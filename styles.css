@@ -16,6 +16,12 @@ nav{
   border-bottom:1px var(--gulfBlue) solid;
 }
 
+/* Styling the nav links text */
+.nav-link{
+  color:var(--gulfBlue);
+  font-weight:600;
+}
+
 .nav-item{
   margin-right:2%;
   font-family: sans-serif; /* This is fallback font for old browsers */
