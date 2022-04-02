@@ -50,7 +50,5 @@ nav{
 
 /*Styling the navbar toggling icon */
 .navbar-toggler-icon{
-  background-color:var(--gulfWhite);
-  color:var(--gulfBlue);
   border: 1px var(--gulfBlue) solid;
 }
