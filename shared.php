@@ -19,12 +19,13 @@ $component_HTMLHeader =
 $component_Nav =
 "<nav class=\"navbar navbar-expand-lg sticky-top\">
 <a class=\"navbar-brand\" href=\"index.php\">
-    <img src=\"img/gulfLogo.png\" width=\"150\" height=\"150\" alt=\"The logo for Giving Us Leadership and Focus\">
+    <img id=\"navbarLogo\" src=\"img/gulfLogo.png\" width=\"250\" height=\"100%\" alt=\"The logo for Giving Us Leadership and Focus\">
 </a>
-<div class=\"container-fluid\">
-  <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-    <span class=\"navbar-toggler-icon\"></span>
-  </button>
+
+<button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+  <span class=\"navbar-toggler-icon\"></span>
+</button>
+
   <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">
     <ul class=\"navbar-nav\">
       <li class=\"nav-item dropdown\">
@@ -55,37 +56,28 @@ $component_Nav =
           Programs
         </a>
         <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
-          <li><a class=\"dropdown-item\" href=\"#\">Site Map</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Proposed Site</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Visual Design Guide</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Wireframes</a></li>
+          <li><a class=\"dropdown-item\" href=\"#\">The Diamond League</a></li>
+          <li><a class=\"dropdown-item\" href=\"#\">Business Apprenticeship</a></li>
         </ul>
       </li>
 
-      <li class=\"nav-item dropdown\">
-        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+      <li class=\"nav-item\">
+        <a class=\"nav-link\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
           Donate
         </a>
-        <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
-          <li><a class=\"dropdown-item\" href=\"#\">Time Sheet</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Team Members</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Contact Info</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Project Log</a></li>
-        </ul>
       </li>
 
-      <li class=\"nav-item dropdown\">
-        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+      <li class=\"nav-item\">
+        <a class=\"nav-link \" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+        Monthly Challenge
+        </a>
+      </li>
+
+      <li class=\"nav-item\">
+        <a class=\"nav-link\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
         Contact
         </a>
-        <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
-          <li><a class=\"dropdown-item\" href=\"#\">Time Sheet</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Team Members</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Contact Info</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Project Log</a></li>
-        </ul>
       </li>
     </ul>
   </div>
-</div>
 </nav>";

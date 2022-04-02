@@ -5,8 +5,8 @@
   --gulfPink: #e85f90;
   --gulfWhite: #ffffff;
   --gulfBlack: #000000;
+  --navLinkText:Open Sans;
 }
-
 
 /*Styling our nav bar*/
 
@@ -16,6 +16,12 @@ nav{
   border-bottom:1px var(--gulfBlue) solid;
 }
 
+.nav-item{
+  margin-right:2%;
+  font-family: sans-serif; /* This is fallback font for old browsers */
+  font-family: var(--navLinkText);
+}
+
 /*Styling the dropdown menu + links */
 .dropdown-menu{
   background-color:var(--gulfBlue);
@@ -23,13 +29,27 @@ nav{
   padding-top:0;
 }
 
+/*Changing the distance between the dropdown menu and its parent link*/
+.dropdown-menu[data-bs-popper]{
+  top:50%;
+}
+
 .dropdown-item{
   background-color:var(--gulfBlue);
   color:var(--gulfWhite);
   border-bottom: 1px var(--gulfWhite) solid;
+  font-family: sans-serif; /* This is fallback font for old browsers */
+  font-family: var(--navLinkText);
 }
 
 .dropdown-item:hover{
+  background-color:var(--gulfWhite);
+  color:var(--gulfBlue);
+  border: 1px var(--gulfBlue) solid;
+}
+
+/*Styling the navbar toggling icon */
+.navbar-toggler-icon{
   background-color:var(--gulfWhite);
   color:var(--gulfBlue);
   border: 1px var(--gulfBlue) solid;
