@@ -20,7 +20,7 @@ $component_HTMLHeader =
 $component_Nav = "
 <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary sticky-top\">
 <a class=\"navbar-brand\" href=\"#\">
-    <img src=\"/img/gulfLogo.png\" width=\"30\" height=\"30\" alt=\"The logo for Giving Us Leadership and Focus\">
+    <img src=\"img/gulfLogo.png\" width=\"30\" height=\"30\" alt=\"The logo for Giving Us Leadership and Focus\">
   </a>
 <div class=\"container-fluid\">
   <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
