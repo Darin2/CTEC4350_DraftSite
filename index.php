@@ -1,15 +1,12 @@
 <?php session_start();
 include("shared.php");
-echo "$HTMLHeader";
-?>
-
-
+echo "$component_HTMLHeader";?>
 </head>
 
 <body>
 
 <main>
-
+<?php echo "$component_Nav";?>
 </main>
 
 <footer>
