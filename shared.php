@@ -14,14 +14,13 @@ $component_HTMLHeader =
 
 <title>The G.U.L.F.</title>
 
-
 </head>";
 
-$component_Nav = "
-<nav class=\"navbar navbar-expand-lg sticky-top\">
-<a class=\"navbar-brand\" href=\"#\">
+$component_Nav =
+"<nav class=\"navbar navbar-expand-lg sticky-top\">
+<a class=\"navbar-brand\" href=\"index.php\">
     <img src=\"img/gulfLogo.png\" width=\"150\" height=\"150\" alt=\"The logo for Giving Us Leadership and Focus\">
-  </a>
+</a>
 <div class=\"container-fluid\">
   <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
     <span class=\"navbar-toggler-icon\"></span>
@@ -30,35 +29,30 @@ $component_Nav = "
     <ul class=\"navbar-nav\">
       <li class=\"nav-item dropdown\">
         <a class=\"nav-link dropdown-toggle\" href=\"#communicationbrief-section\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-          Communication Brief
+          About
         </a>
         <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
-          <li><a class=\"dropdown-item\" href=\"#\">Project Summary</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Audience Analysis</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Perception/Tone</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Communication Strategy</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Communication Goals</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Intended Audience</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Competitive Positioning</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Targeted Messaging</a></li>
+          <li><a class=\"dropdown-item\" href=\"#\">Our Mission</a></li>
+          <li><a class=\"dropdown-item\" href=\"#\">Our Impact</a></li>
+          <li><a class=\"dropdown-item\" href=\"#\">Testimonials</a></li>
+          <li><a class=\"dropdown-item\" href=\"#\">Our Staff</a></li>
         </ul>
       </li>
 
       <li class=\"nav-item dropdown\">
         <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-          Audience Profile
+          Get Involved
         </a>
         <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
-          <li><a class=\"dropdown-item\" href=\"#\">Participants</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Volunteers</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Sponsors</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Administrators</a></li>
+          <li><a class=\"dropdown-item\" href=\"#\">Volunteer</a></li>
+          <li><a class=\"dropdown-item\" href=\"#\">Membership</a></li>
+          <li><a class=\"dropdown-item\" href=\"#\">Sponsorship</a></li>
         </ul>
       </li>
 
       <li class=\"nav-item dropdown\">
         <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-          Project Assets
+          Programs
         </a>
         <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
           <li><a class=\"dropdown-item\" href=\"#\">Site Map</a></li>
@@ -70,7 +64,19 @@ $component_Nav = "
 
       <li class=\"nav-item dropdown\">
         <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-          Team Information
+          Donate
+        </a>
+        <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
+          <li><a class=\"dropdown-item\" href=\"#\">Time Sheet</a></li>
+          <li><a class=\"dropdown-item\" href=\"#\">Team Members</a></li>
+          <li><a class=\"dropdown-item\" href=\"#\">Contact Info</a></li>
+          <li><a class=\"dropdown-item\" href=\"#\">Project Log</a></li>
+        </ul>
+      </li>
+
+      <li class=\"nav-item dropdown\">
+        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+        Contact
         </a>
         <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
           <li><a class=\"dropdown-item\" href=\"#\">Time Sheet</a></li>

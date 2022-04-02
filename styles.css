@@ -7,8 +7,30 @@
   --gulfBlack: #000000;
 }
 
+
+/*Styling our nav bar*/
+
 nav{
   background-color:white !important;
   color:var(--gulfBlue) !important;
   border-bottom:1px var(--gulfBlue) solid;
+}
+
+/*Styling the dropdown menu + links */
+.dropdown-menu{
+  background-color:var(--gulfBlue);
+  padding-bottom:0;
+  padding-top:0;
+}
+
+.dropdown-item{
+  background-color:var(--gulfBlue);
+  color:var(--gulfWhite);
+  border-bottom: 1px var(--gulfWhite) solid;
+}
+
+.dropdown-item:hover{
+  background-color:var(--gulfWhite);
+  color:var(--gulfBlue);
+  border: 1px var(--gulfBlue) solid;
 }
