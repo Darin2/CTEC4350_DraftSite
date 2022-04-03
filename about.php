@@ -20,6 +20,21 @@
 
 <main>
 
+  <h3>Our Mission</h3>
+  <div class="mission">
+
+  </div>
+
+  <h3>Our Impact</h3>
+  <div class="impact">
+
+  </div>
+
+  <h3>Our Story</h3>
+  <div class="story">
+
+  </div>
+
 </main>
 
     <footer>
