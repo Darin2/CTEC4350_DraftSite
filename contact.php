@@ -9,8 +9,8 @@ echo "$component_HTMLHeader";?>
 
 </main>
 
-    <footer>
-	    <p class="centeredText">Website by Something Visionary - CTEC 4350 @ UT Arlington - For class use only</p>
-    </footer>
+<footer>
+  <p class="centeredText">Website by Something Visionary - CTEC 4350 @ UT Arlington - For class use only</p>
+</footer>
 </body>
 </html>
