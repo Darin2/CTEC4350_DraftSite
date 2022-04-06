@@ -81,3 +81,43 @@ $component_Nav =
       </ul>
     </div>
   </nav>";
+
+$component_Footer = '
+<footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="footer-section">
+              <h5>Quick Links</h5>
+              <ul class="quick-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sign in/Log in</a></li>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Donate</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer-section">
+              <h5>Contact</h5>
+              <p>(817) 558 - 4853</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer-section">
+              <h5>Stay Connected with us!</h5>
+              <ul class="sm-icons">
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="footnote">Website by Something Visionary - CTEC 4350 @ UT Arlington - For class use only</p>
+      </div>
+    </footer>';
