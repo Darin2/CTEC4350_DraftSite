@@ -1,3 +1,14 @@
+/* Attempting to do a full width full page background image */
+html {
+  background: url(img/daniel-halseth-JbYkNEmvxIs-unsplash_3500x1969.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/* This is our color palette based on the visual design guide. Please use the color variables below instead of typing in the hex code for each color. */
 :root {
   --gulfBlue: #334da1;
   --gulfOrange: #f89939;
@@ -8,7 +19,10 @@
   --navLinkText:Open Sans;
 }
 
-/*Styling our nav bar*/
+
+/*******************************************/
+/***********Styling our nav bar************/
+/*****************************************/
 
 nav{
   background-color:white !important;
