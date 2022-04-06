@@ -19,6 +19,19 @@ html {
   --navLinkText:Open Sans;
 }
 
+/*Link styles*/
+a:link {
+  text-decoration: none;
+  color: var(--gulfBlue);
+}
+a:hover {
+  font-weight: bolder;
+}
+a:visited {
+  color: var(--gulfOrange);
+}
+/*End of link styles*/
+
 
 /*******************************************/
 /***********Styling our nav bar************/
@@ -72,3 +85,31 @@ nav{
 .navbar-toggler-icon{
   border: 1px var(--gulfBlue) solid;
 }
+
+/*Styling footer */
+.centeredText{
+  margin-top:5%;
+  text-align:center;
+}
+.row {
+  padding-top: 30px;
+}
+.quick-links {
+  list-style-type: none;
+  padding-left: 0;
+}
+.sm-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  column-gap: 20px;
+  padding-left: 0;
+  font-size: 35px;
+}
+.footer-hr {
+  min-width: 100%;
+  margin-bottom: 0;
+  background-color: var(--gulfBlue);
+}
+/*End of footer styling*/
