@@ -1,6 +1,10 @@
 <?php session_start();
 include("shared.php");
-echo "$component_HTMLHeader";?>
+echo "$component_HTMLHeader";
+/*
+Link to the wireframes for this project: https://darinhardin550576.invisionapp.com/freehand/Wireframes-YASr5nqZY?projectID=cl09vkvs0jk590132e7033lju
+*/
+?>
 </head>
 
 <body>
