@@ -96,6 +96,7 @@ $component_Nav =
 
 $component_Footer = '
 <footer>
+      <hr>
       <div class="container-fluid">
         <div class="row">
           <div class="col">
