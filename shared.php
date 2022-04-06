@@ -17,67 +17,67 @@ $component_HTMLHeader =
 </head>";
 
 $component_Nav =
-"<nav class=\"navbar navbar-expand-lg sticky-top\">
-<a class=\"navbar-brand\" href=\"index.php\">
-    <img id=\"navbarLogo\" src=\"img/gulfLogo.png\" width=\"250\" height=\"100%\" alt=\"The logo for Giving Us Leadership and Focus\">
-</a>
+  "<nav class=\"navbar col navbar-expand-lg sticky-top\">
+  <a class=\"navbar-brand\" href=\"index.php\">
+      <img id=\"navbarLogo\" src=\"img/gulfLogo.png\" width=\"250\" height=\"100%\" alt=\"The logo for Giving Us Leadership and Focus\">
+  </a>
 
-<button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-  <span class=\"navbar-toggler-icon\"></span>
-</button>
+  <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+    <span class=\"navbar-toggler-icon\"></span>
+  </button>
 
-  <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">
-    <ul class=\"navbar-nav\">
-      <li class=\"nav-item dropdown\">
-        <a class=\"nav-link dropdown-toggle\" href=\"#communicationbrief-section\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-          About
-        </a>
-        <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
-          <li><a class=\"dropdown-item\" href=\"#\">Our Mission</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Our Impact</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Testimonials</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Our Staff</a></li>
-        </ul>
-      </li>
+    <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">
+      <ul class=\"navbar-nav\">
+        <li class=\"nav-item dropdown\">
+          <a class=\"nav-link dropdown-toggle\" href=\"#communicationbrief-section\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+            About
+          </a>
+          <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
+            <li><a class=\"dropdown-item\" href=\"#\">Our Mission</a></li>
+            <li><a class=\"dropdown-item\" href=\"#\">Our Impact</a></li>
+            <li><a class=\"dropdown-item\" href=\"#\">Testimonials</a></li>
+            <li><a class=\"dropdown-item\" href=\"#\">Our Staff</a></li>
+          </ul>
+        </li>
 
-      <li class=\"nav-item dropdown\">
-        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-          Get Involved
-        </a>
-        <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
-          <li><a class=\"dropdown-item\" href=\"#\">Volunteer</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Membership</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Sponsorship</a></li>
-        </ul>
-      </li>
+        <li class=\"nav-item dropdown\">
+          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+            Get Involved
+          </a>
+          <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
+            <li><a class=\"dropdown-item\" href=\"#\">Volunteer</a></li>
+            <li><a class=\"dropdown-item\" href=\"#\">Membership</a></li>
+            <li><a class=\"dropdown-item\" href=\"#\">Sponsorship</a></li>
+          </ul>
+        </li>
 
-      <li class=\"nav-item dropdown\">
-        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-          Programs
-        </a>
-        <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
-          <li><a class=\"dropdown-item\" href=\"#\">The Diamond League</a></li>
-          <li><a class=\"dropdown-item\" href=\"#\">Business Apprenticeship</a></li>
-        </ul>
-      </li>
+        <li class=\"nav-item dropdown\">
+          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+            Programs
+          </a>
+          <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
+            <li><a class=\"dropdown-item\" href=\"#\">The Diamond League</a></li>
+            <li><a class=\"dropdown-item\" href=\"#\">Business Apprenticeship</a></li>
+          </ul>
+        </li>
 
-      <li class=\"nav-item\">
-        <a class=\"nav-link\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
-          Donate
-        </a>
-      </li>
+        <li class=\"nav-item\">
+          <a class=\"nav-link\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            Donate
+          </a>
+        </li>
 
-      <li class=\"nav-item\">
-        <a class=\"nav-link \" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
-        Monthly Challenge
-        </a>
-      </li>
+        <li class=\"nav-item\">
+          <a class=\"nav-link \" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+          Monthly Challenge
+          </a>
+        </li>
 
-      <li class=\"nav-item\">
-        <a class=\"nav-link\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
-        Contact
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>";
+        <li class=\"nav-item\">
+          <a class=\"nav-link\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+          Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>";
