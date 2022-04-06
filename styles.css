@@ -86,6 +86,27 @@ nav{
   border: 1px var(--gulfBlue) solid;
 }
 
+/*Styling programs page */
+.our-programs {
+  background-image: url("img/programbg.jpg");
+  background-repeat: no-repeat;
+}
+.programs-h1 {
+  color: var(--gulfWhite);
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    max-width: 90%;
+    row-gap: 30px;
+    margin: 5px 0 5px 0;
+  }
+  .programs-h1 {
+    margin-bottom: 0;
+  }
+}
+/*End of programs page styling*/
+
 /*Styling footer */
 .centeredText{
   margin-top:5%;
