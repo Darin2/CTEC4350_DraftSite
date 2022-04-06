@@ -103,7 +103,7 @@ $component_Footer = '
             <div class="footer-section">
               <h5>Quick Links</h5>
               <ul class="quick-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="#">Sign in/Log in</a></li>
                 <li><a href="#">Our Mission</a></li>
                 <li><a href="#">Donate</a></li>
