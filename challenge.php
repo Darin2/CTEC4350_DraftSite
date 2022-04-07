@@ -6,6 +6,7 @@ echo "$component_HTMLHeader";?>
 <body>
 
 <main>
+<?php echo "$component_Nav";?>
 
 </main>
 

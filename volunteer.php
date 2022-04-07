@@ -10,8 +10,8 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
 <body>
 
 <main>
-
 <?php echo "$component_Nav";?>
+
 <div class="container-fluid">
   <div id="homepageHeroJumbotron" class="jumbotron">
     <h1 class="display-4">Headline Text Here</h1>
@@ -22,7 +22,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       <a class="btn btn-primary btn-lg" href="#" role="button">Call to action of some sort</a>
     </p>
   </div>
-  
+
 
 <!--end container -->
 </div>

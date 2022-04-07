@@ -6,8 +6,8 @@ echo "$component_HTMLHeader";?>
 <body>
 
 <main>
-  
   <?php echo "$component_Nav";?>
+  
   <div class="container-fluid our-programs">
       <div id="homepageHeroJumbotron" class="jumbotron">
         <h1 class="display-4 programs-h1">Our Programs</h1>
@@ -40,6 +40,6 @@ echo "$component_HTMLHeader";?>
       $("#navbarSupportedContent a:not(.dropdown-toggle)").click(function() {
         $("#navbarSupportedContent").collapse("hide");
       });
-</script>  
+</script>
 </body>
 </html>

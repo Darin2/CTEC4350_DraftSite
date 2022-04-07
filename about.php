@@ -6,7 +6,7 @@ echo "$component_HTMLHeader";?>
 <body>
 
 <main>
-
+<?php echo "$component_Nav";?>
   <!-- Thanks for getting started here. Please remember to use Bootstrap if you can. -->
   <h3>Our Mission</h3>
   <div class="mission">
@@ -22,7 +22,7 @@ echo "$component_HTMLHeader";?>
   <div class="story">
 
   </div>
-  
+
 </main>
 
 <footer>
