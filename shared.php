@@ -41,7 +41,7 @@ $component_Nav =
     <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">
       <ul class=\"navbar-nav\">
         <li class=\"nav-item dropdown\">
-          <a class=\"nav-link dropdown-toggle\" href=\"about.php\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+          <a class=\"nav-link dropdown-toggle\" href=\"about.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
             About
           </a>
           <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
@@ -53,7 +53,7 @@ $component_Nav =
         </li>
 
         <li class=\"nav-item dropdown\">
-          <a class=\"nav-link dropdown-toggle\" href=\"getinvolved.php\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+          <a class=\"nav-link dropdown-toggle\" href=\"getinvolved.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
             Get Involved
           </a>
           <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
@@ -64,7 +64,7 @@ $component_Nav =
         </li>
 
         <li class=\"nav-item dropdown\">
-          <a class=\"nav-link dropdown-toggle\" href=\"programs.php\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+          <a class=\"nav-link dropdown-toggle\" href=\"programs.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
             Programs
           </a>
           <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
