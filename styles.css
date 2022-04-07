@@ -1,4 +1,4 @@
-/* Attempting to do a full width full page background image */
+/* This is a full-page background image of Margaret Hunt Hill Bridge. */
 html {
   background: url(img/daniel-halseth-JbYkNEmvxIs-unsplash_3500x1969.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -138,5 +138,12 @@ nav{
   min-width: 100%;
   margin-bottom: 0;
   background-color: var(--gulfBlue);
+}
+footer{
+  background: url(img/daniel-halseth-JbYkNEmvxIs-unsplash_3500x1969.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 /*End of footer styling*/
