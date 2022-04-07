@@ -62,6 +62,12 @@ nav{
   padding-top:0;
 }
 
+/*Attempting to make the nav menus open on hover instead of on click */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+
 /*Changing the distance between the dropdown menu and its parent link*/
 .dropdown-menu[data-bs-popper]{
   top:50%;
