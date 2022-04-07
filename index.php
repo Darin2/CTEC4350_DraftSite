@@ -101,6 +101,9 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
             </div>
         </section><!-- End of counter Section -->
   </div>
+  <div id="homepageGoogleMapsEmbed">
+    <?php echo "$component_GoogleMapsEmbed"?>
+  </div>
 
 
 </div>

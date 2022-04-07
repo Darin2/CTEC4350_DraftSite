@@ -134,3 +134,5 @@ $component_Footer = '
         <p class="footnote">Website by Something Visionary - CTEC 4350 @ UT Arlington - For class use only</p>
       </div>
     </footer>';
+
+$component_GoogleMapsEmbed = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.65870968798!2d-97.07813204926569!3d32.748251992665494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e87743d0cf749%3A0x7b63e1df94aafc2!2s602%20Magic%20Mile%20St%2C%20Arlington%2C%20TX%2076011!5e0!3m2!1sen!2sus!4v1649375009229!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
