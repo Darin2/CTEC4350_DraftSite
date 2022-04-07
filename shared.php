@@ -41,7 +41,7 @@ $component_Nav =
     <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">
       <ul class=\"navbar-nav\">
         <li class=\"nav-item dropdown\">
-          <a class=\"nav-link dropdown-toggle\" href=\"#communicationbrief-section\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+          <a class=\"nav-link dropdown-toggle\" href=\"about.php\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
             About
           </a>
           <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
@@ -53,7 +53,7 @@ $component_Nav =
         </li>
 
         <li class=\"nav-item dropdown\">
-          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+          <a class=\"nav-link dropdown-toggle\" href=\"getinvolved.php\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
             Get Involved
           </a>
           <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
@@ -64,7 +64,7 @@ $component_Nav =
         </li>
 
         <li class=\"nav-item dropdown\">
-          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+          <a class=\"nav-link dropdown-toggle\" href=\"programs.php\" id=\"navbarDropdownMenuLink\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
             Programs
           </a>
           <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
@@ -80,13 +80,13 @@ $component_Nav =
         </li>
 
         <li class=\"nav-item\">
-          <a class=\"nav-link \" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+          <a class=\"nav-link \" href=\"challenge.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
           Monthly Challenge
           </a>
         </li>
 
         <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+          <a class=\"nav-link\" href=\"contact.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
           Contact
           </a>
         </li>
@@ -105,10 +105,10 @@ $component_Footer = '
               <ul class="quick-links">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="#">Sign in/Log in</a></li>
-                <li><a href="#">Our Mission</a></li>
+                <li><a href="about.php">About</a></li>
                 <li><a href="#">Donate</a></li>
                 <li><a href="#">Membership</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
               </ul>
             </div>
           </div>
