@@ -25,8 +25,6 @@ echo "$component_HTMLHeader";?>
 
 </main>
 
-<footer>
-  <p class="centeredText">Website by Something Visionary - CTEC 4350 @ UT Arlington - For class use only</p>
-</footer>
+<?php echo "$component_Footer";?>
 </body>
 </html>

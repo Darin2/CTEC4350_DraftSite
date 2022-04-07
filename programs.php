@@ -7,7 +7,7 @@ echo "$component_HTMLHeader";?>
 
 <main>
   <?php echo "$component_Nav";?>
-  
+
   <div class="container-fluid our-programs">
       <div id="homepageHeroJumbotron" class="jumbotron">
         <h1 class="display-4 programs-h1">Our Programs</h1>
@@ -35,11 +35,6 @@ echo "$component_HTMLHeader";?>
 </main>
 
 <?php echo "$component_Footer";?>
-<script>
-  /*This code ensures our nav bar is able to be toggled closed. */
-      $("#navbarSupportedContent a:not(.dropdown-toggle)").click(function() {
-        $("#navbarSupportedContent").collapse("hide");
-      });
-</script>
+
 </body>
 </html>

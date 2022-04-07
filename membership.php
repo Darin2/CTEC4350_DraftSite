@@ -28,11 +28,5 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
 </div>
 </main>
 <?php echo "$component_Footer";?>
-<script>
-  /*This code ensures our nav bar is able to be toggled closed. */
-      $("#navbarSupportedContent a:not(.dropdown-toggle)").click(function() {
-        $("#navbarSupportedContent").collapse("hide");
-      });
-</script>
 </body>
 </html>
