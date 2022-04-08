@@ -59,37 +59,37 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
   <div id="testimonialsJumbotron" class="jumbotron row mx-auto">
   </div>
   <div id="statisticsJumbotron row">
-    <!-- counter attempt with code from https://codepen.io/cworsley/pen/LJrdNa -->
+    <!-- counter attempt with code from codepen -->
     <section id="counter" class="counter">
-            <div class="main_counter_area">
+            <div class="col">
                 <div class="overlay p-y-3">
                     <div class="container">
                         <div class="row">
-                            <div class="main_counter_content text-center white-text wow fadeInUp">
+                            <div class="main_counter_content flexStatisticBoxes text-center white-text wow fadeInUp mx-auto">
                                 <div class="col-md-3">
-                                    <div class="single_counter p-y-2 m-t-1">
+                                    <div class="single_counter p-y-2 m-t-1 mx-4">
                                         <i class="fa fa-heart m-b-1"></i>
                                         <h2 class="statistic-counter">100</h2>
                                         <p>Side Hustles Started</p>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="single_counter p-y-2 m-t-1">
+                                    <div class="single_counter p-y-2 m-t-1 mx-4">
                                         <i class="fa fa-check m-b-1"></i>
                                         <h2 class="statistic-counter">400</h2>
                                         <p>Volunteering Events</p>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="single_counter p-y-2 m-t-1">
+                                    <div class="single_counter p-y-2 m-t-1 mx-4">
                                         <i class="fa fa-refresh m-b-1"></i>
                                         <h2 class="statistic-counter">312</h2>
                                         <p>Internships Created</p>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="single_counter p-y-2 m-t-1">
-                                        <i class="fa fa-beer m-b-1"></i>
+                                    <div class="single_counter p-y-2 m-t-1 mx-4">
+                                        <i class="fa fa-check m-b-1"></i>
                                         <h2 class="statistic-counter">8</h2>
                                         <p>Schools Involved</p>
                                     </div>

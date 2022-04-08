@@ -175,13 +175,20 @@ footer{
               background: url(https://images.pexels.com/photos/196288/pexels-photo-196288.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) no-repeat top center;
               background-size: cover;
               overflow: hidden;
+              display: flex;
           }
           .main_counter_area .main_counter_content .single_counter{
               background: #334da1;
                   color: #fff;
+
           }
           .main_counter_area .main_counter_content .single_counter i{
               font-size:36px;
+
+          }
+          .flexStatisticBoxes{
+            display:flex;
+            
           }
 
 /*End Carousel Attempt Styling
