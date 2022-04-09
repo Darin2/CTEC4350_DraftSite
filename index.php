@@ -32,7 +32,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
       </p>
     </div>
-    <div id="getInvolvedJumbotron" class="jumbotron row mx-0">
+    <div id="getInvolvedJumbotron" class="jumbotron row ml-0">
 
       <!-- volunteer row -->
       <div id="homepage-volunteerRow" class="row d-flex align-items-center bg-dark bg-gradient">
