@@ -32,7 +32,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
       </p>
     </div>
-    <div id="getInvolvedJumbotron" class="jumbotron row mx-4">
+    <div id="getInvolvedJumbotron" class="jumbotron row mx-0 bg-dark bg-gradient">
 
 
       <!-- center-aligned section -->
@@ -44,9 +44,10 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       <p class="lead text-white text-center">
       Become a volunteer today.
       </p>
-      <p class="lead">
+      <p class="lead w-25 d-flex justify-content-center mx-auto">
         <a class="btn btn-primary btn-lg d-flex justify-content-center" href="#" role="button">Learn More</a>
       </p>
+
       </section>
 
       <!-- center-aligned section -->
@@ -58,7 +59,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       <p class="lead text-white text-center">
       Ready to join?
       </p>
-      <p class="lead">
+      <p class="lead w-25 d-flex justify-content-center mx-auto">
         <a class="btn btn-primary btn-lg d-flex justify-content-center" href="#" role="button">Learn More</a>
       </p>
       </section>
@@ -72,7 +73,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       <p class="lead text-white text-center">
       Interested in becoming a sponsor?
       </p>
-      <p class="lead">
+      <p class="lead w-25 d-flex justify-content-center mx-auto">
         <a class="btn btn-primary btn-lg d-flex justify-content-center" href="#" role="button">Learn More</a>
       </p>
       </section>
