@@ -97,30 +97,30 @@ $component_Nav =
 $component_Footer = '
 <footer>
       <hr>
-      <div class="container-fluid">
+      <div class="container-fluid bg-dark bg-gradient">
         <div class="row">
           <div class="col">
             <div class="footer-section">
-              <h5>Quick Links</h5>
-              <ul class="quick-links">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="#">Sign in/Log in</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="#">Donate</a></li>
-                <li><a href="#">Membership</a></li>
-                <li><a href="contact.php">Contact Us</a></li>
+              <h5 class="text-white">Quick Links</h5>
+              <ul class="quick-links text-white">
+                <li><a class="text-white" href="index.php">Home</a></li>
+                <li><a class="text-white" href="#">Sign in/Log in</a></li>
+                <li><a class="text-white" href="about.php">About</a></li>
+                <li><a class="text-white" href="#">Donate</a></li>
+                <li><a class="text-white" href="#">Membership</a></li>
+                <li><a class="text-white" href="contact.php">Contact Us</a></li>
               </ul>
             </div>
           </div>
           <div class="col">
             <div class="footer-section">
-              <h5>Contact</h5>
-              <p>(817) 558 - 4853</p>
+              <h5 class="text-white">Contact</h5>
+              <p class="text-white">(817) 558 - 4853</p>
             </div>
           </div>
           <div class="col">
             <div class="footer-section">
-              <h5>Stay Connected with us!</h5>
+              <h5 class="text-white">Stay Connected with us!</h5>
               <ul class="sm-icons">
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
@@ -131,7 +131,7 @@ $component_Footer = '
             </div>
           </div>
         </div>
-        <p class="footnote">Website by Something Visionary - CTEC 4350 @ UT Arlington - For class use only</p>
+        <p class="footnote text-white">Website by Something Visionary - CTEC 4350 @ UT Arlington - For class use only</p>
       </div>
     </footer>';
 
