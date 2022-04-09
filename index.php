@@ -22,12 +22,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
 <div class="container-fluid fullwidthBridgePic px-0 mx-auto">
     <div id="homepageHeroJumbotron" class="jumbotron row mx-4">
       <h1 class="display-4 text-white">Giving Us Leadership And Focus</h1>
-      <p class="lead text-white">Delivering fun, positive growth opportunities to DFW's youth since 2016.</p>
-
-      <p></p>
-      <p class="lead text-white">
-      Want to get involved?
-      </p>
+      <p class="lead text-white my-0 py-0">Delivering fun, positive growth opportunities to DFW's youth since 2016.</p>
       <p class="lead">
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
       </p>
@@ -93,7 +88,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       </div>
 
       <!--sponsorship row -->
-      <div id="homepage-SponsorshipRow" class="row d-flex align-items-center bg-dark bg-gradient">
+      <div id="homepage-SponsorshipRow" class="row d-flex align-items-center">
         <!-- sponsorship lottie animation. should show up on left side of text for tablet/desktop. Should show up above text for mobile. -->
         <section class="col-sm">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -108,10 +103,10 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
         </section>
         <!-- center-aligned text section with CTA button -->
         <section class="col-sm">
-          <h1 class="display-4 text-white text-center">Sponsorship</h1>
-          <p class="lead text-white text-center">Join The G.U.L.F as a sponsor and help us deliver world-class growth opportunities for DFW youth.</p>
-          <p class="lead text-white text-center">***place carousel or bootstrap card(s) with sponsorship-related image(s) and text here ****</p>
-          <p class="lead text-white text-center">
+          <h1 class="display-4 text-black text-center">Sponsorship</h1>
+          <p class="lead text-black text-center">Join The G.U.L.F as a sponsor and help us deliver world-class growth opportunities for DFW youth.</p>
+          <p class="lead text-black text-center">***place carousel or bootstrap card(s) with sponsorship-related image(s) and text here ****</p>
+          <p class="lead text-black text-center">
           Interested in becoming a sponsor?
           </p>
           <p class="lead w-25 d-flex justify-content-center mx-auto">
@@ -119,6 +114,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
           </p>
         </section>
       </div>
+
     </div>
     <div id="testimonialsJumbotron" class="jumbotron row mx-4">
     </div>

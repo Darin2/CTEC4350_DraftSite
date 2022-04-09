@@ -207,3 +207,7 @@ footer{
 #homepageHeroJumbotron{
   height:100vh;
 }
+/*Styling Homepage Sponsorship Row Background */
+#homepage-SponsorshipRow{
+  background-color:#FFEBE6;
+}
