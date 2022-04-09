@@ -201,3 +201,8 @@ footer{
     }
 
 /* END styling the statistics/counters on index.php */
+
+/*Styling home page hero image */
+#homepageHeroJumbotron{
+  height:100vh;
+}
