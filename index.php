@@ -40,7 +40,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       <h1 class="display-4 text-white text-center">Volunteering</h1>
       <p class="lead text-white text-center">Help us accomplish our mission to develop the next generation of leaders and entrepreneurs.</p>
 
-      <p class="lead text-white text-center">***place bootstrap card(s) with volunteering-related image(s) and text here ****</p>
+      <p class="lead text-white text-center">***place carousel or bootstrap card(s) with volunteering-related image(s) and text here ****</p>
       <p class="lead text-white text-center">
       Become a volunteer today.
       </p>
@@ -55,7 +55,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       <h1 class="display-4 text-white text-center">Membership</h1>
       <p class="lead text-white text-center">Join The G.U.L.F. and experience the growth opportunities of a life time.</p>
 
-      <p class="lead text-white text-center">***place bootstrap card(s) with membership-related image(s) and text here ****</p>
+      <p class="lead text-white text-center">***place carousel or bootstrap card(s) with membership-related image(s) and text here ****</p>
       <p class="lead text-white text-center">
       Ready to join?
       </p>
@@ -69,7 +69,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       <h1 class="display-4 text-white text-center">Sponsorship</h1>
       <p class="lead text-white text-center">Join The G.U.L.F as a sponsor and help us deliver world-class growth opportunities for DFW youth.</p>
 
-      <p class="lead text-white text-center">***place bootstrap card(s) with sponsorship-related image(s) and text here ****</p>
+      <p class="lead text-white text-center">***place carousel or bootstrap card(s) with sponsorship-related image(s) and text here ****</p>
       <p class="lead text-white text-center">
       Interested in becoming a sponsor?
       </p>
