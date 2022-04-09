@@ -11,7 +11,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
                delay: 10,
                time: 2000
            });
-</script> <!-- javascript code for the carousel -->
+</script>
 </head>
 
 <body>
@@ -34,50 +34,91 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
     </div>
     <div id="getInvolvedJumbotron" class="jumbotron row mx-0 bg-dark bg-gradient">
 
+      <!-- volunteer row -->
+      <div id="homepage-volunteerRow" class="row">
+        <!-- volunteer lottie animation. Should show up on left side of text for tablet and desktop. Should show up on top of the text for mobile.  -->
+        <section class="col-sm">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+              src="https://assets1.lottiefiles.com/packages/lf20_t2bpn6yt.json"
+              background="transparent"
+              speed="1"
+              style="width: 300px; height: 300px;"
+              loop
+              autoplay>
+            </lottie-player>
+        </section>
+        <!-- center-aligned text section with CTA button-->
+        <section class="col-sm">
+          <h1 class="display-4 text-white text-center">Volunteering</h1>
+          <p class="lead text-white text-center">Help us accomplish our mission to develop the next generation of leaders and entrepreneurs.</p>
 
-      <!-- center-aligned section -->
-      <section>
-      <h1 class="display-4 text-white text-center">Volunteering</h1>
-      <p class="lead text-white text-center">Help us accomplish our mission to develop the next generation of leaders and entrepreneurs.</p>
+          <p class="lead text-white text-center">***place carousel or bootstrap card(s) with volunteering-related image(s) and text here ****</p>
+          <p class="lead text-white text-center">
+          Become a volunteer today.
+          </p>
+          <p class="lead w-25 d-flex justify-content-center mx-auto">
+            <a class="btn btn-primary btn-lg d-flex justify-content-center" href="#" role="button">Learn More</a>
+          </p>
+        </section>
+      </div>
 
-      <p class="lead text-white text-center">***place carousel or bootstrap card(s) with volunteering-related image(s) and text here ****</p>
-      <p class="lead text-white text-center">
-      Become a volunteer today.
-      </p>
-      <p class="lead w-25 d-flex justify-content-center mx-auto">
-        <a class="btn btn-primary btn-lg d-flex justify-content-center" href="#" role="button">Learn More</a>
-      </p>
+      <!-- membership row -->
+      <div id="homepage-membershipRow"class="row">
+        <!-- center-aligned section -->
+        <section class="col-sm">
+        <h1 class="display-4 text-white text-center">Membership</h1>
+        <p class="lead text-white text-center">Join The G.U.L.F. and experience the growth opportunities of a life time.</p>
 
-      </section>
+        <p class="lead text-white text-center">***place carousel or bootstrap card(s) with membership-related image(s) and text here ****</p>
+        <p class="lead text-white text-center">
+        Ready to join?
+        </p>
+        <p class="lead w-25 d-flex justify-content-center mx-auto">
+          <a class="btn btn-primary btn-lg d-flex justify-content-center" href="#" role="button">Learn More</a>
+        </p>
+        </section>
+        <section class="col-sm">
+          <!-- membership lottie animation. Should show up on right side of text for tablet and desktop. Should show up on top of the text for mobile.  -->
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player
+            src="https://assets2.lottiefiles.com/packages/lf20_VuL7dB.json"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px;"
+            loop
+            autoplay>
+          </lottie-player>
+        </section>
+      </div>
 
-      <!-- center-aligned section -->
-      <section>
-      <h1 class="display-4 text-white text-center">Membership</h1>
-      <p class="lead text-white text-center">Join The G.U.L.F. and experience the growth opportunities of a life time.</p>
-
-      <p class="lead text-white text-center">***place carousel or bootstrap card(s) with membership-related image(s) and text here ****</p>
-      <p class="lead text-white text-center">
-      Ready to join?
-      </p>
-      <p class="lead w-25 d-flex justify-content-center mx-auto">
-        <a class="btn btn-primary btn-lg d-flex justify-content-center" href="#" role="button">Learn More</a>
-      </p>
-      </section>
-
-      <!-- center-aligned section -->
-      <section>
-      <h1 class="display-4 text-white text-center">Sponsorship</h1>
-      <p class="lead text-white text-center">Join The G.U.L.F as a sponsor and help us deliver world-class growth opportunities for DFW youth.</p>
-
-      <p class="lead text-white text-center">***place carousel or bootstrap card(s) with sponsorship-related image(s) and text here ****</p>
-      <p class="lead text-white text-center">
-      Interested in becoming a sponsor?
-      </p>
-      <p class="lead w-25 d-flex justify-content-center mx-auto">
-        <a class="btn btn-primary btn-lg d-flex justify-content-center" href="#" role="button">Learn More</a>
-      </p>
-      </section>
-
+      <!--sponsorship row -->
+      <div id="homepage-SponsorshipRow" class="row">
+        <!-- sponsorship lottie animation. should show up on left side of text for tablet/desktop. Should show up above text for mobile. -->
+        <section class="col-sm">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player
+            src="https://assets5.lottiefiles.com/packages/lf20_t0orczaq.json"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px;"
+            loop
+            autoplay>
+          </lottie-player>
+        </section>
+        <!-- center-aligned text section with CTA button -->
+        <section class="col-sm">
+          <h1 class="display-4 text-white text-center">Sponsorship</h1>
+          <p class="lead text-white text-center">Join The G.U.L.F as a sponsor and help us deliver world-class growth opportunities for DFW youth.</p>
+          <p class="lead text-white text-center">***place carousel or bootstrap card(s) with sponsorship-related image(s) and text here ****</p>
+          <p class="lead text-white text-center">
+          Interested in becoming a sponsor?
+          </p>
+          <p class="lead w-25 d-flex justify-content-center mx-auto">
+            <a class="btn btn-primary btn-lg d-flex justify-content-center" href="#" role="button">Learn More</a>
+          </p>
+        </section>
+      </div>
 
     <!-- Not using these cards rn, might delete them -->
     <!-- <div class="card col-xl-3 mx-2">
