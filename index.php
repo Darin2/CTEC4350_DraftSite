@@ -32,10 +32,10 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
       </p>
     </div>
-    <div id="getInvolvedJumbotron" class="jumbotron row mx-0 bg-dark bg-gradient">
+    <div id="getInvolvedJumbotron" class="jumbotron row mx-0">
 
       <!-- volunteer row -->
-      <div id="homepage-volunteerRow" class="row d-flex align-items-center">
+      <div id="homepage-volunteerRow" class="row d-flex align-items-center bg-dark bg-gradient">
         <!-- volunteer lottie animation. Should show up on left side of text for tablet and desktop. Should show up on top of the text for mobile.  -->
         <section class="col-sm">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -93,7 +93,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       </div>
 
       <!--sponsorship row -->
-      <div id="homepage-SponsorshipRow" class="row d-flex align-items-center">
+      <div id="homepage-SponsorshipRow" class="row d-flex align-items-center bg-dark bg-gradient">
         <!-- sponsorship lottie animation. should show up on left side of text for tablet/desktop. Should show up above text for mobile. -->
         <section class="col-sm">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
