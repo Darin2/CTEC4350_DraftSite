@@ -1,5 +1,5 @@
 /* This is a full-page background image of Margaret Hunt Hill Bridge. */
-html {
+.fullwidthBridgePic {
   background: url(img/daniel-halseth-JbYkNEmvxIs-unsplash_3500x1969.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -19,6 +19,13 @@ html {
   --navLinkText:Open Sans;
 }
 
+.gulfBlueBG{
+  background-color:var(--gulfBlue);
+}
+
+.gulfOrangeBG{
+  background-color:var(--gulfOrange);
+}
 /*Link styles*/
 a:link {
   text-decoration: none;
@@ -27,9 +34,10 @@ a:link {
 a:hover {
   font-weight: bolder;
 }
-a:visited {
-  color: var(--gulfOrange);
+/*a:visited {
+  color: var(--gulfBlue);
 }
+*/
 /*End of link styles*/
 
 
@@ -92,6 +100,12 @@ nav{
   border: 1px var(--gulfBlue) solid;
 }
 
+/* End of nav bar styling*/
+
+
+
+
+
 /*Styling programs page */
 .our-programs {
   background-image: url("img/programbg.jpg");
@@ -140,55 +154,50 @@ nav{
   background-color: var(--gulfBlue);
 }
 footer{
-  background: url(img/daniel-halseth-JbYkNEmvxIs-unsplash_3500x1969.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
 }
 /*End of footer styling*/
 
-/* Attempting to style the carousel. No idea if this will work. Imported from https://codepen.io/cworsley/pen/LJrdNa*/
-
-/* Counters */
-.p-y-2 {
-  padding-top: 28px;
-  padding-bottom: 28px;
-}
-.p-y-3 {
-  padding-top: 45px;
-  padding-bottom: 45px;
-}
-.m-b-1 {
-  margin-bottom: 18px;
-}
-.m-t-1 {
-  margin-top: 18px;
-}
 
 
-          /*==========================================================
-                         counter section style
-          ============================================================*/
+/* Styling the statistics/counters on index.php */
+    .p-y-2 {
+      padding-top: 28px;
+      padding-bottom: 28px;
+    }
+    .p-y-3 {
+      padding-top: 45px;
+      padding-bottom: 45px;
+    }
+    .m-b-1 {
+      margin-bottom: 18px;
+    }
+    .m-t-1 {
+      margin-top: 18px;
+    }
 
-          .main_counter_area{
-              background: url(https://images.pexels.com/photos/196288/pexels-photo-196288.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) no-repeat top center;
-              background-size: cover;
-              overflow: hidden;
-              display: flex;
-          }
-          .main_counter_area .main_counter_content .single_counter{
-              background: #334da1;
-                  color: #fff;
+    /*==========================================================
+                   counter section style
+    ============================================================*/
 
-          }
-          .main_counter_area .main_counter_content .single_counter i{
-              font-size:36px;
+    .main_counter_area{
+        background: url(https://images.pexels.com/photos/196288/pexels-photo-196288.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) no-repeat top center;
+        background-size: cover;
+        overflow: hidden;
+        display: flex;
+    }
+    .main_counter_area .main_counter_content .single_counter{
+        background: #334da1;
+            color: #ffffff;
 
-          }
-          .flexStatisticBoxes{
-            display:flex;
-            
-          }
+    }
+    .main_counter_area .main_counter_content .single_counter i{
+        font-size:36px;
 
-/*End Carousel Attempt Styling
+    }
+    .flexStatisticBoxes{
+      display:flex;
+
+    }
+
+/* END styling the statistics/counters on index.php */

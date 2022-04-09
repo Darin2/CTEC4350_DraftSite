@@ -19,15 +19,18 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
 <main>
 <?php echo "$component_Nav";?>
 
-<div class="container-fluid">
+<div class="container-fluid fullwidthBridgePic px-0">
 
   <div id="homepageHeroJumbotron" class="jumbotron row mx-auto">
-    <h1 class="display-4">Giving Us Leadership And Focus</h1>
-    <p class="lead">Delivering fun, positive growth opportunities to DFW's youth since 2007.</p>
+    <h1 class="display-4 text-white">Giving Us Leadership And Focus</h1>
+    <p class="lead text-white">Delivering fun, positive growth opportunities to DFW's youth since 2007.</p>
     <hr class="my-4">
     <p></p>
+    <p class="lead text-white">
+      Want to get involved?
+    </p>
     <p class="lead">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Get Involved</a>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
     </p>
   </div>
   <div id="getInvolvedJumbotron" class="jumbotron row mx-auto">
@@ -67,31 +70,31 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
                         <div class="row">
                             <div class="main_counter_content flexStatisticBoxes text-center white-text wow fadeInUp mx-auto">
                                 <div class="col-md-3">
-                                    <div class="single_counter p-y-2 m-t-1 mx-4">
-                                        <i class="fa fa-heart m-b-1"></i>
-                                        <h2 class="statistic-counter">100</h2>
-                                        <p>Side Hustles Started</p>
+                                    <div class="single_counter p-y-2 m-t-1 mx-4 gulfBlueBG">
+                                        <i class="fa fa-heart m-b-1 gulfBlueBG text-white"></i>
+                                        <h2 class="statistic-counter gulfBlueBG text-white">100</h2>
+                                        <p class="gulfBlueBG text-white">Side Hustles Started</p>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="single_counter p-y-2 m-t-1 mx-4">
-                                        <i class="fa fa-check m-b-1"></i>
-                                        <h2 class="statistic-counter">400</h2>
-                                        <p>Volunteering Events</p>
+                                    <div class="single_counter p-y-2 m-t-1 mx-4 gulfBlueBG">
+                                        <i class="fa fa-check m-b-1 gulfBlueBG text-white"></i>
+                                        <h2 class="statistic-counter gulfBlueBG text-white">400</h2>
+                                        <p class="gulfBlueBG text-white">Volunteering Events</p>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="single_counter p-y-2 m-t-1 mx-4">
-                                        <i class="fa fa-refresh m-b-1"></i>
-                                        <h2 class="statistic-counter">312</h2>
-                                        <p>Internships Created</p>
+                                    <div class="single_counter p-y-2 m-t-1 mx-4 gulfBlueBG">
+                                        <i class="fa fa-refresh m-b-1 gulfBlueBG text-white"></i>
+                                        <h2 class="statistic-counter gulfBlueBG text-white">312</h2>
+                                        <p class="gulfBlueBG text-white">Internships Created</p>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="single_counter p-y-2 m-t-1 mx-4">
-                                        <i class="fa fa-check m-b-1"></i>
-                                        <h2 class="statistic-counter">8</h2>
-                                        <p>Schools Involved</p>
+                                    <div class="single_counter p-y-2 m-t-1 mx-4 gulfBlueBG">
+                                        <i class="fa fa-check m-b-1 gulfBlueBG text-white"></i>
+                                        <h2 class="statistic-counter gulfBlueBG text-white">8</h2>
+                                        <p class="gulfBlueBG text-white">Schools Involved</p>
                                     </div>
                                 </div>
                             </div>
