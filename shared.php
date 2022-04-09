@@ -96,7 +96,6 @@ $component_Nav =
 
 $component_Footer = '
 <footer>
-      <hr>
       <div class="container-fluid bg-dark bg-gradient">
         <div class="row">
           <div class="col">
