@@ -29,7 +29,8 @@
 /*Link styles*/
 a:link {
   text-decoration: none;
-  color: var(--gulfBlue);
+  /*color: var(--gulfBlue); commenting this part out for now because our nav link background color is blue too  */
+
 }
 a:hover {
   font-weight: bolder;
