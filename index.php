@@ -35,7 +35,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
     <div id="getInvolvedJumbotron" class="jumbotron row mx-0 bg-dark bg-gradient">
 
       <!-- volunteer row -->
-      <div id="homepage-volunteerRow" class="row">
+      <div id="homepage-volunteerRow" class="row d-flex align-items-center">
         <!-- volunteer lottie animation. Should show up on left side of text for tablet and desktop. Should show up on top of the text for mobile.  -->
         <section class="col-sm">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -43,7 +43,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
               src="https://assets1.lottiefiles.com/packages/lf20_t2bpn6yt.json"
               background="transparent"
               speed="1"
-              style="width: 300px; height: 300px;"
+              style="width: 100%; height: 80%;"
               loop
               autoplay>
             </lottie-player>
@@ -64,7 +64,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       </div>
 
       <!-- membership row -->
-      <div id="homepage-membershipRow"class="row">
+      <div id="homepage-membershipRow"class="row d-flex align-items-center">
         <!-- center-aligned section -->
         <section class="col-sm">
         <h1 class="display-4 text-white text-center">Membership</h1>
@@ -85,7 +85,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
             src="https://assets2.lottiefiles.com/packages/lf20_VuL7dB.json"
             background="transparent"
             speed="1"
-            style="width: 300px; height: 300px;"
+            style="width: 100%; height: 80%;"
             loop
             autoplay>
           </lottie-player>
@@ -93,7 +93,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       </div>
 
       <!--sponsorship row -->
-      <div id="homepage-SponsorshipRow" class="row">
+      <div id="homepage-SponsorshipRow" class="row d-flex align-items-center">
         <!-- sponsorship lottie animation. should show up on left side of text for tablet/desktop. Should show up above text for mobile. -->
         <section class="col-sm">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -101,7 +101,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
             src="https://assets5.lottiefiles.com/packages/lf20_t0orczaq.json"
             background="transparent"
             speed="1"
-            style="width: 300px; height: 300px;"
+            style="width: 100%; height: 80%;"
             loop
             autoplay>
           </lottie-player>
