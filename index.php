@@ -64,7 +64,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       </div>
 
       <!-- membership row -->
-      <div id="homepage-membershipRow"class="row d-flex align-items-center">
+      <div id="homepage-membershipRow"class="row d-flex align-items-center gulfBlueBG">
         <!-- center-aligned section -->
         <section class="col-sm">
         <h1 class="display-4 text-white text-center">Membership</h1>
@@ -119,33 +119,6 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
           </p>
         </section>
       </div>
-
-    <!-- Not using these cards rn, might delete them -->
-    <!-- <div class="card col-xl-3 mx-2">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-    <h5 class="card-title">Join The G.U.L.F.</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Learn More</a>
-    </div>
-    </div>
-    <div class="card col-xl-3 mx-2">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-    <h5 class="card-title">Volunteer With Us</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Learn More</a>
-    </div>
-    </div>
-    <div class="card col-xl-3 mx-2">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-    <h5 class="card-title">Invest In Our Youth</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Learn More</a>
-    </div>
-    </div>
-    -->
     </div>
     <div id="testimonialsJumbotron" class="jumbotron row mx-4">
     </div>

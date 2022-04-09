@@ -20,7 +20,7 @@
 }
 
 .gulfBlueBG{
-  background-color:var(--gulfBlue);
+  background-color:var(--gulfBlue) !important;
 }
 
 .gulfOrangeBG{
