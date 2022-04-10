@@ -32,6 +32,24 @@ echo "$component_HTMLHeader";?>
       </div>
     <!--end container -->
     </div>
+    
+    <div class="container-fluid testimonials">
+    <div id="homepageHeroJumbotron" class="jumbotron">
+      <h1 class="display-4 programs-h1">Testimonials</h1>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">The G.U.L.F. is an invaluable experience!</h5>
+        <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." - John Doe (member of The G.U.L.F)</p>
+        <a href="#" class="btn btn-primary">Get Involved</a>
+      </div>
+    </div>
+    </div>
+    <!--end container -->
+    </div>
 </main>
 
 <?php echo "$component_Footer";?>
