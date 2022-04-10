@@ -133,9 +133,6 @@ nav{
   margin-top:5%;
   text-align:center;
 }
-.row {
-  padding-top: 30px;
-}
 .quick-links {
   list-style-type: none;
   padding-left: 0;
@@ -210,4 +207,9 @@ footer{
 /*Styling Homepage Sponsorship Row Background */
 #homepage-SponsorshipRow{
   background-color:#FFEBE6;
+}
+
+/*Styling Homepage Statistics Jumbotron */
+#statisticsJumbotron{
+  padding-top:0px !important;
 }
