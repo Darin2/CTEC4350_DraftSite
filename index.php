@@ -28,7 +28,6 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
       </p>
     </div>
-  
     <div id="testimonialsJumbotron" class="jumbotron row mx-4">
     </div>
     <div id="statisticsJumbotron" class="row gulfBlueBG">
