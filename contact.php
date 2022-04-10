@@ -68,15 +68,18 @@ echo "$component_HTMLHeader";?>
           <option value="4">Other</option>
         </select>
       </div>
+      <!--Optional message from user -->
       <div class="input-group">
         <span class="input-group-text">Message (optional)</span>
         <textarea class="form-control" aria-label="With textarea"></textarea>
       </div>
-
+      <!--Checkbox input -->
       <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label text-white" for="exampleCheck1">I'd like to receive occasional updates and announcements from The G.U.L.F.</label>
       </div>
+
+      <!--submit form -->
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
