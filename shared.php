@@ -74,7 +74,7 @@ $component_Nav =
         </li>
 
         <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+          <a class=\"nav-link\" href=\"https://www.paypal.com/donate?token=IBOjFEeD8bISqsVxcBPs5cCCrkQHjIDONXWEYSOJuwcFzJFgmhW8Nu8u7Xqld370PTE-0aJtzZRBmQIr\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
             Donate
           </a>
         </li>
@@ -116,6 +116,11 @@ $component_Footer = '
               <h5 class="text-white">Contact</h5>
               <p class="text-white">(817) 558 - 4853</p>
             </div>
+          </div>
+          <div class="col">
+          <a href="https://www.paypal.com/donate?token=IBOjFEeD8bISqsVxcBPs5cCCrkQHjIDONXWEYSOJuwcFzJFgmhW8Nu8u7Xqld370PTE-0aJtzZRBmQIr">
+          <img class="my-2" src="img/donatebutton.gif"
+          </a>
           </div>
           <div class="col">
             <div class="footer-section">
