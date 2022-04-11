@@ -120,7 +120,7 @@ echo "$component_HTMLHeader";?>
             <div class="row flex-center sm-no-flex">
               <!-- note: headshot images used in this component must have a transparent background -->
               <div class="pull-right sm-no-float col-md-8">
-                <ul class="team-members">
+                <ul class="team-members list-unstyled">
                   <!-- single member row starts -->
                   <li class="clearfix">
                     <div class="member-details">
