@@ -45,10 +45,11 @@ $component_Nav =
             About
           </a>
           <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
-            <li><a class=\"dropdown-item\" href=\"#\">Our Mission</a></li>
-            <li><a class=\"dropdown-item\" href=\"#\">Our Impact</a></li>
-            <li><a class=\"dropdown-item\" href=\"#\">Testimonials</a></li>
-            <li><a class=\"dropdown-item\" href=\"#\">Our Staff</a></li>
+            <li><a class=\"dropdown-item\" href=\"about.php#about-OurMissionRow\">Our Mission</a></li>
+            <li><a class=\"dropdown-item\" href=\"about.php#about-OurImpactRow\">Our Impact</a></li>
+            <li><a class=\"dropdown-item\" href=\"about.php#about-OurStoryRow\">Our Story</a></li>
+            <li><a class=\"dropdown-item\" href=\"about.php#about-QuotesRow\">Testimonials</a></li>
+            <li><a class=\"dropdown-item\" href=\"about.php#about-StaffRow\">Our Staff</a></li>
           </ul>
         </li>
 
@@ -57,9 +58,9 @@ $component_Nav =
             Get Involved
           </a>
           <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
-            <li><a class=\"dropdown-item\" href=\"#\">Volunteer</a></li>
-            <li><a class=\"dropdown-item\" href=\"#\">Membership</a></li>
-            <li><a class=\"dropdown-item\" href=\"#\">Sponsorship</a></li>
+            <li><a class=\"dropdown-item\" href=\"getinvolved.php#getinvolved-volunteerRow\">Volunteer</a></li>
+            <li><a class=\"dropdown-item\" href=\"getinvolved.php#getinvolved-membershipRow\">Membership</a></li>
+            <li><a class=\"dropdown-item\" href=\"getinvolved.php#getinvolved-SponsorshipRow\">Sponsorship</a></li>
           </ul>
         </li>
 

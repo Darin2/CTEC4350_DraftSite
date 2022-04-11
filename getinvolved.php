@@ -37,7 +37,7 @@ echo "$component_HTMLHeader";?>
   </div>
 
   <!-- membership row -->
-  <div id="getinvolved-membershipRow"class="row d-flex align-items-center gulfBlueBG">
+  <div id="getinvolved-membershipRow" class="row d-flex align-items-center gulfBlueBG">
     <!-- center-aligned section -->
     <section class="col-sm">
     <h1 class="display-4 text-white text-center">Membership</h1>

@@ -108,6 +108,134 @@ echo "$component_HTMLHeader";?>
         <footer class="blockquote-footer py-3">John Doe, <cite title="Source Title">Dallas Cowboys</cite></footer>
       </blockquote>
     </div>
+
+    <!-- Our Staff row -->
+    <div id="about-OurStaffRow" class="row d-flex align-items-center">
+      <!-- center-aligned text section with CTA button -->
+      <section class="col-12">
+
+        <!-- begin codepen for headshots  (credits: https://codepen.io/thenahidul/pen/WXKONJ)-->
+          <section>
+          <div class="container">
+            <div class="row flex-center sm-no-flex">
+              <!-- note: headshot images used in this component must have a transparent background -->
+              <div class="pull-right sm-no-float col-md-8">
+                <ul class="team-members">
+                  <!-- single member row starts -->
+                  <li class="clearfix">
+                    <div class="member-details">
+                      <div>
+                        <img src="img/testStaffImg.png" alt="UI Designer">
+                        <div class="member-info">
+                          <h3>John Doe</h3>
+                          <p>UI Designer</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="member-details">
+                      <div>
+                        <img src="img/testStaffImg.png" alt="UI Designer">
+                        <div class="member-info">
+                          <h3>John Doe</h3>
+                          <p>UI Designer</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="member-details">
+                      <div>
+                        <img src="img/testStaffImg.png" alt="UI Designer">
+                        <div class="member-info">
+                          <h3>John Doe</h3>
+                          <p>UI Designer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li><!-- /single member row ends -->
+
+                  <!-- single member row starts -->
+                  <li class="clearfix">
+                    <div class="member-details">
+                      <div>
+                        <img src="img/testStaffImg.png" alt="UI Designer">
+                        <div class="member-info">
+                          <h3>John Doe</h3>
+                          <p>UI Designer</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="member-details">
+                      <div>
+                        <img src="img/testStaffImg.png" alt="UI Designer">
+                        <div class="member-info">
+                          <h3>John Doe</h3>
+                          <p>UI Designer</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="member-details">
+                      <div>
+                        <img src="img/testStaffImg.png" alt="UI Designer">
+                        <div class="member-info">
+                          <h3>John Doe</h3>
+                          <p>UI Designer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li><!-- /single member row ends -->
+
+                  <!-- single member row starts -->
+                  <li class="clearfix">
+                    <div class="member-details">
+                      <div>
+                        <img src="img/testStaffImg.png" alt="UI Designer">
+                        <div class="member-info">
+                          <h3>John Doe</h3>
+                          <p>UI Designer</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="member-details">
+                      <div>
+                        <img src="img/testStaffImg.png" alt="UI Designer">
+                        <div class="member-info">
+                          <h3>John Doe</h3>
+                          <p>UI Designer</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="member-details">
+                      <div>
+                        <img src="img/testStaffImg.png" alt="UI Designer">
+                        <div class="member-info">
+                          <h3>John Doe</h3>
+                          <p>UI Designer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li><!-- /single member row ends -->
+
+                </ul><!-- /end team-photos -->
+              </div><!-- /end col-md-8 -->
+
+              <div class="pull-left col-md-4 sm-text-center">
+                <div class="team-overview">
+                  <h2>Who Are We?</h2>
+                  <p><div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quae nesciunt officia! Autem, nam eum voluptatem, esse voluptatibus deleniti tempora laboriosam sequi pariatur, explicabo itaque. Fuga, deserunt? Repudiandae, neque qui.</div></p>
+                </div>
+              </div><!-- /end col-md-4 -->
+            </div><!-- /end row -->
+          </div><!-- /end container -->
+          </section>
+        <!-- end codepen for headshots -->
+
+      </section>
+    </div>
 </div>
 <!-- end fluid container -->
 </div>
