@@ -108,35 +108,26 @@ nav{
 
 
 /*Styling programs page */
-.our-programs {
-  background-image: url("img/programbg.jpg");
-  background-repeat: no-repeat;
-  padding-bottom: 30px;
-}
 .programs-h1 {
-  color: var(--gulfWhite);
+  color: var(--gulfBlack);
   margin-bottom: 0;
-  padding-top: 20px;
+  padding: 20px 0px;
 }
-.testimonials {
-  background-color: #32406d;
-  height: 500px;
+.even-columns {
+  display: flex;
 }
-.card {
-  margin-bottom: 20px;
+.content {
+  width: 100%;
+  margin: 0;
 }
-@media only screen and (max-width: 576px) {
-  .card {
-    max-width: 90%;
-    row-gap: 30px;
-    margin: 5px 0px;
-  }
-  .our-programs {
-    background-size: 100% 100%;
-  }
-  .programs-h1 {
-    margin-bottom: 0;
-  }
+.dl-img {
+  width: 100%;
+}
+.prg-txt {
+  padding: 0 70px;
+}
+.btn-prg {
+  width: 25%;
 }
 /*End of programs page styling*/
 
