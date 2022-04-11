@@ -8,47 +8,37 @@ echo "$component_HTMLHeader";?>
 <main>
   <?php echo "$component_Nav";?>
 
-  <div class="container-fluid our-programs">
-      <div id="homepageHeroJumbotron" class="jumbotron">
-        <h1 class="display-4 programs-h1">Our Programs</h1>
-      </div>
-      <div class="jumbotron row mx-auto d-flex justify-content-center">
-        <div class="card col-xl-3 mx-2">
-          <img class="card-img-top" src="img/thedl.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">The Diamond League</h5>
-            <p class="card-text">On every 2nd Saturday of the month, come join us for fun parties all over the metroplex. From concerts, sports, dancing, and computer games; we do it all and more! Each party has its own theme and setting. All proceeds go to helping The G.U.L.F. continue shaping and building its young entreprenuers. </p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
+  <div id="homepageHeroJumbotron" class="jumbotron d-flex justify-content-center">
+      <h1 class="display-4 programs-h1">Our Programs</h1>
+    </div>
+
+    <div class="content flow">
+      <div class="even-columns">
+        <div class="col prg-txt d-flex flex-column align-self-center">
+          <h2>The Diamond League</h2>
+          <p>Whether you like  parties,  concerts,  sports, rapping, singing,  dancing,  playing  on the computer, or thinking of all the different ways to make money, The DL has got you you covered.</p>
+          <p>On every 2nd Saturday of the month, come join us for fun parties all over the metroplex. From concerts, sports, dancing, and computer games; we do it all and more! Each party has its own theme and setting. All proceeds go to helping The G.U.L.F. continue shaping and building its young entreprenuers.</p>
+          <a href="#" class="btn btn-primary btn-prg">Join Us Today</a>
         </div>
-        <div class="card col-xl-3 mx-2">
-          <img class="card-img-top" src="img/youthprog.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Youth Business Apprenticeship Program</h5>
-            <p class="card-text">Our Youth Business Apprenticeship Program and monthly Youth Business Expos will be available to those who believe they are cut out to be their own bosses and learning the ins and outs of entrepreneurship. Through this program, participants will work alongside and learn from real business owners and career professionals.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
+        <div class="col">
+          <img src="img/thedl.jpg" class="dl-img" alt="">
         </div>
       </div>
-    <!--end container -->
     </div>
-    
-    <div class="container-fluid testimonials">
-    <div id="homepageHeroJumbotron" class="jumbotron">
-      <h1 class="display-4 programs-h1">Testimonials</h1>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        Featured
+
+    <div class="content flow">
+      <div class="even-columns">
+        <div class="col">
+          <img src="img/youthprg.jpg" class="dl-img" alt="">
+        </div>
+        <div class="col prg-txt d-flex flex-column align-self-center">
+          <h2>Youth Business Apprenticeship Program</h2>
+          <p>Program and monthly Youth Business Expos will be available to those who believe they are cut out to be their own bosses and learning the ins and outs of entrepreneurship. Through this program, participants will work alongside and learn from real business owners and career professionals.</p>
+          <p>In our Youth Apprenticeship Program, participants will be taught invaluable skills, lessons, and business acumen from those who have stayed on path before us, and who are now young successful business men and woman.</p>
+          <p>It will also focus on giving sponsors and partner companies access in offering their services, consultation, mentorship, and products to the GULF community by sponsoring and/or partnering with us, allowing youth to learn and earn as an incentive in making and maintaining passing grades and staying on the right path. A win-win for teens and the communities we're a part of.</p>
+          <a href="#" class="btn btn-primary btn-prg">Learn More</a>
+        </div>
       </div>
-      <div class="card-body">
-        <h5 class="card-title">The G.U.L.F. is an invaluable experience!</h5>
-        <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." - John Doe (member of The G.U.L.F)</p>
-        <a href="#" class="btn btn-primary">Get Involved</a>
-      </div>
-    </div>
-    </div>
-    <!--end container -->
     </div>
 </main>
 
