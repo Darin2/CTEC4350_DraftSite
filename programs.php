@@ -8,7 +8,7 @@ echo "$component_HTMLHeader";?>
 <main>
   <?php echo "$component_Nav";?>
 
-  <div id="homepageHeroJumbotron" class="jumbotron d-flex justify-content-center">
+  <div id="programspagepageHeroJumbotron" class="jumbotron d-flex justify-content-center">
       <h1 class="display-4 programs-h1">Our Programs</h1>
     </div>
 
