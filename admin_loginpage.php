@@ -102,12 +102,12 @@ if (array_key_exists('Submit1', $_POST)){
           $stmt->close();
 
           //Our user is logged in so we redirect them to the welcome page
-          //Note that we can't echo ANYTHING to the page prior to this line.
-          //header("Location: welcomepage.php");
-          //exit;
+          //Note that we can't echo ANYTHING to the page prior to this line or it won't work.
+          header("Location: welcomepage.php");
+          exit;
 
-        //}
-        stmt->num_rows was not ==1
+        }
+        //if stmt->num_rows was not ==1, let the user know their username/password weren't correct
         else{
           echo "Incorrect username or password. To reset your password, please click <a href='passwordreset.php'>here</a>.";
         }
