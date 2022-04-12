@@ -46,10 +46,12 @@ if (array_key_exists('Submit1', $_POST)){
   /*The test credentials for the database login system are:
   Username: thegulf2022
   Password: thegulf2022
-  
+
   */
+
+  //Execute this code if the user didn't enter admin/123 as their credentials
   else {
-      //If the user doesn't enter admin credentials, store the username and password in their own variables
+      //Store the username and password entered by the user in variables
         $login_attempt_username = $_POST['username_string'];
         $login_attempt_password = hash('sha256', $_POST['password_string']); //this line encrypts the password string using sha256. Must implement the same encryption on the password entered at registration (registration_page.php) for this to work with registration. Not needed for current implementation because we don't have a password registration system.
 
@@ -67,6 +69,7 @@ if (array_key_exists('Submit1', $_POST)){
       //Sending query to database and storing results
       if($stmt->prepare($sql)){
         //echo "Debugging: the statement prepared<br>";
+
         $stmt->bind_param('ss', $login_attempt_username, $login_attempt_password);
 
         $stmt->execute();
@@ -83,8 +86,7 @@ if (array_key_exists('Submit1', $_POST)){
           //***Giving access to the user via session variable
           //Start a session
           $_SESSION = array();
-          //Take the $firstname string from our query and store it in a session variable
-          $_SESSION['firstNameOfUser'] = $firstname;
+
           //Take the $username string from our query and store it in a session variable (this string is printed in the Welcome Page greeting)
           $_SESSION['welcomepageusername']=$username;
           //Take the $username string from our query and store it in a session variable (this string is printed in the Nav bar as "Hello, $username")
@@ -106,7 +108,7 @@ if (array_key_exists('Submit1', $_POST)){
 
           //Our user is logged in so we redirect them to the welcome page
           //Note that we can't echo ANYTHING to the page prior to this line or it won't work.
-          header("Location: welcomepage.php");
+          header("Location: admin_controlpanel.php");
           exit;
 
         }
