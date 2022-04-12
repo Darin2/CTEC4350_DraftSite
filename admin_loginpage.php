@@ -3,22 +3,26 @@ session_start();
 include("shared.php");
 include("dbconn.inc.php");
 $conn = dbConnect();
+echo "$component_HTMLHeader";
 
-/*This section attempts to use the database and verify user's credentials when they attempt to log in, and grant USER LEVEL ACCESS (not admin) if credentials are correct */
-  //if we have a password and username from the user, store those in variables
+/*This section attempts to use the database and verify user's credentials when they attempt to log in, and grant access (the only type of access we need to worry about is "admin" level access). We only grant admin access if the credentials are correct.
+
+The user input being validated in this script comes from the HTML form below.
+
+ */
 
 
 //Only execute this code if the user has submitted something to the form
 if (array_key_exists('Submit1', $_POST)){
 
-  //If the user gives admin credentials, give admin access and don't worry about interacting with the user credentials database
+  //If the user gives admin credentials, give admin access
   if (($_POST['username_string'] == "admin") && ($_POST['password_string']=="123")){
     $_SESSION = array();
     $_SESSION['welcomepageusername']="Administrator";
     //echo "session welcome page username thing = ".$_SESSION['welcomepageusername'];
     //echo "username = $username";
     $_SESSION['admin_access'] = true;
-    header("Location: welcomepage.php");
+    header("Location: admin_controlpanel.php");
     exit;
   }
   else {
