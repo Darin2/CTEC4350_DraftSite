@@ -7,7 +7,11 @@ echo "$component_HTMLHeader";?>
 <body class="mb-0 pb-0 bg-dark">
 
 <main>
-<?php echo "$component_Nav";?>
+
+<?php
+  //printing navigation
+  echo "$component_Nav";
+?>
 
 <!-- bootstrap form example -->
 <div class="container-fluid bg-dark mb-5">
@@ -40,7 +44,10 @@ echo "$component_HTMLHeader";?>
         <label for="contactField-Phone" class="form-label text-black">Phone Number</label>
         <input type="name" name="contactPhoneNumber" class="form-control" id="contact-input-PhoneNumber" placeholder="123-456-7890">
       </div>
-      <!-- dropdown menu for "I am interested in.." -->
+      <!-- dropdown menu for "I am interested in.."
+
+      ***not including this dropdown right now - it will require a lot more database/SQL work on the back end and we may not have time **
+
       <div class="mb-3">
         <select class="form-select" name="contactInterestedIn" id="contact-input-InterestedIn" aria-label="Default select example">
           <option selected>I am interested in...</option>
@@ -50,17 +57,20 @@ echo "$component_HTMLHeader";?>
           <option value="4">Other</option>
         </select>
       </div>
+      -->
       <!--Optional message from user -->
       <div class="input-group">
         <span class="input-group-text">Message (optional)</span>
         <textarea class="form-control" name="contactOptionalMessage" aria-label="With textarea" id="contact-input-textArea"></textarea>
       </div>
-      <!--Checkbox input -->
+      <!--Checkbox input
+      ***Commenting this part out for now, don't think it's necessary.
+      
       <div class="mb-3 form-check">
         <input type="checkbox" name="contactOptIn" class="form-check-input" id="contact-input-OptIn">
         <label class="form-check-label text-black" for="exampleCheck1">I'd like to receive occasional updates and announcements from The G.U.L.F.</label>
       </div>
-
+      -->
       <!--submit form -->
       <button type="submit" name="Submit" class="btn btn-primary my-3">Submit</button>
     </form>
