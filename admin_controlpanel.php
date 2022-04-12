@@ -5,9 +5,8 @@ include("dbconn.inc.php");
 $conn = dbConnect();
 ?>
 <?php
-    //include("shared.php");
-    echo "$HTMLHeader";
-    echo "$header";
+    echo "$component_HTMLHeader";
+    echo "$component_Nav";
 ?>
 <main>
   <body>
@@ -17,4 +16,4 @@ $conn = dbConnect();
     </div>
   </body>
 </main>
-<?php echo $footer ?>
+<?php echo $component_Footer; ?>

@@ -39,9 +39,9 @@ if (array_key_exists('Submit1', $_POST)){
     exit;
   }
 
-  /*******************************************/
-  /********** Database login system *********/
-  /******************************************/
+/*******************************************/
+/********** Database login system *********/
+/******************************************/
 
   /*The test credentials for the database login system are:
   Username: thegulf2022
