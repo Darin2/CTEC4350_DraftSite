@@ -28,72 +28,149 @@ $component_HTMLHeader =
 
 </head>";
 
-$component_Nav =
-  "<nav class=\"navbar col navbar-expand-lg sticky-top\">
-  <a class=\"navbar-brand\" href=\"index.php\">
-      <img id=\"navbarLogo\" src=\"img/gulfLogo.png\" width=\"250\" height=\"100%\" alt=\"The logo for Giving Us Leadership and Focus\">
-  </a>
+/*********************************************/
+/* Building a nav for un-authenticated users */
+/*********************************************/
 
-  <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-    <span class=\"navbar-toggler-icon\"></span>
-  </button>
+//If the user doesn't have admin access, show them the regular nav:
+if ($_SESSION['admin_access'] !== true){
+  $component_Nav =
+    "<nav class=\"navbar col navbar-expand-lg sticky-top\">
+    <a class=\"navbar-brand\" href=\"index.php\">
+        <img id=\"navbarLogo\" src=\"img/gulfLogo.png\" width=\"250\" height=\"100%\" alt=\"The logo for Giving Us Leadership and Focus\">
+    </a>
 
-    <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">
-      <ul class=\"navbar-nav\">
-        <li class=\"nav-item dropdown\">
-          <a class=\"nav-link dropdown-toggle\" href=\"about.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
-            About
-          </a>
-          <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
-            <li><a class=\"dropdown-item\" href=\"about.php#about-OurMissionRow\">Our Mission</a></li>
-            <li><a class=\"dropdown-item\" href=\"about.php#about-OurImpactRow\">Our Impact</a></li>
-            <li><a class=\"dropdown-item\" href=\"about.php#about-OurStoryRow\">Our Story</a></li>
-            <li><a class=\"dropdown-item\" href=\"about.php#about-QuotesRow\">Testimonials</a></li>
-            <li><a class=\"dropdown-item\" href=\"about.php#about-StaffRow\">Our Staff</a></li>
-          </ul>
-        </li>
+    <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+      <span class=\"navbar-toggler-icon\"></span>
+    </button>
 
-        <li class=\"nav-item dropdown\">
-          <a class=\"nav-link dropdown-toggle\" href=\"getinvolved.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
-            Get Involved
-          </a>
-          <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
-            <li><a class=\"dropdown-item\" href=\"getinvolved.php#getinvolved-volunteerRow\">Volunteer</a></li>
-            <li><a class=\"dropdown-item\" href=\"getinvolved.php#getinvolved-membershipRow\">Membership</a></li>
-            <li><a class=\"dropdown-item\" href=\"getinvolved.php#getinvolved-SponsorshipRow\">Sponsorship</a></li>
-          </ul>
-        </li>
+      <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">
+        <ul class=\"navbar-nav\">
+          <li class=\"nav-item dropdown\">
+            <a class=\"nav-link dropdown-toggle\" href=\"about.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+              About
+            </a>
+            <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
+              <li><a class=\"dropdown-item\" href=\"about.php#about-OurMissionRow\">Our Mission</a></li>
+              <li><a class=\"dropdown-item\" href=\"about.php#about-OurImpactRow\">Our Impact</a></li>
+              <li><a class=\"dropdown-item\" href=\"about.php#about-OurStoryRow\">Our Story</a></li>
+              <li><a class=\"dropdown-item\" href=\"about.php#about-QuotesRow\">Testimonials</a></li>
+              <li><a class=\"dropdown-item\" href=\"about.php#about-StaffRow\">Our Staff</a></li>
+            </ul>
+          </li>
 
-        <li class=\"nav-item dropdown\">
-          <a class=\"nav-link dropdown-toggle\" href=\"programs.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
-            Programs
-          </a>
-          <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
-            <li><a class=\"dropdown-item\" href=\"#\">The Diamond League</a></li>
-            <li><a class=\"dropdown-item\" href=\"#\">Business Apprenticeship</a></li>
-          </ul>
-        </li>
+          <li class=\"nav-item dropdown\">
+            <a class=\"nav-link dropdown-toggle\" href=\"getinvolved.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+              Get Involved
+            </a>
+            <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
+              <li><a class=\"dropdown-item\" href=\"getinvolved.php#getinvolved-volunteerRow\">Volunteer</a></li>
+              <li><a class=\"dropdown-item\" href=\"getinvolved.php#getinvolved-membershipRow\">Membership</a></li>
+              <li><a class=\"dropdown-item\" href=\"getinvolved.php#getinvolved-SponsorshipRow\">Sponsorship</a></li>
+            </ul>
+          </li>
 
-        <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"https://www.paypal.com/donate?token=IBOjFEeD8bISqsVxcBPs5cCCrkQHjIDONXWEYSOJuwcFzJFgmhW8Nu8u7Xqld370PTE-0aJtzZRBmQIr\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
-            Donate
-          </a>
-        </li>
+          <li class=\"nav-item dropdown\">
+            <a class=\"nav-link dropdown-toggle\" href=\"programs.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+              Programs
+            </a>
+            <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
+              <li><a class=\"dropdown-item\" href=\"#\">The Diamond League</a></li>
+              <li><a class=\"dropdown-item\" href=\"#\">Business Apprenticeship</a></li>
+            </ul>
+          </li>
 
-        <li class=\"nav-item\">
-          <a class=\"nav-link \" href=\"challenge.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
-          Monthly Challenge
-          </a>
-        </li>
+          <li class=\"nav-item\">
+            <a class=\"nav-link\" href=\"https://www.paypal.com/donate?token=IBOjFEeD8bISqsVxcBPs5cCCrkQHjIDONXWEYSOJuwcFzJFgmhW8Nu8u7Xqld370PTE-0aJtzZRBmQIr\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+              Donate
+            </a>
+          </li>
 
-        <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"contact.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
-          Contact
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>";
+          <li class=\"nav-item\">
+            <a class=\"nav-link \" href=\"challenge.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            Monthly Challenge
+            </a>
+          </li>
+
+          <li class=\"nav-item\">
+            <a class=\"nav-link\" href=\"contact.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>";
+}
+
+//If the user does have admin access, show them a nav with the following admin links: log out, view email list, etc.
+if ($_SESSION['admin_access'] == true){
+  $component_Nav =
+    "<nav class=\"navbar col navbar-expand-lg sticky-top\">
+    <a class=\"navbar-brand\" href=\"index.php\">
+        <img id=\"navbarLogo\" src=\"img/gulfLogo.png\" width=\"250\" height=\"100%\" alt=\"The logo for Giving Us Leadership and Focus\">
+    </a>
+
+    <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+      <span class=\"navbar-toggler-icon\"></span>
+    </button>
+
+      <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">
+        <ul class=\"navbar-nav\">
+          <li class=\"nav-item dropdown\">
+            <a class=\"nav-link dropdown-toggle\" href=\"about.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+              About
+            </a>
+            <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
+              <li><a class=\"dropdown-item\" href=\"about.php#about-OurMissionRow\">Our Mission</a></li>
+              <li><a class=\"dropdown-item\" href=\"about.php#about-OurImpactRow\">Our Impact</a></li>
+              <li><a class=\"dropdown-item\" href=\"about.php#about-OurStoryRow\">Our Story</a></li>
+              <li><a class=\"dropdown-item\" href=\"about.php#about-QuotesRow\">Testimonials</a></li>
+              <li><a class=\"dropdown-item\" href=\"about.php#about-StaffRow\">Our Staff</a></li>
+            </ul>
+          </li>
+
+          <li class=\"nav-item dropdown\">
+            <a class=\"nav-link dropdown-toggle\" href=\"getinvolved.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+              Get Involved
+            </a>
+            <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
+              <li><a class=\"dropdown-item\" href=\"getinvolved.php#getinvolved-volunteerRow\">Volunteer</a></li>
+              <li><a class=\"dropdown-item\" href=\"getinvolved.php#getinvolved-membershipRow\">Membership</a></li>
+              <li><a class=\"dropdown-item\" href=\"getinvolved.php#getinvolved-SponsorshipRow\">Sponsorship</a></li>
+            </ul>
+          </li>
+
+          <li class=\"nav-item dropdown\">
+            <a class=\"nav-link dropdown-toggle\" href=\"programs.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+              Programs
+            </a>
+            <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
+              <li><a class=\"dropdown-item\" href=\"#\">The Diamond League</a></li>
+              <li><a class=\"dropdown-item\" href=\"#\">Business Apprenticeship</a></li>
+            </ul>
+          </li>
+
+          <li class=\"nav-item\">
+            <a class=\"nav-link\" href=\"https://www.paypal.com/donate?token=IBOjFEeD8bISqsVxcBPs5cCCrkQHjIDONXWEYSOJuwcFzJFgmhW8Nu8u7Xqld370PTE-0aJtzZRBmQIr\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+              Donate
+            </a>
+          </li>
+
+          <li class=\"nav-item\">
+            <a class=\"nav-link \" href=\"challenge.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            Monthly Challenge
+            </a>
+          </li>
+
+          <li class=\"nav-item\">
+            <a class=\"nav-link\" href=\"contact.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>";
+}
 
 $component_Footer = '
 <footer>
