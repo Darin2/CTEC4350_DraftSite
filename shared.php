@@ -177,7 +177,7 @@ if ($_SESSION['admin_access'] == true){
               <li><a class=\"dropdown-item\" href=\"admin_registeredUsersList.php\">Business Apprenticeship</a></li>
             </ul>
           </li>
-          
+
           <li class=\"nav-item\">
             <a class=\"nav-link bg-primary bg-gradient\" href=\"admin_logoutpage.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
             Log Out
@@ -197,7 +197,7 @@ $component_Footer = '
               <h5 class="text-white">Quick Links</h5>
               <ul class="quick-links text-white">
                 <li><a class="text-white" href="index.php">Home</a></li>
-                <li><a class="text-white" href="#">Sign in/Log in</a></li>
+                <li><a class="text-white" href="admin_loginpage.php">Log in</a></li>
                 <li><a class="text-white" href="about.php">About</a></li>
                 <li><a class="text-white" href="#">Donate</a></li>
                 <li><a class="text-white" href="#">Membership</a></li>
