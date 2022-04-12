@@ -97,7 +97,7 @@ $component_Nav =
 
 $component_Footer = '
 <footer>
-      <div class="container-fluid bg-dark bg-gradient">
+      <div class="container-fluid bg-dark">
         <div class="row">
           <div class="col">
             <div class="footer-section">
