@@ -8,20 +8,21 @@ $conn = dbConnect();
 The user input being validated in this script comes from the HTML form below.
 
  */
-
-
+/*******************************************/
+/**********Plain-text login system**********/
+/*******************************************/
 //Only execute this code if the user has submitted something to the form
 if (array_key_exists('Submit1', $_POST)){
 
-  //If the user gives admin credentials, give admin access
+  //If the user gives admin credentials on the form, execute code in this if statement
   if (($_POST['username_string'] == "thegulf2022") && ($_POST['password_string']=="thegulf2022")){
     //start a session
     $_SESSION = array();
     //create a name that we'll use to address the user (e.g. "Welcome back, Administrator.")
-    $_SESSION['welcomepageusername']="Mr Bible";
+    $_SESSION['admin_Name']="Administrator";
 
     //***Debugging code below:
-    //echo "session welcome page username thing = ".$_SESSION['welcomepageusername'];
+    //echo "session control panel username = ".$_SESSION['admin_Name'];
     //echo "username = $username";
 
     //Set admin access to true
