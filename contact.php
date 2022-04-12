@@ -20,7 +20,7 @@ echo "$component_HTMLHeader";?>
       <h5 class="text-center text-black">Send us a message and we'll get back to you ASAP.</h5>
       <div class="mb-3">
         <label for="contactField-Email" class="form-label text-black">Email address</label>
-        <input type="email" class="form-control" id="contactField-Email" aria-describedby="emailHelp">
+        <input type="email" class="form-control" id="contact-input-Email" aria-describedby="emailHelp">
         <!-- * we don't need this part right now, but leaving the code here as an example of the form-text class*
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         -->
@@ -28,21 +28,21 @@ echo "$component_HTMLHeader";?>
       <!-- Get user's first name -->
       <div class="mb-3">
         <label for="contactField-FirstName" class="form-label text-black">First Name</label>
-        <input type="name" name="contactFirstnName" class="form-control" id="contactField-FirstName">
+        <input type="name" name="contactFirstnName" class="form-control" id="contact-input-FirstName">
       </div>
       <!-- Get user's last name -->
       <div class="mb-3">
         <label for="contactField-LastName" class="form-label text-black">Last Name</label>
-        <input type="name" name="contactLastName" class="form-control" id="contactField-LastName">
+        <input type="name" name="contactLastName" class="form-control" id="contact-input-LastName">
       </div>
       <!-- Get user's phone number -->
       <div class="mb-3">
         <label for="contactField-Phone" class="form-label text-black">Phone Number</label>
-        <input type="name" name="contactPhoneNumber" class="form-control" id="contactField-Phone" placeholder="123-456-7890">
+        <input type="name" name="contactPhoneNumber" class="form-control" id="contact-input-PhoneNumber" placeholder="123-456-7890">
       </div>
       <!-- dropdown menu for "I am interested in.." -->
       <div class="mb-3">
-        <select class="form-select" name="contactInterestedIn" aria-label="Default select example">
+        <select class="form-select" name="contactInterestedIn" id="contact-input-InterestedIn" aria-label="Default select example">
           <option selected>I am interested in...</option>
           <option value="1">Joining The G.U.L.F. as a participant</option>
           <option value="2">Volunteering with The G.U.L.F.</option>
@@ -53,12 +53,12 @@ echo "$component_HTMLHeader";?>
       <!--Optional message from user -->
       <div class="input-group">
         <span class="input-group-text">Message (optional)</span>
-        <textarea class="form-control" name="contactOptionalMessage" aria-label="With textarea"></textarea>
+        <textarea class="form-control" name="contactOptionalMessage" aria-label="With textarea" id="contact-input-textArea"></textarea>
       </div>
       <!--Checkbox input -->
       <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label text-black" name="contactOptIn" for="exampleCheck1">I'd like to receive occasional updates and announcements from The G.U.L.F.</label>
+        <input type="checkbox" name="contactOptIn" class="form-check-input" id="contact-input-OptIn">
+        <label class="form-check-label text-black" for="exampleCheck1">I'd like to receive occasional updates and announcements from The G.U.L.F.</label>
       </div>
 
       <!--submit form -->
