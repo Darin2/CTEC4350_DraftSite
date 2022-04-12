@@ -11,7 +11,7 @@ $conn = dbConnect();
 ?>
 <main>
   <body>
-    <h1>Welcome back, <?php echo $_SESSION['admin_Name'];?>!</h1>
+    <h1>Welcome to the admin control panel, <?php echo $_SESSION['admin_Name'];?>!</h1>
   </body>
 </main>
 <?php echo $footer ?>

@@ -167,6 +167,12 @@ if ($_SESSION['admin_access'] == true){
             Contact
             </a>
           </li>
+
+          <li class=\"nav-item\">
+            <a class=\"nav-link\" href=\"admin_controlpanel.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            Admin Controls
+            </a>
+          </li>
         </ul>
       </div>
     </nav>";

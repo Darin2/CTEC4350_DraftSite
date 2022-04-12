@@ -87,13 +87,6 @@ if (array_key_exists('Submit1', $_POST)){
           //Start a session
           $_SESSION = array();
 
-          //Take the $username string from our query and store it in a session variable (this string is printed in the Welcome Page greeting)
-          $_SESSION['welcomepageusername']=$username;
-          //Take the $username string from our query and store it in a session variable (this string is printed in the Nav bar as "Hello, $username")
-          $_SESSION['usernameForNav']=$username;
-          //create a non-session variable for the username
-          $usernameForNav = $_SESSION['usernameForNav'];
-
           /*Debugging stuff*/
           //echo "Checking what's inside the session welcome page username thing = ".$_SESSION['welcomepageusername'];
           //echo "Debugging: username = $username";
