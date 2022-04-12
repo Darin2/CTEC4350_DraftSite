@@ -179,7 +179,7 @@ if ($_SESSION['admin_access'] == true){
           </li>
 
           <li class=\"nav-item\">
-            <a class=\"nav-link bg-primary bg-gradient\" href=\"admin_logoutpage.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link bg-danger text-white bg-gradient\" href=\"admin_logoutpage.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
             Log Out
             </a>
           </li>

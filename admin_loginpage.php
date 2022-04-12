@@ -86,6 +86,7 @@ if (array_key_exists('Submit1', $_POST)){
           //***Giving access to the user via session variable
           //Start a session
           $_SESSION = array();
+          $_SESSION['admin_Name'] = "Administrator";
 
           /*Debugging stuff*/
           //echo "Checking what's inside the session welcome page username thing = ".$_SESSION['welcomepageusername'];
