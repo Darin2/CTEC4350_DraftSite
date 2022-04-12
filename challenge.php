@@ -1,5 +1,5 @@
 <?php session_start();
-include("../../../Downloads/shared.php");
+include("shared.php");
 echo "$component_HTMLHeader";?>
 <!doctype html>
 <html>
