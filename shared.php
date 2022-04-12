@@ -99,7 +99,7 @@ $component_Footer = '
 <footer>
       <div class="container-fluid bg-dark">
         <div class="row">
-          <div class="col">
+          <div class="col mt-3">
             <div class="footer-section">
               <h5 class="text-white">Quick Links</h5>
               <ul class="quick-links text-white">
@@ -112,18 +112,13 @@ $component_Footer = '
               </ul>
             </div>
           </div>
-          <div class="col">
+          <div class="col mt-3">
             <div class="footer-section">
               <h5 class="text-white">Contact</h5>
               <p class="text-white">(817) 558 - 4853</p>
             </div>
           </div>
-          <div class="col">
-          <a href="https://www.paypal.com/donate?token=IBOjFEeD8bISqsVxcBPs5cCCrkQHjIDONXWEYSOJuwcFzJFgmhW8Nu8u7Xqld370PTE-0aJtzZRBmQIr">
-          <img class="my-2" src="img/donatebutton.gif"
-          </a>
-          </div>
-          <div class="col">
+          <div class="col mt-3">
             <div class="footer-section">
               <h5 class="text-white">Stay Connected with us!</h5>
               <ul class="sm-icons">

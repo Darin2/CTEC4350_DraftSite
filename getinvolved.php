@@ -18,7 +18,7 @@ echo "$component_HTMLHeader";?>
           src="https://assets1.lottiefiles.com/packages/lf20_t2bpn6yt.json"
           background="transparent"
           speed="1"
-          style="width: 100%; height: 80%;"
+          style="width: 80%; height: 30%;"
           loop
           autoplay>
         </lottie-player>
