@@ -52,7 +52,7 @@ if (array_key_exists('Submit1', $_POST)){
         If the database finds a record for this query, we want to give access to the user, and grab the username, password and email for that record (email will be used for signup confirmations, password recovery in the future)
       */
 
-      //$sql = "SELECT firstname, username, password, email FROM `GULFUserTable` WHERE username = ? AND password = ?";
+      //$sql = "SELECT adminUsername, adminPassword FROM `gulfAdminCredentials` WHERE adminUsername = ? AND adminPassword = ?";
 
       //$stmt = $conn->stmt_init();
 
@@ -63,7 +63,7 @@ if (array_key_exists('Submit1', $_POST)){
 
         //$stmt->execute();
 
-        //$stmt->bind_result($firstname,$username,$password,$email);
+        //$stmt->bind_result($adminUsername,$adminPassword);
 
         //$stmt->store_result();
 

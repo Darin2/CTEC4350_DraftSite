@@ -16,6 +16,6 @@ function dbConnect(){
 	// initiate a new mysqli object to connect to the Database.  Store the mysqli object in a variable $conn.
 	$conn = new mysqli($host, $user, $pwd, $database, $port) or die("could not connect to server");
 
-	// return $conn to the fucntion call
+	// return $conn to the function call
 	return $conn;}
 ?>
