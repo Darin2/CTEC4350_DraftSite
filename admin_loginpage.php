@@ -3,13 +3,19 @@ session_start();
 include("shared.php");
 include("dbconn.inc.php");
 $conn = dbConnect();
-/*This section attempts to use the database and verify user's credentials when they attempt to log in, and grant access (the only type of access we need to worry about is "admin" level access). We only grant admin access if the credentials are correct.
+/*This file has two ways of logging in our user: a plain-text login system and a database login system.
+
+The plain-text login system checks if the user has entered "admin" as their username and "123" as their password. This is for easy login during testing and should be removed at launch.
+
+The database login system talks to our uta.cloud myPHPAdmin database and verifies the user's credentials when they attempt to log in, and grants admin access if the credentials are correct. We only grant admin access if the credentials are correct.
 
 The user input being validated in this script comes from the HTML form below.
 
  */
+
+
 /*******************************************/
-/**********Plain-text login system**********/
+/********* Plain-text login system *********/
 /******************************************/
 
 //Only execute this code if the user has submitted something to the form
@@ -33,17 +39,14 @@ if (array_key_exists('Submit1', $_POST)){
     exit;
   }
 
-  /*This code checks the database for a matching set of credentials (username and password).
+  /*******************************************/
+  /********** Database login system *********/
+  /******************************************/
 
-  If a matching set of credentials are found, the user is logged in and redirected to the "welcome page" (which does not currently exist in this directory as of 4-12-2022).
-
-  This code is currently unnecessary for our Spring 2022 project but I'm leaving it here for now, on the off chance we need to create a registration/login system.
-
-  The test credentials are:
+  /*The test credentials for the database login system are:
   Username: thegulf2022
   Password: thegulf2022
-
-   - Darin
+  
   */
   else {
       //If the user doesn't enter admin credentials, store the username and password in their own variables
@@ -93,8 +96,8 @@ if (array_key_exists('Submit1', $_POST)){
           //echo "Checking what's inside the session welcome page username thing = ".$_SESSION['welcomepageusername'];
           //echo "Debugging: username = $username";
 
-          //Give user level access
-          $_SESSION['user_access'] = true;
+          //Give admin level access
+          $_SESSION['admin_access'] = true;
 
           /*Debugging stuff*/
           //echo "The SQL query returned a result, so the password was correct and you're now logged in";
