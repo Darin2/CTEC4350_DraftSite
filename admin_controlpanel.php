@@ -12,8 +12,6 @@ $conn = dbConnect();
 <main>
   <body>
     <h1>Welcome back, <?php echo $_SESSION['firstNameOfUser'];?>!</h1>
-    <?php echo $ViewEventsBtn ?>
-    <?php echo $SuggestEventBtn ?>
   </body>
 </main>
 <?php echo $footer ?>
