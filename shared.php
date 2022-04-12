@@ -173,6 +173,16 @@ if ($_SESSION['admin_access'] == true){
             Admin Controls
             </a>
           </li>
+
+          <li class=\"nav-item dropdown\">
+            <a class=\"nav-link dropdown-toggle\" href=\"admin_controlpanel.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+              Admin Controls
+            </a>
+            <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
+              <li><a class=\"dropdown-item\" href=\"contactFormLeads.php\">The Diamond League</a></li>
+              <li><a class=\"dropdown-item\" href=\"registeredUsersList.php\">Business Apprenticeship</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </nav>";
