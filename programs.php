@@ -1,5 +1,6 @@
 <?php session_start();
 include("shared.php");
+include("dbconn.inc.php");
 echo "$component_HTMLHeader";?>
 </head>
 
