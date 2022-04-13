@@ -15,12 +15,12 @@ echo "$component_HTMLHeader";?>
 
   // Process user input if they submit the form
   if (isset($_POST['Submit'])) {
-
+    echo "debug: the form was successfully submitted";
   	// set up an array of the required user input
 
   	$required = array("contactFirstName", "contactLastName", "contactEmail"); // note that, in this array, the spelling of each item should match the form field names
 
-  	// set up the expected array
+  	// set up the expected array (all fields in the form, whether required or not)
   	$expected = array("contactFirstName", "contactLastName", "contactEmail", "contactPhoneNumber", "contactMessage"); // again, the spelling of each item should match the form field names
 
     // set up a label array, use the field name as the key and label as the value
@@ -52,68 +52,47 @@ echo "$component_HTMLHeader";?>
   			} else {
 
   				${$field} = $_POST[$field];
-
   			}
-
   		}
-
   	}
 
   	//print_r ($missing); // for debugging purpose
 
-  	/* add more data validation here */
-  	// ex. $price should be a number
   	/* proceed only if there is no required fields missing and all other data validation rules are satisfied */
   	if (empty($missing)){
-
-  		//========================
-  		// processing user input
-
+    echo "debug: the \$missing array is empty on line 62";
   		$stmt = $conn->stmt_init();
 
+  		// compose a query: Insert a new record
 
-  		// compose a query: Insert or Update? Depending on whether there is a $eventID - based on Dr Jang code example Fall '21
-
-  		if ($eventID != "") {
-  			/* there is an existing eventID ==> need to deal with an existing reocrd ==> use an update query */
-
-  			// Ensure $eventID contains an integer.
-  			$eventID = intval($eventID);
-
-  			$sql = "Update `eventsTable` SET eventLocation = ?, eventName = ?, eventURL = ?, eventTime = ?, eventDate = ? WHERE eventID = ?";
-
-  			if($stmt->prepare($sql)){
-  				// Note: user input could be an array, the code to deal with array values should be added before the bind_param statment.
-  				$stmt->bind_param('sssssi',$eventLocation, $eventName, $eventURL, $eventTime, $eventDate, $eventID);
-  				$stmt_prepared = 1;// set up a variable to signal that the query statement is successfully prepared.
-  			}
-
-  		} else {
-  			// no existing pid ==> this means no existing record to deal with, then it must be a new record ==> use an insert query
-  			$sql = "Insert Into `eventsTable` (eventName, eventLocation, eventCategory, eventURL, eventTime, eventDate) values (?, ?, ?, ?, ?, ?)";
+			$sql = "Insert Into `contactFormSubmissions` (contactFirstName, contactLastName, contactEmail, contactPhoneNumber, contactMessage) values (?, ?, ?, ?, ?)";
 
   			if($stmt->prepare($sql)){
 
   				// Note: user input could be an array, the code to deal with array values should be added before the bind_param statment.
 
-  				$stmt->bind_param('ssssss',$eventName, $eventLocation, $eventCategory, $eventURL, $eventTime, $eventDate);
+  				$stmt->bind_param('sssss',$contactFirstName, $contactLastName, $contactEmail, $contactPhoneNumber, $contactMessage);
   				$stmt_prepared = 1; // set up a variable to signal that the query statement is successfully prepared.
+          echo "debug: stmt prepared on line 70";
   			}
-  		}
+
 
   		if ($stmt_prepared == 1){
+        echo "debug: stmt prepared ==1 on line 80";
   			if ($stmt->execute()){
+          echo "debug: stmt executed on line 82";
 
-                  //  the following code does not produce most user-friendly message.  Particularly the category information is presented as an number which the user will have no idea about.  Can you fix it?
+          //  the following code does not produce most user-friendly message.  Particularly the category information is presented as an number which the user will have no idea about.  Can you fix it?
 
-  				$output = "<div>Success!<p>The following information has been saved in the database:</p>";
-  				foreach($expected as $key){
-  					$output .= "<b>{$label[$key]}</b>: {$_POST[$key]} <br>";
-  				}
-  				$output .= "<p>Back to the <a href='admin_productList.php'>Upcoming Events Page</a></p>";
+  				$output = "<div>Thanks, ".$contactFirstName."!<p>We'll get back to you soon.</p>";
+          //this foreach loop prints everything the user just submitted
+  				//foreach($expected as $key){
+  					//$output .= "<b>{$label[$key]}</b>: {$_POST[$key]} <br>";
+  				//}
+  				$output .= "<p>Back to the <a href='index.php'>Home page</a></p>";
   			} else {
   				//$stmt->execute() failed.
-  				$output = "<div>Database operation failed.  Please contact the webmaster.</div>";
+  				$output = "<div>Form submission failed.  Please try again or contact us via phone (817) 558 - 4853). We can also be reached on RingCentral.</div>";
   			}
   		} else {
   			// statement is not successfully prepared (issues with the query).
@@ -122,16 +101,13 @@ echo "$component_HTMLHeader";?>
 
   	} else {
   		// $missing is not empty
-  		$output = "<div><p>The following required fields are missing in your form submission.  Please check your form again and fill them out.  <br>Thank you.<br>\n<ul>\n";
+  		$output = "<div><p>The following required fields are missing in your submission.  Please fill out all required fields.  <br>Thank you.<br>\n<ul>\n";
   		foreach($missing as $m){
   			$output .= "<li>{$label[$m]}\n";
   		}
   		$output .= "</ul></div>\n";
   	}
-
-  } else {
-  	$output = "<div>Please begin your event managment operation from the <a href='admin_productList.php'>admin page</a>.</div>";
-  }
+}
 
 ?>
 
@@ -141,7 +117,7 @@ echo "$component_HTMLHeader";?>
 
   It takes up 4 columns of a 12-column grid on large screens, 6 on a medium screen, and all 12 on a small screen.
   -->
-    <form class="container col-lg-4 col-md-6 col-sm-12 my-3 px-5 pt-5 bg-light bg-gradient rounded">
+    <form class="container col-lg-4 col-md-6 col-sm-12 my-3 px-5 pt-5 bg-light bg-gradient rounded" method="POST" action="">
       <h1 class="text-center text-black">Let's Stay In Touch!</h1>
       <h5 class="text-center text-black">Send us a message and we'll get back to you ASAP.</h5>
       <div class="mb-3">
