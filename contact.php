@@ -1,10 +1,11 @@
 <?php session_start();
 include("shared.php");
 include("dbconn.inc.php");
+$conn = dbConnect();
 echo "$component_HTMLHeader";?>
 </head>
 
-<body class="mb-0 pb-0 bg-dark">
+<body class="mb-0 pb-0 bg-light">
 
 <main>
 
@@ -15,7 +16,7 @@ echo "$component_HTMLHeader";?>
 
   // Process user input if they submit the form
   if (isset($_POST['Submit'])) {
-    echo "debug: the form was successfully submitted";
+    echo "debug: the form was successfully submitted<br>";
   	// set up an array of the required user input
 
   	$required = array("contactFirstName", "contactLastName", "contactEmail"); // note that, in this array, the spelling of each item should match the form field names
@@ -60,7 +61,7 @@ echo "$component_HTMLHeader";?>
 
   	/* proceed only if there is no required fields missing and all other data validation rules are satisfied */
   	if (empty($missing)){
-    echo "debug: the \$missing array is empty on line 62";
+    echo "debug: the \$missing array is empty on line 62<br>";
   		$stmt = $conn->stmt_init();
 
   		// compose a query: Insert a new record
@@ -73,14 +74,14 @@ echo "$component_HTMLHeader";?>
 
   				$stmt->bind_param('sssss',$contactFirstName, $contactLastName, $contactEmail, $contactPhoneNumber, $contactMessage);
   				$stmt_prepared = 1; // set up a variable to signal that the query statement is successfully prepared.
-          echo "debug: stmt prepared on line 70";
+          echo "debug: stmt prepared on line 70<br>";
   			}
 
 
   		if ($stmt_prepared == 1){
-        echo "debug: stmt prepared ==1 on line 80";
+        echo "debug: stmt prepared ==1 on line 81<br>";
   			if ($stmt->execute()){
-          echo "debug: stmt executed on line 82";
+          echo "debug: stmt executed on line 83<br>";
 
           //  the following code does not produce most user-friendly message.  Particularly the category information is presented as an number which the user will have no idea about.  Can you fix it?
 
@@ -92,6 +93,8 @@ echo "$component_HTMLHeader";?>
   				$output .= "<p>Back to the <a href='index.php'>Home page</a></p>";
   			} else {
   				//$stmt->execute() failed.
+          //stackoverflow error printing code
+          printf("Error: %s.\n", $stmt->error);
   				$output = "<div>Form submission failed.  Please try again or contact us via phone (817) 558 - 4853). We can also be reached on RingCentral.</div>";
   			}
   		} else {
@@ -108,7 +111,7 @@ echo "$component_HTMLHeader";?>
   		$output .= "</ul></div>\n";
   	}
 }
-
+echo "$output";
 ?>
 
 <!-- bootstrap form example -->
