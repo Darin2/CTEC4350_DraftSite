@@ -11,15 +11,12 @@ echo "$component_HTMLHeader";?>
 <?php echo "$component_Nav"; ?>
 
 <?php
-//This is my code that can insert stuff into the database. it needs to be trimmed and revised to where it grabs values from the contact form, validates that nothing is missing, and sends it to the database. The database table for this data also still needs to be created.
+//This code can insert stuff into the database. it needs to be trimmed and revised to where it grabs values from the contact form, validates that nothing is missing, and sends it to the database. The database table for this data also still needs to be created.
 
-  // Process only if there is any submission
+  // Process user input if there is any submission
   if (isset($_POST['Submit'])) {
 
-  	// ==========================
-  	//validate user input
-
-  	// set up the required array
+  	// set up an array of the required user input
 
   	$required = array("eventName", "eventLocation", "eventURL","eventTime", "eventDate"); // note that, in this array, the spelling of each item should match the form field names
 
@@ -145,25 +142,25 @@ echo "$component_HTMLHeader";?>
       <h1 class="text-center text-black">Let's Stay In Touch!</h1>
       <h5 class="text-center text-black">Send us a message and we'll get back to you ASAP.</h5>
       <div class="mb-3">
-        <label for="contactField-Email" class="form-label text-black">Email address</label>
-        <input type="email" class="form-control" id="contact-input-Email" aria-describedby="emailHelp">
+        <label for="contactEmail" class="form-label text-black">Email address</label>
+        <input type="email" name="contactEmail" class="form-control" id="contact-input-Email" aria-describedby="emailHelp">
         <!-- * we don't need this part right now, but leaving the code here as an example of the form-text class*
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         -->
       </div>
       <!-- Get user's first name -->
       <div class="mb-3">
-        <label for="contactField-FirstName" class="form-label text-black">First Name</label>
-        <input type="name" name="contactFirstnName" class="form-control" id="contact-input-FirstName">
+        <label for="contactFirstName" class="form-label text-black">First Name</label>
+        <input type="name" name="contactFirstName" class="form-control" id="contact-input-FirstName">
       </div>
       <!-- Get user's last name -->
       <div class="mb-3">
-        <label for="contactField-LastName" class="form-label text-black">Last Name</label>
+        <label for="contactLastName" class="form-label text-black">Last Name</label>
         <input type="name" name="contactLastName" class="form-control" id="contact-input-LastName">
       </div>
       <!-- Get user's phone number -->
       <div class="mb-3">
-        <label for="contactField-Phone" class="form-label text-black">Phone Number</label>
+        <label for="contactPhoneNumber" class="form-label text-black">Phone Number</label>
         <input type="name" name="contactPhoneNumber" class="form-control" id="contact-input-PhoneNumber" placeholder="123-456-7890">
       </div>
       <!-- dropdown menu for "I am interested in.."
