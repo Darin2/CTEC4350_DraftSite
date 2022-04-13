@@ -13,12 +13,12 @@ echo "$component_HTMLHeader";?>
 <?php
 //This code can insert stuff into the database. it needs to be trimmed and revised to where it grabs values from the contact form, validates that nothing is missing, and sends it to the database. The database table for this data also still needs to be created.
 
-  // Process user input if there is any submission
+  // Process user input if they submit the form
   if (isset($_POST['Submit'])) {
 
   	// set up an array of the required user input
 
-  	$required = array("eventName", "eventLocation", "eventURL","eventTime", "eventDate"); // note that, in this array, the spelling of each item should match the form field names
+  	$required = array("contactFirstName", "contactLastName", "contactEmail","eventTime", "eventDate"); // note that, in this array, the spelling of each item should match the form field names
 
   	// set up the expected array
   	$expected = array("eventName", "eventLocation", "eventURL","eventCategory", "eventID", "eventTime", "eventDate"); // again, the spelling of each item should match the form field names
@@ -142,7 +142,8 @@ echo "$component_HTMLHeader";?>
       <h1 class="text-center text-black">Let's Stay In Touch!</h1>
       <h5 class="text-center text-black">Send us a message and we'll get back to you ASAP.</h5>
       <div class="mb-3">
-        <label for="contactEmail" class="form-label text-black">Email address</label>
+        <p class="text-center text-black">* Required field</p>
+        <label for="contactEmail" class="form-label text-black">*Email address</label>
         <input type="email" name="contactEmail" class="form-control" id="contact-input-Email" aria-describedby="emailHelp">
         <!-- * we don't need this part right now, but leaving the code here as an example of the form-text class*
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
@@ -150,12 +151,12 @@ echo "$component_HTMLHeader";?>
       </div>
       <!-- Get user's first name -->
       <div class="mb-3">
-        <label for="contactFirstName" class="form-label text-black">First Name</label>
+        <label for="contactFirstName" class="form-label text-black">*First Name</label>
         <input type="name" name="contactFirstName" class="form-control" id="contact-input-FirstName">
       </div>
       <!-- Get user's last name -->
       <div class="mb-3">
-        <label for="contactLastName" class="form-label text-black">Last Name</label>
+        <label for="contactLastName" class="form-label text-black">*Last Name</label>
         <input type="name" name="contactLastName" class="form-control" id="contact-input-LastName">
       </div>
       <!-- Get user's phone number -->
@@ -179,8 +180,8 @@ echo "$component_HTMLHeader";?>
       -->
       <!--Optional message from user -->
       <div class="input-group">
-        <span class="input-group-text">Message (optional)</span>
-        <textarea class="form-control" name="contactOptionalMessage" aria-label="With textarea" id="contact-input-textArea"></textarea>
+        <span class="input-group-text">Message</span>
+        <textarea class="form-control" name="contactMessage" aria-label="With textarea" id="contact-input-textArea"></textarea>
       </div>
       <!--Checkbox input
       ***Commenting this part out for now, don't think it's necessary.
