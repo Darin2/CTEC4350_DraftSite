@@ -12,7 +12,7 @@ echo "$component_HTMLHeader";?>
 <?php echo "$component_Nav"; ?>
 
 <?php
-//This code can insert stuff into the database. It grabs values from the contact form, validates that nothing is missing, and sends it to the database. 
+//This code can insert stuff into the database. It grabs values from the contact form, validates that nothing is missing, and sends it to the database.
 
   // Process user input if they submit the form
   if (isset($_POST['Submit'])) {
@@ -83,8 +83,7 @@ echo "$component_HTMLHeader";?>
   			if ($stmt->execute()){
           //echo "debug: stmt executed on line 83<br>";
 
-          //  the following code does not produce most user-friendly message.  Particularly the category information is presented as an number which the user will have no idea about.  Can you fix it?
-
+          //  the following code prints a confirmation message at the top of the contact page when the user successfully submits the form.
   				$output = "
           <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
           <h3 class='display-4 mx-auto my-5 text-white'>Thanks for reaching out, ".$contactFirstName."!<p>We'll get back to you soon.</h3>
