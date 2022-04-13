@@ -63,8 +63,15 @@ echo "$component_HTMLHeader";?>
 
 <div id="container">
 </div>
-
-<div id="m1" class="month">
+	
+<div class="container-fluid px-0 mx-auto">
+  <div id="challengeJumbotron" class="jumbotron row ml-0">
+	
+    <!-- Our Mission row -->
+    <div id="about-ChallengesRow" class="row d-flex align-items-center bg-dark bg-gradient">
+      <!-- center-aligned text section with CTA button-->
+      <section class="col-sm">
+    <div id="m1" class="month">
 	
 <h3>January Challenge</h3>
 <p class="lead text-black text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
@@ -124,6 +131,10 @@ echo "$component_HTMLHeader";?>
 <h3>Decemeber Challenge</h3>
 <p class="lead text-black text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
 </div>
+      </section>
+    </div>
+		</div>
+	</div>
 	
 </main>
 <?php echo "$component_Footer";?>
