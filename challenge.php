@@ -6,7 +6,7 @@ echo "$component_HTMLHeader";?>
 <head>
 <title>Monthly Challenges | The G.U.L.F. </title>
 <style>
-	.menu{display: inline;}
+#menu {width: 100px; height: 300px; border-right: 1px dashed grey;}
 </style>
 
 <script>
@@ -37,9 +37,6 @@ echo "$component_HTMLHeader";?>
 <body>
 <main>
 	<?php echo "$component_Nav";?>
-        <h1 class="display-4 text-black text-center">Monthly Entrepreneur Challenge</h1>
-<p class="lead text-black text-center">Challenge your entrepreneurial skills each month with our challenges. Click on the current month to discover a new challenge!</p>
-
 
 <div id="menu">
 	<a href="#" id="linkM1">January</a><br>
@@ -66,7 +63,12 @@ echo "$component_HTMLHeader";?>
 	
     <!-- challenges row -->
     <div id="about-ChallengesRow" class="row d-flex align-items-center gulfBlueBG bg-gradient">
-      <section class="col-sm">
+		
+      <section class="col-sm py-0">
+		     <h1 class="display-4 text-black text-center">Monthly Entrepreneur Challenge</h1>
+<p class="lead text-black text-center">Challenge your entrepreneurial skills each month with our challenges. Click on the current month to discover a new challenge!</p>
+		</section>
+		<section class="col-sm py-0">
     <div id="m1" class="month">
 	
 <h4 class="display-4 text-white text-center">January Challenge</h4>
