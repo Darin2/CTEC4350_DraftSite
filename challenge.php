@@ -5,11 +5,8 @@ echo "$component_HTMLHeader";?>
 <html>
 <head>
 <title>Monthly Challenges | The G.U.L.F. </title>
-
 <style>
-	.month {position:absolute; left:130px; top: 10px; width: 400px; padding: 0.5em; display: none; margin: 0.5em}
-	#container {position:absolute; left:130px; top: 10px; width: 400px; padding: 0.5em; display: block;}
-
+	.menu{display: inline;}
 </style>
 
 <script>
@@ -67,69 +64,68 @@ echo "$component_HTMLHeader";?>
 <div class="container-fluid px-0 mx-auto">
   <div id="challengeJumbotron" class="jumbotron row ml-0">
 	
-    <!-- Our Mission row -->
-    <div id="about-ChallengesRow" class="row d-flex align-items-center bg-dark bg-gradient">
-      <!-- center-aligned text section with CTA button-->
+    <!-- challenges row -->
+    <div id="about-ChallengesRow" class="row d-flex align-items-center gulfBlueBG bg-gradient">
       <section class="col-sm">
     <div id="m1" class="month">
 	
-<h3>January Challenge</h3>
-<p class="lead text-black text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
+<h4 class="display-4 text-white text-center">January Challenge</h4>
+<p class="lead text-white text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
 </div>
 
 <div id="m2" class="month">
-<h3>February Challenge</h3>
-<p class="lead text-black text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
+<h4 class="display-4 text-white text-center">February Challenge</h4>
+<p class="lead text-white text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
 </div>
 
 <div id="m3" class="month">
-<h3>March Challenge</h3>
-<p class="lead text-black text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
+<h4 class="display-4 text-white text-center">March Challenge</h4>
+<p class="lead text-white text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
 </div>
 	
 <div id="m4" class="month">
-<h3>April Challenge</h3>
-<p class="lead text-black text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
+<h4 class="display-4 text-white text-center">April Challenge</h4>
+<p class="lead text-white text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
 </div>
 	
 <div id="m5" class="month">
-<h3>May Challenge</h3>
-<p class="lead text-black text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
+<h4 class="display-4 text-white text-center">May Challenge</h4>
+<p class="lead text-white text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
 </div>
 	
 <div id="m6" class="month">
-<h3>June Challenge</h3>
-<p class="lead text-black text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
+<h4 class="display-4 text-white text-center">June Challenge</h4>
+<p class="lead text-white text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
 </div>
 	
 <div id="m7" class="month">
-<h3>July Challenge</h3>
-<p class="lead text-black text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
+<h4 class="display-4 text-white text-center">July Challenge</h4>
+<p class="lead text-white text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
 </div>
 	
 <div id="m8" class="month">
-<h3>August Challenge</h3>
-<p class="lead text-black text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
+<h4 class="display-4 text-white text-center">August Challenge</h4>
+<p class="lead text-white text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
 </div>
 	
 <div id="m9" class="month">
-<h3>Septemeber Challenge</h3>
-<p class="lead text-black text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
+<h4 class="display-4 text-white text-center">September Challenge</h4>
+<p class="lead text-white text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
 </div>
 	
 <div id="m10" class="month">
-<h3>October Challenge</h3>
-<p class="lead text-black text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
+<h4 class="display-4 text-white text-center">October Challenge</h4>
+<p class="lead text-white text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
 </div>
 	
 <div id="m11" class="month">
-<h3>November Challenge</h3>
-<p class="lead text-black text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
+<h4 class="display-4 text-white text-center">November Challenge</h4>
+<p class="lead text-white text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
 </div>
 	
 <div id="m12" class="month">
-<h3>Decemeber Challenge</h3>
-<p class="lead text-black text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
+<h4 class="display-4 text-white text-center">Decemeber Challenge</h4>
+<p class="lead text-white text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
 </div>
       </section>
     </div>
