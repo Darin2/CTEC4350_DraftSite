@@ -18,30 +18,33 @@ echo "$component_HTMLHeader";?>
 
   	// set up an array of the required user input
 
-  	$required = array("contactFirstName", "contactLastName", "contactEmail","eventTime", "eventDate"); // note that, in this array, the spelling of each item should match the form field names
+  	$required = array("contactFirstName", "contactLastName", "contactEmail"); // note that, in this array, the spelling of each item should match the form field names
 
   	// set up the expected array
-  	$expected = array("eventName", "eventLocation", "eventURL","eventCategory", "eventID", "eventTime", "eventDate"); // again, the spelling of each item should match the form field names
+  	$expected = array("contactFirstName", "contactLastName", "contactEmail", "contactPhoneNumber", "contactMessage"); // again, the spelling of each item should match the form field names
 
-      // set up a label array, use the field name as the key and label as the value
-      $label = array ("eventName"=>'Name of event', "eventLocation"=>"Event Location", "eventCategory"=>'Event category', "eventURL"=>'Link to the event',"eventID"=>'eventID',"eventTime"=>"Time", "eventDate"=>"Date");
+    // set up a label array, use the field name as the key and label as the value
+    $label = array ("contactFirstName"=>'First name', "contactLastName"=>"Last name", "contactEmail"=>'Email address', "contactPhoneNumber"=>'Phone number',"contactMessage"=>'Message');
 
-
+    // set up an empty array where we'll push any required fields that weren't submitted
   	$missing = array();
 
+    //for each item in the expected array (with each item referred to as "field")
   	foreach ($expected as $field){
 
-
-          // Enable the line below to debug
+      // Enable the line below to debug
   		//echo "$field: in_array(): ".in_array($field, $required)." empty(_POST[$field]): ".empty($_POST[$field])."<br>";
 
+      //If you find an item that's in the required array and it's empty, push that item into the missing array.
   		if (in_array($field, $required) && empty($_POST[$field])) {
   			array_push ($missing, $field);
 
   		} else {
-  			// Passed the required field test, set up a variable to carry the user input.
-  			// Note the variable set up here uses the $field value as the veriable name. Notice the syntax ${$field}.  This is a "variable variable". For example, the first $field in the foreach loop here is "title" (the first one in the $expected array) and a $title variable will be created.  The value of this variable will be either "" or $_POST["title"] depending on whether $_POST["title"] is set up.
-              // once we run through the whole $expected array, then these variables, $title, $artist, $price, $categoryID, $pDtail, and $pid, will be generated.
+  			// Otherwise, we know that all required fields had input. So set up a variable to carry the user input.
+
+  			// Note the variable set up here uses the $field value as the variable name. Notice the syntax ${$field}.  This is a "variable variable". For example, the first $field in the foreach loop here is "title" (the first one in the $expected array) and a $title variable will be created.  The value of this variable will be either "" or $_POST["title"] depending on whether $_POST["title"] is set up.
+
+        // once we run through the whole $expected array, then these variables, $contactFirstName, $contactLastName, $contactEmail, $contactPhoneNumber, $contactMessage will be generated.
 
   			if (!isset($_POST[$field])) {
   				//$_POST[$field] is not set, set the value as ""
@@ -143,22 +146,26 @@ echo "$component_HTMLHeader";?>
       <h5 class="text-center text-black">Send us a message and we'll get back to you ASAP.</h5>
       <div class="mb-3">
         <p class="text-center text-black">* Required field</p>
-        <label for="contactEmail" class="form-label text-black">*Email address</label>
+
+        <label for="contactEmail" class="form-label text-black">* Email address</label>
         <input type="email" name="contactEmail" class="form-control" id="contact-input-Email" aria-describedby="emailHelp">
         <!-- * we don't need this part right now, but leaving the code here as an example of the form-text class*
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         -->
       </div>
+
       <!-- Get user's first name -->
       <div class="mb-3">
-        <label for="contactFirstName" class="form-label text-black">*First Name</label>
+        <label for="contactFirstName" class="form-label text-black">* First Name</label>
         <input type="name" name="contactFirstName" class="form-control" id="contact-input-FirstName">
       </div>
+
       <!-- Get user's last name -->
       <div class="mb-3">
-        <label for="contactLastName" class="form-label text-black">*Last Name</label>
+        <label for="contactLastName" class="form-label text-black">* Last Name</label>
         <input type="name" name="contactLastName" class="form-control" id="contact-input-LastName">
       </div>
+
       <!-- Get user's phone number -->
       <div class="mb-3">
         <label for="contactPhoneNumber" class="form-label text-black">Phone Number</label>
@@ -181,6 +188,7 @@ echo "$component_HTMLHeader";?>
       <!--Optional message from user -->
       <div class="input-group">
         <span class="input-group-text">Message</span>
+        <label for="contactMessage" class="form-label text-black"></label>
         <textarea class="form-control" name="contactMessage" aria-label="With textarea" id="contact-input-textArea"></textarea>
       </div>
       <!--Checkbox input
