@@ -115,10 +115,14 @@ nav{
 }
 .even-columns {
   display: flex;
+  margin-bottom: 4rem;
 }
 .content {
   width: 100%;
   margin: 0;
+}
+.programs-h1 {
+  font-weight: 500;
 }
 .dl-img {
   width: 100%;
@@ -128,6 +132,46 @@ nav{
 }
 .btn-prg {
   width: 25%;
+}
+.tdl {
+  padding-right: 30px;
+}
+.ybp {
+  padding-left: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .even-columns {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 4rem;
+  }
+  .even-columns-responsive {
+    display: flex;
+    flex-direction: column;
+  }
+  .dl-img {
+    padding: 0 30px;
+    margin-bottom: 30px;
+  }
+  .prg-txt {
+    padding: 0 30px;
+  }
+  .tdl {
+    padding-right: 0px;
+  }
+  .ybp {
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .dl-img {
+    padding: 0 20px;
+  }
+  .btn-prg {
+    width: 40%;
+  }
 }
 /*End of programs page styling*/
 
