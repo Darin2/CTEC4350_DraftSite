@@ -12,7 +12,7 @@ echo "$component_HTMLHeader";?>
 <?php echo "$component_Nav"; ?>
 
 <?php
-//This code can insert stuff into the database. it needs to be trimmed and revised to where it grabs values from the contact form, validates that nothing is missing, and sends it to the database. The database table for this data also still needs to be created.
+//This code can insert stuff into the database. It grabs values from the contact form, validates that nothing is missing, and sends it to the database. 
 
   // Process user input if they submit the form
   if (isset($_POST['Submit'])) {
