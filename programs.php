@@ -22,15 +22,15 @@ echo "$component_HTMLHeader";?>
           <a href="#" class="btn btn-primary btn-prg">Join Us Today</a>
         </div>
         <div class="col">
-          <img src="img/thedl.jpg" class="dl-img" alt="">
+          <img src="img/thedl.jpg" class="dl-img img-fluid tdl rounded" alt="Teens playing basketball">
         </div>
       </div>
     </div>
 
     <div class="content flow">
-      <div class="even-columns">
+      <div class="even-columns even-columns-responsive">
         <div class="col">
-          <img src="img/youthprg.jpg" class="dl-img" alt="">
+          <img src="img/youthprg.jpg" class="dl-img img-fluid ybp rounded" alt="Business workers smiling for a group photo">
         </div>
         <div class="col prg-txt d-flex flex-column align-self-center">
           <h2>Youth Business Apprenticeship Program</h2>
