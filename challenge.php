@@ -6,7 +6,7 @@ echo "$component_HTMLHeader";?>
 <head>
 <title>Monthly Challenges | The G.U.L.F. </title>
 <style>
-#menu {width: 100px; height: 300px; border-right: 1px dashed grey;}
+#menu {width: 100px; height: 300px; display: inline;}
 </style>
 
 <script>
@@ -37,8 +37,7 @@ echo "$component_HTMLHeader";?>
 <body>
 <main>
 	<?php echo "$component_Nav";?>
-
-<div id="menu">
+   <div id="menu">
 	<a href="#" id="linkM1">January</a><br>
 	<a href="#" id="linkM2">February</a><br>
 	<a href="#" id="linkM3">March</a><br>
@@ -50,11 +49,8 @@ echo "$component_HTMLHeader";?>
 	<a href="#" id="linkM9">September</a><br>
 	<a href="#" id="linkM10">October</a><br>
 	<a href="#" id="linkM11">November</a><br>
-	<a href="#" id="linkM12">December</a><br>
-
-
+	<a href="#" id="linkM12">December</a><br
 </div>
-
 <div id="container">
 </div>
 	
