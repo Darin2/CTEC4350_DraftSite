@@ -79,13 +79,20 @@ else if (($_SESSION['admin_access'] == true)){
 <?php
     echo "$component_HTMLHeader";
     echo "$component_Nav";
-    echo "$output";
+
 ?>
 
-<main class="bg-dark">
+<main class="bg-dark px-3">
+
   <body class="bg-dark">
-
-
+    <!-- breadcrumbs for navigation/usability -->
+    <nav class="bg-dark mt-3 px-3" aria-label="breadcrumb">
+      <ol class="breadcrumb bg-dark">
+        <li class="breadcrumb-item bg-dark"><a href="admin_controlpanel.php">Admin Controls</a></li>
+        <li class="breadcrumb-item active bg-dark" aria-current="page">Contact Form Leads</li>
+      </ol>
+    </nav>
+    <?php echo "$output"; ?>
   </body>
 </main>
 <?php echo $component_Footer; ?>
