@@ -488,3 +488,13 @@ footer{
 #statisticsJumbotron{
   padding-top:0px !important;
 }
+
+/* Styling volunteer page */
+.volunteer-img {
+  max-width: 30%;
+  height: auto;
+}
+.volunteer-places {
+  column-gap: 20px;
+}
+/* End volunteer page */
