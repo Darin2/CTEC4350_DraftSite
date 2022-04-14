@@ -12,8 +12,8 @@ header("Location: admin_loginpage.php");
     echo "$component_HTMLHeader";
     echo "$component_Nav";
 ?>
-<main>
-  <body>
+<main class="bg-dark">
+  <body class="bg-dark">
     <!-- control panel container -->
     <div class="container bg-light bg-gradient">
         <h1>Admin Control Panel</h1>
@@ -21,8 +21,10 @@ header("Location: admin_loginpage.php");
           <div id="adminLinksContainer">
             <div>
               <p><a href="admin_contactFormLeads.php">View Contact Form submissions</a></p>
+              <p><a href="admin_volunteerInterestFormLeads.php">View Volunteer Interest Form submissions</a></p>
               <p><a href="admin_registeredUsersList.php">View registered users</a></p>
               <p><a href="admin_editFaqPage.php">Edit the FAQ Page</a></p>
+
             </div>
           </div>
 

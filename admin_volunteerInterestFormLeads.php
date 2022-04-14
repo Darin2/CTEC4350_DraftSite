@@ -12,7 +12,7 @@ header("Location: admin_loginpage.php");
 else if (($_SESSION['admin_access'] == true)){
 
   //The code below this line is from fall 2021 and needs to be edited to work with our database
-  $sql = "SELECT contactFirstName, contactLastName, contactEmail, contactPhoneNumber, contactMessage FROM `contactFormSubmissions`";
+  $sql = "SELECT volunteerFirstName, volunteerLastName, volunteerEmail, volunteerPhoneNumber, volunteerMessage FROM `volunteerInterestFormSubmissions`";
 
 	$stmt = $conn->stmt_init();
 
@@ -20,7 +20,7 @@ else if (($_SESSION['admin_access'] == true)){
 
 		$stmt->execute();
 		//Once we retrieve stuff from the database, we want to bind those results to variables (in the same order that we retrieved it):
-		$stmt->bind_result($contactFirstName, $contactLastName, $contactEmail, $contactPhoneNumber, $contactMessage);
+		$stmt->bind_result($volunteerFirstName, $volunteerLastName, $volunteerEmail, $volunteerPhoneNumber, $volunteerMessage);
 
 		$tblRows = "";
 
@@ -32,11 +32,11 @@ else if (($_SESSION['admin_access'] == true)){
 			$tblRows = $tblRows."
         <tr>
         <th scope='row'>$rowcounter</th>
-          <td>$contactFirstName</a></td>
-          <td>$contactLastName</td>
-          <td>$contactEmail</td>
-          <td>$contactPhoneNumber</td>
-          <td>$contactMessage</td>
+          <td>$volunteerFirstName</a></td>
+          <td>$volunteerLastName</td>
+          <td>$volunteerEmail</td>
+          <td>$volunteerPhoneNumber</td>
+          <td>$volunteerMessage</td>
         </tr>";
 
         $rowcounter++;
@@ -44,7 +44,7 @@ else if (($_SESSION['admin_access'] == true)){
 		//Creating a string containing our database query results in  big table, with the <th> below as our headings
 		$output = "
     <div class='col bg-dark my-0 py-0'>
-    <h1 class='display-4 text-white py-4 my-4'>Contact Form Leads</h1>
+    <h1 class='display-4 text-white py-4 my-4'>Volunteer Interest Form Leads</h1>
     </div>
     <table class='table table-dark'>
     <thead>
@@ -54,7 +54,7 @@ else if (($_SESSION['admin_access'] == true)){
         <th scope='col'>Last</th>
         <th scope='col'>Email</th>
         <th scope='col'>Phone</th>
-        <th scope='col'>Message</th>
+        <th scope='col'>Questions/Comment:</th>
       </tr>
     </thead>
     <tbody>".$tblRows."</tbody></table>\n";
@@ -64,7 +64,7 @@ else if (($_SESSION['admin_access'] == true)){
 		}
 		else {
 		//If the statement didn't prepare correctly
-		$output = "Query to retrieve product information failed. (the SQL statement didn't prepare)";
+		$output = "Query to retrieve information failed. (the SQL statement didn't prepare)";
 
 		}
 	//close the database connection
