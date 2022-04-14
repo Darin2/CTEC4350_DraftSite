@@ -161,11 +161,11 @@ nav{
   .prg-txt {
     padding: 0 30px;
   }
-  .tdl {
-    padding-right: 0px;
+ .tdl {
+    padding-left: 30px;
   }
   .ybp {
-    padding-left: 0px;
+    padding-right: 30px;
   }
 }
 
