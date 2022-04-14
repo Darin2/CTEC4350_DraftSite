@@ -8,11 +8,32 @@ echo "$component_HTMLHeader";?>
 
 <main>
   <?php echo "$component_Nav";?>
+ 
+    <!-- programs intro row -->
+    <div id="programs-headerRow" class="row d-flex align-items-center gulfBlueBG">
 
-  <div id="programspagepageHeroJumbotron" class="jumbotron d-flex justify-content-center">
-      <h1 class="display-4 programs-h1">Our Programs</h1>
+    <section class="col-sm">
+      <!-- membership lottie animation. Should show up on right side of text for tablet and desktop. Should show up on top of the text for mobile.  -->
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player
+        src="https://assets4.lottiefiles.com/packages/lf20_doyhajlr.json"
+        background="transparent"
+        speed="1"
+        style="width: 100%; height: 50vh;"
+        loop
+        autoplay>
+      </lottie-player>
+      <!-- center-aligned section -->
+      </section>
+      <section class="col-sm">
+      <h1 class="display-4 text-white text-center prg-display">Programs</h1>
+      <p class="lead text-white text-center prg-display">The G.U.L.F is a non-profit organization dedicated to encouraging team building and individual growth through our both young adult and youth enrichment programs.</p>
+      <p class="lead text-white text-center">
+      <strong>Come check us out!</strong>
+      </p>
+      </section>
     </div>
-
+  
     <div class="content flow">
       <div class="even-columns">
         <div class="col prg-txt d-flex flex-column align-self-center">
