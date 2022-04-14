@@ -7,6 +7,83 @@ echo "$component_HTMLHeader";
 Link to the wireframes for this project: https://darinhardin550576.invisionapp.com/freehand/Wireframes-YASr5nqZY?projectID=cl09vkvs0jk590132e7033lju
 */
 ?>
+
+<script>
+  function init(){
+    document.getElementById('volunteer-input-Email').onchange = process;
+  }
+
+  function process(evt){
+
+    // data validation
+    var err = 0;
+
+    // Store the input from the email field in a variable
+    var emailText = document.getElementById('volunteer-input-Email').value;
+
+    //Create a regular expression for validating the email
+    var emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+
+    //Test whether or not this email passes the regular expression.
+    if (emailPattern.test(emailText)) {
+      //if it passes, remove the error message for the username.
+      removeErrorMessage('email');
+    } else {
+      //if it doesn't pass, add the error message to the username.
+      addErrorMessage('email', 'Please type a valid email.');
+      err ++;
+      var emailDiv = document.getElementById("emailDiv");
+      emailDiv.style.borderLeft = "1px solid red";
+    }
+
+    // prevent form submission
+    if (evt.preventDefault)
+    {
+      evt.preventDefault();
+    } else {
+      evt.returnValue = false;
+    }
+
+  }
+
+  function addErrorMessage(fieldId, msg){
+      //console.log(msg);
+
+      // for the label element of this field, change the text color to red.
+      document.getElementById(fieldId+"Label").style.color = "red";
+
+      // check if an error message span is available
+      if (document.getElementById(fieldId + "ErrMsg"))
+      {
+        // an error message span is already available, use it
+        document.getElementById(fieldId + "ErrMsg").innerHTML = msg;
+        document.getElementById(fieldId + "ErrMsg").style.display = "block";
+      } else {
+
+        // otherwise, create the error message span
+        var messageSpan = document.createElement("span");
+        messageSpan.className = "errMsg"; // set the CSS class to use
+        messageSpan.id = fieldId + "ErrMsg"; // set the id
+        messageSpan.innerHTML = msg;
+
+        var inputLabel = document.getElementById(fieldId+'Label');
+        inputLabel.parentNode.appendChild(messageSpan);
+
+      }
+
+  }
+
+  function removeErrorMessage (fieldId){
+    if (document.getElementById(fieldId + "ErrMsg"))
+    {
+      document.getElementById(fieldId+"Label").style.color = "black";
+      document.getElementById(fieldId + "ErrMsg").style.display = "none";
+    }
+
+  }
+
+  window.onload = init;
+</script>
 </head>
 
 <body class="bg-dark">
