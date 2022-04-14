@@ -54,7 +54,6 @@ a:hover {
 nav{
   background-color:white !important;
   color:var(--gulfBlue) !important;
-  border-bottom:1px var(--gulfBlue) solid;
 }
 
 /* Styling the nav links text */
