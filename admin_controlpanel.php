@@ -23,7 +23,7 @@ header("Location: admin_loginpage.php");
             <h1 class="text-center display-4 py-1">Admin Controls</h1>
 
             <!-- card attempt -->
-            <div class="card mb-4 pb-4" style="width: 18rem;">
+            <div class="card mb-4 pb-4">
               <div class="card-header bg-primary text-white text-center">
                 My Messages
               </div>
@@ -32,7 +32,7 @@ header("Location: admin_loginpage.php");
               </ul>
             </div>
 
-            <div class="card mb-4 pb-4" style="width: 18rem;">
+            <div class="card mb-4 pb-4">
               <div class="card-header bg-primary text-white text-center">
                 Volunteers
               </div>
