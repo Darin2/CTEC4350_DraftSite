@@ -286,6 +286,9 @@ h3, .login {
   .prg-txt {
     padding: 0 30px;
   }
+ #programs-headerRow {
+    margin-bottom: 20px;
+  }
  .tdl {
     padding-left: 30px;
   }
