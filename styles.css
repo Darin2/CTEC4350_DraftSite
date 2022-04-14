@@ -19,12 +19,17 @@
   --navLinkText:Open Sans;
 }
 
+/*Background color classes */
 .gulfBlueBG{
   background-color:var(--gulfBlue) !important;
 }
 
 .gulfOrangeBG{
   background-color:var(--gulfOrange);
+}
+
+.offwhiteBG{
+  background-color:#F4F7FA;
 }
 /*Link styles*/
 a:link {
