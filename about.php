@@ -48,7 +48,7 @@ echo "$component_HTMLHeader";?>
       <!-- center-aligned text section with CTA button-->
       <section class="col-sm">
         <h1 class="display-4 text-white text-center">Our Mission</h1>
-        <p class="lead text-white text-center">We're here to develop the next generation of leaders and entrepreneurs and launch them toward success.</p>
+        <p class="lead text-white text-center">We're launching the next generation of leaders and entrepreneurs toward success.</p>
         <!-- commenting this part out for right now. Not sure if we want a CTA in every single section. Might get repetitive.
         <p class="lead text-white text-center">
         Become a volunteer today.
