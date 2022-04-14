@@ -37,7 +37,25 @@ header("Location: admin_loginpage.php");
                 Volunteers
               </div>
               <ul class="list-group list-group-flush mb-0">
-                <li class="list-group-item"><a href="admin_volunteerInterestFormLeads.php" class="list-group-item list-group-item-action">View Volunteer Interest Form submissions</a></li>
+                <li class="list-group-item"><a href="admin_volunteerInterestFormLeads.php" class="list-group-item list-group-item-action">View View Volunteer Interest Form submissions</a></li>
+              </ul>
+            </div>
+
+            <div class="card mb-4 pb-4">
+              <div class="card-header bg-primary text-white text-center">
+                Sponsors
+              </div>
+              <ul class="list-group list-group-flush mb-0">
+                <li class="list-group-item"><a href="admin_sponsorFormLeads.php" class="list-group-item list-group-item-action">View View Sponsorship Leads</a></li>
+              </ul>
+            </div>
+
+            <div class="card mb-4 pb-4">
+              <div class="card-header bg-primary text-white text-center">
+                Members
+              </div>
+              <ul class="list-group list-group-flush mb-0">
+                <li class="list-group-item"><a href="admin_memberFormLeads.php" class="list-group-item list-group-item-action">View View Membership Applicants</a></li>
               </ul>
             </div>
 

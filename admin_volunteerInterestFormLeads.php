@@ -12,7 +12,7 @@ header("Location: admin_loginpage.php");
 else if (($_SESSION['admin_access'] == true)){
 
   //The code below this line is from fall 2021 and needs to be edited to work with our database
-  $sql = "SELECT volunteerFirstName, volunteerLastName, volunteerEmail, volunteerPhoneNumber, volunteerMessage FROM `volunteerInterestFormSubmissions`";
+  $sql = "SELECT volunteerInterestID, volunteerFirstName, volunteerLastName, volunteerEmail, volunteerPhoneNumber, volunteerMessage FROM `volunteerInterestFormSubmissions`";
 
 	$stmt = $conn->stmt_init();
 
@@ -20,7 +20,7 @@ else if (($_SESSION['admin_access'] == true)){
 
 		$stmt->execute();
 		//Once we retrieve stuff from the database, we want to bind those results to variables (in the same order that we retrieved it):
-		$stmt->bind_result($volunteerFirstName, $volunteerLastName, $volunteerEmail, $volunteerPhoneNumber, $volunteerMessage);
+		$stmt->bind_result($volunteerInterestID, $volunteerFirstName, $volunteerLastName, $volunteerEmail, $volunteerPhoneNumber, $volunteerMessage);
 
 		$tblRows = "";
 

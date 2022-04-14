@@ -32,7 +32,7 @@ echo "$component_HTMLHeader";?>
       Become a volunteer today.
       </p>
       <p class="lead w-25 d-flex justify-content-center mx-auto">
-        <a class="btn btn-primary btn-lg d-flex justify-content-center" href="#" role="button">Learn More</a>
+        <a class="btn btn-primary btn-lg d-flex justify-content-center" href="volunteer.php" role="button">Learn More</a>
       </p>
     </section>
   </div>
@@ -47,7 +47,7 @@ echo "$component_HTMLHeader";?>
     Ready to join?
     </p>
     <p class="lead w-25 d-flex justify-content-center mx-auto">
-      <a class="btn btn-primary btn-lg d-flex justify-content-center" href="#" role="button">Learn More</a>
+      <a class="btn btn-primary btn-lg d-flex justify-content-center" href="membership.php" role="button">Learn More</a>
     </p>
     </section>
     <section class="col-sm">
@@ -86,7 +86,7 @@ echo "$component_HTMLHeader";?>
       Interested in becoming a sponsor?
       </p>
       <p class="lead w-25 d-flex justify-content-center mx-auto">
-        <a class="btn btn-primary btn-lg d-flex justify-content-center" href="#" role="button">Learn More</a>
+        <a class="btn btn-primary btn-lg d-flex justify-content-center" href="sponsorship.php" role="button">Learn More</a>
       </p>
     </section>
   </div>

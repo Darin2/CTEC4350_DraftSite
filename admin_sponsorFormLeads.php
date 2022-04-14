@@ -12,7 +12,7 @@ header("Location: admin_loginpage.php");
 else if (($_SESSION['admin_access'] == true)){
 
   //The code below this line is from fall 2021 and needs to be edited to work with our database
-  $sql = "SELECT contactFirstName, contactLastName, contactEmail, contactPhoneNumber, contactMessage FROM `contactFormSubmissions`";
+  $sql = "SELECT sponsorID, sponsorFirstName, sponsorLastName, sponsorEmail, sponsorPhoneNumber, sponsorMessage FROM `sponsorFormSubmissions`";
 
 	$stmt = $conn->stmt_init();
 
@@ -20,7 +20,7 @@ else if (($_SESSION['admin_access'] == true)){
 
 		$stmt->execute();
 		//Once we retrieve stuff from the database, we want to bind those results to variables (in the same order that we retrieved it):
-		$stmt->bind_result($contactFirstName, $contactLastName, $contactEmail, $contactPhoneNumber, $contactMessage);
+		$stmt->bind_result($sponsorID, $sponsorFirstName, $sponsorLastName, $sponsorEmail, $sponsorPhoneNumber, $sponsorMessage);
 
 		$tblRows = "";
 
@@ -32,11 +32,11 @@ else if (($_SESSION['admin_access'] == true)){
 			$tblRows = $tblRows."
         <tr>
         <th scope='row'>$rowcounter</th>
-          <td>$contactFirstName</a></td>
-          <td>$contactLastName</td>
-          <td>$contactEmail</td>
-          <td>$contactPhoneNumber</td>
-          <td>$contactMessage</td>
+          <td>$sponsorFirstName</a></td>
+          <td>$sponsorLastName</td>
+          <td>$sponsorEmail</td>
+          <td>$sponsorPhoneNumber</td>
+          <td>$sponsorMessage</td>
         </tr>";
 
         $rowcounter++;
@@ -54,7 +54,7 @@ else if (($_SESSION['admin_access'] == true)){
         <th scope='col'>Last</th>
         <th scope='col'>Email</th>
         <th scope='col'>Phone</th>
-        <th scope='col'>Message</th>
+        <th scope='col'>Best way to contact:</th>
       </tr>
     </thead>
     <tbody>".$tblRows."</tbody></table>\n";
@@ -69,8 +69,6 @@ else if (($_SESSION['admin_access'] == true)){
 		}
 	//close the database connection
 		$conn->close();
-
-
 
 }
 
@@ -89,7 +87,7 @@ else if (($_SESSION['admin_access'] == true)){
     <nav class="bg-dark mt-3 px-3" aria-label="breadcrumb">
       <ol class="breadcrumb bg-dark">
         <li class="breadcrumb-item bg-dark"><a href="admin_controlpanel.php">Admin Controls</a></li>
-        <li class="breadcrumb-item active bg-dark" aria-current="page">Contact Form Messages</li>
+        <li class="breadcrumb-item active bg-dark" aria-current="page">Sponsorship Leads</li>
       </ol>
     </nav>
     <?php echo "$output"; ?>

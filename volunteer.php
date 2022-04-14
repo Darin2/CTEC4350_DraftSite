@@ -120,13 +120,13 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
 
       		// compose a query: Insert a new record
 
-    			$sql = "Insert Into `volunteerInterestFormSubmissions` (volunteerFirstName, volunteerLastName, volunteerEmail, volunteerPhoneNumber, volunteerMessage) values (?, ?, ?, ?, ?)";
+    			$sql = "Insert Into `volunteerInterestID, volunteerInterestFormSubmissions` (volunteerFirstName, volunteerLastName, volunteerEmail, volunteerPhoneNumber, volunteerMessage) values (?, ?, ?, ?, ?, ?)";
 
       			if($stmt->prepare($sql)){
 
       				// Note: user input could be an array, the code to deal with array values should be added before the bind_param statment.
 
-      				$stmt->bind_param('sssss',$volunteerFirstName, $volunteerLastName, $volunteerEmail, $volunteerPhoneNumber, $volunteerMessage);
+      				$stmt->bind_param('isssss', $volunteerInterestID, $volunteerFirstName, $volunteerLastName, $volunteerEmail, $volunteerPhoneNumber, $volunteerMessage);
       				$stmt_prepared = 1; // set up a variable to signal that the query statement is successfully prepared.
               //echo "debug: stmt prepared on line 70<br>";
       			}
