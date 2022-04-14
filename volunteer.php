@@ -11,18 +11,22 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
 <body>
 
 <main>
-<?php echo "$component_Nav";?>
-
 <div class="container-fluid">
-  <div id="homepageHeroJumbotron" class="jumbotron">
-    <h1 class="display-4">Headline Text Here</h1>
-    <p class="lead">Subheading can go here</p>
+  <div id="volunteerJumbotron" class="jumbotron">
+    <h1 class="display-4">Fun-Filled Volunteering</h1>
+    <p class="lead">Come out and Volunteer with us at...</p>
+  </div>
+  <div class="volunteer-places d-flex justify-content-center align-items-center">
+    <img src="img/rangerstadium.jpg" class="volunteer-img" alt="Responsive image">
+    <img src="img/attstadium.jpeg" class="volunteer-img" alt="Responsive image">
+    <img src="img/aacenter.jpeg" class="volunteer-img" alt="Responsive image">
+  </div>
     <hr class="my-4">
     <p>background image will be full-width</p>
     <p class="lead">
       <a class="btn btn-primary btn-lg" href="#" role="button">Call to action of some sort</a>
     </p>
-  </div>
+
 
 
 <!--end container -->
