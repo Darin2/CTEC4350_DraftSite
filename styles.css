@@ -227,7 +227,7 @@ input[type=select]{
     justify-content: center;
 }
 .modal-box .cancel{
-    background-color: #c44f4f;
+    background-color: var(--gulfPurple);
     border-radius: 5px;
     border: none;
     padding: 10px 15px;
