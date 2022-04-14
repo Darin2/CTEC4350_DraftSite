@@ -4,10 +4,9 @@ include("shared.php");
 include("dbconn.inc.php");
 $conn = dbConnect();
 
-//If the user doesn't have admin access, redirect them to the login page
-if (($_SESSION['admin_access'] != true)){
-  header('Location: admin_loginpage.php');
-  exit;
+//Redirect users without admin access to the home page.
+if ($_SESSION['admin_access'] != true){
+header("Location: admin_loginpage.php");
 }
 //If they do have admin access, print each record from the contactFormSubmissions table (will style the page to look better later)
 else if (($_SESSION['admin_access'] == true)){
