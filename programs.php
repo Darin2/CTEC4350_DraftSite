@@ -8,7 +8,7 @@ echo "$component_HTMLHeader";?>
 
 <main>
   <?php echo "$component_Nav";?>
- 
+
     <!-- programs intro row -->
     <div id="programs-headerRow" class="row d-flex align-items-center gulfBlueBG">
 
@@ -19,7 +19,7 @@ echo "$component_HTMLHeader";?>
         src="https://assets4.lottiefiles.com/packages/lf20_doyhajlr.json"
         background="transparent"
         speed="1"
-        style="width: 100%; height: 50vh;"
+        style="width: 100%; height: 70vh;"
         loop
         autoplay>
       </lottie-player>
@@ -33,7 +33,7 @@ echo "$component_HTMLHeader";?>
       </p>
       </section>
     </div>
-  
+
     <div class="content flow">
       <div class="even-columns">
         <div class="col prg-txt d-flex flex-column align-self-center">
