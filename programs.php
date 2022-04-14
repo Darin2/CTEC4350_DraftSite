@@ -94,4 +94,4 @@ echo "$component_HTMLHeader";?>
 </main>
 
 <?php echo "$component_Footer";?>
-<script src="popup.js"></script>
+<script src="js/popup.js"></script>
