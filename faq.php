@@ -1,7 +1,8 @@
 <?php
-
+	session_start();
+	include("shared.php");
 	// connect with database
-$conn = mysqli_connect("localhost", "vmt8625_class4350", "theGULF2022", "vmt8625_4350");
+	$conn = mysqli_connect("localhost", "vmt8625_class4350", "theGULF2022", "vmt8625_4350");
 
 	// fetch all FAQs from database
 	$sql = "SELECT * FROM faqs";
