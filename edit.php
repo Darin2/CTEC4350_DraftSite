@@ -1,25 +1,24 @@
 <?php session_start();
 
-	// connect with database
-// $conn = mysqli_connect("localhost", "vmt8625_class4350", "theGULF2022", "vmt8625_4350");
-
 	// stored shared content
 include("dbconn.inc.php");
+include("shared.php");
+//echo "$component_HTMLHeader";
 
 // make database connection
-  //$conn = new PDO("mysql:host=localhost:3306;dbname=vmt8625_4350", "root", "root");
-//$conn = mysqli_connect("localhost", "vmt8625_class4350", "theGULF2022", "vmt8625_4350");
-$conn = dbConnect();
+ $conn = new PDO("mysql:host=localhost;dbname=vmt8625_4350", "vmt8625_class4350", "theGULF2022");
 
-// establishing sttement object 
-$statement = $conn->stmt_init();
+// make database connection
+//$conn = dbConnect();
+
+// establishing statement object 
+//$stmt = $conn->stmt_init();
 
 	// check if FAQ exists
 	$sql = "SELECT * FROM faqs WHERE id = ?";
-	$statement = $conn->prepare($sql);
-	//$statement->execute([$_REQUEST["id"]]);
-	$faq = $statement->fetch();
-
+	$stmt = $conn->prepare($sql);
+	$stmt->execute([$_REQUEST["id"]]);
+	$faq = $stmt->fetch();
 
 
 	// check if edit form is submitted
@@ -27,19 +26,20 @@ $statement = $conn->stmt_init();
 	{
 		// update the FAQ in database
 		$sql = "UPDATE faqs SET question = ?, answer = ? WHERE id = ?";
-		$statement = $conn->prepare($sql);
-		$statement->execute([
+		$stmt = $conn->prepare($sql);
+		$stmt->execute([
 			$_POST["question"],
 			$_POST["answer"],
 			$_POST["id"]
 		]);
 
 		// redirect back to previous page
-		header("Location: " . $_SERVER["HTTP_REFERER"]);
+		//header("Location: " . $_SERVER["HTTP_REFERER"]);
+		  header("Location: add.php");
+
 	}
-
 ?>
-
+	<?php echo "$component_Nav";?>
 <!-- include CSS -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" />
@@ -87,3 +87,4 @@ $statement = $conn->stmt_init();
 		$("#answer").richText();
 	});
 </script>
+<?php echo "$component_Footer";?>
