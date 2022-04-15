@@ -1,8 +1,10 @@
 <?php
+session_start();
 
 	// stored shared content
 include("dbconn.inc.php");
-
+include("shared.php");
+echo "$component_HTMLHeader";
 // make database connection
   //$conn = new PDO("mysql:host=localhost:3306;dbname=vmt8625_4350", "root", "root");
 //$conn = mysqli_connect("localhost", "vmt8625_class4350", "theGULF2022", "vmt8625_4350");
@@ -30,9 +32,9 @@ $conn = dbConnect();
 	$stmt->prepare($sql);		
 	$stmt->execute();
 	$stmt->bind_result($question, $answer, $id);
-	
 	//$faqs = $statement->fetchAll(); //change this to bind result statement
 ?>
+	<?php echo "$component_Nav";?>
 
 <!-- include bootstrap, font awesome and rich text library CSS -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -99,7 +101,7 @@ $conn = dbConnect();
 								</a>
 
 								<!-- delete form -->
-								<form method="POST" action="delete.php" onsubmit="return confirm('Are you sure you want to delete this FAQ ?');">
+								<form method="POST" action="delete.php" onsubmit="return confirm('Are you sure you want to delete this FAQ?');">
 									<input type="hidden" name="id" value="<?php echo $id; ?>" required />
 									<input type="submit" value="Delete" class="btn btn-danger btn-sm" />
 								</form>
@@ -118,3 +120,4 @@ $conn = dbConnect();
 		$("#answer").richText();
 	});
 </script>
+<?php echo "$component_Footer";?>
