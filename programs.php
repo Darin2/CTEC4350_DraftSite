@@ -34,7 +34,7 @@ echo "$component_HTMLHeader";?>
       </section>
     </div>
 
-    <div class="content flow">
+    <div class="content flow mt-3">
       <div class="even-columns">
         <div class="col prg-txt d-flex flex-column align-self-center">
           <h2>The Diamond League</h2>
