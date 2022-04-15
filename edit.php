@@ -1,7 +1,7 @@
 <?php session_start();
 
 	// stored shared content
-include("dbconn.inc.php");
+include("dbconn2.inc.php");
 include("shared.php");
 //echo "$component_HTMLHeader";
 

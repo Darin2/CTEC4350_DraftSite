@@ -3,7 +3,7 @@
 	// connect database
 //$conn = mysqli_connect("localhost", "vmt8625_class4350", "theGULF2022", "vmt8625_4350");
 // stored shared content
-include("dbconn.inc.php");
+include("dbconn2.inc.php");
 include("shared.php");
 //echo "$component_HTMLHeader";
 

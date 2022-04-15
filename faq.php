@@ -1,12 +1,10 @@
 <?php
-<<<<<<< Updated upstream
 	session_start();
 	include("shared.php");
 	// connect with database
 	$conn = mysqli_connect("localhost", "vmt8625_class4350", "theGULF2022", "vmt8625_4350");
-=======
 	// stored shared content
-include("dbconn.inc.php");
+include("dbconn2.inc.php");
 include("shared.php");
 echo "$component_HTMLHeader";
 
@@ -15,7 +13,6 @@ echo "$component_HTMLHeader";
 
 //$conn = mysqli_connect("localhost", "vmt8625_class4350", "theGULF2022", "vmt8625_4350");
 //$conn = dbConnect();
->>>>>>> Stashed changes
 
 	// fetch all FAQs from database
 	$sql = "SELECT * FROM faqs";
