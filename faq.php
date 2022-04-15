@@ -1,16 +1,29 @@
 <?php
+<<<<<<< Updated upstream
 	session_start();
 	include("shared.php");
 	// connect with database
 	$conn = mysqli_connect("localhost", "vmt8625_class4350", "theGULF2022", "vmt8625_4350");
+=======
+	// stored shared content
+include("dbconn.inc.php");
+include("shared.php");
+echo "$component_HTMLHeader";
+
+// make database connection
+ $conn = new PDO("mysql:host=localhost;dbname=vmt8625_4350", "vmt8625_class4350", "theGULF2022");
+
+//$conn = mysqli_connect("localhost", "vmt8625_class4350", "theGULF2022", "vmt8625_4350");
+//$conn = dbConnect();
+>>>>>>> Stashed changes
 
 	// fetch all FAQs from database
 	$sql = "SELECT * FROM faqs";
-	$statement = $conn->prepare($sql);
-	$statement->execute();
-	//$faqs = $statement->fetchAll();
-
+	$stmt = $conn->prepare($sql);		
+	$stmt->execute();
+	$faqs = $stmt->fetchAll();
 ?>
+<?php echo "$component_Nav";?>
 
 <!-- include CSS -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -25,7 +38,7 @@
 	<div class="row">
 		<div class="col-md-12 accordion_one">
 		    <div class="panel-group">
-		    	<?php foreach ($faqs as $faq): ?>
+                <?php foreach ($faqs as $faq): ?>
 			        <div class="panel panel-default">
 
 			        	<!-- button to show the question -->
@@ -51,6 +64,8 @@
 		</div>
 	</div>
 </div>
+<?php echo "$component_Footer";?>
+
 
 <!-- apply some styles -->
 <style>
