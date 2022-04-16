@@ -37,8 +37,8 @@ header("Location: admin_loginpage.php");
             </div>
             <!-- End my messages card.-->
 
-            <!-- Begin my messages card.-->
-            <div class="card mb-4 pb-1">
+            <!-- Begin Edit Site card.-->
+            <div class="card mb-4 pb-0">
               <div class="card-header bg-primary text-white text-left pl-4">
                 Edit Website
               </div>
@@ -48,7 +48,7 @@ header("Location: admin_loginpage.php");
                 <li class="list-group-item px-0 py-0 border-0"><a href="admin_volunteerInterestFormLeads.php" class="list-group-item list-group-item-action">Edit PayPal Link</a></li>
               </ul>
             </div>
-            <!-- End my messages card.-->
+            <!-- End Edit Site card.-->
 
 
           </div>
