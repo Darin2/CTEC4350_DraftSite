@@ -46,7 +46,6 @@ header("Location: admin_loginpage.php");
                 <li class="list-group-item px-0 py-0 border-0"><a href="admin_contactFormLeads.php" class="list-group-item list-group-item-action">Edit FAQ page</a></li>
                 <li class="list-group-item px-0 py-0 border-0"><a href="admin_memberFormLeads.php" class="list-group-item list-group-item-action">Edit Phone Number</a></li>
                 <li class="list-group-item px-0 py-0 border-0"><a href="admin_volunteerInterestFormLeads.php" class="list-group-item list-group-item-action">Edit PayPal Link</a></li>
-                <li class="list-group-item px-0 py-0 border-0"><a href="admin_sponsorFormLeads.php" class="list-group-item list-group-item-action">Sponsorship Leads</a></li>
               </ul>
             </div>
             <!-- End my messages card.-->
