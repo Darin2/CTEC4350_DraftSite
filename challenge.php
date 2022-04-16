@@ -4,7 +4,7 @@ echo "$component_HTMLHeader";?>
 <!doctype html>
 <html>
 <head>
-<title>Entrepreuner Challenges | The G.U.L.F. </title>
+<title>Entrepreneur Challenges | The G.U.L.F. </title>
 <style>
 #menu {width: 100px; height: 300px; display: inline;}
 </style>
@@ -12,18 +12,18 @@ echo "$component_HTMLHeader";?>
 </head>
 
 <body>
-<main>	
+<main>
 	<?php echo "$component_Nav";?>
-	   
+
 <div id="container">
 </div>
-	
+
 <div class="container-fluid px-0 mx-auto">
   <div id="challengeJumbotron" class="jumbotron row ml-0">
-	
+
     <!-- challenges row -->
     <div id="about-ChallengesRow" class="row d-flex align-items-center gulfBlueBG bg-gradient">
-		
+
       <section class="col-sm py-0">
 		<h1 class="display-4 text-black text-center">Monthly Entrepreneur Challenge</h1>
 <p class="lead text-black text-center">Challenge your entrepreneurial skills with our challenges. Check back each month to discover a new challenge! Don't forget to show us how you do, tag us in your social media posts using the hashtag #TheGULF</p>
@@ -38,7 +38,7 @@ const d = new Date();
 let name = month[d.getMonth()];
 document.getElementById("demo").innerHTML = name;
 </script>
-		
+
 <section class="col-sm py-0">
  <div id="m1" class="month">
 <h4 class="display-4 text-white text-center">Trade-up Challenge</h4>
@@ -54,29 +54,29 @@ document.getElementById("demo").innerHTML = name;
 <h4 class="display-4 text-white text-center">Invention Challenge</h4>
 <p class="lead text-white text-center">Invent your own product and come up with a five minute business pitch as if you were pitching your product to real investors.<br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
 </div>
-	
+
 <div id="m4" class="month">
 <h4 class="display-4 text-white text-center">Flipping Challenge</h4>
 <p class="lead text-white text-center">Find an item you can buy cheaply from a garage sale, thrift store or friend. Buy the item, and see how quickly you can sell it for a profit.<br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
 </div>
-	
+
 <div id="m5" class="month">
 <h4 class="display-4 text-white text-center">Mentoring Challenge</h4>
 <p class="lead text-white text-center">Connect with a local business owner, either in person or virtually, and ask them what they've learned since starting their own business.<br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
 </div>
-	
+
 <div id="m6" class="month">
 <h4 class="display-4 text-white text-center">Innovation Challenge</h4>
 <p class="lead text-white text-center">Think of your absolute favorite product. What do you like about it? What makes it great? Now, think of three ways this product could be even better.<br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
 </div>
-	
+
 
 </div>
       </section>
     </div>
 		</div>
 	</div>
-	
+
 </main>
 <?php echo "$component_Footer";?>
 </body>
