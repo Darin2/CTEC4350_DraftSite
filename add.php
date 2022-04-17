@@ -4,7 +4,12 @@ session_start();
 	// include shared content
 include("dbconn2.inc.php");
 include("shared.php");
+
+if ($_SESSION['admin_access'] != true){
+header("Location: admin_loginpage.php");
+}
 echo "$component_HTMLHeader";
+
 // make database connection
   //$conn = new PDO("mysql:host=localhost:3306;dbname=vmt8625_4350", "root", "root");
 //$conn = mysqli_connect("localhost", "vmt8625_class4350", "theGULF2022", "vmt8625_4350");
