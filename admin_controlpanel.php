@@ -43,9 +43,8 @@ header("Location: admin_loginpage.php");
                 Edit Website
               </div>
               <ul class="list-group list-group-flush mb-0 px-0">
-                <li class="list-group-item px-0 py-0 border-0"><a href="admin_contactFormLeads.php" class="list-group-item list-group-item-action">Edit FAQ page</a></li>
-                <li class="list-group-item px-0 py-0 border-0"><a href="admin_memberFormLeads.php" class="list-group-item list-group-item-action">Edit Phone Number</a></li>
-                <li class="list-group-item px-0 py-0 border-0"><a href="admin_volunteerInterestFormLeads.php" class="list-group-item list-group-item-action">Edit PayPal Link</a></li>
+                <li class="list-group-item px-0 py-0 border-0"><a href="add.php" class="list-group-item list-group-item-action">Edit FAQ page</a></li>
+                <li class="list-group-item px-0 py-0 border-0"><a href="admin_memberFormLeads.php" class="list-group-item list-group-item-action">Edit Statistics On Home Page</a></li>
               </ul>
             </div>
             <!-- End Edit Site card.-->

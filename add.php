@@ -15,35 +15,32 @@ $conn = dbConnect();
 
 	if (isset($_POST["submit"]))
 	{
-		
+
 		// insert in faqs table
 		$sql = "INSERT INTO faqs (question, answer) VALUES (?, ?)";
-		$stmt->prepare($sql);		
-		
+		$stmt->prepare($sql);
+
 		// add in bind parameter statement
 		$stmt ->bind_param("ss",$_POST["question"], $_POST["answer"]);
 
 		$stmt->execute();
-	} 
+	}
 
 
 	// get all faqs from latest to oldest
 	$sql = "SELECT question, answer, id FROM faqs ORDER BY id DESC";
-	$stmt->prepare($sql);		
+	$stmt->prepare($sql);
 	$stmt->execute();
 	$stmt->bind_result($question, $answer, $id);
 	//$faqs = $statement->fetchAll(); //change this to bind result statement
 ?>
 	<?php echo "$component_Nav";?>
 
-<!-- include bootstrap, font awesome and rich text library CSS -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<!-- includefont awesome and rich text library CSS -->
 <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" />
 <link rel="stylesheet" type="text/css" href="richtext/richtext.min.css" />
 
-<!-- include jquer, bootstrap and rich text JS -->
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
+<!-- include rich text JS -->
 <script src="richtext/jquery.richtext.js"></script>
 
 <!-- layout for form to add FAQ -->
@@ -89,7 +86,7 @@ $conn = dbConnect();
 
 				<!-- table body -->
 				<tbody>
-				<?php while($stmt->fetch()): ?> 
+				<?php while($stmt->fetch()): ?>
 						<tr>
 							<td><?php echo $id; ?></td>
 							<td><?php echo $question; ?></td>
