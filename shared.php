@@ -36,7 +36,7 @@ $component_HTMLHeader =
 if ($_SESSION['admin_access'] !== true){
   $component_Nav =
     "<nav class=\"navbar col navbar-expand-lg sticky-top\">
-    <a class=\"navbar-brand\" href=\"index.php\">
+    <a class=\"navbar-brand px-3\" href=\"index.php\">
         <img id=\"navbarLogo\" src=\"img/gulfLogo.png\" width=\"250\" height=\"100%\" alt=\"The logo for Giving Us Leadership and Focus\">
     </a>
 
@@ -106,7 +106,7 @@ if ($_SESSION['admin_access'] !== true){
 if ($_SESSION['admin_access'] == true){
   $component_Nav =
     "<nav class=\"navbar col navbar-expand-lg sticky-top\">
-    <a class=\"navbar-brand\" href=\"index.php\">
+    <a class=\"navbar-brand px-3\" href=\"index.php\">
         <img id=\"navbarLogo\" src=\"img/gulfLogo.png\" width=\"250\" height=\"100%\" alt=\"The logo for Giving Us Leadership and Focus\">
     </a>
 
