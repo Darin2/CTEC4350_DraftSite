@@ -55,7 +55,6 @@ if ($_SESSION['admin_access'] !== true){
               <li><a class=\"dropdown-item\" href=\"about.php#about-OurImpactRow\">Our Impact</a></li>
               <li><a class=\"dropdown-item\" href=\"about.php#about-OurStoryRow\">Our Story</a></li>
               <li><a class=\"dropdown-item\" href=\"about.php#about-QuotesRow\">Testimonials</a></li>
-              <li><a class=\"dropdown-item\" href=\"about.php#about-StaffRow\">Our Staff</a></li>
             </ul>
           </li>
 
@@ -125,7 +124,6 @@ if ($_SESSION['admin_access'] == true){
               <li><a class=\"dropdown-item\" href=\"about.php#about-OurImpactRow\">Our Impact</a></li>
               <li><a class=\"dropdown-item\" href=\"about.php#about-OurStoryRow\">Our Story</a></li>
               <li><a class=\"dropdown-item\" href=\"about.php#about-QuotesRow\">Testimonials</a></li>
-              <li><a class=\"dropdown-item\" href=\"about.php#about-StaffRow\">Our Staff</a></li>
             </ul>
           </li>
 
