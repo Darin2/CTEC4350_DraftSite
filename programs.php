@@ -2,6 +2,7 @@
 include("shared.php");
 include("dbconn.inc.php");
 echo "$component_HTMLHeader";?>
+<meta name="keywords" content="Volunteering, Mission, Next Generation Leaders, Entrepreneurs, DFW, Dallas-Fort Worth">
 </head>
 
 <body>

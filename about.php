@@ -2,6 +2,8 @@
 include("shared.php");
 include("dbconn.inc.php");
 echo "$component_HTMLHeader";?>
+<meta name="keywords" content="Positive, Youth, Entrepreneur, Leadership, Success, Volunteer">
+
 </head>
 
 <body>
