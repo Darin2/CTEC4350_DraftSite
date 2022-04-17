@@ -1,14 +1,6 @@
 <?php session_start();
 include("shared.php");
 echo "$component_HTMLHeader";?>
-<!doctype html>
-<html>
-<head>
-<title>Entrepreneur Challenges | The G.U.L.F. </title>
-<meta name="keywords" content="Entrepreneur, Success, Entrepreneur Challenge, Trade-Up, Invention, Flipping, Mentoring, Creative, Business Ideas, Product, Business Pitch, Investors, Profit">
-<style>
-#menu {width: 100px; height: 300px; display: inline;}
-</style>
 
 <!-- script below to figure out the current month-->
 <script>
