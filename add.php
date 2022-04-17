@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-	// stored shared content
+	// include shared content
 include("dbconn2.inc.php");
 include("shared.php");
 echo "$component_HTMLHeader";
@@ -34,7 +34,7 @@ $conn = dbConnect();
 	$stmt->bind_result($question, $answer, $id);
 	//$faqs = $statement->fetchAll(); //change this to bind result statement
 ?>
-	<?php echo "$component_Nav";?>
+<?php echo "$component_Nav";?>
 
 <!-- includefont awesome and rich text library CSS -->
 <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" />
@@ -43,22 +43,24 @@ $conn = dbConnect();
 <!-- include rich text JS -->
 <script src="richtext/jquery.richtext.js"></script>
 
-<!-- layout for form to add FAQ -->
-<div class="container" style="margin-top: 50px; margin-bottom: 50px;">
+<!-- Begin bootstrap container -->
+<div class="container">
+	<!-- Begin row -->
 	<div class="row">
+		<!-- Begin interior container (inside of row) -->
 		<div class="offset-md-3 col-md-6">
 			<h1 class="text-center">Add FAQ</h1>
 
-			<!-- for to add FAQ -->
+			<!-- Begin form -->
 			<form method="POST" action="add.php">
 
-				<!-- question -->
+				<!-- Input field for the FAQ question -->
 				<div class="form-group">
 					<label>Enter Question</label>
 					<input type="text" name="question" class="form-control" required />
 				</div>
 
-				<!-- answer -->
+				<!-- Input field for the FAQ answer -->
 				<div class="form-group">
 					<label>Enter Answer</label>
 					<textarea name="answer" id="answer" class="form-control" required></textarea>
@@ -67,12 +69,17 @@ $conn = dbConnect();
 				<!-- submit button -->
 				<input type="submit" name="submit" class="btn btn-info" value="Add FAQ" />
 			</form>
+			<!-- End form -->
 		</div>
+		<!-- End interior container (inside of row) -->
 	</div>
+	<!-- End row -->
 
-	<!-- show all FAQs added -->
+	<!-- Begin row -->
 	<div class="row">
+		<!-- Begin interior container (inside of row) -->
 		<div class="offset-md-2 col-md-8">
+			<!-- Begin table -->
 			<table class="table table-bordered">
 				<!-- table heading -->
 				<thead>
@@ -87,6 +94,7 @@ $conn = dbConnect();
 				<!-- table body -->
 				<tbody>
 				<?php while($stmt->fetch()): ?>
+						<!-- Begin table row -->
 						<tr>
 							<td><?php echo $id; ?></td>
 							<td><?php echo $question; ?></td>
@@ -104,10 +112,13 @@ $conn = dbConnect();
 								</form>
 							</td>
 						</tr>
+						<!-- End table row -->
 					<?php endwhile; ?>
 				</tbody>
 			</table>
+			<!-- End table -->
 		</div>
+		<!-- End interior container (inside of row) -->
 	</div>
 </div>
 
