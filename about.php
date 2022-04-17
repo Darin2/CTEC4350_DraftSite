@@ -224,14 +224,15 @@ echo "$component_HTMLHeader";?>
                 </ul><!-- /end team-photos -->
               </div><!-- /end col-md-8 -->
 
+              <!-- *** removing this whole section until we receive images of staff
               <div class="pull-left col-md-4 sm-text-center">
                 <div class="team-overview">
                   <h2>Who Are We?</h2>
                   <p><div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quae nesciunt officia! Autem, nam eum voluptatem, esse voluptatibus deleniti tempora laboriosam sequi pariatur, explicabo itaque. Fuga, deserunt? Repudiandae, neque qui.</div></p>
                 </div>
-              </div><!-- /end col-md-4 -->
-            </div><!-- /end row -->
-          </div><!-- /end container -->
+              </div> /end col-md-4 -->
+            <!--</div> /end row -->
+          <!--</div> /end container -->
           </section>
         <!-- end codepen for headshots -->
 
