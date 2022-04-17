@@ -13,21 +13,27 @@ echo "$component_HTMLHeader";?>
 
     <!--Our Story row -->
     <div id="about-OurStoryRow" class="row d-flex align-items-center mt-0 py-0">
-      <!-- Our Story lottie animation. should show up on left side of text for tablet/desktop. Should show up above text for mobile. -->
+
+      <!-- center-aligned text section with CTA button. Should show up on the left side for tablet/desktop -->
+      <section class="col-sm mt-0 py-0">
+        <h1 class="display-4 text-black text-center">About Us</h1>
+        <p class="lead text-black text-center mx-5">Since 2016, we've been driving positive change in DFW's youth.</p>
+        <p class="lead text-black text-center mx-5">Whether they're volunteering at AT&T Stadium, learning about the business world or growing their leadership skills, G.U.L.F. participants are pushed to be their absolute best.</p>
+        <p class="lead w-25 d-flex justify-content-center mx-auto">
+          <a class="btn btn-primary btn-lg d-flex justify-content-center" href="getinvolved.php" role="button">Get Involved</a>
+        </p>
+      </section>
+
+      <!-- Our Story lottie animation. should show up on right side of text for tablet/desktop.-->
       <section class="col-sm mt-0 py-0">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_qct0ydor.json"  background="#1A5EBB"  speed="1"  style="width: 100%; height: 80%;"  loop  autoplay></lottie-player>
-      </section>
-      <!-- center-aligned text section with CTA button -->
-      <section class="col-sm mt-0 py-0">
-        <h1 class="display-4 text-black text-center">Our Story</h1>
-        <p class="lead text-black text-center">Since 2016, we've been driving positive change in DFW's youth.</p>
-        <p class="lead text-black text-center">
-        Interested in getting involved?
-        </p>
-        <p class="lead w-25 d-flex justify-content-center mx-auto">
-          <a class="btn btn-primary btn-lg d-flex justify-content-center" href="#" role="button">Learn More</a>
-        </p>
+        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_1ixgi8rs.json"
+          background="transparent"
+          speed="1"
+          style="width: 100%; height: 100%;"
+          loop
+          autoplay>
+        </lottie-player>
       </section>
     </div>
 
@@ -37,26 +43,22 @@ echo "$component_HTMLHeader";?>
       <section class="col-sm">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <lottie-player
-        src="https://assets3.lottiefiles.com/packages/lf20_xiussssy.json"
-        background="transparent"
-        speed="1"
-        style="width: 80%; height: 80%;"
-        loop
-        autoplay>
+          src="https://assets3.lottiefiles.com/packages/lf20_xiussssy.json"
+          background="transparent"
+          speed="1"
+          style="width: 80%; height: 80%;"
+          loop
+          autoplay>
         </lottie-player>
       </section>
       <!-- center-aligned text section with CTA button-->
       <section class="col-sm">
         <h1 class="display-4 text-white text-center">Our Mission</h1>
-        <p class="lead text-white text-center">We're launching the next generation of leaders and entrepreneurs toward success.</p>
-        <!-- commenting this part out for right now. Not sure if we want a CTA in every single section. Might get repetitive.
-        <p class="lead text-white text-center">
-        Become a volunteer today.
-        </p>
+        <p class="lead text-white text-center mx-5">We're launching Texas teens and young adults toward success via volunteering, mentoring programs and leadership.</p>
+        <p class="lead text-white text-center">Want to help?</p>
         <p class="lead w-25 d-flex justify-content-center mx-auto">
-          <a class="btn btn-primary btn-lg d-flex justify-content-center" href="#" role="button">Learn More</a>
+          <a class="btn btn-primary btn-lg d-flex justify-content-center" href="getinvolved.php" role="button">Get Involved</a>
         </p>
-        -->
       </section>
     </div>
 
@@ -65,12 +67,12 @@ echo "$component_HTMLHeader";?>
       <!-- center-aligned section -->
       <section class="col-sm py-0">
         <h1 class="display-4 text-black text-center">Our Impact</h1>
-        <p class="lead text-black text-center">We've led over 100 volunteering events impacting over 20,000 people in 5 cities.</p>
+        <p class="lead text-black text-center mx-5">We've led over 100 volunteering events and 46 youth leadership programs impacting over 6,000 people in 5 cities.</p>
         <p class="lead text-black text-center">
         Want to be a part of the action?
         </p>
         <p class="lead w-25 d-flex justify-content-center mx-auto">
-          <a class="btn btn-primary btn-lg d-flex justify-content-center" href="#" role="button">Get Involved</a>
+          <a class="btn btn-primary btn-lg d-flex justify-content-center" href="volunteer.php" role="button">Get Involved</a>
         </p>
       </section>
       <section class="col-sm py-0">
@@ -88,29 +90,34 @@ echo "$component_HTMLHeader";?>
     </div>
 
     <div id="about-QuotesRow" class="row d-flex align-items-center bg-dark bg-gradient">
+      <!-- lottie animation for this section -->
+      <section class="col-sm py-0">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ydeuqme7.json"
+          background="transparent"
+          speed="1"
+          style="width: 100%; height: 100%;"
+          loop
+          autoplay>
+        </lottie-player>
+      </section>
 
-      <h1 class="display-4 text-white text-center pt-3">
-        Testimonials
-      </h1>
-      <p class="text-white text-center pt-3">Hear what people are saying:</p>
+      <!-- testimonial section -->
+      <section class="col-sm py-0">
+        <h1 class="display-4 text-white text-center">What People Are Saying</h1>
+        <blockquote class="blockquote text-center text-white py-3">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer py-3">John Doe, <cite title="Source Title">Dallas Morning News</cite></footer>
+        </blockquote>
+        <blockquote class="blockquote text-center text-white py-3">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer py-3">John Doe, <cite title="Source Title">Dallas Morning News</cite></footer>
+        </blockquote>
+      </section>
 
-      <blockquote class="blockquote text-center text-white py-3">
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer class="blockquote-footer py-3">John Doe, <cite title="Source Title">Dallas Morning News</cite></footer>
-      </blockquote>
-
-      <blockquote class="blockquote text-center text-white py-3">
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer class="blockquote-footer py-3">Jane Doe, <cite title="Source Title">Fort Worth Star Telegram</cite></footer>
-      </blockquote>
-
-      <blockquote class="blockquote text-center text-white py-3">
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer class="blockquote-footer py-3">John Doe, <cite title="Source Title">Dallas Cowboys</cite></footer>
-      </blockquote>
     </div>
 
-    </div>
+  </div>
 </div>
 <!-- end fluid container -->
 </div>
