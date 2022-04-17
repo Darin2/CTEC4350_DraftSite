@@ -12,8 +12,8 @@ header("Location: admin_loginpage.php");
     echo "$component_HTMLHeader";
     echo "$component_Nav";
 ?>
-<main class="bg-dark">
-  <body class="bg-dark">
+<body class="bg-dark">
+  <main class="bg-dark">
 
     <!-- control panel container -->
     <div id="controlPanelContainer" class="container bg-dark bg-gradient mx-auto col-lg-10 col-md-12 col-sm-12 pb-5 rounded">
@@ -56,6 +56,6 @@ header("Location: admin_loginpage.php");
 
 
     </div>
-  </body>
-</main>
+  </main>
+</body>
 <?php echo $component_Footer; ?>
