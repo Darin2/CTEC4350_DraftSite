@@ -5,7 +5,7 @@ echo "$component_HTMLHeader";?>
 <html>
 <head>
 <title>Entrepreneur Challenges | The G.U.L.F. </title>
-<meta name="keywords" content="Entrepreneur, Success, Monthly Entrepreneur Challenge, Trade-Up, Invention, Flipping, Mentoring, Creative, Business Ideas, Product, Business Pitch, Investors, Profit">
+<meta name="keywords" content="Entrepreneur, Success, Entrepreneur Challenge, Trade-Up, Invention, Flipping, Mentoring, Creative, Business Ideas, Product, Business Pitch, Investors, Profit">
 <style>
 #menu {width: 100px; height: 300px; display: inline;}
 </style>
