@@ -1,17 +1,12 @@
 <?php session_start();
 
-	// stored shared content
+// stored shared content
 include("dbconn2.inc.php");
 include("shared.php");
-//echo "$component_HTMLHeader";
-
 // make database connection
  $conn = new PDO("mysql:host=localhost;dbname=vmt8625_4350", "vmt8625_class4350", "theGULF2022");
 
-// make database connection
-//$conn = dbConnect();
-
-// establishing statement object 
+// establishing statement object
 //$stmt = $conn->stmt_init();
 
 	// check if FAQ exists
@@ -39,15 +34,15 @@ include("shared.php");
 
 	}
 ?>
-	<?php echo "$component_Nav";?>
+<?php
+echo "$component_HTMLHeader";
+echo "$component_Nav";
+?>
 <!-- include CSS -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" />
 <link rel="stylesheet" type="text/css" href="richtext/richtext.min.css" />
 
 <!-- include JS -->
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
 <script src="richtext/jquery.richtext.js"></script>
 
 <!-- layout for form to edit FAQ -->

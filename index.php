@@ -6,14 +6,6 @@ echo "$component_HTMLHeader";
 Link to the wireframes for this project: https://darinhardin550576.invisionapp.com/freehand/Wireframes-YASr5nqZY?projectID=cl09vkvs0jk590132e7033lju
 */
 ?>
-<script type="text/javascript">
-  // Counter code imported from https://codepen.io/xpeed/pen/YpWKLW
-           jQuery('.statistic-counter').counterUp({
-               delay: 10,
-               time: 2000
-           });
-</script>
-</head>
 
 <body>
 
