@@ -123,28 +123,31 @@ if (array_key_exists('Submit1', $_POST)){
     echo "$component_HTMLHeader";
 ?>
 <!-- Printing Login Form -->
-<body>
-  <main>
-  <h2 class="text-center">Login</h2>
+<body class="bg-dark">
+  <main class="bg-dark">
+  <!-- begin bootstrap container -->
+  <div class="container bg-dark my-5">
+    <h1 class="text-white text-center display-4 py-3"> Please Log In to Access the Admin Panel.</h2>
 
-  <!-- Form that sends the password string to the authentication page -->
-  <form action="" class="container col-lg-4 col-md-6 col-sm-12" method="post">
+    <!-- Form that sends the password string to the authentication page -->
+    <form action="" class="container rounded py-1 col-lg-5 col-md-8 col-sm-12 bg-dark bg-gradient" method="post">
 
-  <label for="username" name="Username">Username</label>
-  <!-- username field -->
-  <input type="text" name="username_string" class="form-control" placeholder="">
-  <br>
+    <label for="username" class="text-white" name="Username">Username</label>
+    <!-- username field -->
+    <input type="text" name="username_string" class="form-control" placeholder="">
+    <br>
 
-  <label for="password" name="Password">Password</label>
-  <!--Input field that takes the password.-->
-  <input type="password" class="form-control" name="password_string" placeholder="">
-  <br>
+    <label for="password" class="text-white" name="Password">Password</label>
+    <!--Input field that takes the password.-->
+    <input type="password" class="form-control" name="password_string" placeholder="">
+    <br>
 
-  <!-- submit button. Name of this button will be used in the session script. I have no idea why it has Next as a value. May need to change. -->
-  <input type="submit" class="form-control btn-primary" name="Submit1" value="Log In &gt;" />
+    <!-- submit button. Name of this button will be used in the session script. I have no idea why it has Next as a value. May need to change. -->
+    <input type="submit" class="form-control btn-primary" name="Submit1" value="Log In" />
 
-  </form>
-
+    </form>
+  </div>
+  <!-- end bootstrap container -->
   </main>
 </body>
 <?php echo $footer ?>
