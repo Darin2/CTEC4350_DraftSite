@@ -34,7 +34,7 @@ echo "$component_HTMLHeader";?>
       </section>
     </div>
 
-    <div class="content flow mt-3">
+    <div id="programs-DiamondLeagueRow" class="content flow mt-3">
       <div class="even-columns">
         <div class="col prg-txt d-flex flex-column align-self-center">
           <h2>The Diamond League</h2>
@@ -73,7 +73,7 @@ echo "$component_HTMLHeader";?>
     </div>
     </div>
 
-    <div class="content flow">
+    <div id="programs-BusinessApprenticeshipRow" class="content flow">
       <div class="even-columns even-columns-responsive">
         <div class="col">
           <img src="img/youthprg.jpg" class="dl-img img-fluid ybp rounded" alt="Business workers smiling for a group photo">
