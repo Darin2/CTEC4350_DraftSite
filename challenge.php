@@ -11,7 +11,6 @@ echo "$component_HTMLHeader";?>
 	document.getElementById("demo").innerHTML = name;
 </script>
 
-</head>
 
 <body>
 <main>
@@ -78,6 +77,30 @@ echo "$component_HTMLHeader";?>
 	<!-- end jumbotron -->
 </div>
 <!--end bootstrap container -->
+
+<!-- begin alternate way of showing the challenge -->
+<div id="challengesContainer" class="container-fluid px-0 mx-auto">
+	<div class="card text-center">
+
+	  <div class="card-header">
+	   <p id="challengeMonth">month</p>
+	  </div>
+
+	  <div class="card-body">
+	    <h5 id="challengeTitle" class="card-title">challenge title</h5>
+	    <p id="challengeDescription" class="card-text">challenge description with social media reminder goes here (IG: thegulf_tx)</p>
+	    <div id="instagramFeed">
+				<p class="card-text">We can put an instagram feed here</p>
+			</div>
+	  </div>
+
+	  <div class="card-footer text-muted">
+	    	<p class="card-text">"next challenge will appear in ____ days" goes here</p>
+	  </div>
+		
+	</div>
+</div>
+<!-- end alternate challenge version -->
 </main>
 <?php echo "$component_Footer";?>
 </body>
