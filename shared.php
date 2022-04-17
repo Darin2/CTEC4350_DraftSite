@@ -75,8 +75,8 @@ if ($_SESSION['admin_access'] !== true){
               Programs
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
-              <li><a class=\"dropdown-item\" href=\"#\">The Diamond League</a></li>
-              <li><a class=\"dropdown-item\" href=\"#\">Business Apprenticeship</a></li>
+              <li><a class=\"dropdown-item\" href=\"programs.php#programs-DiamondLeagueRow\">The Diamond League</a></li>
+              <li><a class=\"dropdown-item\" href=\"programs.php#programs-BusinessApprenticeshipRow\">Business Apprenticeship</a></li>
             </ul>
           </li>
 
