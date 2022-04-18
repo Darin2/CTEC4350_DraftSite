@@ -7,15 +7,15 @@ echo "$component_HTMLHeader";?>
 <?php echo "$component_Nav";?>
 
 <!-- begin alternate way of showing the challenge -->
-<div id="challengesContainer" class="container-fluid px-0 mx-auto">
+<div id="challengesContainer" class="container-fluid px-0 mx-auto gulfBlueBG">
 	<div class="card text-center">
 
 	  <div class="card-header">
-	   <p id="challengeMonth">month</p>
+	   <p id="challengeMonth" class="display-4">month</p>
 	  </div>
 
-	  <div class="card-body">
-	    <h5 id="challengeTitle" class="card-title">challenge title</h5>
+	  <div class="card-body bg-dark">
+	    <h5 id="challengeTitle" class="card-title text-white">challenge title</h5>
 	    <p id="challengeDescription" class="card-text">challenge description with social media reminder goes here (IG: thegulf_tx)</p>
 	  </div>
 
@@ -139,10 +139,10 @@ echo "$component_HTMLHeader";?>
 	}
 
 	//make an array containing the number of days in each month, in order from january to december
-	lengthOfMonthArray = [31,28,31,30,31,30,31,31,30,31,30,31];
+	let lengthOfMonthArray = [31,28,31,30,31,30,31,31,30,31,30,31];
 
 	//Get the number for today's date, e.g. "18" for april 18th
-	let todaysDateNumber = date.prototype.getDate();
+	let todaysDateNumber = String(new Date().getDate()).padStart(2, '0');
 	console.log('todaysDate = ' + todaysDateNumber);
 
 	//get the number of days in this month
@@ -151,12 +151,11 @@ echo "$component_HTMLHeader";?>
 
 	//total days in this month - today's date = days left in this month. Challenge resets on first day of each month, so add one to get the number of days until reset.
 	let daysUntilCountdownResets = daysInCurrentMonth - todaysDateNumber + 1;
-
+	console.log('daysUntilCountdownResets = ' + daysUntilCountdownResets);
 
 	console.log('challengeTitle = ' + challengeTitleArray[d.getMonth()]);
 	console.log('challengeDescription = ' + challengeDescriptionArray[d.getMonth()]);
-	//Print the current month in the demo element.
-	document.getElementById("demo").innerHTML = currentMonth;
+
 	//Print the current month at the top of the challengesContainer.
 	document.getElementById("challengeMonth").innerHTML = currentMonth;
 	//Print the description of the challenge with the "share on social media" message attached
