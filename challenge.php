@@ -79,13 +79,10 @@ echo "$component_HTMLHeader";?>
 	  <div class="card-body">
 	    <h5 id="challengeTitle" class="card-title">challenge title</h5>
 	    <p id="challengeDescription" class="card-text">challenge description with social media reminder goes here (IG: thegulf_tx)</p>
-	    <div id="instagramFeed">
-				<p class="card-text">We can put an instagram feed here</p>
-			</div>
 	  </div>
 
 	  <div class="card-footer text-muted">
-	    	<p class="card-text">"next challenge will appear in ____ days" goes here</p>
+	    	<p id="daysLeft" class="card-text">"next challenge will appear in ____ days" goes here</p>
 	  </div>
 
 	</div>
@@ -93,37 +90,128 @@ echo "$component_HTMLHeader";?>
 <!-- end alternate challenge version -->
 </main>
 <?php echo "$component_Footer";?>
-</body>
 <script>
-//create an array of months
-const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-/*
+	//create an array of months
+	const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
-January = month[0]
-February = month[1]
-March = month[2]
-April = month[3]
-May = month[4]
-June = month[5]
-July = month[6]
-August = month[7]
-September = month[8]
-October = month[9]
-November = month[10]
-December = month[11]
-*/
+	//create a new Date object when someone loads this page
+	const d = new Date();
 
+	// store the current month in a variable
+	let currentMonth = month[d.getMonth()];
+	console.log('currentMonth = ' + currentMonth);
 
-//create a new Date object when someone loads this page
-const d = new Date();
+	console.log('d.getMonth() = ' + d.getMonth());
 
-// store the current month in a variable
-let currentMonth = month[d.getMonth()];
+	let challengeTitleArray = ["Trade Up","3 in 5","Invention","Flipping","Mentoring","Innovation"];
 
+	let challengeDescriptionArray = [
 
-//Print the current month in the demo element.
-document.getElementById("demo").innerHTML = currentMonth;
+		"This week, your challenge is to turn $5 into at least $25. You get to keep every dollar you make, so get creative!",
 
-document.getElementById("challengeMonth").innerText = currentMonth;
+		"Come up with three business ideas in five minutes or less, then write a business plan for your favorite one.",
+
+		"Invent your own product and come up with a five minute business pitch as if you were pitching your product to real investors.",
+
+		"Find an item you can buy cheaply from a garage sale, thrift store or friend. Buy the item, and see how quickly you can sell it for a profit.",
+
+		"Connect with a local business owner, either in person or virtually, and ask them what they've learned since starting their own business.",
+
+		"Think of your absolute favorite product. What do you like about it? What makes it great? Now, think of three ways this product could be even better."]
+
+	let shareMsg = "Share your success with us on Instagram and use the hashtag #TheGulf. Check back next month for another challenge!";
+
+	let challengeTitleText = "";
+	let challengeDescriptionText = "";
+	//using a switch statement to decide what to show for this month's challenge. This should probably be written as a function if we have the time, but this works for now.
+
+	console.log('Debug: on line 134 my switch statement evaluated d.month to equal ' + d.getMonth());
+	switch(d.getMonth()){
+		//If the month is January, we'll show the Trade Up Challenge
+		case 0:
+			challengeTitleText = challengeTitleArray[0];
+			challengeDescriptionText = challengeDescriptionArray[0];
+		break;
+
+		//If the month is February, we'll show the 3 in 5 Challenge
+		case 1:
+			challengeTitleText = challengeTitleArray[1];
+			challengeDescriptionText = challengeDescriptionArray[1];
+		break;
+
+		//If the month is March, we'll show the Invention Challenge
+		case 2:
+			challengeTitleText = challengeTitleArray[2];
+			challengeDescriptionText = challengeDescriptionArray[2];
+		break;
+
+		//If the month is April, we'll show the Flipping Challenge
+		case 3:
+			challengeTitleText = challengeTitleArray[3];
+			challengeDescriptionText = challengeDescriptionArray[3];
+		break;
+
+		//If the month is May, we'll show the Mentoring Challenge
+		case 4:
+			challengeTitleText = challengeTitleArray[4];
+			challengeDescriptionText = challengeDescriptionArray[4];
+		break;
+
+		//If the month is June, we'll show the Innovation Challenge
+		case 5:
+			challengeTitleText = challengeTitleArray[5];
+			challengeDescriptionText = challengeDescriptionArray[5];
+		break;
+
+		//If the month is July, we'll show the Trade Up Challenge
+		case 6:
+			challengeTitleText = challengeTitleArray[0];
+			challengeDescriptionText = challengeDescriptionArray[0];
+		break;
+
+		//If the month is August, we'll show the 3 in 5 Challenge
+		case 7:
+			challengeTitleText = challengeTitleArray[1];
+			challengeDescriptionText = challengeDescriptionArray[1];
+		break;
+
+		//If the month is September, we'll show the Invention Challenge
+		case 8:
+			challengeTitleText = challengeTitleArray[2];
+			challengeDescriptionText = challengeDescriptionArray[2];
+		break;
+
+		//If the month is October, we'll show the Flipping Challenge
+		case 9:
+			challengeTitleText = challengeTitleArray[3];
+			challengeDescriptionText = challengeDescriptionArray[3];
+		break;
+
+		//If the month is November, we'll show the Mentoring Challenge
+		case 10:
+			challengeTitleText = challengeTitleArray[4];
+			challengeDescriptionText = challengeDescriptionArray[4];
+		break;
+
+		//If the month is December, we'll show the Innovation Challenge
+		case 11:
+			challengeTitleText = challengeTitleArray[5];
+			challengeDescriptionText = challengeDescriptionArray[5];
+		break;
+	}
+
+	console.log('challengeTitle = ' + challengeTitleArray[d.getMonth()]);
+	console.log('challengeDescription = ' + challengeDescriptionArray[d.getMonth()]);
+	//Print the current month in the demo element.
+	document.getElementById("demo").innerHTML = currentMonth;
+	//Print the current month at the top of the challengesContainer.
+	document.getElementById("challengeMonth").innerHTML = currentMonth;
+	//Print the description of the challenge.
+	document.getElementById("challengeDescription").innerHTML = challengeDescriptionText + ' ' + shareMsg;
+	//Print the title of the challenge.
+	document.getElementById("challengeTitle").innerHTML = challengeTitleText + ' Challenge';
+
 </script>
+</body>
+
 </html>
