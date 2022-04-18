@@ -206,7 +206,7 @@ echo "$component_HTMLHeader";?>
 	document.getElementById("demo").innerHTML = currentMonth;
 	//Print the current month at the top of the challengesContainer.
 	document.getElementById("challengeMonth").innerHTML = currentMonth;
-	//Print the description of the challenge.
+	//Print the description of the challenge with the "share on social media" message attached
 	document.getElementById("challengeDescription").innerHTML = challengeDescriptionText + ' ' + shareMsg;
 	//Print the title of the challenge.
 	document.getElementById("challengeTitle").innerHTML = challengeTitleText + ' Challenge';
