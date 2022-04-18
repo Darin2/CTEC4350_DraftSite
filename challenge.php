@@ -7,19 +7,19 @@ echo "$component_HTMLHeader";?>
 <?php echo "$component_Nav";?>
 
 <!-- begin alternate way of showing the challenge -->
-<div id="challengesContainer" class="container-fluid px-0 mx-auto gulfBlueBG">
-	<div class="card text-center">
+<div id="challengesContainer" class="container-fluid px-5 mx-2 gulfBlueBG">
+	<div class="col card text-center">
 
-	  <div class="card-header">
+	  <div class="card-header col-lg-6 col-md-8 col-sm-12 card text-center mx-auto">
 	   <p id="challengeMonth" class="display-4">month</p>
 	  </div>
 
 	  <div class="card-body bg-dark">
 	    <h5 id="challengeTitle" class="card-title text-white">challenge title</h5>
-	    <p id="challengeDescription" class="card-text">challenge description with social media reminder goes here (IG: thegulf_tx)</p>
+	    <p id="challengeDescription" class="card-text text-white">challenge description with social media reminder goes here (IG: thegulf_tx)</p>
 	  </div>
 
-	  <div class="card-footer text-muted">
+	  <div class="card-footer text-muted text-black">
 	    	<p id="daysLeft" class="card-text">"next challenge will appear in ____ days" goes here</p>
 	  </div>
 
@@ -28,6 +28,7 @@ echo "$component_HTMLHeader";?>
 <!-- end alternate challenge version -->
 </main>
 <?php echo "$component_Footer";?>
+<!-- javascript that makes the content change each month -->
 <script>
 	//create an array of months
 	const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
@@ -157,7 +158,7 @@ echo "$component_HTMLHeader";?>
 	console.log('challengeDescription = ' + challengeDescriptionArray[d.getMonth()]);
 
 	//Print the current month at the top of the challengesContainer.
-	document.getElementById("challengeMonth").innerHTML = currentMonth;
+	document.getElementById("challengeMonth").innerHTML = "Monthly Challenge: " + currentMonth;
 	//Print the description of the challenge with the "share on social media" message attached
 	document.getElementById("challengeDescription").innerHTML = challengeDescriptionText + ' ' + shareMsg;
 	//Print the title of the challenge.
