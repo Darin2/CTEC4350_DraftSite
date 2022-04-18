@@ -2,16 +2,6 @@
 include("shared.php");
 echo "$component_HTMLHeader";?>
 
-<!-- script below to figure out the current month-->
-<script>
-	const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-
-	const d = new Date();
-	let name = month[d.getMonth()];
-	document.getElementById("demo").innerHTML = name;
-</script>
-
-
 <body>
 <main>
 <?php echo "$component_Nav";?>
@@ -97,11 +87,43 @@ echo "$component_HTMLHeader";?>
 	  <div class="card-footer text-muted">
 	    	<p class="card-text">"next challenge will appear in ____ days" goes here</p>
 	  </div>
-		
+
 	</div>
 </div>
 <!-- end alternate challenge version -->
 </main>
 <?php echo "$component_Footer";?>
 </body>
+<script>
+//create an array of months
+const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+/*
+
+January = month[0]
+February = month[1]
+March = month[2]
+April = month[3]
+May = month[4]
+June = month[5]
+July = month[6]
+August = month[7]
+September = month[8]
+October = month[9]
+November = month[10]
+December = month[11]
+*/
+
+
+//create a new Date object when someone loads this page
+const d = new Date();
+
+// store the current month in a variable
+let currentMonth = month[d.getMonth()];
+
+
+//Print the current month in the demo element.
+document.getElementById("demo").innerHTML = currentMonth;
+
+document.getElementById("challengeMonth").innerText = currentMonth;
+</script>
 </html>
