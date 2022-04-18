@@ -6,68 +6,6 @@ echo "$component_HTMLHeader";?>
 <main>
 <?php echo "$component_Nav";?>
 
-<!-- begin bootstrap container -->
-<div class="container-fluid px-0 mx-auto">
-
-	<!-- begin jumbotron -->
-	<div id="challengeJumbotron" class="jumbotron row ml-0">
-
-		<!-- begin challenges row -->
-		<div id="about-ChallengesRow" class="row d-flex align-items-center gulfBlueBG bg-gradient">
-
-			<!-- begin title section -->
-			<section class="col-sm py-0">
-				<h1 class="display-4 text-black text-center">Monthly Entrepreneur Challenge</h1>
-				<p class="lead text-black text-center">Challenge your entrepreneurial skills with our challenges. Check back each month to discover a new challenge! Don't forget to show us how you do, tag us in your social media posts using the hashtag #TheGULF</p>
-			</section>
-			<!-- end title section -->
-
-			<p id="demo"></p>
-
-			<!-- begin months section -->
-			<section id="monthsSection" class="col-sm py-0">
-
-				<div id="m1" class="month">
-					<h4 class="display-4 text-white text-center">Trade-Up Challenge</h4>
-					<p class="lead text-white text-center">This week, your challenge is to turn $5 into at least $25. <br> You get to keep every dollar you make, so get creative! <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
-				</div>
-
-				<div id="m2" class="month">
-					<h4 class="display-4 text-white text-center">3 in 5 Challenge</h4>
-					<p class="lead text-white text-center">Come up with three business ideas in five minutes or less, then write a business plan for your favorite one. <br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
-				</div>
-
-				<div id="m3" class="month">
-					<h4 class="display-4 text-white text-center">Invention Challenge</h4>
-					<p class="lead text-white text-center">Invent your own product and come up with a five minute business pitch as if you were pitching your product to real investors.<br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
-				</div>
-
-				<div id="m4" class="month">
-					<h4 class="display-4 text-white text-center">Flipping Challenge</h4>
-					<p class="lead text-white text-center">Find an item you can buy cheaply from a garage sale, thrift store or friend. Buy the item, and see how quickly you can sell it for a profit.<br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
-				</div>
-
-				<div id="m5" class="month">
-					<h4 class="display-4 text-white text-center">Mentoring Challenge</h4>
-					<p class="lead text-white text-center">Connect with a local business owner, either in person or virtually, and ask them what they've learned since starting their own business.<br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
-				</div>
-
-				<div id="m6" class="month">
-					<h4 class="display-4 text-white text-center">Innovation Challenge</h4>
-					<p class="lead text-white text-center">Think of your absolute favorite product. What do you like about it? What makes it great? Now, think of three ways this product could be even better.<br> Share your success with us on Instagram and use the hashtag #TheGulf <br> Check back next month for another challenge!</p>
-				</div>
-
-			</div>
-			<!-- end challenges row -->
-
-		</section>
-		<!-- end months section -->
-
-	</div>
-	<!-- end jumbotron -->
-</div>
-<!--end bootstrap container -->
-
 <!-- begin alternate way of showing the challenge -->
 <div id="challengesContainer" class="container-fluid px-0 mx-auto">
 	<div class="card text-center">
@@ -200,6 +138,21 @@ echo "$component_HTMLHeader";?>
 		break;
 	}
 
+	//make an array containing the number of days in each month, in order from january to december
+	lengthOfMonthArray = [31,28,31,30,31,30,31,31,30,31,30,31];
+
+	//Get the number for today's date, e.g. "18" for april 18th
+	let todaysDateNumber = date.prototype.getDate();
+	console.log('todaysDate = ' + todaysDateNumber);
+
+	//get the number of days in this month
+	let daysInCurrentMonth = lengthOfMonthArray[d.getMonth()];
+	console.log('daysInCurrentMonth = ' + daysInCurrentMonth);
+
+	//total days in this month - today's date = days left in this month. Challenge resets on first day of each month, so add one to get the number of days until reset.
+	let daysUntilCountdownResets = daysInCurrentMonth - todaysDateNumber + 1;
+
+
 	console.log('challengeTitle = ' + challengeTitleArray[d.getMonth()]);
 	console.log('challengeDescription = ' + challengeDescriptionArray[d.getMonth()]);
 	//Print the current month in the demo element.
@@ -210,6 +163,8 @@ echo "$component_HTMLHeader";?>
 	document.getElementById("challengeDescription").innerHTML = challengeDescriptionText + ' ' + shareMsg;
 	//Print the title of the challenge.
 	document.getElementById("challengeTitle").innerHTML = challengeTitleText + ' Challenge';
+	//Print the remaining days for this challenge
+	document.getElementById("daysLeft").innerHTML = daysUntilCountdownResets + ' days until our next challenge!';
 
 </script>
 </body>
