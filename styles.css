@@ -611,6 +611,7 @@ footer{
 #homepageHeroJumbotron{
   height:100vh;
 }
+
 /*Styling Homepage Sponsorship Row Background */
 #getinvolved-SponsorshipRow{
   background-color:#FFEBE6;
@@ -639,4 +640,51 @@ footer{
 #challengeBorder{
   top: 25%;
   transform: translateY(-25%);
+}
+
+/* Index.php Hero Video for Desktop */
+.video-container{
+  width: 100vw;
+  height: 100vh;
+}
+
+#videoContainer iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-container iframe {
+    /* height = 100 * (9 / 16) = 56.25 */
+    height: 56.25vw;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video-container iframe {
+    /* width = 100 / (9 / 16) = 177.777777 */
+    width: 177.78vh;
+  }
+}
+#text{
+  position: absolute;
+  color: #FFFFFF;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#videoH1{
+  text-shadow: 2px 2px 5px #000000;
+}
+
+/*End homepage video for desktop */
+
+/* Begin homepage hero for mobile (non-video using bridge pic as hero img) */
+
+#bridgePicH1{
+  text-shadow: 2px 2px 5px #000000;
 }
