@@ -12,8 +12,17 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
 <main>
 <?php echo "$component_Nav";?>
 
-<div class="container-fluid fullwidthBridgePic px-0 mx-auto">
+<div class="container-fluid px-0 mx-auto">
 
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/CGYUh6xWKTg?controls=0&autoplay=1&mute=1&playlist=CGYUh6xWKTg&loop=1"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+    <!-- Commenting out hero jumbotron to replace with video
     <div id="homepageHeroJumbotron" class="jumbotron row mx-4">
       <h1 class="display-4 text-white pt-5">Giving Us Leadership And Focus</h1>
       <p class="lead text-white my-0 py-0">Delivering fun, positive growth opportunities to DFW's youth since 2016.</p>
@@ -21,54 +30,16 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
       </p>
     </div>
+    -->
+
+
     <div id="testimonialsJumbotron" class="jumbotron row mx-4">
     </div>
-    <div id="statisticsJumbotron" class="row gulfBlueBG">
-      <!-- counter attempt with code from codepen -->
-      <section id="counter" class="counter">
-          <div class="col">
-              <div class="overlay p-y-3">
-                  <div class="container">
-                      <div class="row">
-                          <div class="main_counter_content flexStatisticBoxes text-center white-text wow fadeInUp mx-auto">
-                              <div class="col-md-3">
-                                  <div class="single_counter p-y-2 m-t-1 mx-4 gulfBlueBG">
-                                      <i class="fa fa-heart m-b-1 gulfBlueBG text-white"></i>
-                                      <h2 class="statistic-counter gulfBlueBG text-white">100</h2>
-                                      <p class="gulfBlueBG text-white">Side Hustles Started</p>
-                                  </div>
-                              </div>
-                              <div class="col-md-3">
-                                  <div class="single_counter p-y-2 m-t-1 mx-4 gulfBlueBG">
-                                      <i class="fa fa-check m-b-1 gulfBlueBG text-white"></i>
-                                      <h2 class="statistic-counter gulfBlueBG text-white">400</h2>
-                                      <p class="gulfBlueBG text-white">Volunteering Events</p>
-                                  </div>
-                              </div>
-                              <div class="col-md-3">
-                                  <div class="single_counter p-y-2 m-t-1 mx-4 gulfBlueBG">
-                                      <i class="fa fa-refresh m-b-1 gulfBlueBG text-white"></i>
-                                      <h2 class="statistic-counter gulfBlueBG text-white">312</h2>
-                                      <p class="gulfBlueBG text-white">Internships Created</p>
-                                  </div>
-                              </div>
-                              <div class="col-md-3">
-                                  <div class="single_counter p-y-2 m-t-1 mx-4 gulfBlueBG">
-                                      <i class="fa fa-check m-b-1 gulfBlueBG text-white"></i>
-                                      <h2 class="statistic-counter gulfBlueBG text-white">8</h2>
-                                      <p class="gulfBlueBG text-white">Schools Involved</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section><!-- End of counter Section -->
-    </div>
+    <!--
     <div id="homepageGoogleMapsEmbed">
-    <?php echo "$component_GoogleMapsEmbed"?>
+      <?php //echo "$component_GoogleMapsEmbed"?>
     </div>
+    -->
   <!-- end innerContainer-->
 </div>
 <!--end container-fluid -->
