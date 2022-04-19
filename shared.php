@@ -87,7 +87,7 @@ if ($_SESSION['admin_access'] !== true){
           </li>
 
           <li class=\"nav-item\">
-            <a class=\"nav-link \" href=\"challenge.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link text-nowrap \" href=\"challenge.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
             Monthly Challenge
             </a>
           </li>
@@ -156,7 +156,7 @@ if ($_SESSION['admin_access'] == true){
           </li>
 
           <li class=\"nav-item\">
-            <a class=\"nav-link \" href=\"challenge.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link text-nowrap \" href=\"challenge.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
             Monthly Challenge
             </a>
           </li>
