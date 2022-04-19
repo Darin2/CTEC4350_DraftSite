@@ -630,3 +630,13 @@ footer{
   column-gap: 20px;
 }
 /* End volunteer page */
+
+/* Challenges Page */
+#challengesContainer{
+  height:100vh;
+
+}
+#challengeBorder{
+  top: 25%;
+  transform: translateY(-25%);
+}

@@ -3,18 +3,18 @@ include("shared.php");
 echo "$component_HTMLHeader";?>
 
 <body>
-<main>
+<main class="fullwidthBridgePic">
 <?php echo "$component_Nav";?>
 
 <!-- begin alternate way of showing the challenge -->
-<div id="challengesContainer" class="container-fluid px-5 mx-2 gulfBlueBG">
-	<div class="col card text-center">
+<div id="challengesContainer" class="container-fluid col-lg-6 col-md-8 col-sm-12 px-5 mx-auto fullwidthBridgePic">
+	<div id="challengeBorder" class="col card text-center">
 
-	  <div class="card-header col-lg-6 col-md-8 col-sm-12 card text-center mx-auto">
+	  <div class="card-header">
 	   <p id="challengeMonth" class="display-4">month</p>
 	  </div>
 
-	  <div class="card-body bg-dark">
+	  <div class="card-body gulfBlueBG text-center">
 	    <h5 id="challengeTitle" class="card-title text-white">challenge title</h5>
 	    <p id="challengeDescription" class="card-text text-white">challenge description with social media reminder goes here (IG: thegulf_tx)</p>
 	  </div>
@@ -26,6 +26,8 @@ echo "$component_HTMLHeader";?>
 	</div>
 </div>
 <!-- end alternate challenge version -->
+
+
 </main>
 <?php echo "$component_Footer";?>
 <!-- javascript that makes the content change each month -->
@@ -46,19 +48,19 @@ echo "$component_HTMLHeader";?>
 
 	let challengeDescriptionArray = [
 
-		"This week, your challenge is to turn $5 into at least $25. You get to keep every dollar you make, so get creative!",
+		"This week, your challenge is to turn $5 into at least $25.<br> You get to keep every dollar you make, so get creative!",
 
 		"Come up with three business ideas in five minutes or less, then write a business plan for your favorite one.",
 
-		"Invent your own product and come up with a five minute business pitch as if you were pitching your product to real investors.",
+		"Invent your own product and come up with a five minute business pitch<br> as if you were pitching your product to real investors.",
 
-		"Find an item you can buy cheaply from a garage sale, thrift store or friend. Buy the item, and see how quickly you can sell it for a profit.",
+		"Find an item you can buy cheaply from a garage sale, thrift store or friend.<br> Buy the item, and see how quickly you can sell it for a profit.",
 
-		"Connect with a local business owner, either in person or virtually, and ask them what they've learned since starting their own business.",
+		"Connect with a local business owner, either in person or virtually,<br> and ask them what they've learned since starting their own business.",
 
-		"Think of your absolute favorite product. What do you like about it? What makes it great? Now, think of three ways this product could be even better."]
+		"Think of your absolute favorite product.<br> What do you like about it? What makes it great?<br> Now, think of three ways this product could be even better."]
 
-	let shareMsg = "Share your success with us on Instagram and use the hashtag #TheGulf. Check back next month for another challenge!";
+	let shareMsg = "<br>Share your success with us on Instagram and use the hashtag #TheGulf. Check back next month for another challenge!";
 
 	let challengeTitleText = "";
 	let challengeDescriptionText = "";
@@ -162,7 +164,7 @@ echo "$component_HTMLHeader";?>
 	//Print the description of the challenge with the "share on social media" message attached
 	document.getElementById("challengeDescription").innerHTML = challengeDescriptionText + ' ' + shareMsg;
 	//Print the title of the challenge.
-	document.getElementById("challengeTitle").innerHTML = challengeTitleText + ' Challenge';
+	document.getElementById("challengeTitle").innerHTML = 'The ' + challengeTitleText + ' Challenge';
 	//Print the remaining days for this challenge
 	document.getElementById("daysLeft").innerHTML = daysUntilCountdownResets + ' days until our next challenge!';
 
