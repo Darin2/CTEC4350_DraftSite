@@ -12,7 +12,15 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
 <main>
 <?php echo "$component_Nav";?>
 
-<div class="container-fluid fullwidthBridgePic px-0 mx-auto">
+<div class="video-section">
+  <div class="gulf-video">
+    <video autoplay loop>
+      <source src="img/Demo_1.mp4" type="video/mp4">
+      Your browser does not support mp4 videos, please switch browsers.
+    </video>
+  </div>
+</div>
+<!-- <div class="container-fluid fullwidthBridgePic px-0 mx-auto">
 
     <div id="homepageHeroJumbotron" class="jumbotron row mx-4">
       <h1 class="display-4 text-white pt-5">Giving Us Leadership And Focus</h1>
@@ -20,6 +28,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       <p class="lead">
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
       </p>
+    </div>  -->
     </div>
     <div id="testimonialsJumbotron" class="jumbotron row mx-4">
     </div>
