@@ -30,12 +30,25 @@ header("Location: admin_loginpage.php");
               </div>
               <ul class="list-group list-group-flush mb-0 px-0">
                 <li class="list-group-item px-0 py-0 border-0"><a href="admin_contactFormLeads.php" class="list-group-item list-group-item-action">"Contact Us" Messages</a></li>
-                <li class="list-group-item px-0 py-0 border-0"><a href="admin_memberFormLeads.php" class="list-group-item list-group-item-action">Membership Applicant Messages</a></li>
-                <li class="list-group-item px-0 py-0 border-0"><a href="admin_volunteerInterestFormLeads.php" class="list-group-item list-group-item-action">Volunteer Applicant Messages</a></li>
-                <li class="list-group-item px-0 py-0 border-0"><a href="admin_sponsorFormLeads.php" class="list-group-item list-group-item-action">Sponsorship Messages</a></li>
+
               </ul>
             </div>
             <!-- End my messages card.-->
+
+            <!-- Begin Applicants card -->
+            <div class="card mb-4 pb-0">
+              <div class="card-header bg-primary text-white text-left pl-4">
+                Applicants
+              </div>
+              <ul class="list-group list-group-flush mb-0 px-0">
+                <li class="list-group-item px-0 py-0 border-0"><a href="admin_memberFormLeads.php" class="list-group-item list-group-item-action">Membership Applicants</a></li>
+                <li class="list-group-item px-0 py-0 border-0"><a href="admin_volunteerInterestFormLeads.php" class="list-group-item list-group-item-action">Volunteer Applicants</a></li>
+                <li class="list-group-item px-0 py-0 border-0"><a href="admin_diamondLeagueInterestFormLeads.php" class="list-group-item list-group-item-action">The Diamond League Applicants</a></li>
+                <li class="list-group-item px-0 py-0 border-0"><a href="admin_YBAPFormLeads.php" class="list-group-item list-group-item-action">Youth Business Apprenticeship Applicants</a></li>
+                <li class="list-group-item px-0 py-0 border-0"><a href="admin_sponsorFormLeads.php" class="list-group-item list-group-item-action">Sponsorship Applicants</a></li>
+              </ul>
+            </div>
+            <!-- end Applicants Card -->
 
             <!-- Begin Edit Site card.-->
             <div class="card mb-4 pb-0">
