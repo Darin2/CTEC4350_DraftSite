@@ -107,9 +107,16 @@ nav{
 
 /* End of nav bar styling*/
 
-
-
-
+/* hero video styling */
+.luxe-video {
+    width: 100%;
+    overflow-x: hidden;
+}
+.luxe-video > video {
+  max-height: 100%;
+  max-width: 100%;
+}
+/* end hero video styling */
 
 /*Styling programs page */
 .programs-h1 {
