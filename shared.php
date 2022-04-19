@@ -174,6 +174,10 @@ if ($_SESSION['admin_access'] == true){
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
               <li><a class=\"dropdown-item\" href=\"admin_contactFormLeads.php\">Contact Form Leads</a></li>
               <li><a class=\"dropdown-item\" href=\"admin_volunteerInterestFormLeads.php\">Volunteer Leads</a></li>
+              <li><a class=\"dropdown-item\" href=\"admin_memberFormLeads.php\">Membership Leads</a></li>
+              <li><a class=\"dropdown-item\" href=\"admin_sponsorFormLeads.php\">Sponsorship Leads</a></li>
+              <li><a class=\"dropdown-item\" href=\"admin_diamondLeagueInterestFormLeads.php\">DL Leads</a></li>
+              <li><a class=\"dropdown-item\" href=\"admin_YBAPInterestFormLeads.php\">YBAP Leads</a></li>
             </ul>
           </li>
 
@@ -198,8 +202,8 @@ $component_Footer = '
                 <li><a class="text-white" href="index.php">Home</a></li>
                 <li><a class="text-white" href="admin_loginpage.php">Log in</a></li>
                 <li><a class="text-white" href="about.php">About</a></li>
-                <li><a class="text-white" href="#">Donate</a></li>
-                <li><a class="text-white" href="#">Membership</a></li>
+                <li><a class="text-white" href="faq.php">FAQ</a></li>
+                <li><a class="text-white" href="membership.php">Membership</a></li>
                 <li><a class="text-white" href="contact.php">Contact Us</a></li>
               </ul>
             </div>

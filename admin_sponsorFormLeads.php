@@ -44,7 +44,7 @@ else if (($_SESSION['admin_access'] == true)){
 		//Creating a string containing our database query results in  big table, with the <th> below as our headings
 		$output = "
     <div class='col bg-dark my-0 py-0'>
-    <h1 class='display-4 text-white py-4 my-4'>Contact Form Leads</h1>
+    <h1 class='display-4 text-white py-4 my-4'>Sponsorship Leads</h1>
     </div>
     <table class='table table-dark'>
     <thead>
