@@ -66,17 +66,6 @@ echo "$component_HTMLHeader";?>
 
     <!-- Our Impact row -->
     <div id="about-OurImpactRow"class="row d-flex align-items-center offwhiteBG">
-      <!-- center-aligned section -->
-      <section class="col-sm py-0">
-        <h1 class="display-4 text-black text-center">Our Impact</h1>
-        <p class="lead text-black text-center mx-5">We've led over 100 volunteering events and 46 youth leadership programs impacting over 6,000 people in 5 cities.</p>
-        <p class="lead text-black text-center">
-        Want to be a part of the action?
-        </p>
-        <p class="lead w-25 d-flex justify-content-center mx-auto">
-          <a class="btn btn-primary btn-lg d-flex justify-content-center" href="volunteer.php" role="button">Get Involved</a>
-        </p>
-      </section>
       <section class="col-sm py-0">
         <!-- Our Impact lottie animation. Should show up on right side of text for tablet and desktop. Should show up on top of the text for mobile.  -->
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -89,6 +78,18 @@ echo "$component_HTMLHeader";?>
         </lottie-player>
 
       </section>
+      <!-- text section -->
+      <section class="col-sm py-0">
+        <h1 class="display-4 text-black text-center">Our Impact</h1>
+        <p class="lead text-black text-center mx-5 px-3">We've led over 100 volunteering events and 46 youth leadership programs impacting over 6,000 people in 5 cities.</p>
+        <p class="lead text-black text-center">
+        Want to be a part of the action?
+        </p>
+        <p class="lead w-25 d-flex justify-content-center mx-auto">
+          <a class="btn btn-primary btn-lg d-flex justify-content-center" href="volunteer.php" role="button">Get Involved</a>
+        </p>
+      </section>
+
     </div>
 
     <div id="about-QuotesRow" class="row d-flex align-items-center bg-dark bg-gradient">
