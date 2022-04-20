@@ -120,7 +120,7 @@ header("Location: admin_loginpage.php");
 
       //check if there was one record returned
       if($stmt->num_rows == 1){
-        echo "<div class='text-white'>Debugging:  on line 78, stmt->num_rows == 1. there was one record</div><br>";
+        //echo "<div class='text-white'>Debugging:  on line 78, stmt->num_rows == 1. there was one record</div><br>";
         $stmt->fetch();
         $stmt->close();
         $credentialsMatched = 1;
@@ -136,7 +136,7 @@ header("Location: admin_loginpage.php");
   }
 
   //If there was a matching pair of credentials in the database AND the new passwords entered into the form matched, UPDATE this particular user's password to equal $newPasswordHashed
-  if($credentialsMatched && $newPasswordsMatched){
+  if((array_key_exists('Submit1', $_POST)) && $credentialsMatched && $newPasswordsMatched){
       //echo "<div class='text-white'>Debugging: on line 100, the credentials matched and the new passwords matched</div> <br>";
       $sql = "UPDATE `gulfAdminCredentials` SET adminPassword = ? WHERE adminID = ?";
 
@@ -152,9 +152,9 @@ header("Location: admin_loginpage.php");
         $stmt->execute();
         //$stmt->fetch();
         $stmt->close();
-        $msg = "<div class='card-body gulfBlueBG text-center'>
-    	    <h5 id='challengeTitle' class='card-title text-white'>Your password has been reset.</h5>
-    	    <p id='challengeDescription' class='card-text text-white'>Please remember to store your password in a safe location. To reset your password again, you must access this page again from the <a href='admin_controlpanel.php'>admin panel</a>. Refreshing this page will resubmit the information you just entered and return an error.</p>
+        echo "<div class='card-body gulfBlueBG text-center fixed-top'>
+    	    <h5 class='card-title text-white'>Your password has been reset.</h5>
+    	    <p class='card-text text-white'>Please remember to store your password in a safe location. To reset your password again, you must access this page again from the <a href='admin_controlpanel.php'>admin panel</a>. Refreshing this page will resubmit the information you just entered and return an error.</p>
     	  </div>";
         }
 
@@ -163,5 +163,26 @@ header("Location: admin_loginpage.php");
           //$stmt->fetch();
           $stmt->close();
         }
+      }
+      else if ((array_key_exists('Submit1', $_POST)) && ($credentialsMatched) && ($newPasswordsMatched != 1)){
+        echo "<div class='card-body gulfBlueBG text-center fixed-top'>
+              <h5 class='card-title text-white'>Error resetting password.</h5>
+              <div class='text-white'>You entered the correct Current Password, but your new passwords did not match. Please try again.</div>
+              </div>
+              <br>";
+      }
+      else if ((array_key_exists('Submit1', $_POST)) && ($credentialsMatched != 1) && ($newPasswordsMatched)){
+        echo "<div class='card-body gulfBlueBG text-center fixed-top'>
+              <h5 class='card-title text-white'>Error resetting password.</h5>
+              <div class='text-white'>Your New Passwords matched, but the Current Password you entered was incorrect. Please try again.</div>
+              </div>
+              <br>";
+      }
+      else if ((array_key_exists('Submit1', $_POST)) && ($credentialsMatched != 1) && ($newPasswordsMatched != 1)){
+        echo "<div class='card-body gulfBlueBG text-center fixed-top'>
+              <h5 class='card-title text-white'>Error resetting password.</h5>
+              <div class='text-white'>Your New Passwords did not match, and the Current Password was incorrect. Please try again.</div>
+              </div>
+              <br>";
       }
 ?>
