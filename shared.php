@@ -191,7 +191,7 @@ if ($_SESSION['admin_access'] == true){
 
 $component_Footer = '
 <footer>
-      <div class="container-fluid bg-dark position-fixed bottom-0">
+      <div class="container-fluid bg-dark">
         <div class="row">
           <div class="col mt-3">
             <div class="footer-section">
