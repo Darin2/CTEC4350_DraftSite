@@ -6,6 +6,10 @@ include("shared.php");
 // make database connection
  $conn = new PDO("mysql:host=localhost;dbname=vmt8625_4350", "vmt8625_class4350", "theGULF2022");
 
+ //Preventing a non-admin user from accessing the page by typing the URL into the address bar
+ if ($_SESSION['admin_access'] != true){
+ header("Location: admin_loginpage.php");
+ }
 // establishing statement object
 //$stmt = $conn->stmt_init();
 

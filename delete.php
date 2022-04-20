@@ -12,6 +12,11 @@ include("shared.php");
 //$conn = mysqli_connect("localhost", "vmt8625_class4350", "theGULF2022", "vmt8625_4350");
 //$conn = dbConnect();
 
+//Preventing a non-admin user from accessing the page by typing the URL into the address bar
+if ($_SESSION['admin_access'] != true){
+header("Location: admin_loginpage.php");
+}
+
 	// check if FAQ existed
 	$sql = "SELECT * FROM faqs WHERE id = ?";
 	$statement = $conn->prepare($sql);

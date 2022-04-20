@@ -4,7 +4,7 @@ include("shared.php");
 include("dbconn.inc.php");
 $conn = dbConnect();
 
-//Redirect users without admin access to the home page.
+//Preventing a user from accessing this page by simply typing the URL into the address bar
 if ($_SESSION['admin_access'] != true){
 header("Location: admin_loginpage.php");
 }
