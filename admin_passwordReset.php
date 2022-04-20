@@ -89,7 +89,7 @@ if (array_key_exists('Submit1', $_POST)){
         Found this at https://www.sitepoint.com/community/t/efficient-way-to-check-if-a-mysql-query-returned-no-results/10514
         Hopefully this will allow me to check whether the statement returned anything */
   }
-  echo "debug: on line 63, stmt did not prepare"
+  echo "debug: on line 63, stmt did not prepare";
 }
 
 //If there was a matching pair of credentials in the database AND the new passwords entered into the form matched, UPDATE this particular user's password to equal $newPasswordHashed
@@ -118,7 +118,7 @@ if($credentialsMatched && $newPasswordsMatched){
       }
 
     }
-}
+
 ?>
 
 <!-- Headers-->
