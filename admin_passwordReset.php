@@ -9,7 +9,6 @@ if ($_SESSION['admin_access'] != true){
 header("Location: admin_loginpage.php");
 }
 
-
 /*This file has two ways of logging in our user: a plain-text login system and a database login system.
 
 The plain-text login system checks if the user has entered "admin" as their username and "123" as their password. This is for easy login during testing and should be removed at launch.
@@ -24,25 +23,39 @@ The user input being validated in this script comes from the HTML form below.
 //Only execute this code if the user has submitted something to the form
 if (array_key_exists('Submit1', $_POST)){
 
-
 /*******************************************/
 /********** Database login system *********/
 /******************************************/
 
   //Execute this code if the user submits the form
 
-  //Store the username and password entered by the user in variables
-    $login_attempt_username = $_POST['username_string'];
-    $login_attempt_password = hash('sha256', $_POST['password_string']); //this line encrypts the password string using sha256. Must implement the same encryption on the password entered at registration (registration_page.php) for this to work with registration. Not needed for current implementation because we don't have a password registration system.
+  //Store the username and "Current password" entered by the user in variables
+  $reset_attempt_username = $_POST['username_string'];
+  $reset_attempt_password = hash('sha256', $_POST['currentPassword']); //this line encrypts the password string using sha256. Must implement the same encryption on the password entered at registration (registration_page.php) for this to work with registration. Not needed for current implementation because we don't have a password registration system.
+
+  //Store the input from the "new password" field
+  $newPassword = $_POST['newPassword'];
+  //Store the input from the "confirm new password" field.
+  $newPasswordConfirm = $_POST['newPasswordConfirm'];
+
+  //Create a hashed version of the new password that we'll store in the database if $newPassword and $newPasswordConFirm are equal
+  $newPasswordHashed = hash('sha256', $_POST['newPasswordConfirm']);
+
+  if ($newPassword == $newPasswordConfirm){
+    $newPasswordsMatched = 1;
+  }
+  else if ($newPassword != $newPasswordConfirm){
+    $newPasswordsMatched = 0;
+  }
 
   /*Building a sql query that will use bindparam() to deter SQL injection attacks
 
     This query will go to the credentials table (gulfAdminCredentials) and look for a record that has matching username and password.
 
-    If the database finds a record for this query, we want to give admin access to the user.
+    If the database finds a record for this query, we want to allow the user to reset their password (with a SQL update query)
   */
 
-  $sql = "SELECT adminUsername, adminPassword FROM `gulfAdminCredentials` WHERE adminUsername = ? AND adminPassword = ?";
+  $sql = "SELECT adminUsername, adminPassword, adminID FROM `gulfAdminCredentials` WHERE adminUsername = ? AND adminPassword = ?";
 
   $stmt = $conn->stmt_init();
 
@@ -50,41 +63,23 @@ if (array_key_exists('Submit1', $_POST)){
   if($stmt->prepare($sql)){
     //echo "Debugging: the statement prepared<br>";
 
-    $stmt->bind_param('ss', $login_attempt_username, $login_attempt_password);
+    //bind the username and (hashed)password entered by the user
+    $stmt->bind_param('ss', $reset_attempt_username, $reset_attempt_password);
 
     $stmt->execute();
 
-    $stmt->bind_result($adminUsername,$adminPassword);
+    //Grab the results of the query
+    $stmt->bind_result($adminUsername,$adminPassword, $adminID);
 
+    //Store the query results
     $stmt->store_result();
 
+    //check if there was one record returned
     if($stmt->num_rows == 1){
-      //echo "Debugging:  $stmt->num_rows == 1. there was one record<br>";
+      echo "Debugging:  on line 78, stmt->num_rows == 1. there was one record<br>";
       $stmt->fetch();
-      //I think I can just give the user access right here because the statement wouldn't return a result if the credentials didn't match
-
-      //***Giving access to the user via session variable
-      //Start a session
-      $_SESSION = array();
-      $_SESSION['admin_Name'] = "Administrator";
-
-      /*Debugging stuff*/
-      //echo "Checking what's inside the session welcome page username thing = ".$_SESSION['welcomepageusername'];
-      //echo "Debugging: username = $username";
-
-      //Give admin level access
-      $_SESSION['admin_access'] = true;
-
-      /*Debugging stuff*/
-      //echo "The SQL query returned a result, so the password was correct and you're now logged in";
-
       $stmt->close();
-
-      //Our user is logged in so we redirect them to the welcome page
-      //Note that we can't echo ANYTHING to the page prior to this line or it won't work.
-      header("Location: admin_controlpanel.php");
-      exit;
-
+      $credentialsMatched = 1;
     }
     //if stmt->num_rows was not ==1, let the user know their username/password weren't correct
     else{
@@ -94,36 +89,74 @@ if (array_key_exists('Submit1', $_POST)){
         Found this at https://www.sitepoint.com/community/t/efficient-way-to-check-if-a-mysql-query-returned-no-results/10514
         Hopefully this will allow me to check whether the statement returned anything */
   }
-
+  echo "debug: on line 63, stmt did not prepare"
 }
-  ?>
+
+//If there was a matching pair of credentials in the database AND the new passwords entered into the form matched, UPDATE this particular user's password to equal $newPasswordHashed
+if($credentialsMatched && $newPasswordsMatched){
+    echo "Debugging: on line 100, the credentials matched and the new passwords matched <br>";
+    $sql = "UPDATE `gulfAdminCredentials` SET adminPassword = ? WHERE adminID = ?";
+
+    $stmt = $conn->stmt_init();
+
+    if($stmt->prepare($sql)){
+      echo "Debugging: the SQL statement for updating the password prepared<br>";
+      //echo "Debugging: the statement prepared<br>";
+
+      //bind the hashed admin password and the adminID (primary key identifying this particular record)
+      $stmt->bind_param('si', $newPasswordHashed, $adminID);
+
+      $stmt->execute();
+      //$stmt->fetch();
+      $stmt->close();
+      }
+
+      else {
+        echo "Debugging: the UPDATE SQL statement on line 98 did not prepare on line 102<br>";
+        //$stmt->fetch();
+        $stmt->close();
+      }
+
+    }
+}
+?>
 
 <!-- Headers-->
 <?php
     echo "$component_HTMLHeader";
 ?>
-<!-- Printing Login Form -->
+<!-- Printing Password Reset Form -->
 <body class="bg-dark">
   <main class="bg-dark">
   <!-- begin bootstrap container -->
   <div class="container bg-dark my-5">
-    <h1 class="text-white text-center display-4 py-3"> Please Log In to Access the Admin Panel.</h2>
+    <h1 class="text-white text-center display-4 py-3">Reset Password</h2>
 
     <!-- Form that sends the password string to the authentication page -->
     <form action="" class="container rounded py-1 col-lg-5 col-md-8 col-sm-12 bg-dark bg-gradient" method="post">
 
-    <label for="username" class="text-white" name="Username">Username</label>
-    <!-- username field -->
-    <input type="text" name="username_string" class="form-control" placeholder="">
-    <br>
+      <label for="username" class="text-white" name="Username">Username</label>
+      <!-- username field -->
+      <input id="username_string" type="text" name="username_string" class="form-control" value="<?php $_SESSION['admin_Username']?>">
+      <br>
 
-    <label for="password" class="text-white" name="Password">Password</label>
-    <!--Input field that takes the password.-->
-    <input type="password" class="form-control" name="password_string" placeholder="">
-    <br>
+      <label for="password" class="text-white" name="Password">Current Password</label>
+      <!--Input field that takes the current password.-->
+      <input type="password" class="form-control" name="currentPassword" placeholder="">
+      <br>
 
-    <!-- submit button. Name of this button will be used in the session script. I have no idea why it has Next as a value. May need to change. -->
-    <input type="submit" class="form-control btn-primary" name="Submit1" value="Log In" />
+      <label for="password" class="text-white" name="Password">New Password</label>
+      <!--Input field that takes the new password.-->
+      <input id="newPassword" type="password" class="form-control" name="newPassword" placeholder="">
+      <br>
+
+      <label for="password" class="text-white" name="Password">Confirm New Password</label>
+      <!--Input field that takes the new password.-->
+      <input id="newPasswordConfirm" type="password" class="form-control" name="newPasswordConfirm" placeholder="">
+      <br>
+
+      <!-- submit button. Name of this button will be used in the session script. I have no idea why it has Next as a value. May need to change. -->
+      <input type="submit" class="form-control btn-primary" name="Submit1" value="Log In" />
 
     </form>
   </div>

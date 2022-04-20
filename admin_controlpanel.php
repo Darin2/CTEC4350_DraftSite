@@ -62,6 +62,17 @@ header("Location: admin_loginpage.php");
             </div>
             <!-- End Edit Site card.-->
 
+            <!-- Begin Account Settings Card.-->
+            <div class="card mb-4 pb-0">
+              <div class="card-header bg-primary text-white text-left pl-4">
+                My Account
+              </div>
+              <ul class="list-group list-group-flush mb-0 px-0">
+                <li class="list-group-item px-0 py-0 border-0"><a href="admin_passwordReset.php" class="list-group-item list-group-item-action">Change Password</a></li>
+              </ul>
+            </div>
+            <!-- End Account settings card.-->
+
 
           </div>
           <!-- end admin links section-->
