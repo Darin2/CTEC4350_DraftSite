@@ -216,16 +216,12 @@ $component_Footer = '
             <div class="footer-section">
               <h5 class="text-white">Stay Connected with us!</h5>
               <ul class="sm-icons">
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/thegulf_tx/"><i class="fa fa-instagram"></i></a></li>
               </ul>
             </div>
           </div>
         </div>
-        <p class="footnote text-white">Website by Something Visionary - CTEC 4350 @ UT Arlington - For class use only</p>
+        <p class="footnote text-white text-center">Website by Something Visionary - CTEC 4350 @ UT Arlington - For class use only</p>
       </div>
     </footer>';
 
