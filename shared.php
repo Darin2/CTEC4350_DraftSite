@@ -214,7 +214,7 @@ $component_Footer = '
           </div>
           <div class="col mt-3">
             <div class="footer-section">
-              <h5 class="text-white">Stay Connected with us!</h5>
+              <h5 class="text-white">Social Media</h5>
               <ul class="sm-icons">
                 <li><a href="https://www.instagram.com/thegulf_tx/"><i class="fa fa-instagram"></i></a></li>
               </ul>
