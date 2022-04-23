@@ -163,18 +163,8 @@ window.onload = init;
           //  the following code prints a confirmation message at the top of the contact page when the user successfully submits the form.
   				$output = "
           <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
-          <h3 class='display-4 mx-auto my-5 text-white'>Thanks for reaching out, ".$memberFirstName."!<p>We'll get back to you soon.</h3>
-          <p class='lead text-white'>In the mean time, have you connected with us on social media?</p>
-          <div class='col mt-3 mx-auto'>
-            <div class='footer-section'>
-              <ul class='sm-icons'>
-                <li><a href='#'><i class='fa fa-instagram'></i></a></li>
-                <li><a href='#'><i class='fa fa-linkedin'></i></a></li>
-                <li><a href='#'><i class='fa fa-facebook'></i></a></li>
-                <li><a href='#'><i class='fa fa-twitter'></i></a></li>
-                <li><a href='#'><i class='fa fa-youtube'></i></a></li>
-              </ul>
-            </div>
+          <h3 class='display-4 mx-auto my-5 text-white'>We're so glad you're inquiring about membership, ".$memberFirstName."!<p>We'll get back to you within 48 hours.</h3>
+          <p class='lead text-white'>In the mean time, have you completed our <a href='challenge.php>monthly challenge?</a></p>
           </div>
           </div>
           ";
@@ -187,7 +177,7 @@ window.onload = init;
   				//$stmt->execute() failed.
           //stackoverflow error printing code for debugging
           //printf("Error: %s.\n", $stmt->error);
-  				$output = "<div>Form submission failed.  Please try again or contact us via phone (817) 558 - 4853). We can also be reached on RingCentral.</div>";
+  				$output = "<div>We've failed to submit this form to our servers.  Please try again or contact us via phone (817) 558 - 4853). We can also be reached on RingCentral.</div>";
   			}
   		} else {
   			// statement is not successfully prepared (issues with the query).

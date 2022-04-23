@@ -168,11 +168,7 @@ echo "$component_HTMLHeader";?>
           <div class='col mt-3 mx-auto'>
             <div class='footer-section'>
               <ul class='sm-icons'>
-                <li><a href='#'><i class='fa fa-instagram'></i></a></li>
-                <li><a href='#'><i class='fa fa-linkedin'></i></a></li>
-                <li><a href='#'><i class='fa fa-facebook'></i></a></li>
-                <li><a href='#'><i class='fa fa-twitter'></i></a></li>
-                <li><a href='#'><i class='fa fa-youtube'></i></a></li>
+              <li><a href='https://www.instagram.com/thegulf_tx'><i class='fa fa-instagram'></i></a></li>
               </ul>
             </div>
           </div>

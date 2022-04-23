@@ -163,8 +163,8 @@ window.onload = init;
           //  the following code prints a confirmation message at the top of the contact page when the user successfully submits the form.
   				$output = "
           <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
-          <h3 class='display-4 mx-auto my-5 text-white'>Thanks for reaching out, ".$contactFirstName."!<p>We'll get back to you soon.</h3>
-          <p class='lead text-white'>In the mean time, have you connected with us on social media?</p>
+          <h3 class='display-4 mx-auto my-5 text-white'>Thanks for reaching out, ".$contactFirstName."!<p>We'll get back to you within 48 hours.</h3>
+          <p class='lead text-white'>In the mean time, have you connected with us on social media and <a href='https://login.ringcentral.com/'>RingCentral?</a></p>
           <div class='col mt-3 mx-auto'>
             <div class='footer-section'>
               <ul class='sm-icons'>
