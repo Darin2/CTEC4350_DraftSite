@@ -164,7 +164,7 @@ window.onload = init;
   				$output = "
           <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
           <h3 class='display-4 mx-auto my-5 text-white'>We're so glad you're inquiring about membership, ".$memberFirstName."!<p>We'll get back to you within 48 hours.</h3>
-          <p class='lead text-white'>In the mean time, have you completed our <a href='challenge.php>monthly challenge?</a></p>
+          <p class='lead text-white text-center'>In the mean time, have you completed our <a href='challenge.php>monthly challenge?</a></p>
           </div>
           </div>
           ";

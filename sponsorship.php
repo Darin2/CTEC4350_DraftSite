@@ -164,7 +164,7 @@ echo "$component_HTMLHeader";?>
   				$output = "
           <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
           <h3 class='display-4 mx-auto my-5 text-white'>Thanks for reaching out, ".$sponsorFirstName."!<p>We'll get back to you soon.</h3>
-            <p class='lead text-white'>In the mean time, have you connected with us on <a href='https://www.instagram.com/thegulf_tx'>social media</a>?</p>
+            <p class='lead text-white text-center'>In the mean time, have you connected with us on <a href='https://www.instagram.com/thegulf_tx'>social media</a>?</p>
           </div>
           ";
           //this foreach loop prints everything the user just submitted
