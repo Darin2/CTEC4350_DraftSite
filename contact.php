@@ -2,7 +2,8 @@
 include("shared.php");
 include("dbconn.inc.php");
 $conn = dbConnect();
-echo "$component_HTMLHeader";?>
+echo "$component_HTMLHeader";
+?>
 
 <script>
 function init(){
