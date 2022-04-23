@@ -219,14 +219,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
               <div class='bg-dark container col-lg-4 col-md-6 col-sm-12 my-3 px-5'>
               <h3 class='mx-auto my-5 text-white '>Thanks for expressing your interest in volunteering, ".$volunteerFirstName."!</h3>
               <p class='text-white'>We'll contact you via email within 48 hours.</p>
-              <p class='lead text-white'>In the mean time, have you connected with us on social media and <a href='https://login.ringcentral.com/'>RingCentral?</a></p>
-              <div class='col mt-3 mx-auto'>
-                <div class='footer-section'>
-                  <ul class='sm-icons'>
-                  <li><a href='https://www.instagram.com/thegulf_tx'><i class='fa fa-instagram'></i></a></li>
-                  </ul>
-                </div>
-              </div>
+              <p class='lead text-white'>In the mean time, have you connected with us on <a href='https://www.instagram.com/thegulf_tx'>social media</a>?</p>
               </div>
               ";
               //this foreach loop prints everything the user just submitted
