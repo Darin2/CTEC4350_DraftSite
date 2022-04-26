@@ -33,7 +33,7 @@
   align-items: center;
   background-size: cover;
   justify-content: center;
-  
+
 
 }
 
@@ -42,7 +42,7 @@
   right: 0;
   bottom: 0;
   z-index: -1;
-  
+
 }
 @media (min-aspect-ratio: 16/9){
   .back-video{
@@ -109,12 +109,12 @@ nav{
 /* Styling the nav links text */
 .nav-link{
   color:var(--gulfBlue);
-  font-weight:600;
+  font-weight:800;
 }
 
 .nav-item{
   margin-right:2%;
-  font-family: sans-serif; /* This is fallback font for old browsers */
+  font-family: Helvetica, Verdana, sans-serif; /* This is fallback font for old browsers */
   font-family: var(--navLinkText);
 }
 
@@ -140,7 +140,7 @@ nav{
   background-color:var(--gulfBlue);
   color:var(--gulfWhite);
   border-bottom: 1px var(--gulfWhite) solid;
-  font-family: sans-serif; /* This is fallback font for old browsers */
+  font-family: Helvetica, Verdana, sans-serif; /* This is fallback font for old browsers */
   font-family: var(--navLinkText);
 }
 
