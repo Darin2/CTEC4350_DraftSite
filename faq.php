@@ -20,6 +20,7 @@ echo "$component_HTMLHeader";
 	$stmt->execute();
 	$faqs = $stmt->fetchAll();
 ?>
+<body>
 <?php echo "$component_Nav";?>
 
 <!-- include CSS -->
@@ -31,7 +32,8 @@ echo "$component_HTMLHeader";
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
 
-	<div id="faqBorder" class="col card text-center">
+
+<div id="faqBorder" class="col card text-center">
 
  <h2 class="display-4 text-black text-center">Frequently Asked Questions</h2>
 
@@ -71,9 +73,11 @@ echo "$component_HTMLHeader";
    <p class="lead">If you have a question that you can't find the answer to, please use the <a href="contact.php">contact form</a> and a member of our team will be in touch.
    </p>
 </div>
+	
+
 
 <?php echo "$component_Footer";?>
-
+</body>
 
 <!-- apply some styles -->
 <style>
