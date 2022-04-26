@@ -26,9 +26,13 @@ echo "$component_HTMLHeader";
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" />
 
+
 <!-- include JS -->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
+
+
+ <h2 class="display-1 text-white text-center">Frequently Asked Questions</h2>
 
 <!-- show all FAQs in a panel -->
 <div class="container" style="margin-top: 50px; margin-bottom: 50px;">
@@ -61,6 +65,8 @@ echo "$component_HTMLHeader";
 		</div>
 	</div>
 </div>
+   <p class="lead">We've put together some commonly asked questions to give you more information about The G.U.L.F and what we offer. <br> If you have a question that you can't find the answer to, please use the <a class="btn btn-primary btn-lg" href="contact.php" role="button">contact form</a> page.
+      </p>
 <?php echo "$component_Footer";?>
 
 
