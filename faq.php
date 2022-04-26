@@ -65,8 +65,13 @@ echo "$component_HTMLHeader";
 		</div>
 	</div>
 </div>
-   <p class="lead">We've put together some commonly asked questions to give you more information about The G.U.L.F and what we offer. <br> If you have a question that you can't find the answer to, please use the <a class="btn btn-primary btn-lg" href="contact.php" role="button">contact form</a> page.
-      </p>
+   <p class="lead">We've put together some commonly asked questions to give you more information about The G.U.L.F and what we offer to our community. <br> If you have a question that you can't find the answer to, please use the <a class="btn btn-primary btn-lg" href="contact.php" role="button">contact form</a> page.
+   </p>
+
+
+ <p class="lead"> --OR-- If you have any questions that we haven't been able to answer we would love to hear from you!<br>Please complete the form found <a class="btn btn-primary btn-lg" href="contact.php" role="button">here</a> and a member of our team will be in touch.
+   </p>
+
 <?php echo "$component_Footer";?>
 
 
