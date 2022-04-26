@@ -735,3 +735,12 @@ footer{
 #bridgePicH1{
   text-shadow: 2px 2px 5px #000000;
 }
+
+/*faq page */
+
+#faqBorder{
+	top: 25%;
+	transform: translateY(-25%);
+}
+
+/* end FAQ page*/
