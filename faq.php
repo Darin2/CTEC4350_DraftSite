@@ -33,7 +33,7 @@ echo "$component_HTMLHeader";
 
 	<div id="faqBorder" class="col card text-center">
 
- <h2 class="display-1 text-black text-center">Frequently Asked Questions</h2>
+ <h2 class="display-4 text-black text-center">Frequently Asked Questions</h2>
 
  <p class="lead">To give you more information about The G.U.L.F and what we offer to our community, here are some commonly asked questions. </p>
 
