@@ -12,25 +12,21 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
 <main>
 <?php echo "$component_Nav";?>
 
-<div class="container-fluid fullwidthBridgePic px-0 mx-auto">
-    <div id="videoContainer" class="video-container d-none d-md-block">
-      <iframe src="https://www.youtube.com/embed/p3XeN3K_3IQ?controls=0&amp;start=10&playlist=p3XeN3K_3IQ&loop=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <div id="text">
-        <h1 id="videoH1" class="display-1 text-center">Leadership & Focus For DFW Youth</h1>
-      </div>
-    </div>
-    <div id="homepageHeroJumbotron" class="d-lg-none d-md-none jumbotron row mx-4">
-      <h1 id="bridgePicH1" class="display-1 text-white text-center">Leadership & Focus For DFW Youth</h1>
-      <p class="lead text-white my-0 py-0">Delivering fun, positive growth opportunities to DFW's youth since 2016.</p>
-      <p class="lead">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
-      </p>
-    </div>
+<div class="hero">
+  <video autoplay loop muted plays-inline class="back-video">
+    <source src="img/revamped.mp4" type="video/mp4">
+  </video>
+</div>
+<div class="landing">
+  <h1>The G.U.L.F </h1>
+  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+</div>
 
-  <!-- end innerContainer-->
-</div>
+   
+
+<!-- end innerContainer-->
 <!--end container-fluid -->
-</div>
+
 </main>
 <div id="homepageGoogleMapsEmbed">
 <?php echo "$component_GoogleMapsEmbed"?>
