@@ -19,7 +19,11 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
 </div>
 <div class="landing">
   <h1>The G.U.L.F </h1>
-  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+	<p>Giving Us Leadership and Focus (The GULF) is a Texas-based 501(c)(3) Organization that is coming up with solutions and opportunities to re-engage underserved teens in staying on track in school.By offering a uniquely combined mentoring program that is fostered and managed by teens in exciting peer to peer settings, teens are encouraged to make successful transitions from high school no matter their surrounding circumstances. <br> Whether they are going to college or preparing for life as young adults without college, they are encouraged and inspired by inquiring project planning, organization, business development, volunteering, and career and entrepreneurial skills. Thus giving them a fighting chance on living life beyond mediocrity. </p>
+	
+	<!-- OR THE TEXT BELOW --> 
+
+	  <p> At The G.U.L.F. we are offering youth an opportunity to get involved in things that teens love and parents will appreciate them doing. <br> We are offering exciting programs and events that get youth to appreciate where they are in life, while creating a focus on where they are going. <br> We promote a positive atmosphere, friends, and activities that emphasize the collective and individual growth of everyone involved.</p>
 </div>
 
    
