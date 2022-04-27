@@ -19,8 +19,7 @@ echo "$component_HTMLHeader";
 	$stmt = $conn->prepare($sql);		
 	$stmt->execute();
 	$faqs = $stmt->fetchAll();
-?>
-<body>
+?><body>
 <?php echo "$component_Nav";?>
 
 <!-- include CSS -->
@@ -80,13 +79,14 @@ echo "$component_HTMLHeader";
 </body>
 
 <!-- apply some styles -->
+
 <style>
 	.accordion_one .panel-group {
 	    border: 1px solid #f1f1f1;
-	    margin-top: 100px
+	    margin-top: 100px;
 	}
 	a:link {
-	    text-decoration: none
+	    text-decoration: none;
 	}
 	.accordion_one .panel {
 	    background-color: transparent;
@@ -107,7 +107,7 @@ echo "$component_HTMLHeader";
 	    line-height: 24px
 	}
 	.accordion_one .panel .panel-heading a.collapsed {
-	    color: #999999;
+	    color: #313131;
 	    display: block;
 	    padding: 12px 30px;
 	    border-top: 0px
@@ -116,29 +116,29 @@ echo "$component_HTMLHeader";
 	    display: block;
 	    padding: 12px 30px;
 	    background: #fff;
-	    color: #313131;
-	    border-bottom: 1px solid #f1f1f1
+	    color: #334da1;
+	    border-bottom: 1px solid #f1f1f1;
 	}
 	.accordion-wrap .panel .panel-heading a {
-	    font-size: 14px
+	    font-size: 14px;
 	}
 	.accordion_one .panel-group .panel-heading+.panel-collapse>.panel-body {
 	    border-top: 0;
 	    padding-top: 0;
 	    padding: 25px 30px 30px 35px;
 	    background: #fff;
-	    color: #999999
+	    color: #313131;
 	}
 	.img-accordion {
 	    width: 81px;
 	    float: left;
 	    margin-right: 15px;
-	    display: block
+	    display: block;
 	}
 	.accordion_one .panel .panel-heading a.collapsed:after {
 	    content: "\2b";
-	    color: #999999;
-	    background: #f1f1f1
+	    color: #334da1;
+	    background: #f1f1f1;
 	}
 	.accordion_one .panel .panel-heading a:after,
 	.accordion_one .panel .panel-heading a.collapsed:after {
@@ -151,10 +151,10 @@ echo "$component_HTMLHeader";
 	    float: left;
 	    margin-left: -31px;
 	    margin-top: -12px;
-	    margin-right: 15px
+	    margin-right: 15px;
 	}
 	.accordion_one .panel .panel-heading a:after {
-	    content: "\2212"
+	    content: "\2212";
 	}
 	.accordion_one .panel .panel-heading a:after,
 	.accordion_one .panel .panel-heading a.collapsed:after {
@@ -168,6 +168,6 @@ echo "$component_HTMLHeader";
 	    float: left;
 	    margin-left: -31px;
 	    margin-top: -12px;
-	    margin-right: 15px
+	    margin-right: 15px;
 	}
 </style>
