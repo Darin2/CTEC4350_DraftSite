@@ -6,7 +6,7 @@ echo "$component_HTMLHeader";?>
 
 <script>
 function init(){
-  document.getElementById('contact-input-Email').onchange = process;
+  document.getElementById('diamondLeague-input-Email').onchange = process;
 }
 
 function process(evt){
@@ -15,7 +15,7 @@ function process(evt){
   var err = 0;
 
   // Store the input from the email field in a variable
-  var emailText = document.getElementById('contact-input-Email').value;
+  var emailText = document.getElementById('diamondLeague-input-Email').value;
 
   //Create a regular expression for validating the email
   var emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
@@ -166,18 +166,7 @@ window.onload = init;
     				$output = "
             <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
             <h3 class='display-4 mx-auto my-5 text-white'>Thanks for reaching out, ".$diamondLeagueFirstName."!<p>We'll get back to you soon.</h3>
-            <p class='lead text-white'>In the mean time, have you connected with us on social media?</p>
-            <div class='col mt-3 mx-auto'>
-              <div class='footer-section'>
-                <ul class='sm-icons'>
-                  <li><a href='#'><i class='fa fa-instagram'></i></a></li>
-                  <li><a href='#'><i class='fa fa-linkedin'></i></a></li>
-                  <li><a href='#'><i class='fa fa-facebook'></i></a></li>
-                  <li><a href='#'><i class='fa fa-twitter'></i></a></li>
-                  <li><a href='#'><i class='fa fa-youtube'></i></a></li>
-                </ul>
-              </div>
-            </div>
+            <p class='lead text-white text-center'>In the mean time, have you connected with us on <a href='https://www.instagram.com/thegulf_tx'>social media</a>?</p>
             </div>
             ";
             //this foreach loop prints everything the user just submitted
@@ -222,8 +211,8 @@ window.onload = init;
       <div class="mb-3">
         <p class="text-center text-black">* Required field</p>
 
-        <label for="contactEmail" class="form-label text-black">* Email address</label>
-        <input type="email" name="contactEmail" class="form-control" id="contact-input-Email" aria-describedby="emailHelp">
+        <label for="diamondLeagueEmail" class="form-label text-black">* Email address</label>
+        <input type="email" name="diamondLeagueEmail" class="form-control" id="diamondLeague-input-Email" aria-describedby="emailHelp">
         <!-- * we don't need this part right now, but leaving the code here as an example of the form-text class*
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         -->
@@ -231,20 +220,20 @@ window.onload = init;
 
       <!-- Get user's first name -->
       <div class="mb-3">
-        <label for="contactFirstName" class="form-label text-black">* First Name</label>
-        <input type="name" name="contactFirstName" class="form-control" id="contact-input-FirstName">
+        <label for="diamondLeagueFirstName" class="form-label text-black">* First Name</label>
+        <input type="name" name="diamondLeagueFirstName" class="form-control" id="diamondLeague-input-FirstName">
       </div>
 
       <!-- Get user's last name -->
       <div class="mb-3">
-        <label for="contactLastName" class="form-label text-black">* Last Name</label>
-        <input type="name" name="contactLastName" class="form-control" id="contact-input-LastName">
+        <label for="diamondLeagueLastName" class="form-label text-black">* Last Name</label>
+        <input type="name" name="diamondLeagueLastName" class="form-control" id="diamondLeague-input-LastName">
       </div>
 
       <!-- Get user's phone number -->
       <div class="mb-3">
-        <label for="contactPhoneNumber" class="form-label text-black">Phone Number</label>
-        <input type="name" name="contactPhoneNumber" class="form-control" id="contact-input-PhoneNumber" placeholder="123-456-7890">
+        <label for="diamondLeaguePhoneNumber" class="form-label text-black">Phone Number</label>
+        <input type="name" name="diamondLeaguePhoneNumber" class="form-control" id="diamondLeague-input-PhoneNumber" placeholder="123-456-7890">
       </div>
       <!-- dropdown menu for "I am interested in.."
 
@@ -263,8 +252,8 @@ window.onload = init;
       <!--Optional message from user -->
       <div class="input-group">
         <span class="input-group-text">Message</span>
-        <label for="contactMessage" class="form-label text-black"></label>
-        <textarea class="form-control" name="contactMessage" aria-label="With textarea" id="contact-input-textArea"></textarea>
+        <label for="diamondLeagueMessage" class="form-label text-black"></label>
+        <textarea class="form-control" name="diamondLeagueMessage" aria-label="With textarea" id="diamondLeague-input-textArea"></textarea>
       </div>
       <!--Checkbox input
       ***Commenting this part out for now, don't think it's necessary.

@@ -66,18 +66,7 @@ echo "$component_HTMLHeader";?>
 
     <!-- Our Impact row -->
     <div id="about-OurImpactRow"class="row d-flex align-items-center offwhiteBG">
-      <section class="col-sm py-0">
-        <!-- Our Impact lottie animation. Should show up on right side of text for tablet and desktop. Should show up on top of the text for mobile.  -->
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_3u3ztlkh.json"
-          background="transparent"
-          speed="1"
-          style="width: 80%; height: 100%;"
-          loop
-          autoplay>
-        </lottie-player>
 
-      </section>
       <!-- text section -->
       <section class="col-sm py-0">
         <h1 class="display-4 text-black text-center">Our Impact</h1>
@@ -90,9 +79,37 @@ echo "$component_HTMLHeader";?>
         </p>
       </section>
 
+      <section class="col-sm py-0">
+        <!-- Our Impact lottie animation. Should show up on right side of text for tablet and desktop. Should show up on top of the text for mobile.  -->
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_3u3ztlkh.json"
+          background="transparent"
+          speed="1"
+          style="width: 80%; height: 100%;"
+          loop
+          autoplay>
+        </lottie-player>
+
+      </section>
+
     </div>
 
     <div id="about-QuotesRow" class="row d-flex align-items-center bg-dark bg-gradient">
+
+
+      <!-- testimonial section -->
+      <section class="col-sm py-0">
+        <h1 class="display-4 text-white text-center">What People Are Saying</h1>
+        <blockquote class="blockquote text-center text-white py-3">
+          <p class="mb-0">I'm not superstitious, but I am a little stitious.</p>
+          <footer class="blockquote-footer py-3">Michael Scott, <cite title="Source Title">Dunder Mifflin Paper Company</cite></footer>
+        </blockquote>
+        <blockquote class="blockquote text-center text-white py-3">
+          <p class="mb-0">Don't let your dreams be dreams.</p>
+          <footer class="blockquote-footer py-3">Shia LaBeouf, <cite title="Source Title">Ice Cream Truck Driver</cite></footer>
+        </blockquote>
+      </section>
+
       <!-- lottie animation for this section -->
       <section class="col-sm py-0">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -103,19 +120,6 @@ echo "$component_HTMLHeader";?>
           loop
           autoplay>
         </lottie-player>
-      </section>
-
-      <!-- testimonial section -->
-      <section class="col-sm py-0">
-        <h1 class="display-4 text-white text-center">What People Are Saying</h1>
-        <blockquote class="blockquote text-center text-white py-3">
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer py-3">John Doe, <cite title="Source Title">Dallas Morning News</cite></footer>
-        </blockquote>
-        <blockquote class="blockquote text-center text-white py-3">
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer py-3">John Doe, <cite title="Source Title">Dallas Morning News</cite></footer>
-        </blockquote>
       </section>
 
     </div>

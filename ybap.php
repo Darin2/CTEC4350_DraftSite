@@ -165,19 +165,8 @@ window.onload = init;
             //  the following code prints a confirmation message at the top of the contact page when the user successfully submits the form.
     				$output = "
             <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
-            <h3 class='display-4 mx-auto my-5 text-white'>Thanks for reaching out, ".$YBAPFirstName."!<p>We'll get back to you soon.</h3>
-            <p class='lead text-white'>In the mean time, have you connected with us on social media?</p>
-            <div class='col mt-3 mx-auto'>
-              <div class='footer-section'>
-                <ul class='sm-icons'>
-                  <li><a href='#'><i class='fa fa-instagram'></i></a></li>
-                  <li><a href='#'><i class='fa fa-linkedin'></i></a></li>
-                  <li><a href='#'><i class='fa fa-facebook'></i></a></li>
-                  <li><a href='#'><i class='fa fa-twitter'></i></a></li>
-                  <li><a href='#'><i class='fa fa-youtube'></i></a></li>
-                </ul>
-              </div>
-            </div>
+            <h3 class='display-4 mx-auto my-5 text-white'>Thanks for reaching out, ".$YBAPFirstName."!<p>We'll get back to you within 48 hours.</h3>
+            <p class='lead text-white text-center'>In the mean time, have you connected with us on <a href='https://www.instagram.com/thegulf_tx'>social media</a>?</p>
             </div>
             ";
             //this foreach loop prints everything the user just submitted

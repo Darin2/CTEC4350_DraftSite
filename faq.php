@@ -20,15 +20,24 @@ echo "$component_HTMLHeader";
 	$stmt->execute();
 	$faqs = $stmt->fetchAll();
 ?>
+<body>
 <?php echo "$component_Nav";?>
 
 <!-- include CSS -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" />
 
+
 <!-- include JS -->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
+
+
+<div id="faqBorder" class="col card text-center">
+
+ <h2 class="display-4 text-black text-center">Frequently Asked Questions</h2>
+
+ <p class="lead">To give you more information about The G.U.L.F and what we offer to our community, here are some commonly asked questions. </p>
 
 <!-- show all FAQs in a panel -->
 <div class="container" style="margin-top: 50px; margin-bottom: 50px;">
@@ -61,8 +70,14 @@ echo "$component_HTMLHeader";
 		</div>
 	</div>
 </div>
-<?php echo "$component_Footer";?>
+   <p class="lead">If you have a question that you can't find the answer to, please use the <a href="contact.php">contact form</a> and a member of our team will be in touch.
+   </p>
+</div>
+	
 
+
+<?php echo "$component_Footer";?>
+</body>
 
 <!-- apply some styles -->
 <style>
