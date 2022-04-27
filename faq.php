@@ -93,24 +93,24 @@ echo "$component_HTMLHeader";
 	    box-shadow: none;
 	    border-bottom: 0px solid transparent;
 	    border-radius: 0;
-	    margin: 0
+	    margin: 0;
 	}
 	.accordion_one .panel-default {
-	    border: 0
+	    border: 0;
 	}
 	.accordion-wrap .panel-heading {
 	    padding: 0px;
-	    border-radius: 0px
+	    border-radius: 0px;
 	}
 	h4 {
 	    font-size: 18px;
-	    line-height: 24px
+	    line-height: 24px;
 	}
 	.accordion_one .panel .panel-heading a.collapsed {
 	    color: #313131;
 	    display: block;
 	    padding: 12px 30px;
-	    border-top: 0px
+	    border-top: 0px;
 	}
 	.accordion_one .panel .panel-heading a {
 	    display: block;
