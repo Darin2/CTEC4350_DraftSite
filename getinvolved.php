@@ -27,7 +27,7 @@ echo "$component_HTMLHeader";?>
     </section>
     <!-- center-aligned text section with CTA button-->
     <section class="col-sm">
-      <h1 class="display-4 text-white text-center">Volunteering</h1>
+      <h1 class="display-2 text-white text-center">Volunteering</h1>
       <p class="lead text-white text-center">Help us accomplish our mission to develop the next generation of leaders and entrepreneurs.</p>
       <p class="lead text-white text-center">
       Become a volunteer today.
@@ -42,7 +42,7 @@ echo "$component_HTMLHeader";?>
   <div id="getinvolved-membershipRow" class="row d-flex align-items-center gulfBlueBG">
     <!-- center-aligned section -->
     <section class="col-sm">
-    <h1 class="display-4 text-white text-center">Membership</h1>
+    <h1 class="display-2 text-white text-center">Membership</h1>
     <p class="lead text-white text-center">Join The G.U.L.F. and experience the growth opportunities of a life time.</p>
     <p class="lead text-white text-center">
     Ready to join?
@@ -81,7 +81,7 @@ echo "$component_HTMLHeader";?>
     </section>
     <!-- center-aligned text section with CTA button -->
     <section class="col-sm">
-      <h1 class="display-4 text-black text-center">Sponsorship</h1>
+      <h1 class="display-2 text-black text-center">Sponsorship</h1>
       <p class="lead text-black text-center">Join The G.U.L.F as a sponsor and help us deliver world-class growth opportunities for DFW youth.</p>
       <p class="lead text-black text-center">
       Interested in becoming a sponsor?

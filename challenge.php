@@ -11,12 +11,12 @@ echo "$component_HTMLHeader";?>
 	<div id="challengeBorder" class="col card text-center">
 
 	  <div class="card-header">
-	   <p id="challengeMonth" class="display-4">month</p>
+	   <p id="challengeMonth" class="display-2">month</p>
 	  </div>
 
 	  <div class="card-body gulfBlueBG text-center">
-	    <h5 id="challengeTitle" class="card-title text-white">challenge title</h5>
-	    <p id="challengeDescription" class="card-text text-white">challenge description with social media reminder goes here (IG: thegulf_tx)</p>
+	    <h5 id="challengeTitle" class="display-6 card-title text-white">challenge title</h5>
+	    <p id="challengeDescription" class="lead card-text text-white">challenge description with social media reminder goes here (IG: thegulf_tx)</p>
 	  </div>
 
 	  <div class="card-footer text-muted text-black">

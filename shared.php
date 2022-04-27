@@ -193,7 +193,7 @@ $component_Footer = '
 <footer>
       <div class="container-fluid bg-dark">
         <div class="row">
-          <div class="col mt-3">
+          <div class="col mt-4">
             <div class="footer-section">
               <h5 class="text-white">Quick Links</h5>
               <ul class="quick-links text-white">
@@ -206,13 +206,13 @@ $component_Footer = '
               </ul>
             </div>
           </div>
-          <div class="col mt-3">
+          <div class="col mt-4">
             <div class="footer-section">
               <h5 class="text-white">Contact</h5>
               <p class="text-white">(817) 558 - 4853</p>
             </div>
           </div>
-          <div class="col mt-3">
+          <div class="col mt-4">
             <div class="footer-section">
               <h5 class="text-white">Social Media</h5>
               <ul class="sm-icons">
