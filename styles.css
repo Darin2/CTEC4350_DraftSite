@@ -59,13 +59,14 @@ nav{
 /* Styling the nav links text */
 .nav-link{
   color:var(--gulfBlue);
-  font-weight:600;
+  font-weight:650;
+  font-family: Helvetica, sans-serif;
 }
 
 .nav-item{
   margin-right:2%;
-  font-family: sans-serif; /* This is fallback font for old browsers */
-  font-family: var(--navLinkText);
+  font-family: Helvetica, sans-serif; /* This is fallback font for old browsers */
+  font-weight:750;
 }
 
 /*Styling the dropdown menu + links */
@@ -91,7 +92,7 @@ nav{
   color:var(--gulfWhite);
   border-bottom: 1px var(--gulfWhite) solid;
   font-family: sans-serif; /* This is fallback font for old browsers */
-  font-family: var(--navLinkText);
+
 }
 
 .dropdown-item:hover{
@@ -112,6 +113,7 @@ nav{
 
 
 /*Styling programs page */
+
 .programs-h1 {
   color: var(--gulfBlack);
   margin-bottom: 0;
@@ -129,7 +131,7 @@ nav{
   margin: 0;
 }
 .programs-h1 {
-  font-weight: 500;
+  font-weight: 600;
 }
 .dl-img {
   width: 100%;
