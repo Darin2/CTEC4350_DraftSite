@@ -195,6 +195,16 @@ nav{
 .prg-display {
   padding: 0 30px;
 }
+.testim-container {
+  background-color: var(--gulfOrange);
+  color: var(--gulfWhite);
+  padding: 2em 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
 /* programs popup */
 .modal-cont {
     position: fixed;
