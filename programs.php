@@ -29,7 +29,7 @@ echo "$component_HTMLHeader";?>
       </section>
 
       <section class="col-sm">
-      <h1 class="display-4 text-white text-center prg-display">Programs</h1>
+      <h1 class="display-2 text-white text-center prg-display">Programs</h1>
       <p class="lead text-white text-center prg-display">The G.U.L.F is a non-profit organization dedicated to encouraging team building and individual growth through our both young adult and youth enrichment programs.</p>
       <p class="lead text-white text-center">
       <strong>Come check us out!</strong>
@@ -40,7 +40,7 @@ echo "$component_HTMLHeader";?>
     <div id="programs-DiamondLeagueRow" class="content flow mt-3">
       <div class="even-columns">
         <div class="col prg-txt d-flex flex-column align-self-center">
-          <h2>The Diamond League</h2>
+          <h2 class="h2">The Diamond League</h2>
           <p>Whether you like  parties,  concerts,  sports, rapping, singing,  dancing,  playing  on the computer, or thinking of all the different ways to make money, The DL has got you you covered.</p>
           <p>On every 2nd Saturday of the month, come join us for fun parties all over the metroplex. From concerts, sports, dancing, and computer games; we do it all and more! Each party has its own theme and setting. All proceeds go to helping The G.U.L.F. continue shaping and building its young entreprenuers.</p>
           <a href="diamondleague.php" class="btn btn-primary btn-prg login">Join Us Today</a>
@@ -91,7 +91,7 @@ echo "$component_HTMLHeader";?>
           <img src="img/youthprg.jpg" class="dl-img img-fluid ybp rounded" alt="Business workers smiling for a group photo">
         </div>
         <div class="col prg-txt d-flex flex-column align-self-center">
-          <h2>Youth Business Apprenticeship Program</h2>
+          <h2 class="h2">Youth Business Apprenticeship Program</h2>
           <p>Our Youth Business Program and monthly Youth Business Expos will be available to those who believe they are cut out to be their own bosses and learning the ins and outs of entrepreneurship. Through this program, participants will work alongside and learn from real business owners and career professionals.</p>
           <p>In our Youth Apprenticeship Program, participants will be taught invaluable skills, lessons, and business acumen from those who have stayed on path before us, and who are now young successful business men and woman.</p>
           <p>It will also focus on giving sponsors and partner companies access in offering their services, consultation, mentorship, and products to the GULF community by sponsoring and/or partnering with us, allowing youth to learn and earn as an incentive in making and maintaining passing grades and staying on the right path. A win-win for teens and the communities we're a part of.</p>
