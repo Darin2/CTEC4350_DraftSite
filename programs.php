@@ -83,7 +83,13 @@ echo "$component_HTMLHeader";?>
       </div>
       -->
     </div>
-
+    
+    <div class="testim-container">
+      <h4>The G.U.L.F. inspired me to adopt a growth mindset.</h4>
+      <h4>"I am glad that I have been a part of this amazing program. The G.U.L.F's staff are like my second familly. We all felt comfortable to share our thoughts and ideas and help build each other into the entreprenuers we aspire to be. The G.U.L.F. inspired me to adopt a growth mindset."</h4>
+      <p>John D. - Former member of The Diamond League</p>
+    </div>
+  
     <div id="programs-BusinessApprenticeshipRow" class="content flow">
 
       <div class="even-columns even-columns-responsive">
