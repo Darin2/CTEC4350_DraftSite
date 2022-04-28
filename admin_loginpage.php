@@ -109,7 +109,11 @@ if (array_key_exists('Submit1', $_POST)){
         }
         //if stmt->num_rows was not ==1, let the user know their username/password weren't correct
         else{
-          echo "Incorrect username or password. To reset your password, please click <a href='passwordreset.php'>here</a>.";
+          echo "<div class='card-body gulfBlueBG text-center fixed-top'>
+                <h5 class='card-title text-white'>The username and password combination was incorrect. Please try again.</h5>
+                <div class='text-white'>To reset your password, click <a href=''>here</a></div>
+                </div>
+                <br>";
         }
             /*
             Found this at https://www.sitepoint.com/community/t/efficient-way-to-check-if-a-mysql-query-returned-no-results/10514
