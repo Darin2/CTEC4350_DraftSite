@@ -30,13 +30,13 @@ echo "$component_HTMLHeader";
 <!-- include JS -->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<h2 class="display-4 text-black text-center">Frequently Asked Questions</h2>
 
+ <p class="lead">To give you more information about The G.U.L.F and what we offer to our community, here are some commonly asked questions.</p>
 
 <div id="faqBorder" class="col card text-center">
 
- <h2 class="display-4 text-black text-center">Frequently Asked Questions</h2>
-
- <p class="lead">To give you more information about The G.U.L.F and what we offer to our community, here are some commonly asked questions. </p>
+ 
 
 <!-- show all FAQs in a panel -->
 <div class="container" style="margin-top: 50px; margin-bottom: 50px;">
