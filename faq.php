@@ -32,7 +32,7 @@ echo "$component_HTMLHeader";
 <script src="js/bootstrap.js"></script>
 <h2 class="display-4 text-black text-center">Frequently Asked Questions</h2>
 
- <p class="lead">To give you more information about The G.U.L.F and what we offer to our community, here are some commonly asked questions.</p>
+ <p class="lead text-center">To give you more information about The G.U.L.F and what we offer to our community, here are some commonly asked questions.</p>
 
 <div id="faqBorder" class="col card text-center">
 	</div>
@@ -69,7 +69,7 @@ echo "$component_HTMLHeader";
 		</div>
 	</div>
 </div>
-   <p class="lead">If you have a question that you can't find the answer to, please use the <a href="contact.php">contact form</a> and a member of our team will be in touch.
+   <p class="lead text-center">If you have a question that you can't find the answer to, please use the <a href="contact.php">contact form</a> and a member of our team will be in touch.
    </p>
 	
 
