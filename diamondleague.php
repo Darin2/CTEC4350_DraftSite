@@ -201,6 +201,10 @@ window.onload = init;
 
 <!-- bootstrap form example -->
 <div class="container-fluid bg-dark mb-5">
+    <!-- Programs page redirect -->
+  <div class="redirect m-3">
+    <a href="programs.php" class="d-flex flex-row align-items-center font-weight-bold"><i class="fa solid fa-angle-left fa-2x m-1"></i><h4 class="m-0">Back to Programs</h4></a>
+  </div>
   <!-- the actual form begins here
 
   It takes up 4 columns of a 12-column grid on large screens, 6 on a medium screen, and all 12 on a small screen.
