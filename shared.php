@@ -124,6 +124,7 @@ if ($_SESSION['admin_access'] == true){
               <li><a class=\"dropdown-item\" href=\"about.php#about-OurMissionRow\">Our Mission</a></li>
               <li><a class=\"dropdown-item\" href=\"about.php#about-OurImpactRow\">Our Impact</a></li>
               <li><a class=\"dropdown-item\" href=\"about.php#about-OurStoryRow\">Our Story</a></li>
+              <li><a class=\"dropdown-item\" href=\"faq.php\">FAQ</a></li>
             </ul>
           </li>
 
