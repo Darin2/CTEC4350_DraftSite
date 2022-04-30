@@ -143,6 +143,13 @@ nav{
 .donate-nav-link {
   color: var(--gulfWhite) !important;
 }
+.redirect-link {
+  color: var(--gulfOrange) !important;
+}
+/* error message for admin login */
+.exit-btn-btn {
+  background-color: var(--gulfWhite);
+}
 
 /*Attempting to make the nav menus open on hover instead of on click */
 .dropdown:hover .dropdown-menu {
