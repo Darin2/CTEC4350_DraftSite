@@ -135,6 +135,14 @@ nav{
   padding-bottom:0;
   padding-top:0;
 }
+.donate-nav-btn {
+  background-color: var(--gulfPurple);
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+.donate-nav-link {
+  color: var(--gulfWhite) !important;
+}
 
 /*Attempting to make the nav menus open on hover instead of on click */
 .dropdown:hover .dropdown-menu {
