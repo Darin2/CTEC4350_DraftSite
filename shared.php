@@ -160,8 +160,8 @@ if ($_SESSION['admin_access'] == true){
             </a>
           </li>
           
-          <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"https://www.paypal.com/donate?token=IBOjFEeD8bISqsVxcBPs5cCCrkQHjIDONXWEYSOJuwcFzJFgmhW8Nu8u7Xqld370PTE-0aJtzZRBmQIr\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+          <li class=\"nav-item donate-nav-btn\">
+            <a class=\"nav-link donate-nav-link\" href=\"https://www.paypal.com/donate?token=IBOjFEeD8bISqsVxcBPs5cCCrkQHjIDONXWEYSOJuwcFzJFgmhW8Nu8u7Xqld370PTE-0aJtzZRBmQIr\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
               Donate
             </a>
           </li>
