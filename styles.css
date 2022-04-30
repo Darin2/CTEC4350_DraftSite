@@ -20,8 +20,17 @@
   align-content: center;
 }
 
+.video {
+  width: 100% !important;
+  height: auto !important;
+}
 
-
+@media screen and (max-width: 600px) {
+  .landing {
+    padding: 6%;
+  }
+}
+/* Commented out styles to test another way to format video
 .hero{
   width: 100%;
   height: auto;
@@ -57,6 +66,7 @@
     height: auto;
   }
 }
+*/
 
 /* This is our color palette based on the visual design guide. Please use the color variables below instead of typing in the hex code for each color. */
 :root {
@@ -159,9 +169,6 @@ nav{
 /* End of nav bar styling*/
 
 
-
-
-
 /*Styling programs page */
 
 .programs-h1 {
@@ -205,132 +212,16 @@ nav{
   margin-bottom: 4rem;
 }
 
-/* programs popup */
-.modal-cont {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.47);
-    top: 0;
-    left: 0;
-     overflow: auto
+/* modal box */
+.modal-body {
+  margin: 1rem 2rem;
+  padding: 0;
 }
-.modal-box{
-    width: 80%;
-    margin: 30px auto;
-    background-color: white;
-    position: relative;
-    text-align: ;
-    padding:
+.form-label {
+  margin-top: 0.5rem;
 }
-.modal-box .close {
-    position: absolute;
-    right: 16px;
-    top: 5px;
-    font-size: 25px;
-    font-weight: bolder;
-    cursor: pointer
-}
-.modal-box .close:hover, .modal-box .close:focus{
-    color: #c6c6c6
-}
-.modal-box img{
-    width: 30%;
-    border-radius: 50%;
-    display: block;
-    margin:auto;
-    padding: 14px;
-    margin-bottom: 30px;
-    min-width: 150px;
-    max-width: 230px
-}
-.input {
-    width: 100%;
-    border: 1px solid #d0d0d0;
-    display: block;
-    padding: 8px;
-    margin: 5px 0;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-.modal-box .join-button {
-    padding: 10px;
-    font-size: 15px;
-    display: block;
-    width: 100%;
-    color: white;
-    background-color: #0d6efd;
-    border-radius: 5px;
-    border: 0;
-    margin: 16px 0;
-}
-.close-forgot{
-    background-color:
-}
-.modal-box .label, .modal-box .join-button, .modal-box .input{
-    width: 80%;
-    display: block;
-    margin: 10px auto;
-}
-.modal-box .join-button{
-    margin-top: 16px;
-    cursor: pointer
-}
-input[type=select]{
-    display: inline-block;
-    width: auto;
-    margin-left: 16px
-    padding: 8px;
-}
-.modal-box .close-forgot {
-    width: 100%;
-    padding: 10px 2%;
-    display: flex;
-    justify-content: center;
-}
-.modal-box .cancel{
-    background-color: var(--gulfPurple);
-    border-radius: 5px;
-    border: none;
-    padding: 10px 15px;
-    font-size: 15px;
-    color: white;
-    cursor: pointer
-}
-.modal-box span{
-    float: right
-}
-.modal-box a{
-    color: var(--gulfWhite);
-    font-weight: 500;
-    text-decoration: underline
-}
-.modal-cont{display: none}
-.modal-box {
-    animation-name: zoom;
-    animation-duration: .7s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-    border: none;
-    border-radius: 5px;
-    width: 50%;
-    top: 100px;
-    padding-top: 10px;
-    box-shadow: 1px 1px 8px var(--gulfBlack);
-    background-color: #f9fafb;
-}
-@keyframes zoom {
-    from{transform: scale(0);}
-    to{transform: scale(1);}
-}
-h3, .login {
-    margin: auto;
-    text-align: center;
-    display: block;
-    margin: 20px 0;
+/* end modal box */
 
-}
-/* end popup */
 @media only screen and (max-width: 768px) {
   .even-columns {
     display: flex;
