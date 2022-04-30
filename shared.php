@@ -55,6 +55,7 @@ if ($_SESSION['admin_access'] !== true){
               <li><a class=\"dropdown-item\" href=\"about.php#about-OurMissionRow\">Our Mission</a></li>
               <li><a class=\"dropdown-item\" href=\"about.php#about-OurImpactRow\">Our Impact</a></li>
               <li><a class=\"dropdown-item\" href=\"about.php#about-OurStoryRow\">Our Story</a></li>
+              <li><a class=\"dropdown-item\" href=\"faq.php\">FAQ</a></li>
             </ul>
           </li>
 
@@ -80,12 +81,6 @@ if ($_SESSION['admin_access'] !== true){
           </li>
 
           <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"https://www.paypal.com/donate?token=IBOjFEeD8bISqsVxcBPs5cCCrkQHjIDONXWEYSOJuwcFzJFgmhW8Nu8u7Xqld370PTE-0aJtzZRBmQIr\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
-              Donate
-            </a>
-          </li>
-
-          <li class=\"nav-item\">
             <a class=\"nav-link text-nowrap \" href=\"challenge.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
             Monthly Challenge
             </a>
@@ -94,6 +89,12 @@ if ($_SESSION['admin_access'] !== true){
           <li class=\"nav-item\">
             <a class=\"nav-link\" href=\"contact.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
             Contact
+            </a>
+          </li>
+          
+          <li class=\"nav-item donate-nav-btn\">
+            <a class=\"nav-link donate-nav-link\" href=\"https://www.paypal.com/donate?token=IBOjFEeD8bISqsVxcBPs5cCCrkQHjIDONXWEYSOJuwcFzJFgmhW8Nu8u7Xqld370PTE-0aJtzZRBmQIr\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+              Donate
             </a>
           </li>
         </ul>
@@ -148,12 +149,6 @@ if ($_SESSION['admin_access'] == true){
           </li>
 
           <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"https://www.paypal.com/donate?token=IBOjFEeD8bISqsVxcBPs5cCCrkQHjIDONXWEYSOJuwcFzJFgmhW8Nu8u7Xqld370PTE-0aJtzZRBmQIr\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
-              Donate
-            </a>
-          </li>
-
-          <li class=\"nav-item\">
             <a class=\"nav-link text-nowrap \" href=\"challenge.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
             Monthly Challenge
             </a>
@@ -162,6 +157,12 @@ if ($_SESSION['admin_access'] == true){
           <li class=\"nav-item\">
             <a class=\"nav-link\" href=\"contact.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
             Contact
+            </a>
+          </li>
+          
+          <li class=\"nav-item\">
+            <a class=\"nav-link\" href=\"https://www.paypal.com/donate?token=IBOjFEeD8bISqsVxcBPs5cCCrkQHjIDONXWEYSOJuwcFzJFgmhW8Nu8u7Xqld370PTE-0aJtzZRBmQIr\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+              Donate
             </a>
           </li>
 
