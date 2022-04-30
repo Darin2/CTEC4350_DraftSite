@@ -109,7 +109,10 @@ if (array_key_exists('Submit1', $_POST)){
         }
         //if stmt->num_rows was not ==1, let the user know their username/password weren't correct
         else{
-          echo "<div class='card-body gulfBlueBG text-center fixed-top'>
+          echo "<div id='close-error' class='card-body gulfBlueBG text-center fixed-top'>
+                <div class='exit-btn'>
+                  <button type='button' class='exit-btn-btn btn-close d-flex justify-content-end' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
                 <h5 class='card-title text-white'>The username and password combination was incorrect. Please try again.</h5>
                 <div class='text-white'>To reset your password, click <a href=''>here</a></div>
                 </div>
@@ -154,5 +157,6 @@ if (array_key_exists('Submit1', $_POST)){
   </div>
   <!-- end bootstrap container -->
   </main>
+  <script src="js/exitbtn.js"></script>
 </body>
 <?php echo $footer ?>
