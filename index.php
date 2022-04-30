@@ -13,13 +13,13 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
 <?php echo "$component_Nav";?>
 
 <div class="hero">
-  <video autoplay loop muted plays-inline class="back-video">
+  <video width="100%" autoplay loop muted plays-inline class="back-video">
     <source src="img/revamped.mp4" type="video/mp4">
   </video>
 </div>
 <div class="landing">	
 	 <section class="col-sm mt-0 py-0">
-        <h1 class="display-6 text-black text-center">We are discovering "diamonds" in the most unlikely places</h1>
+        <h1 class="display-6 text-black text-center">Discovering Diamonds</h1>
         <p class="lead text-black text-center mx-5">Giving Us Leadership and Focus (The GULF) is a Texas-based 501(c)(3) Organization that is coming up with solutions and opportunities to re-engage underserved teens in staying on track in school.</p>
         <p class="lead text-black text-center mx-5">By offering a uniquely combined mentoring program that is fostered and managed by teens in exciting peer to peer settings, teens are encouraged to make successful transitions from high school no matter their surrounding circumstances.</p>
         <p class="lead text-black text-center mx-5">
