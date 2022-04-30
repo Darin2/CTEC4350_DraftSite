@@ -237,7 +237,7 @@ nav{
 }
 /* end modal box */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .even-columns {
     display: flex;
     flex-direction: column-reverse;
@@ -263,9 +263,12 @@ nav{
   .ybp {
     padding-right: 30px;
   }
+  .testim-container {
+    text-align: center;
+  }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
   .dl-img {
     padding: 0 20px;
   }
