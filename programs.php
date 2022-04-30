@@ -10,7 +10,6 @@ echo "$component_HTMLHeader";?>
 
 <main>
   <?php echo "$component_Nav";?>
-
     <!-- programs intro row -->
     <div id="programs-headerRow" class="row d-flex align-items-center gulfBlueBG">
 
@@ -29,7 +28,7 @@ echo "$component_HTMLHeader";?>
       </section>
 
       <section class="col-sm">
-      <h1 class="display-2 text-white text-center prg-display">Programs</h1>
+      <h1 class="display-4 text-white text-center prg-display">Programs</h1>
       <p class="lead text-white text-center prg-display">The G.U.L.F is a non-profit organization dedicated to encouraging team building and individual growth through our both young adult and youth enrichment programs.</p>
       <p class="lead text-white text-center">
       <strong>Come check us out!</strong>
@@ -40,56 +39,75 @@ echo "$component_HTMLHeader";?>
     <div id="programs-DiamondLeagueRow" class="content flow mt-3">
       <div class="even-columns">
         <div class="col prg-txt d-flex flex-column align-self-center">
-          <h2 class="h2">The Diamond League</h2>
+          <h2>The Diamond League</h2>
           <p>Whether you like  parties,  concerts,  sports, rapping, singing,  dancing,  playing  on the computer, or thinking of all the different ways to make money, The DL has got you you covered.</p>
           <p>On every 2nd Saturday of the month, come join us for fun parties all over the metroplex. From concerts, sports, dancing, and computer games; we do it all and more! Each party has its own theme and setting. All proceeds go to helping The G.U.L.F. continue shaping and building its young entreprenuers.</p>
-          <a href="diamondleague.php" class="btn btn-primary btn-prg login">Join Us Today</a>
+          <button type="button" class="btn btn-primary btn-prg login" data-bs-toggle="modal" data-bs-target="#Modal1">Join Us Today</button>
         </div>
         <div class="col">
           <img src="img/thedl.jpg" class="dl-img img-fluid tdl rounded" alt="Teens playing basketball">
         </div>
       </div>
-      <!-- commenting out the modals until we get them to be 100% functional. don't want to present broken stuff for our draft critique.
-      <div class="modal-cont">
-        <div class="modal-box">
-            <span class="close">&times;</span>
-            <form action="" method="POST" class="login-box">
-                <h3>Sign up for The Diamond League </h3>
+    </div>
 
-                <label for="diamondLeagueFirstName" class="label">*First Name</label>
-                <input type="name" name="diamondLeagueFirstName" id="fName_dl" class="input" required>
-
-                <label for="diamondLeagueLastName" class="label">*Last Name</label>
-                <input type="name" name="diamondLeagueLastName" id="lName_dl" class="input" required>
-
-                <label for="diamondLeagueEmail" class="label">*Email</label>
-                <input type="text" name="diamondLeagueEmail" id="email_dl" class="input" required>
-
-                <label for="diamondLeaguePhoneNumber" class="label">Phone Number</label>
-                <input type="name" name="diamondLeaguePhoneNumber" id="pNumber_dl" class="input">
-                 commenting this part out; we know they're interested in The DL because they've clicked the CTA
-                <label for="programs" class="label">Program of Interest</label>
-                <select name="programs" id="dl-option" class="input">
-                  <option value="diamond-league">Select One</option>
-                  <option value="diamond-league">The Diamond League</option>
+    <!-- Modal -->
+    <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel1">Join the Diamond League</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post">
+              <p>* Required field</p>
+              <label for="diamondLeagueEmail" class="form-label text-black">* Email address</label>
+              <input type="email" name="diamondLeagueEmail" class="form-control" id="diamondLeague-input-Email" aria-describedby="emailHelp">
+              <label for="diamondLeagueFirstName" class="form-label text-black">* First Name</label>
+              <input type="name" name="diamondLeagueFirstName" class="form-control" id="diamondLeague-input-FirstName">
+              <label for="diamondLeagueLastName" class="form-label text-black">* Last Name</label>
+              <input type="name" name="diamondLeagueLastName" class="form-control" id="diamondLeague-input-LastName">
+              <label for="diamondLeaguePhoneNumber" class="form-label text-black">Phone Number</label>
+              <!-- dropdown menu for "I am interested in.."
+              ***not including this dropdown right now - it will require a lot more database/SQL work on the back end and we may not have time **
+              <div class="mb-3">
+                <select class="form-select" name="contactInterestedIn" id="contact-input-InterestedIn" aria-label="Default select example">
+                  <option selected>I am interested in...</option>
+                  <option value="1">Joining The G.U.L.F. as a participant</option>
+                  <option value="2">Volunteering with The G.U.L.F.</option>
+                  <option value="3">Sponsorship of The G.U.L.F.</option>
+                  <option value="4">Other</option>
                 </select>
-
-              <button type="submit" name="SubmitDL" class="join-button">Join</button>
-                <div class="close-forgot">
-                    <button class="cancel">Cancel</button>
-                </div>
+              </div>
+              -->
+              <!--Optional message from user -->
+              <input type="name" name="diamondLeaguePhoneNumber" class="form-control" id="diamondLeague-input-PhoneNumber" placeholder="123-456-7890">
+              <label for="diamondLeagueMessage" class="form-label text-black"></label>
+              <label for="diamondLeagueMessage" class="form-label text-black">Message</label>
+              <textarea class="form-control" name="diamondLeagueMessage" aria-label="With textarea" id="diamondLeague-input-textArea"></textarea>
             </form>
+          </div>
+          <div class="modal-footer">
+            <!--Checkbox input
+            ***Commenting this part out for now, don't think it's necessary.
+            <div class="mb-3 form-check">
+              <input type="checkbox" name="contactOptIn" class="form-check-input" id="contact-input-OptIn">
+              <label class="form-check-label text-black" for="exampleCheck1">I'd like to receive occasional updates and announcements from The G.U.L.F.</label>
+            </div>
+            -->
+            <!--submit form -->
+            <button type="submit" name="Submit" class="btn btn-primary my-3">Submit</button>
+          </div>
         </div>
       </div>
-      -->
     </div>
-    
+
     <div class="testim-container">
       <h4>The G.U.L.F. inspired me to adopt a growth mindset.</h4>
-      <h4>"I am glad that I have been a part of this amazing program. The G.U.L.F's staff are like my second familly. We all felt comfortable to share our thoughts and ideas and help build each other into the entreprenuers we aspire to be. The G.U.L.F. inspired me to adopt a growth mindset."</h4>
-      <p>John D. - Former member of The Diamond League</p>
+      <h4>"I am glad that I was a part of this amazing program. Everyone there was like my second family. We all felt comfortable to share our thoughts and ideas and helped build each other into the entreprenuers we aspired to be. The G.U.L.F. inspired me to adopt a growth mindset."</h4>
+      <h6>Johnny Dixon. - Former member of The Diamond League</h6>
     </div>
-  
+
     <div id="programs-BusinessApprenticeshipRow" class="content flow">
 
       <div class="even-columns even-columns-responsive">
@@ -97,52 +115,65 @@ echo "$component_HTMLHeader";?>
           <img src="img/youthprg.jpg" class="dl-img img-fluid ybp rounded" alt="Business workers smiling for a group photo">
         </div>
         <div class="col prg-txt d-flex flex-column align-self-center">
-          <h2 class="h2">Youth Business Apprenticeship Program</h2>
+          <h2>Youth Business Apprenticeship Program</h2>
           <p>Our Youth Business Program and monthly Youth Business Expos will be available to those who believe they are cut out to be their own bosses and learning the ins and outs of entrepreneurship. Through this program, participants will work alongside and learn from real business owners and career professionals.</p>
           <p>In our Youth Apprenticeship Program, participants will be taught invaluable skills, lessons, and business acumen from those who have stayed on path before us, and who are now young successful business men and woman.</p>
           <p>It will also focus on giving sponsors and partner companies access in offering their services, consultation, mentorship, and products to the GULF community by sponsoring and/or partnering with us, allowing youth to learn and earn as an incentive in making and maintaining passing grades and staying on the right path. A win-win for teens and the communities we're a part of.</p>
-          <a href="ybap.php" class="btn btn-primary btn-prg login" href="ybap.php">Join Us Today</a>
+          <button type="button" class="btn btn-primary btn-prg login" data-bs-toggle="modal" data-bs-target="#Modal2">Join Us Today</button>
         </div>
       </div>
+   </div>
 
-      <!-- commenting out the modals until we get them to be 100% functional. don't want to present broken stuff for our draft critique.
-      <div class="modal-cont">
-        <div class="modal-box">
-            <span class="close">&times;</span>
-            <form action="" method="POST" class="login-box">
-
-              <h3>Sign up for Youth Business Apprenticeship Program </h3>
-
-                <label for="YBAPFirstName" class="label">*First Name</label>
-                <input type="name" name="YBAPFirstName" id="fName_yba" class="input" required>
-
-                <label for="YBAPLastName" class="label">*Last Name</label>
-                <input type="name" name="YBAPLastName" id="lName_yba" class="input" required>
-
-                <label for="YBAPEmail" class="label">*Email</label>
-                <input type="name" name="YBAPEmail" id="email_yba" class="input" required>
-
-                <label for="YBAPPhoneNumber" class="label">Phone Number</label>
-                <input type="text" name="YBAPPhoneNumber" id="pNumber_yba" class="input">
-
-                 commenting this part out; we already know they're interested in the YBAP
-                <label for="programs" class="label">Program of Interest</label>
-                <select name="programs" id="yba-option" class="input">
-                  <option value="diamond-league">Select One</option>
-                  <option value="diamond-league">Youth Business Apprenticehsip Program</option>
-                </select>
-
-              <button type="submit" name="SubmitYBAP" class="join-button">Join</button>
-              <div class="close-forgot">
-                  <button class="cancel">Cancel</button>
-              </div>
-            </form>
-        </div>
-    </div>
-    -->
-  </div>
+   <!-- Modal -->
+   <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
+     <div class="modal-dialog" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="ModalLabel2">Join the Youth Business Apprenticeship Program</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+           <p>* Indicates required field</p>
+           <form class="" action="" method="post">
+             <label for="contactEmail" class="form-label text-black">* Email address</label>
+             <input type="email" name="contactEmail" class="form-control" id="contact-input-Email" aria-describedby="emailHelp">
+             <label for="contactFirstName" class="form-label text-black">* First Name</label>
+             <input type="name" name="contactFirstName" class="form-control" id="contact-input-FirstName">
+             <label for="contactLastName" class="form-label text-black">* Last Name</label>
+             <input type="name" name="contactLastName" class="form-control" id="contact-input-LastName">
+             <label for="contactPhoneNumber" class="form-label text-black">Phone Number</label>
+             <input type="name" name="contactPhoneNumber" class="form-control" id="contact-input-PhoneNumber" placeholder="123-456-7890">
+             <!-- dropdown menu for "I am interested in.."
+             ***not including this dropdown right now - it will require a lot more database/SQL work on the back end and we may not have time **
+             <div class="mb-3">
+               <select class="form-select" name="contactInterestedIn" id="contact-input-InterestedIn" aria-label="Default select example">
+                 <option selected>I am interested in...</option>
+                 <option value="1">Joining The G.U.L.F. as a participant</option>
+                 <option value="2">Volunteering with The G.U.L.F.</option>
+                 <option value="3">Sponsorship of The G.U.L.F.</option>
+                 <option value="4">Other</option>
+               </select>
+             </div>
+             -->
+             <!--Optional message from user -->
+            <label for="contactMessage" class="form-label text-black">Message</label>
+            <textarea class="form-control" name="contactMessage" aria-label="With textarea" id="contact-input-textArea"></textarea>
+           </form>
+         </div>
+         <div class="modal-footer">
+           <!--Checkbox input
+           ***Commenting this part out for now, don't think it's necessary.
+           <div class="mb-3 form-check">
+             <input type="checkbox" name="contactOptIn" class="form-check-input" id="contact-input-OptIn">
+             <label class="form-check-label text-black" for="exampleCheck1">I'd like to receive occasional updates and announcements from The G.U.L.F.</label>
+           </div>
+           -->
+           <!--submit form -->
+           <button type="submit" name="Submit" class="btn btn-primary my-3">Submit</button>
+         </div>
+       </div>
+     </div>
+   </div>
 </main>
 
 <?php echo "$component_Footer";?>
-
-<!-- <script src="js/popup.js"></script> -->
