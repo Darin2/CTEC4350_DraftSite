@@ -178,18 +178,35 @@ echo "$component_HTMLHeader";?>
   				//$stmt->execute() failed.
           //stackoverflow error printing code for debugging
           //printf("Error: %s.\n", $stmt->error);
-  				$output = "<div class='text-white text-center'>Form submission failed.  Please try again or contact us via phone (817) 558 - 4853). We can also be reached on RingCentral.</div>";
+          // $output = "<p class='text-white'>Debug: the statement did not successfully execute. stmt->execute() failed.</p>";
+          $output = "
+          <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+          <h3 class='display-4 mx-auto my-5 text-white'>We were unable to submit your information to our database.</h3>
+          <p class='lead text-white'>Please try again or contact us via phone (817) 558 - 4853).</p>
+          <p class='lead text-white'>We can also be reached on RingCentral.</p>
+          </div>
+          ";
   			}
   		} else {
   			// statement is not successfully prepared (issues with the query).
-  			$output = "<div class='text-white text-center'>Database query failed.  Please contact us via phone (817) 558 - 4853).</div>";
+        // $output = "<p class='text-white'>Debug: the statement did not successfully prepare, so there were issues with the query.</p>";
+        $output = "
+        <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+        <h3 class='display-4 mx-auto my-5 text-white'>We were unable to submit your information to our database.</h3>
+        <p class='lead text-white'>Please try again or contact us via phone (817) 558 - 4853).</p>
+        <p class='lead text-white'>We can also be reached on RingCentral.</p>
+        </div>
+        ";
   		}
 
   	} else {
   		// $missing is not empty
-  		$output = "<div class='text-white text-center'><p>The following required fields are missing in your submission.  Please fill out all required fields.  <br>Thank you.<br>\n<ul>\n";
+  		$output = "<div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+      <h3 class='display-4 mx-auto my-5 text-white'>Please fill out all required fields.</h3>
+      <p class='lead text-white'>The following required fields are missing in your submission:</p>
+      <br>\n<ul>\n";
   		foreach($missing as $m){
-  			$output .= "<li>{$label[$m]}\n";
+  			$output .= "<li class='text-white'>{$label[$m]}\n";
   		}
   		$output .= "</ul></div>\n";
   	}

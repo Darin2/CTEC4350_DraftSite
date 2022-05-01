@@ -189,10 +189,13 @@ echo "$component_HTMLHeader";?>
     		}
 
     	} else {
-    		// $missing is not empty
-    		$output = "<div><p>The following required fields are missing in your submission.  Please fill out all required fields.  <br>Thank you.<br>\n<ul>\n";
+        // $missing is not empty
+    		$output = "<div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+        <h3 class='display-4 mx-auto my-5 text-white'>Please fill out all required fields.</h3>
+        <p class='lead text-white'>The following required fields are missing in your submission:</p>
+        <br>\n<ul>\n";
     		foreach($missing as $m){
-    			$output .= "<li>{$label[$m]}\n";
+    			$output .= "<li class='text-white'>{$label[$m]}\n";
     		}
     		$output .= "</ul></div>\n";
     	}

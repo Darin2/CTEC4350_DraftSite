@@ -6,80 +6,80 @@ echo "$component_HTMLHeader";
 ?>
 
 <script>
-function init(){
-  document.getElementById('contact-input-Email').onchange = process;
-}
-
-function process(evt){
-
-  // data validation
-  var err = 0;
-
-  // Store the input from the email field in a variable
-  var emailText = document.getElementById('contact-input-Email').value;
-
-  //Create a regular expression for validating the email
-  var emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
-
-  //Test whether or not this email passes the regular expression.
-  if (emailPattern.test(emailText)) {
-    //if it passes, remove the error message for the username.
-    removeErrorMessage('email');
-  } else {
-    //if it doesn't pass, add the error message to the username.
-    addErrorMessage('email', 'Please type a valid email.');
-    err ++;
-    var emailDiv = document.getElementById("emailDiv");
-    emailDiv.style.borderLeft = "1px solid red";
+  function init(){
+    document.getElementById('contact-input-Email').onchange = process;
   }
 
-  // prevent form submission
-  if (evt.preventDefault)
-  {
-    evt.preventDefault();
-  } else {
-    evt.returnValue = false;
-  }
+  function process(evt){
 
-}
+    // data validation
+    var err = 0;
 
-function addErrorMessage(fieldId, msg){
-    //console.log(msg);
+    // Store the input from the email field in a variable
+    var emailText = document.getElementById('contact-input-Email').value;
 
-    // for the label element of this field, change the text color to red.
-    document.getElementById(fieldId+"Label").style.color = "red";
+    //Create a regular expression for validating the email
+    var emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
 
-    // check if an error message span is available
-    if (document.getElementById(fieldId + "ErrMsg"))
-    {
-      // an error message span is already available, use it
-      document.getElementById(fieldId + "ErrMsg").innerHTML = msg;
-      document.getElementById(fieldId + "ErrMsg").style.display = "block";
+    //Test whether or not this email passes the regular expression.
+    if (emailPattern.test(emailText)) {
+      //if it passes, remove the error message for the username.
+      removeErrorMessage('email');
     } else {
-
-      // otherwise, create the error message span
-      var messageSpan = document.createElement("span");
-      messageSpan.className = "errMsg"; // set the CSS class to use
-      messageSpan.id = fieldId + "ErrMsg"; // set the id
-      messageSpan.innerHTML = msg;
-
-      var inputLabel = document.getElementById(fieldId+'Label');
-      inputLabel.parentNode.appendChild(messageSpan);
-
+      //if it doesn't pass, add the error message to the username.
+      addErrorMessage('email', 'Please type a valid email.');
+      err ++;
+      var emailDiv = document.getElementById("emailDiv");
+      emailDiv.style.borderLeft = "1px solid red";
     }
 
-}
+    // prevent form submission
+    if (evt.preventDefault)
+    {
+      evt.preventDefault();
+    } else {
+      evt.returnValue = false;
+    }
 
-function removeErrorMessage (fieldId){
-  if (document.getElementById(fieldId + "ErrMsg"))
-  {
-    document.getElementById(fieldId+"Label").style.color = "black";
-    document.getElementById(fieldId + "ErrMsg").style.display = "none";
   }
 
-}
+  function addErrorMessage(fieldId, msg){
+      //console.log(msg);
 
-window.onload = init;
+      // for the label element of this field, change the text color to red.
+      document.getElementById(fieldId+"Label").style.color = "red";
+
+      // check if an error message span is available
+      if (document.getElementById(fieldId + "ErrMsg"))
+      {
+        // an error message span is already available, use it
+        document.getElementById(fieldId + "ErrMsg").innerHTML = msg;
+        document.getElementById(fieldId + "ErrMsg").style.display = "block";
+      } else {
+
+        // otherwise, create the error message span
+        var messageSpan = document.createElement("span");
+        messageSpan.className = "errMsg"; // set the CSS class to use
+        messageSpan.id = fieldId + "ErrMsg"; // set the id
+        messageSpan.innerHTML = msg;
+
+        var inputLabel = document.getElementById(fieldId+'Label');
+        inputLabel.parentNode.appendChild(messageSpan);
+
+      }
+
+  }
+
+  function removeErrorMessage (fieldId){
+    if (document.getElementById(fieldId + "ErrMsg"))
+    {
+      document.getElementById(fieldId+"Label").style.color = "black";
+      document.getElementById(fieldId + "ErrMsg").style.display = "none";
+    }
+
+  }
+
+  window.onload = init;
 </script>
 </head>
 
@@ -90,7 +90,7 @@ window.onload = init;
 <?php echo "$component_Nav"; ?>
 
 <?php
-//This code can insert stuff into the database. It grabs values from the contact form, validates that nothing is missing, and sends it to the database.
+  //This code can insert stuff into the database. It grabs values from the contact form, validates that nothing is missing, and sends it to the database.
 
   // Process user input if they submit the form
   if (isset($_POST['Submit'])) {
@@ -192,10 +192,10 @@ window.onload = init;
   		}
   		$output .= "</ul></div>\n";
   	}
-}
+  }
 
-//printing the $output message
-echo "$output";
+  //printing the $output message
+  echo "$output";
 ?>
 
 <!-- bootstrap form example -->
