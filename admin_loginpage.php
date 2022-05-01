@@ -132,7 +132,8 @@ if (array_key_exists('Submit1', $_POST)){
 ?>
 <!-- Printing Login Form -->
 <body class="bg-dark">
-  <main class="bg-dark">
+<main class="bg-dark">
+<?php echo "$component_Nav";?>
   <!-- begin bootstrap container -->
   <div class="container bg-dark my-5">
     <!-- Redirect to home link -->
@@ -160,7 +161,8 @@ if (array_key_exists('Submit1', $_POST)){
     </form>
   </div>
   <!-- end bootstrap container -->
-  </main>
-  <script src="js/exitbtn.js"></script>
+</main>
+<script src="js/exitbtn.js"></script>
+<?php echo "$component_Footer";?>
 </body>
-<?php echo $footer ?>
+</html>
