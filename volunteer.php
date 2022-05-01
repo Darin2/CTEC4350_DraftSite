@@ -103,7 +103,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
         <h1 class="text-center text-black">Interested in volunteering with us?</h1>
         <p class="lead text-center text-black">Fill out the form below and help us make a difference.</p>
         <div class="mb-3">
-          <p class="text-center text-black">* Required field</p>
+          <p class="text-black">* Required field</p>
 
           <label for="volunteerEmail" class="form-label text-black">* Email address</label>
           <input type="email" name="volunteerEmail" class="form-control" id="volunteer-input-Email" aria-describedby="emailHelp">

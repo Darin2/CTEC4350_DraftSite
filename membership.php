@@ -163,9 +163,11 @@ echo "$component_HTMLHeader";?>
           //  the following code prints a confirmation message at the top of the contact page when the user successfully submits the form.
   				$output = "
           <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
-          <h3 class='display-4 mx-auto my-5 text-white'>We're so glad you're inquiring about membership, ".$memberFirstName."!<p>We'll get back to you within 48 hours.</h3>
-          <p class='lead text-white text-center'>In the mean time, have you completed our <a href='challenge.php>monthly challenge?</a></p>
-          </div>
+          <h3 class='display-4 mx-auto my-5 text-white'>We're so glad you're inquiring about membership, ".$memberFirstName."!</h3>
+          <p class='lead text-white'>We'll reach out with your next steps within 48 hours.</p>
+          <p class='lead text-white'>In the mean time, have you completed our
+            <a class='gulfOrangeText' href='challenge.php'> monthly challenge?</a>
+          </p>
           </div>
           ";
           //this foreach loop prints everything the user just submitted
@@ -177,7 +179,9 @@ echo "$component_HTMLHeader";?>
   				//$stmt->execute() failed.
           //stackoverflow error printing code for debugging
           //printf("Error: %s.\n", $stmt->error);
-  				$output = "<div>We've failed to submit this form to our servers.  Please try again or contact us via phone (817) 558 - 4853). We can also be reached on RingCentral.</div>";
+  				$output = "<div>
+          <p class='text-white'>We've failed to submit this form to our servers.  Please try again or contact us via phone (817) 558 - 4853). We can also be reached on RingCentral.</p>
+          </div>";
   			}
   		} else {
   			// statement is not successfully prepared (issues with the query).
@@ -206,9 +210,9 @@ echo "$output";
   -->
     <form class="container col-lg-4 col-md-6 col-sm-12 my-3 px-5 pt-5 bg-light bg-gradient rounded" method="POST" action="">
       <h1 class="text-center text-black">Let's Stay In Touch!</h1>
-      <h5 class="text-center text-black">Send us a message and we'll get back to you ASAP.</h5>
+      <p class="lead text-center text-black">Send us a message and we'll get back to you ASAP.</p>
       <div class="mb-3">
-        <p class="text-center text-black">* Required field</p>
+        <p class="text-black">* Required field</p>
 
         <label for="memberEmail" class="form-label text-black">* Email address</label>
         <input type="email" name="memberEmail" class="form-control" id="member-input-Email" aria-describedby="emailHelp">
