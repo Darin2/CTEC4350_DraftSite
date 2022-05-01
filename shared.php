@@ -208,7 +208,7 @@ $component_Footer = '
               <h5 class="text-white">Quick Links</h5>
               <ul class="quick-links text-white">
                 <li><a class="text-white" href="index.php">Home</a></li>
-                <li><a class="text-white" href="admin_loginpage.php">Log in</a></li>
+                <li><a class="text-white" href="admin_loginpage.php">Log in (Admin)</a></li>
                 <li><a class="text-white" href="about.php">About</a></li>
                 <li><a class="text-white" href="faq.php">FAQ</a></li>
                 <li><a class="text-white" href="membership.php">Membership</a></li>
