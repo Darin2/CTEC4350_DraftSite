@@ -92,7 +92,124 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
 <?php echo "$component_Nav";?>
 
 <div class="container-fluid px-0 mx-auto">
+<!-- processing the volunteer interest form input-->
+<?php
+  //This code can insert stuff into the database. It grabs values from the volunteer interest form, validates that nothing is missing, and sends it to the database.
 
+    // Process user input if they submit the form
+    if (isset($_POST['SubmitVolunteerInterestForm'])) {
+      //echo "<p class='text-white my-5'>debug: the form was successfully submitted</p><br>";
+    	// set up an array of the required user input
+
+    	$required = array("volunteerFirstName", "volunteerLastName", "volunteerEmail"); // note that, in this array, the spelling of each item should match the form field names
+
+    	// set up the expected array (all fields in the form, whether required or not)
+    	$expected = array("volunteerFirstName", "volunteerLastName", "volunteerEmail", "volunteerPhoneNumber", "volunteerMessage"); // again, the spelling of each item should match the form field names
+
+      // set up a label array, use the field name as the key and label as the value
+      $label = array ("volunteerFirstName"=>'First name', "volunteerLastName"=>"Last name", "volunteerEmail"=>'Email address', "volunteerPhoneNumber"=>'Phone number',"volunteerMessage"=>'Message');
+
+      // set up an empty array where we'll push any required fields that weren't submitted
+    	$missing = array();
+
+      //for each item in the expected array (with each item referred to as "field")
+    	foreach ($expected as $field){
+
+        // Enable the line below to debug
+    		//echo "$field: in_array(): ".in_array($field, $required)." empty(_POST[$field]): ".empty($_POST[$field])."<br>";
+
+        //If you find an item that's in the required array and it's empty, push that item into the "missing" array.
+    		if (in_array($field, $required) && empty($_POST[$field])) {
+    			array_push ($missing, $field);
+
+    		} else {
+    			// Otherwise, we know that all required fields had input. So set up a variable to carry the user input.
+
+    			// Note the variable set up here uses the $field value as the variable name. Notice the syntax ${$field}.  This is a "variable variable". For example, the first $field in the foreach loop here is "title" (the first one in the $expected array) and a $title variable will be created.  The value of this variable will be either "" or $_POST["title"] depending on whether $_POST["title"] is set up.
+
+          // once we run through the whole $expected array, then these variables, $contactFirstName, $contactLastName, $contactEmail, $contactPhoneNumber, $contactMessage will be generated.
+
+    			if (!isset($_POST[$field])) {
+    				//$_POST[$field] is not set, set the value as ""
+    				${$field} = "";
+    			} else {
+
+    				${$field} = $_POST[$field];
+    			}
+    		}
+    	}
+
+    	//print_r ($missing); // for debugging purpose
+
+    	/* proceed only if there is no required fields missing and all other data validation rules are satisfied */
+    	if (empty($missing)){
+      //echo "debug: the \$missing array is empty on line 62<br>";
+    		$stmt = $conn->stmt_init();
+
+    		// compose a query: Insert a new record
+
+  			$sql = "Insert Into `volunteerInterestFormSubmissions` (volunteerInterestID, volunteerFirstName, volunteerLastName, volunteerEmail, volunteerPhoneNumber, volunteerMessage) values (?, ?, ?, ?, ?, ?)";
+
+    			if($stmt->prepare($sql)){
+
+    				// Note: user input could be an array, the code to deal with array values should be added before the bind_param statment.
+
+    				$stmt->bind_param('isssss', $volunteerInterestID, $volunteerFirstName, $volunteerLastName, $volunteerEmail, $volunteerPhoneNumber, $volunteerMessage);
+    				$stmt_prepared = 1; // set up a variable to signal that the query statement is successfully prepared.
+            //echo "debug: stmt prepared on line 70<br>";
+    			}
+
+
+    		if ($stmt_prepared == 1){
+          //echo "debug: stmt prepared ==1 on line 81<br>";
+    			if ($stmt->execute()){
+            //echo "debug: stmt executed on line 83<br>";
+
+            //  the following code prints a confirmation message at the top of the contact page when the user successfully submits the form.
+    				$output = "
+            <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+            <h3 class='display-4 mx-auto my-5 text-white'>Thanks for expressing your interest in volunteering, ".$volunteerFirstName."!</h3>
+            <p class='text-white'>We'll contact you via email within 48 hours.</p>
+            <p class='lead text-white'>In the mean time, have you connected with us on <a class='gulfOrangeText' href='https://www.instagram.com/thegulf_tx'>social media</a>?</p>
+            </div>
+            ";
+            //this foreach loop prints everything the user just submitted
+    				//foreach($expected as $key){
+    					//$output .= "<b>{$label[$key]}</b>: {$_POST[$key]} <br>";
+    				//}
+    				//$output .= "<p>Back to the <a href='index.php'>Home page</a></p>";
+    			} else {
+    				//$stmt->execute() failed.
+            //stackoverflow error printing code for debugging
+            //printf("Error: %s.\n", $stmt->error);
+    				$output = "<div class='bg-dark container col-lg-4 col-md-6 col-sm-12 my-3 px-5'>
+            <p class='text-white'> Form submission failed.  Please try again or contact us via phone (817) 558 - 4853). We can also be reached on RingCentral.
+            </p>
+            </div>
+            <br>";
+    			}
+    		} else {
+    			// statement is not successfully prepared (issues with the query).
+    			$output = "<div>
+          <p class='text-white'>Database query failed.  Please contact the webmaster.</p>
+          </div>
+          <br>
+          ";
+    		}
+
+    	} else {
+    		// $missing is not empty
+    		$output = "<div><p class='text-white'>The following required fields are missing in your submission.  Please fill out all required fields.</p>  <br>Thank you.<br>\n<ul>\n";
+    		foreach($missing as $m){
+    			$output .= "<li>{$label[$m]}\n";
+    		}
+    		$output .= "</ul></div>\n";
+    	}
+  }
+
+  //printing the $output message
+  echo "$output";
+?>
   <!-- "I'm interested in volunteering" form -->
   <div class="container-fluid bg-dark mb-5">
     <!-- the actual form begins here
@@ -140,125 +257,6 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
         <button type="submit" name="SubmitVolunteerInterestForm" class="btn btn-primary my-3">Submit</button>
       </form>
   </div>
-
-  <!-- processing the volunteer interest form input-->
-  <?php
-    //This code can insert stuff into the database. It grabs values from the volunteer interest form, validates that nothing is missing, and sends it to the database.
-
-      // Process user input if they submit the form
-      if (isset($_POST['SubmitVolunteerInterestForm'])) {
-        //echo "<p class='text-white my-5'>debug: the form was successfully submitted</p><br>";
-      	// set up an array of the required user input
-
-      	$required = array("volunteerFirstName", "volunteerLastName", "volunteerEmail"); // note that, in this array, the spelling of each item should match the form field names
-
-      	// set up the expected array (all fields in the form, whether required or not)
-      	$expected = array("volunteerFirstName", "volunteerLastName", "volunteerEmail", "volunteerPhoneNumber", "volunteerMessage"); // again, the spelling of each item should match the form field names
-
-        // set up a label array, use the field name as the key and label as the value
-        $label = array ("volunteerFirstName"=>'First name', "volunteerLastName"=>"Last name", "volunteerEmail"=>'Email address', "volunteerPhoneNumber"=>'Phone number',"volunteerMessage"=>'Message');
-
-        // set up an empty array where we'll push any required fields that weren't submitted
-      	$missing = array();
-
-        //for each item in the expected array (with each item referred to as "field")
-      	foreach ($expected as $field){
-
-          // Enable the line below to debug
-      		//echo "$field: in_array(): ".in_array($field, $required)." empty(_POST[$field]): ".empty($_POST[$field])."<br>";
-
-          //If you find an item that's in the required array and it's empty, push that item into the "missing" array.
-      		if (in_array($field, $required) && empty($_POST[$field])) {
-      			array_push ($missing, $field);
-
-      		} else {
-      			// Otherwise, we know that all required fields had input. So set up a variable to carry the user input.
-
-      			// Note the variable set up here uses the $field value as the variable name. Notice the syntax ${$field}.  This is a "variable variable". For example, the first $field in the foreach loop here is "title" (the first one in the $expected array) and a $title variable will be created.  The value of this variable will be either "" or $_POST["title"] depending on whether $_POST["title"] is set up.
-
-            // once we run through the whole $expected array, then these variables, $contactFirstName, $contactLastName, $contactEmail, $contactPhoneNumber, $contactMessage will be generated.
-
-      			if (!isset($_POST[$field])) {
-      				//$_POST[$field] is not set, set the value as ""
-      				${$field} = "";
-      			} else {
-
-      				${$field} = $_POST[$field];
-      			}
-      		}
-      	}
-
-      	//print_r ($missing); // for debugging purpose
-
-      	/* proceed only if there is no required fields missing and all other data validation rules are satisfied */
-      	if (empty($missing)){
-        //echo "debug: the \$missing array is empty on line 62<br>";
-      		$stmt = $conn->stmt_init();
-
-      		// compose a query: Insert a new record
-
-    			$sql = "Insert Into `volunteerInterestFormSubmissions` (volunteerInterestID, volunteerFirstName, volunteerLastName, volunteerEmail, volunteerPhoneNumber, volunteerMessage) values (?, ?, ?, ?, ?, ?)";
-
-      			if($stmt->prepare($sql)){
-
-      				// Note: user input could be an array, the code to deal with array values should be added before the bind_param statment.
-
-      				$stmt->bind_param('isssss', $volunteerInterestID, $volunteerFirstName, $volunteerLastName, $volunteerEmail, $volunteerPhoneNumber, $volunteerMessage);
-      				$stmt_prepared = 1; // set up a variable to signal that the query statement is successfully prepared.
-              //echo "debug: stmt prepared on line 70<br>";
-      			}
-
-
-      		if ($stmt_prepared == 1){
-            //echo "debug: stmt prepared ==1 on line 81<br>";
-      			if ($stmt->execute()){
-              //echo "debug: stmt executed on line 83<br>";
-
-              //  the following code prints a confirmation message at the top of the contact page when the user successfully submits the form.
-      				$output = "
-              <div class='bg-dark container col-lg-4 col-md-6 col-sm-12 my-3 px-5'>
-              <h3 class='mx-auto my-5 text-white '>Thanks for expressing your interest in volunteering, ".$volunteerFirstName."!</h3>
-              <p class='text-white'>We'll contact you via email within 48 hours.</p>
-              <p class='lead text-white text-center'>In the mean time, have you connected with us on <a class='gulfOrangeText' href='https://www.instagram.com/thegulf_tx'>social media</a>?</p>
-              </div>
-              ";
-              //this foreach loop prints everything the user just submitted
-      				//foreach($expected as $key){
-      					//$output .= "<b>{$label[$key]}</b>: {$_POST[$key]} <br>";
-      				//}
-      				//$output .= "<p>Back to the <a href='index.php'>Home page</a></p>";
-      			} else {
-      				//$stmt->execute() failed.
-              //stackoverflow error printing code for debugging
-              //printf("Error: %s.\n", $stmt->error);
-      				$output = "<div class='bg-dark container col-lg-4 col-md-6 col-sm-12 my-3 px-5'>
-              <p class='text-white'> Form submission failed.  Please try again or contact us via phone (817) 558 - 4853). We can also be reached on RingCentral.
-              </p>
-              </div>
-              <br>";
-      			}
-      		} else {
-      			// statement is not successfully prepared (issues with the query).
-      			$output = "<div>
-            <p class='text-white'>Database query failed.  Please contact the webmaster.</p>
-            </div>
-            <br>
-            ";
-      		}
-
-      	} else {
-      		// $missing is not empty
-      		$output = "<div><p class='text-white'>The following required fields are missing in your submission.  Please fill out all required fields.</p>  <br>Thank you.<br>\n<ul>\n";
-      		foreach($missing as $m){
-      			$output .= "<li>{$label[$m]}\n";
-      		}
-      		$output .= "</ul></div>\n";
-      	}
-    }
-
-    //printing the $output message
-    echo "$output";
-  ?>
 
 <!--end container -->
 </div>
