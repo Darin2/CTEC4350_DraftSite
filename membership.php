@@ -179,13 +179,23 @@ echo "$component_HTMLHeader";?>
     				//$stmt->execute() failed.
             //stackoverflow error printing code for debugging
             //printf("Error: %s.\n", $stmt->error);
-    				$output = "<div>
-            <p class='text-white'>We've failed to submit this form to our servers.  Please try again or contact us via phone (817) 558 - 4853). We can also be reached on RingCentral.</p>
-            </div>";
+            $output = "
+            <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+            <h3 class='display-4 mx-auto my-5 text-white'>We were unable to submit your information to our database.</h3>
+            <p class='lead text-white'>Please try again or contact us via phone (817) 558 - 4853).</p>
+            <p class='lead text-white'>We can also be reached on RingCentral.</p>
+            </div>
+            ";
     			}
     		} else {
     			// statement is not successfully prepared (issues with the query).
-    			$output = "<div>Database query failed.  Please contact the webmaster.</div>";
+          $output = "
+          <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+          <h3 class='display-4 mx-auto my-5 text-white'>We were unable to submit your information to our database.</h3>
+          <p class='lead text-white'>Please try again or contact us via phone (817) 558 - 4853).</p>
+          <p class='lead text-white'>We can also be reached on RingCentral.</p>
+          </div>
+          ";
     		}
 
     	} else {

@@ -182,18 +182,22 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
     				//$stmt->execute() failed.
             //stackoverflow error printing code for debugging
             //printf("Error: %s.\n", $stmt->error);
-    				$output = "<div class='bg-dark container col-lg-4 col-md-6 col-sm-12 my-3 px-5'>
-            <p class='text-white'> Form submission failed.  Please try again or contact us via phone (817) 558 - 4853). We can also be reached on RingCentral.
-            </p>
+            $output = "
+            <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+            <h3 class='display-4 mx-auto my-5 text-white'>We were unable to submit your information to our database.</h3>
+            <p class='lead text-white'>Please try again or contact us via phone (817) 558 - 4853).</p>
+            <p class='lead text-white'>We can also be reached on RingCentral.</p>
             </div>
-            <br>";
+            ";
     			}
     		} else {
     			// statement is not successfully prepared (issues with the query).
-    			$output = "<div>
-          <p class='text-white'>Database query failed.  Please contact the webmaster.</p>
+          $output = "
+          <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+          <h3 class='display-4 mx-auto my-5 text-white'>We were unable to submit your information to our database.</h3>
+          <p class='lead text-white'>Please try again or contact us via phone (817) 558 - 4853).</p>
+          <p class='lead text-white'>We can also be reached on RingCentral.</p>
           </div>
-          <br>
           ";
     		}
 

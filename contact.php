@@ -162,10 +162,11 @@ echo "$component_HTMLHeader";
           //echo "debug: stmt executed on line 83<br>";
 
           //  the following code prints a confirmation message at the top of the contact page when the user successfully submits the form.
-  				$output = "
+          $output = "
           <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
-          <h3 class='display-4 mx-auto my-5 text-white'>Thanks for reaching out, ".$contactFirstName."!<p>We'll get back to you within 48 hours.</h3>
-          <p class='lead text-white text-center'>In the mean time, have you connected with us on <a href='https://www.instagram.com/thegulf_tx'>social media</a>?</p>
+          <h3 class='display-4 mx-auto my-5 text-white'>Thanks for reaching out, ".$contactFirstName.".</h3>
+          <p class='lead text-white'>We'll reach out to you within 48 hours.</p>
+          <p class='lead text-white'>In the mean time, have you connected with us on <a class='gulfOrangeText' href='https://www.instagram.com/thegulf_tx'>social media</a>?</p>
           </div>
           ";
           //this foreach loop prints everything the user just submitted
@@ -177,20 +178,35 @@ echo "$component_HTMLHeader";
   				//$stmt->execute() failed.
           //stackoverflow error printing code for debugging
           //printf("Error: %s.\n", $stmt->error);
-  				$output = "<div>Form submission failed.  Please try again or contact us via phone (817) 558 - 4853). We can also be reached on RingCentral.</div>";
+          $output = "
+          <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+          <h3 class='display-4 mx-auto my-5 text-white'>We were unable to submit your information to our database.</h3>
+          <p class='lead text-white'>Please try again or contact us via phone (817) 558 - 4853).</p>
+          <p class='lead text-white'>We can also be reached on RingCentral.</p>
+          </div>
+          ";
   			}
   		} else {
   			// statement is not successfully prepared (issues with the query).
-  			$output = "<div>Database query failed.  Please contact the webmaster.</div>";
+        $output = "
+        <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+        <h3 class='display-4 mx-auto my-5 text-white'>We were unable to submit your information to our database.</h3>
+        <p class='lead text-white'>Please try again or contact us via phone (817) 558 - 4853).</p>
+        <p class='lead text-white'>We can also be reached on RingCentral.</p>
+        </div>
+        ";
   		}
 
   	} else {
-  		// $missing is not empty
-  		$output = "<div><p>The following required fields are missing in your submission.  Please fill out all required fields.  <br>Thank you.<br>\n<ul>\n";
-  		foreach($missing as $m){
-  			$output .= "<li>{$label[$m]}\n";
-  		}
-  		$output .= "</ul></div>\n";
+      // $missing is not empty
+      $output = "<div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+      <h3 class='display-4 mx-auto my-5 text-white'>Please fill out all required fields.</h3>
+      <p class='lead text-white'>The following required fields are missing in your submission:</p>
+      <br>\n<ul>\n";
+      foreach($missing as $m){
+        $output .= "<li class='text-white'>{$label[$m]}\n";
+      }
+      $output .= "</ul></div>\n";
   	}
   }
 
@@ -204,11 +220,11 @@ echo "$component_HTMLHeader";
 
   It takes up 4 columns of a 12-column grid on large screens, 6 on a medium screen, and all 12 on a small screen.
   -->
-    <form class="container col-lg-4 col-md-6 col-sm-12 my-3 px-5 pt-5 bg-light bg-gradient rounded" method="POST" action="">
-      <h1 class="text-center text-black">Let's Stay In Touch!</h1>
-      <h5 class="text-center text-black">Send us a message and we'll get back to you ASAP.</h5>
+    <form class="container col-lg-6 col-md-8 col-sm-12 my-3 px-5 pt-5 bg-light bg-gradient rounded" method="POST" action="">
+      <h1 class="text-center text-black">Let's Talk.</h1>
+      <p class="lead text-black">Send us a message with the form below and we'll get back to you ASAP.</h5>
       <div class="mb-3">
-        <p class="text-center text-black">* Required field</p>
+        <p class="text-black">* Required field</p>
 
         <label for="contactEmail" class="form-label text-black">* Email address</label>
         <input type="email" name="contactEmail" class="form-control" id="contact-input-Email" aria-describedby="emailHelp">
