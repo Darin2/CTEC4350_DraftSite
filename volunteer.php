@@ -147,7 +147,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
 
       // Process user input if they submit the form
       if (isset($_POST['SubmitVolunteerInterestForm'])) {
-        //echo "debug: the form was successfully submitted<br>";
+        echo "<p class='text-white my-5'>debug: the form was successfully submitted</p><br>";
       	// set up an array of the required user input
 
       	$required = array("volunteerFirstName", "volunteerLastName", "volunteerEmail"); // note that, in this array, the spelling of each item should match the form field names
@@ -167,7 +167,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
           // Enable the line below to debug
       		//echo "$field: in_array(): ".in_array($field, $required)." empty(_POST[$field]): ".empty($_POST[$field])."<br>";
 
-          //If you find an item that's in the required array and it's empty, push that item into the missing array.
+          //If you find an item that's in the required array and it's empty, push that item into the "missing" array.
       		if (in_array($field, $required) && empty($_POST[$field])) {
       			array_push ($missing, $field);
 
@@ -197,7 +197,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
 
       		// compose a query: Insert a new record
 
-    			$sql = "Insert Into `volunteerInterestID, volunteerInterestFormSubmissions` (volunteerFirstName, volunteerLastName, volunteerEmail, volunteerPhoneNumber, volunteerMessage) values (?, ?, ?, ?, ?, ?)";
+    			$sql = "Insert Into `volunteerInterestFormSubmissions` (volunteerInterestID, volunteerFirstName, volunteerLastName, volunteerEmail, volunteerPhoneNumber, volunteerMessage) values (?, ?, ?, ?, ?, ?)";
 
       			if($stmt->prepare($sql)){
 
@@ -231,16 +231,24 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
       				//$stmt->execute() failed.
               //stackoverflow error printing code for debugging
               //printf("Error: %s.\n", $stmt->error);
-      				$output = "<div>Form submission failed.  Please try again or contact us via phone (817) 558 - 4853). We can also be reached on RingCentral.</div>";
+      				$output = "<div class='bg-dark container col-lg-4 col-md-6 col-sm-12 my-3 px-5'>
+              <p class='text-white'> Form submission failed.  Please try again or contact us via phone (817) 558 - 4853). We can also be reached on RingCentral.
+              </p>
+              </div>
+              <br>";
       			}
       		} else {
       			// statement is not successfully prepared (issues with the query).
-      			$output = "<div>Database query failed.  Please contact the webmaster.</div>";
+      			$output = "<div>
+            <p class='text-white'>Database query failed.  Please contact the webmaster.</p>
+            </div>
+            <br>
+            ";
       		}
 
       	} else {
       		// $missing is not empty
-      		$output = "<div><p>The following required fields are missing in your submission.  Please fill out all required fields.  <br>Thank you.<br>\n<ul>\n";
+      		$output = "<div><p class='text-white'>The following required fields are missing in your submission.  Please fill out all required fields.</p>  <br>Thank you.<br>\n<ul>\n";
       		foreach($missing as $m){
       			$output .= "<li>{$label[$m]}\n";
       		}
