@@ -147,7 +147,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
 
       // Process user input if they submit the form
       if (isset($_POST['SubmitVolunteerInterestForm'])) {
-        echo "<p class='text-white my-5'>debug: the form was successfully submitted</p><br>";
+        //echo "<p class='text-white my-5'>debug: the form was successfully submitted</p><br>";
       	// set up an array of the required user input
 
       	$required = array("volunteerFirstName", "volunteerLastName", "volunteerEmail"); // note that, in this array, the spelling of each item should match the form field names
@@ -219,7 +219,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
               <div class='bg-dark container col-lg-4 col-md-6 col-sm-12 my-3 px-5'>
               <h3 class='mx-auto my-5 text-white '>Thanks for expressing your interest in volunteering, ".$volunteerFirstName."!</h3>
               <p class='text-white'>We'll contact you via email within 48 hours.</p>
-              <p class='lead text-white text-center'>In the mean time, have you connected with us on <a href='https://www.instagram.com/thegulf_tx'>social media</a>?</p>
+              <p class='lead text-white text-center'>In the mean time, have you connected with us on <a class='gulfOrangeText' href='https://www.instagram.com/thegulf_tx'>social media</a>?</p>
               </div>
               ";
               //this foreach loop prints everything the user just submitted

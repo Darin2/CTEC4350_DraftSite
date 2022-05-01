@@ -88,6 +88,10 @@
   background-color:var(--gulfOrange);
 }
 
+.gulfOrangeText{
+  color:var(--gulfOrange) !important;
+}
+
 .offwhiteBG{
   background-color:#F4F7FA;
 }

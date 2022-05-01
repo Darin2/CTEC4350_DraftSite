@@ -207,26 +207,26 @@ $component_Footer = '
             <div class="footer-section">
               <h5 class="text-white">Quick Links</h5>
               <ul class="quick-links text-white">
-                <li><a class="text-white" href="index.php">Home</a></li>
-                <li><a class="text-white" href="admin_loginpage.php">Log in (Admin)</a></li>
-                <li><a class="text-white" href="about.php">About</a></li>
-                <li><a class="text-white" href="faq.php">FAQ</a></li>
-                <li><a class="text-white" href="membership.php">Membership</a></li>
-                <li><a class="text-white" href="contact.php">Contact Us</a></li>
+                <li><a class="gulfOrangeText" href="index.php">Home</a></li>
+                <li><a class="gulfOrangeText" href="admin_loginpage.php">Log in (Admin)</a></li>
+                <li><a class="gulfOrangeText" href="about.php">About</a></li>
+                <li><a class="gulfOrangeText" href="faq.php">FAQ</a></li>
+                <li><a class="gulfOrangeText" href="membership.php">Membership</a></li>
+                <li><a class="gulfOrangeText" href="contact.php">Contact Us</a></li>
               </ul>
             </div>
           </div>
           <div class="col mt-4">
             <div class="footer-section">
               <h5 class="text-white">Contact</h5>
-              <p class="text-white">(817) 558 - 4853</p>
+              <p><a class="gulfOrangeText" href="tel:817-558-4853">(817) 558 - 4853</a></p>
             </div>
           </div>
           <div class="col mt-4">
             <div class="footer-section">
               <h5 class="text-white">Social Media</h5>
               <ul class="sm-icons">
-                <li><a href="https://www.instagram.com/thegulf_tx/"><i class="fa fa-instagram"></i></a></li>
+                <li><a class="gulfOrangeText" href="https://www.instagram.com/thegulf_tx/"><i class="fa fa-instagram"></i></a></li>
               </ul>
             </div>
           </div>
