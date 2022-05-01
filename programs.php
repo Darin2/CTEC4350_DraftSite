@@ -41,7 +41,7 @@ echo "$component_HTMLHeader";?>
         <div class="col prg-txt d-flex flex-column align-self-center">
           <h2>The Diamond League</h2>
           <p>Whether you like  parties,  concerts,  sports, rapping, singing,  dancing,  playing  on the computer, or thinking of all the different ways to make money, The DL has got you you covered.</p>
-          <p>On every 2nd Saturday of the month, come join us for fun parties all over the metroplex. From concerts, sports, dancing, and computer games; we do it all and more! Each party has its own theme and setting. All proceeds go to helping The G.U.L.F. continue shaping and building its young entreprenuers.</p>
+          <p>Get ready for the most amazing events for teens, that are put together and thrown by teens. On every 2nd Saturday of the month, come join us for fun parties all over the metroplex. Each party has its own theme and setting. All proceeds go to helping The G.U.L.F. continue shaping and building its young entreprenuers.</p>
           <button type="button" class="btn btn-primary btn-prg login" data-bs-toggle="modal" data-bs-target="#Modal1">Join Us Today</button>
         </div>
         <div class="col">
@@ -55,7 +55,7 @@ echo "$component_HTMLHeader";?>
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="ModalLabel1">Join the Diamond League</h5>
+            <h5 class="modal-title" id="ModalLabel1">Join The Diamond League</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -129,7 +129,7 @@ echo "$component_HTMLHeader";?>
      <div class="modal-dialog" role="document">
        <div class="modal-content">
          <div class="modal-header">
-           <h5 class="modal-title" id="ModalLabel2">Join the Youth Business Apprenticeship Program</h5>
+           <h5 class="modal-title" id="ModalLabel2">Join The Youth Business Apprenticeship Program</h5>
            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
          </div>
          <div class="modal-body">
