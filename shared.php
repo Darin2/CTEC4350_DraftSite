@@ -56,7 +56,7 @@ if ($_SESSION['admin_access'] !== true){
           </li>
 
           <li class=\"nav-item dropdown\">
-            <a class=\"nav-link dropdown-toggle\" href=\"about.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
               About
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
@@ -68,7 +68,7 @@ if ($_SESSION['admin_access'] !== true){
           </li>
 
           <li class=\"nav-item dropdown\">
-            <a class=\"nav-link dropdown-toggle\" href=\"getinvolved.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
               Get Involved
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
@@ -79,7 +79,7 @@ if ($_SESSION['admin_access'] !== true){
           </li>
 
           <li class=\"nav-item dropdown\">
-            <a class=\"nav-link dropdown-toggle\" href=\"programs.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
               Programs
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
@@ -125,7 +125,7 @@ if ($_SESSION['admin_access'] == true){
       <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">
         <ul class=\"navbar-nav\">
           <li class=\"nav-item dropdown\">
-            <a class=\"nav-link dropdown-toggle\" href=\"about.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
               About
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
@@ -137,7 +137,7 @@ if ($_SESSION['admin_access'] == true){
           </li>
 
           <li class=\"nav-item dropdown\">
-            <a class=\"nav-link dropdown-toggle\" href=\"getinvolved.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
               Get Involved
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
@@ -148,7 +148,7 @@ if ($_SESSION['admin_access'] == true){
           </li>
 
           <li class=\"nav-item dropdown\">
-            <a class=\"nav-link dropdown-toggle\" href=\"programs.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
               Programs
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
@@ -176,10 +176,11 @@ if ($_SESSION['admin_access'] == true){
           </li>
 
           <li class=\"nav-item dropdown\">
-            <a class=\"nav-link dropdown-toggle\" href=\"admin_controlpanel.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
               Admin Controls
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
+              <li><a class=\"dropdown-item\" href=\"admin_controlpanel.php\">View Control Panel</a></li>
               <li><a class=\"dropdown-item\" href=\"admin_contactFormLeads.php\">Contact Form Leads</a></li>
               <li><a class=\"dropdown-item\" href=\"admin_volunteerInterestFormLeads.php\">Volunteer Leads</a></li>
               <li><a class=\"dropdown-item\" href=\"admin_memberFormLeads.php\">Membership Leads</a></li>

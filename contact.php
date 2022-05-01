@@ -222,7 +222,7 @@ echo "$component_HTMLHeader";
   -->
     <form class="container col-lg-6 col-md-8 col-sm-12 my-3 px-5 pt-5 bg-light bg-gradient rounded" method="POST" action="">
       <h1 class="text-center text-black">Let's Talk.</h1>
-      <p class="lead text-black">Send us a message with the form below and we'll get back to you ASAP.</h5>
+      <p class="lead text-center text-black">Send us a message with the form below and we'll get back to you ASAP.</h5>
       <div class="mb-3">
         <p class="text-black">* Required field</p>
 
