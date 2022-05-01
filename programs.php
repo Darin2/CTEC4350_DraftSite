@@ -36,7 +36,7 @@ echo "$component_HTMLHeader";?>
       </section>
     </div>
 
-    <div id="programs-DiamondLeagueRow" class="content flow mt-3">
+    <div id="programs-DiamondLeagueRow" class="content flow my-5">
       <div class="even-columns">
         <div class="col prg-txt d-flex flex-column align-self-center">
           <h2>The Diamond League</h2>
@@ -102,11 +102,21 @@ echo "$component_HTMLHeader";?>
       </div>
     </div>
 
+    <!--
     <div class="testim-container">
-      <h4>The G.U.L.F. inspired me to adopt a growth mindset.</h4>
-      <h4>"I am glad that I was a part of this amazing program. Everyone there was like my second family. We all felt comfortable to share our thoughts and ideas and helped build each other into the entreprenuers we aspired to be. The G.U.L.F. inspired me to adopt a growth mindset."</h4>
+      <p class="lead col-lg-6 col-md-8 col-sm-12">"I am glad that I was a part of this amazing program. Everyone there was like my second family. We all felt comfortable to share our thoughts and ideas and helped build each other into the entreprenuers we aspired to be. The G.U.L.F. inspired me to adopt a growth mindset."
+      </p>
       <h6>Johnny Dixon. - Former member of The Diamond League</h6>
     </div>
+    -->
+    <!-- New idea for testimonial section -->
+    <section class="col-sm py-5 my-5 gulfBlueBG">
+      <h2 class="text-white text-center">What People Are Saying</h2>
+      <blockquote class="mx-auto blockquote text-center text-white py-3 px-2 col-lg-8 col-md-10 col-sm-12">
+        <p class="mx-auto pb-4 px-2 col-lg-8 col-md-10 col-sm-12">"I am glad that I was a part of this amazing program. Everyone there was like my second family. We all felt comfortable to share our thoughts and ideas and helped build each other into the entreprenuers we aspired to be. The G.U.L.F. inspired me to adopt a growth mindset."</p>
+        <footer class="blockquote-footer text-white">Johnny Dixon, <cite title="Source Title">Former member of The Diamond League</cite></footer>
+      </blockquote>
+    </section>
 
     <div id="programs-BusinessApprenticeshipRow" class="content flow">
 
