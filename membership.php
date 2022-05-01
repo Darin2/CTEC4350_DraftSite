@@ -208,9 +208,9 @@ echo "$component_HTMLHeader";?>
 
   It takes up 4 columns of a 12-column grid on large screens, 6 on a medium screen, and all 12 on a small screen.
   -->
-    <form class="container col-lg-4 col-md-6 col-sm-12 my-3 px-5 pt-5 bg-light bg-gradient rounded" method="POST" action="">
-      <h1 class="text-center text-black">Let's Stay In Touch!</h1>
-      <p class="lead text-center text-black">Send us a message and we'll get back to you ASAP.</p>
+    <form class="container col-lg-6 col-md-8 col-sm-12 my-3 px-5 pt-5 bg-light bg-gradient rounded" method="POST" action="">
+      <h1 class="text-center text-black">Interested In Membership?</h1>
+      <p class="lead text-center text-black">Fill out the form below to get started on your journey to success.</p>
       <div class="mb-3">
         <p class="text-black">* Required field</p>
 

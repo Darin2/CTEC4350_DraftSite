@@ -169,7 +169,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
     				$output = "
             <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
             <h3 class='display-4 mx-auto my-5 text-white'>Thanks for expressing your interest in volunteering, ".$volunteerFirstName."!</h3>
-            <p class='text-white'>We'll contact you via email within 48 hours.</p>
+            <p class='lead text-white'>We'll contact you via email within 48 hours.</p>
             <p class='lead text-white'>In the mean time, have you connected with us on <a class='gulfOrangeText' href='https://www.instagram.com/thegulf_tx'>social media</a>?</p>
             </div>
             ";
@@ -216,7 +216,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
 
     It takes up 4 columns of a 12-column grid on large screens, 6 on a medium screen, and all 12 on a small screen.
     -->
-      <form class="container col-lg-4 col-md-6 col-sm-12 my-3 px-5 pt-5 bg-light bg-gradient rounded" method="POST" action="">
+      <form class="container col-lg-6 col-md-8 col-sm-12 my-3 px-5 pt-5 bg-light bg-gradient rounded" method="POST" action="">
         <h1 class="text-center text-black">Interested in volunteering with us?</h1>
         <p class="lead text-center text-black">Fill out the form below and help us make a difference.</p>
         <div class="mb-3">

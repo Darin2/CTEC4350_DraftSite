@@ -89,7 +89,7 @@ echo "$component_HTMLHeader";?>
 <?php echo "$component_Nav"; ?>
 
 <?php
-//This code can insert stuff into the database. It grabs values from the contact form, validates that nothing is missing, and sends it to the database.
+  //This code can insert stuff into the database. It grabs values from the contact form, validates that nothing is missing, and sends it to the database.
 
   // Process user input if they submit the form
   if (isset($_POST['SubmitSponsorForm'])) {
@@ -161,10 +161,12 @@ echo "$component_HTMLHeader";?>
           //echo "debug: stmt executed on line 83<br>";
 
           //  the following code prints a confirmation message at the top of the contact page when the user successfully submits the form.
-  				$output = "
+
+          $output = "
           <div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
-          <h3 class='display-4 mx-auto my-5 text-white'>Thanks for reaching out, ".$sponsorFirstName."!<p>We'll get back to you soon.</h3>
-            <p class='lead text-white text-center'>In the mean time, have you connected with us on <a href='https://www.instagram.com/thegulf_tx'>social media</a>?</p>
+          <h3 class='display-4 mx-auto my-5 text-white'>Thank you for considering sponsorship, ".$sponsorFirstName.".</h3>
+          <p class='lead text-white'>We'll contact you within 48 hours.</p>
+          <p class='lead text-white'>In the mean time, have you connected with us on <a class='gulfOrangeText' href='https://www.instagram.com/thegulf_tx'>social media</a>?</p>
           </div>
           ";
           //this foreach loop prints everything the user just submitted
@@ -176,25 +178,25 @@ echo "$component_HTMLHeader";?>
   				//$stmt->execute() failed.
           //stackoverflow error printing code for debugging
           //printf("Error: %s.\n", $stmt->error);
-  				$output = "<div>Form submission failed.  Please try again or contact us via phone (817) 558 - 4853). We can also be reached on RingCentral.</div>";
+  				$output = "<div class='text-white text-center'>Form submission failed.  Please try again or contact us via phone (817) 558 - 4853). We can also be reached on RingCentral.</div>";
   			}
   		} else {
   			// statement is not successfully prepared (issues with the query).
-  			$output = "<div>Database query failed.  Please contact the webmaster.</div>";
+  			$output = "<div class='text-white text-center'>Database query failed.  Please contact us via phone (817) 558 - 4853).</div>";
   		}
 
   	} else {
   		// $missing is not empty
-  		$output = "<div><p>The following required fields are missing in your submission.  Please fill out all required fields.  <br>Thank you.<br>\n<ul>\n";
+  		$output = "<div class='text-white text-center'><p>The following required fields are missing in your submission.  Please fill out all required fields.  <br>Thank you.<br>\n<ul>\n";
   		foreach($missing as $m){
   			$output .= "<li>{$label[$m]}\n";
   		}
   		$output .= "</ul></div>\n";
   	}
-}
+  }
 
-//printing the $output message
-echo "$output";
+  //printing the $output message
+  echo "$output";
 ?>
 
 <!-- bootstrap form example -->
@@ -203,11 +205,11 @@ echo "$output";
 
   It takes up 4 columns of a 12-column grid on large screens, 6 on a medium screen, and all 12 on a small screen.
   -->
-    <form class="container col-lg-4 col-md-6 col-sm-12 my-3 px-5 pt-5 bg-light bg-gradient rounded" method="POST" action="">
+    <form class="container col-lg-6 col-md-8 col-sm-12 my-3 px-5 pt-5 bg-light bg-gradient rounded" method="POST" action="">
       <h1 class="text-center text-black">Considering sponsorship?</h1>
-      <h5 class="text-center text-black">Fill out the form below and help propel underprivileged DFW youth toward success.</h5>
+      <p class="lead text-center text-black">Fill out the form below and help us propel underprivileged DFW youth toward success.</p>
       <div class="mb-3">
-        <p class="text-center text-black">* Required field</p>
+        <p class="text-black">* Required field</p>
 
         <label for="sponsorEmail" class="form-label text-black">* Email address</label>
         <input type="email" name="sponsorEmail" class="form-control" id="sponsor-input-Email" aria-describedby="emailHelp">
