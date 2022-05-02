@@ -68,18 +68,7 @@ echo "$component_HTMLHeader";?>
               <label for="diamondLeagueLastName" class="form-label text-black">* Last Name</label>
               <input type="name" name="diamondLeagueLastName" class="form-control" id="diamondLeague-input-LastName">
               <label for="diamondLeaguePhoneNumber" class="form-label text-black">Phone Number</label>
-              <!-- dropdown menu for "I am interested in.."
-              ***not including this dropdown right now - it will require a lot more database/SQL work on the back end and we may not have time **
-              <div class="mb-3">
-                <select class="form-select" name="contactInterestedIn" id="contact-input-InterestedIn" aria-label="Default select example">
-                  <option selected>I am interested in...</option>
-                  <option value="1">Joining The G.U.L.F. as a participant</option>
-                  <option value="2">Volunteering with The G.U.L.F.</option>
-                  <option value="3">Sponsorship of The G.U.L.F.</option>
-                  <option value="4">Other</option>
-                </select>
-              </div>
-              -->
+
               <!--Optional message from user -->
               <input type="name" name="diamondLeaguePhoneNumber" class="form-control" id="diamondLeague-input-PhoneNumber" placeholder="123-456-7890">
               <label for="diamondLeagueMessage" class="form-label text-black"></label>
@@ -102,13 +91,6 @@ echo "$component_HTMLHeader";?>
       </div>
     </div>
 
-    <!--
-    <div class="testim-container">
-      <p class="lead col-lg-6 col-md-8 col-sm-12">"I am glad that I was a part of this amazing program. Everyone there was like my second family. We all felt comfortable to share our thoughts and ideas and helped build each other into the entreprenuers we aspired to be. The G.U.L.F. inspired me to adopt a growth mindset."
-      </p>
-      <h6>Johnny Dixon. - Former member of The Diamond League</h6>
-    </div>
-    -->
     <!-- New idea for testimonial section -->
     <section class="col-sm py-5 my-5 gulfBlueBG">
       <h2 class="text-white text-center">What People Are Saying</h2>
