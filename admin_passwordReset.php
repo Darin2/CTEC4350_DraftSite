@@ -136,7 +136,7 @@ header("Location: admin_loginpage.php");
         $msg = "<div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
               <h3 class='display-4 mx-auto my-5 text-white'>Your password has been reset.</h3>
               <p class='lead text-white'>Please remember to store your password in a safe location.</p>
-              <p class='text-white'>To reset your password again, you must access this page again from the <a href='admin_controlpanel.php'>admin panel</a>. Refreshing this page will resubmit the information you just entered and return an error.</p>
+              <p class='text-white'>To reset your password again, you must access this page again from the <a href='admin_controlpanel.php'>admin panel</a>. Refreshing this page will cause an error.</p>
               </div>
               <br>";
         }
@@ -150,7 +150,8 @@ header("Location: admin_loginpage.php");
       else if ((array_key_exists('Submit1', $_POST)) && ($newPasswordIsLongEnough == false)){
         $msg = "<div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
             <h3 class='display-4 mx-auto my-5 text-white'>There was an error resetting your password.</h3>
-            <p class='lead text-white'>You entered the correct Current Password, but your new password was too short. Please try again.</p>
+            <p class='lead text-white'>You entered the correct Current Password, but your new password was too short. New passwords must be at least 8 characters in length.</p>
+            <p class='lead text-white'>Please try again.</p>
             </div>
             <br>";
 
@@ -201,7 +202,9 @@ header("Location: admin_loginpage.php");
       echo $msg;
     }
     else{
-      echo '<h1 class="text-white text-center display-4 py-3">Reset Password</h2>';
+      echo '<h1 class="text-white text-center display-4 py-3">Reset Password</h2>
+            <p class="lead text-white text-center">Passwords must be at least 8 characters in length.</p>
+      ';
     }
     ?>
 
