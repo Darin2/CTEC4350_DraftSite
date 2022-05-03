@@ -152,7 +152,7 @@ header("Location: admin_loginpage.php");
         $stmt->execute();
         //$stmt->fetch();
         $stmt->close();
-        echo "<div class='card-body gulfBlueBG text-center fixed-top'>
+        echo "<div class='card-body gulfBlueBG text-center fixed-bottom'>
     	    <h5 class='card-title text-white'>Your password has been reset.</h5>
     	    <p class='card-text text-white'>Please remember to store your password in a safe location. To reset your password again, you must access this page again from the <a href='admin_controlpanel.php'>admin panel</a>. Refreshing this page will resubmit the information you just entered and return an error.</p>
     	  </div>";
@@ -165,24 +165,33 @@ header("Location: admin_loginpage.php");
         }
       }
       else if ((array_key_exists('Submit1', $_POST)) && ($credentialsMatched) && ($newPasswordsMatched != 1)){
-        echo "<div class='card-body gulfBlueBG text-center fixed-top'>
+        echo "<div class='card-body gulfBlueBG text-center fixed-bottom'>
               <h5 class='card-title text-white'>Error resetting password.</h5>
               <div class='text-white'>You entered the correct Current Password, but your new passwords did not match. Please try again.</div>
               </div>
               <br>";
       }
       else if ((array_key_exists('Submit1', $_POST)) && ($credentialsMatched != 1) && ($newPasswordsMatched)){
-        echo "<div class='card-body gulfBlueBG text-center fixed-top'>
+        echo "<div class='card-body gulfBlueBG text-center fixed-bottom'>
               <h5 class='card-title text-white'>Error resetting password.</h5>
               <div class='text-white'>Your New Passwords matched, but the Current Password you entered was incorrect. Please try again.</div>
               </div>
               <br>";
       }
       else if ((array_key_exists('Submit1', $_POST)) && ($credentialsMatched != 1) && ($newPasswordsMatched != 1)){
-        echo "<div class='card-body gulfBlueBG text-center fixed-top'>
+        echo "<div class='card-body gulfBlueBG text-center fixed-bottom'>
               <h5 class='card-title text-white'>Error resetting password.</h5>
               <div class='text-white'>Your New Passwords did not match, and the Current Password was incorrect. Please try again.</div>
               </div>
               <br>";
       }
+/* Attempting to not allow blank passwords
+
+      else if ((array_key_exists('Submit1', $_POST)) && ($newPasswordHashed == "") && ($newPasswordsMatched)){
+        echo "<div class='card-body gulfBlueBG text-center fixed-bottom'>
+              <h5 class='card-title text-white'>Error resetting password.</h5>
+              <div class='text-white'>Enter a password, Please try again.</div>
+              </div>
+              <br>";
+      } */
 ?>
