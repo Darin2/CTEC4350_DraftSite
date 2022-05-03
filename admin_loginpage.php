@@ -2,6 +2,10 @@
   include("shared.php");
   include("dbconn.inc.php");
   $conn = dbConnect();
+
+  if ($_SESSION['admin_access'] == true){
+  header("Location: admin_controlpanel.php");
+  }
   /*This file has two ways of logging in our user: a plain-text login system and a database login system.
 
   The plain-text login system checks if the user has entered "admin" as their username and "123" as their password. This is for easy login during testing and should be removed at launch.
