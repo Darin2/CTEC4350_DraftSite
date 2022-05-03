@@ -38,7 +38,7 @@ if ($_SESSION['admin_access'] !== true){
   $component_Nav =
     "<nav class=\"navbar col navbar-expand-lg sticky-top bg-dark\">
     <a class=\"navbar-brand px-3\" href=\"index.php\">
-        <img id=\"navbarLogo\" src=\"img/gulfLogo.png\" width=\"250\" height=\"100%\" alt=\"The logo for Giving Us Leadership and Focus\">
+        <img id=\"navbarLogo\" src=\"img/gulf_minimal_white.png\" width=\"250\" height=\"100%\" alt=\"The logo for Giving Us Leadership and Focus\">
     </a>
 
     <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -115,7 +115,7 @@ if ($_SESSION['admin_access'] == true){
   $component_Nav =
     "<nav class=\"navbar col navbar-expand-lg sticky-top bg-dark\">
     <a class=\"navbar-brand px-3\" href=\"index.php\">
-        <img id=\"navbarLogo\" src=\"img/gulfLogo.png\" width=\"250\" height=\"100%\" alt=\"The logo for Giving Us Leadership and Focus\">
+        <img id=\"navbarLogo\" src=\"img/gulf_minimal_white.png\" width=\"250\" height=\"100%\" alt=\"The logo for Giving Us Leadership and Focus\">
     </a>
 
     <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
