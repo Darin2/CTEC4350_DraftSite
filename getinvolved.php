@@ -9,10 +9,10 @@ echo "$component_HTMLHeader";?>
 
 <main>
 <?php echo "$component_Nav";?>
-<div id="getInvolvedJumbotron" class="jumbotron row ml-0">
+<div id="getInvolvedJumbotron" class="jumbotron row mx-0 px-0 ">
 
   <!-- volunteer row -->
-  <div id="getinvolved-volunteerRow" class="row d-flex align-items-center bg-dark bg-gradient">
+  <div id="getinvolved-volunteerRow" class="row mx-0 px-0 d-flex align-items-center bg-dark bg-gradient">
     <!-- volunteer lottie animation. Should show up on left side of text for tablet and desktop. Should show up on top of the text for mobile.  -->
     <section class="col-sm">
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -39,20 +39,17 @@ echo "$component_HTMLHeader";?>
   </div>
 
   <!-- membership row -->
-  <div id="getinvolved-membershipRow" class="row d-flex align-items-center gulfBlueBG">
+  <div id="getinvolved-membershipRow" class="row mx-0 px-0 d-flex align-items-center gulfBlueBG">
     <!-- center-aligned section -->
     <section class="col-sm">
-    <h1 class="display-2 text-white text-center">Membership</h1>
-    <p class="lead text-white text-center">Join The G.U.L.F. and experience the growth opportunities of a life time.</p>
-    <p class="lead text-white text-center">
-    Ready to join?
-    </p>
-    <p class="lead w-25 d-flex justify-content-center mx-auto">
-      <a class="btn btn-primary btn-lg d-flex justify-content-center" href="membership.php" role="button">Learn More</a>
-    </p>
+      <h1 class="display-2 text-white text-center">Membership</h1>
+      <p class="lead text-white text-center">Join The G.U.L.F. and experience the growth opportunities of a life time.</p>
+      <p class="lead w-25 d-flex justify-content-center mx-auto">
+        <a class="btn btn-primary btn-lg d-flex justify-content-center" href="membership.php" role="button">Learn More</a>
+      </p>
     </section>
+    <!-- membership lottie animation. Should show up on right side of text for tablet and desktop. Should show up on top of the text for mobile.  -->
     <section class="col-sm">
-      <!-- membership lottie animation. Should show up on right side of text for tablet and desktop. Should show up on top of the text for mobile.  -->
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
       <lottie-player
         src="https://assets2.lottiefiles.com/packages/lf20_VuL7dB.json"
@@ -66,7 +63,7 @@ echo "$component_HTMLHeader";?>
   </div>
 
   <!--sponsorship row -->
-  <div id="getinvolved-SponsorshipRow" class="row d-flex align-items-center">
+  <div id="getinvolved-SponsorshipRow" class="row mx-0 px-0 d-flex align-items-center">
     <!-- sponsorship lottie animation. should show up on left side of text for tablet/desktop. Should show up above text for mobile. -->
     <section class="col-sm">
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
