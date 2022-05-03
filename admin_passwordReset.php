@@ -14,43 +14,6 @@ header("Location: admin_loginpage.php");
     echo "$component_HTMLHeader";
     echo "$component_Nav";
 ?>
-<!-- Printing Password Reset Form -->
-<body class="bg-dark">
-  <main class="bg-dark">
-  <div>
-    <?php echo $msg?>
-  </div>
-  <!-- begin bootstrap container -->
-  <div class="container bg-dark my-5">
-    <h1 class="text-white text-center display-4 py-3">Reset Password</h2>
-
-    <!-- Form that sends the password string to the authentication page -->
-    <form action="" class="container rounded py-1 col-lg-5 col-md-8 col-sm-12 bg-dark bg-gradient" method="post">
-
-      <label for="password" class="text-white" name="Password">Current Password</label>
-      <!--Input field that takes the current password.-->
-      <input type="password" class="form-control" name="currentPassword" placeholder="">
-      <br>
-
-      <label for="password" class="text-white" name="Password">New Password</label>
-      <!--Input field that takes the new password.-->
-      <input id="newPassword" type="password" class="form-control" name="newPassword" placeholder="">
-      <br>
-
-      <label for="password" class="text-white" name="Password">Confirm New Password</label>
-      <!--Input field that takes the new password.-->
-      <input id="newPasswordConfirm" type="password" class="form-control" name="newPasswordConfirm" placeholder="">
-      <br>
-
-      <!-- submit button. Name of this button will be used in the session script. I have no idea why it has Next as a value. May need to change. -->
-      <input type="submit" class="form-control btn-primary" name="Submit1" value="Reset Password" />
-
-    </form>
-  </div>
-  <!-- end bootstrap container -->
-  </main>
-  <?php echo $component_Footer ?>
-</body>
 
 <?php /* PASSWORD RESET CODE */
   /*This file has two ways of logging in our user: a plain-text login system and a database login system.
@@ -127,7 +90,11 @@ header("Location: admin_loginpage.php");
       }
       //if stmt->num_rows was not ==1, let the user know their username/password weren't correct
       else{
-        echo "<div class='text-white'>The password you entered for the Current Password field was incorrect. Please try again.</div><br>";
+        $msg ="<div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+              <h3 class='display-4 mx-auto my-5 text-white'>There was an error resetting your password.</h3>
+              <p class='lead text-white'>The password you entered for the Current Password field was incorrect. Please try again.</p>
+              </div>
+              <br>";
       }
           /*
           Found this at https://www.sitepoint.com/community/t/efficient-way-to-check-if-a-mysql-query-returned-no-results/10514
@@ -152,10 +119,13 @@ header("Location: admin_loginpage.php");
         $stmt->execute();
         //$stmt->fetch();
         $stmt->close();
-        echo "<div class='card-body gulfBlueBG text-center fixed-bottom'>
-    	    <h5 class='card-title text-white'>Your password has been reset.</h5>
-    	    <p class='card-text text-white'>Please remember to store your password in a safe location. To reset your password again, you must access this page again from the <a href='admin_controlpanel.php'>admin panel</a>. Refreshing this page will resubmit the information you just entered and return an error.</p>
-    	  </div>";
+
+        $msg = "<div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+              <h3 class='display-4 mx-auto my-5 text-white'>Your password has been reset.</h3>
+              <p class='lead text-white'>Please remember to store your password in a safe location.</p>
+              <p class='text-white'>To reset your password again, you must access this page again from the <a href='admin_controlpanel.php'>admin panel</a>. Refreshing this page will resubmit the information you just entered and return an error.</p>
+              </div>
+              <br>";
         }
 
         else {
@@ -165,27 +135,30 @@ header("Location: admin_loginpage.php");
         }
       }
       else if ((array_key_exists('Submit1', $_POST)) && ($credentialsMatched) && ($newPasswordsMatched != 1)){
-        echo "<div class='card-body gulfBlueBG text-center fixed-bottom'>
-              <h5 class='card-title text-white'>Error resetting password.</h5>
-              <div class='text-white'>You entered the correct Current Password, but your new passwords did not match. Please try again.</div>
-              </div>
-              <br>";
+        $msg = "<div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+            <h3 class='display-4 mx-auto my-5 text-white'>There was an error resetting your password.</h3>
+            <p class='lead text-white'>You entered the correct Current Password, but your new passwords did not match. Please try again.</p>
+            </div>
+            <br>";
+
       }
       else if ((array_key_exists('Submit1', $_POST)) && ($credentialsMatched != 1) && ($newPasswordsMatched)){
-        echo "<div class='card-body gulfBlueBG text-center fixed-bottom'>
-              <h5 class='card-title text-white'>Error resetting password.</h5>
-              <div class='text-white'>Your New Passwords matched, but the Current Password you entered was incorrect. Please try again.</div>
+        $msg = "<div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+              <h3 class='display-4 mx-auto my-5 text-white'>There was an error resetting your password.</h3>
+              <p class='lead text-white'>Your New Passwords matched, but the Current Password you entered was incorrect. Please try again.</p>
               </div>
               <br>";
+
+
       }
       else if ((array_key_exists('Submit1', $_POST)) && ($credentialsMatched != 1) && ($newPasswordsMatched != 1)){
-        echo "<div class='card-body gulfBlueBG text-center fixed-bottom'>
-              <h5 class='card-title text-white'>Error resetting password.</h5>
-              <div class='text-white'>Your New Passwords did not match, and the Current Password was incorrect. Please try again.</div>
+        $msg = "<div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+              <h3 class='display-4 mx-auto my-5 text-white'>There was an error resetting your password.</h3>
+              <p class='lead text-white'>Your New Passwords did not match, and the Current Password was incorrect. Please try again.</p>
               </div>
               <br>";
       }
-/* Attempting to not allow blank passwords
+      /* Attempting to not allow blank passwords
 
       else if ((array_key_exists('Submit1', $_POST)) && ($newPasswordHashed == "") && ($newPasswordsMatched)){
         echo "<div class='card-body gulfBlueBG text-center fixed-bottom'>
@@ -195,3 +168,45 @@ header("Location: admin_loginpage.php");
               <br>";
       } */
 ?>
+
+<!-- Printing Password Reset Form -->
+<body class="bg-dark">
+  <main class="bg-dark">
+  <!-- begin bootstrap container -->
+  <div class="container bg-dark my-5">
+    <?php
+    if ($msg){
+      echo $msg;
+    }
+    else{
+      echo '<h1 class="text-white text-center display-4 py-3">Reset Password</h2>';
+    }
+    ?>
+
+    <!-- Form that sends the password string to the authentication page -->
+    <form action="" class="container rounded py-1 col-lg-5 col-md-8 col-sm-12 bg-dark bg-gradient" method="post">
+
+      <label for="password" class="text-white" name="Password">Current Password</label>
+      <!--Input field that takes the current password.-->
+      <input type="password" class="form-control" name="currentPassword" placeholder="">
+      <br>
+
+      <label for="password" class="text-white" name="Password">New Password</label>
+      <!--Input field that takes the new password.-->
+      <input id="newPassword" type="password" class="form-control" name="newPassword" placeholder="">
+      <br>
+
+      <label for="password" class="text-white" name="Password">Confirm New Password</label>
+      <!--Input field that takes the new password.-->
+      <input id="newPasswordConfirm" type="password" class="form-control" name="newPasswordConfirm" placeholder="">
+      <br>
+
+      <!-- submit button. Name of this button will be used in the session script. I have no idea why it has Next as a value. May need to change. -->
+      <input type="submit" class="form-control btn-primary" name="Submit1" value="Reset Password" />
+
+    </form>
+  </div>
+  <!-- end bootstrap container -->
+  </main>
+  <?php echo $component_Footer ?>
+</body>

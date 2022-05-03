@@ -135,7 +135,7 @@
   <div class="container bg-dark my-5">
     <!-- Redirect to home link -->
     <div class="redirect m-3">
-      <a href="index.php" class="redirect-link d-flex flex-row align-items-center font-weight-bold"><i class="fa solid fa-angle-left fa-2x m-1"></i><h4 class="m-0">Back to Home</h4></a>
+      <a href="index.php" class="redirect-link d-flex flex-row align-items-center"><i class="fa solid fa-angle-left fa-2x m-1"></i><h4 class="m-0">Back to Home</h4></a>
     </div>
     <?php
     if ($errorMsg){
@@ -143,7 +143,6 @@
     }
     else{
       echo '<h1 class="text-white text-center display-4 py-3"> Please Log In to Access the Admin Panel.</h2>';
-
     }
     ?>
     <!--<h1 class="text-white text-center display-4 py-3"> Please Log In to Access the Admin Panel.</h2>
@@ -169,7 +168,6 @@
   </div>
   <!-- end bootstrap container -->
 </main>
-<script src="js/exitbtn.js"></script>
 <?php echo "$component_Footer";?>
 </body>
 </html>
