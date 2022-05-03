@@ -40,14 +40,15 @@ header("Location: admin_loginpage.php");
     $currentAdminUsername = $_SESSION['admin_Username'];
     $reset_attempt_password = hash('sha256', $_POST['currentPassword']); //this line encrypts the password string using sha256. Must implement the same encryption on the password entered at registration (registration_page.php) for this to work with registration. Not needed for current implementation because we don't have a password registration system.
 
-    //Store the input from the "new password" field
-    $newPassword = $_POST['newPassword'];
-    //Store the input from the "confirm new password" field.
-    $newPasswordConfirm = $_POST['newPasswordConfirm'];
+    //Convert the input from the "new password" field to a string and store in $newPassword
+    $newPassword = strval($_POST['newPassword']);
+    //Convert the input from the "new password confirm" field to a string and store in $newPasswordConfirm
+    $newPasswordConfirm = strval($_POST['newPasswordConfirm']);
 
     //Create a hashed version of the new password that we'll store in the database if $newPassword and $newPasswordConFirm are equal
     $newPasswordHashed = hash('sha256', $_POST['newPasswordConfirm']);
 
+    //Check if the two new password fields matched
     if ($newPassword == $newPasswordConfirm){
       $newPasswordsMatched = 1;
     }
@@ -55,6 +56,14 @@ header("Location: admin_loginpage.php");
       $newPasswordsMatched = 0;
     }
 
+    //Checking the length of the new password. If it's 8 character or longer, it's long enough.
+    if (strlen($newPassword)>=8){
+      $newPasswordIsLongEnough = 1;
+    }
+    //If the new password is less than 8 characters long, it's too short.
+    else if (strlen($newPassword)<8){
+      $newPasswordIsLongEnough = 0;
+    }
     /*Building a sql query that will use bindparam() to deter SQL injection attacks
 
       This query will go to the credentials table (gulfAdminCredentials) and look for a record that has matching username and password.
@@ -102,8 +111,12 @@ header("Location: admin_loginpage.php");
     }
   }
 
-  //If there was a matching pair of credentials in the database AND the new passwords entered into the form matched, UPDATE this particular user's password to equal $newPasswordHashed
-  if((array_key_exists('Submit1', $_POST)) && $credentialsMatched && $newPasswordsMatched){
+  /* If there was a matching pair of credentials in the database,
+    AND the new passwords entered into the form matched,
+    AND the new passwords wasn't too short,
+    THEN update this particular user's password to equal $newPasswordHashed.
+    */
+    if((array_key_exists('Submit1', $_POST)) && $credentialsMatched && $newPasswordsMatched &&($newPasswordIsLongEnough)){
       //echo "<div class='text-white'>Debugging: on line 100, the credentials matched and the new passwords matched</div> <br>";
       $sql = "UPDATE `gulfAdminCredentials` SET adminPassword = ? WHERE adminID = ?";
 
@@ -127,13 +140,22 @@ header("Location: admin_loginpage.php");
               </div>
               <br>";
         }
-
+        //stmt did not prepare
         else {
           echo "<div class='text-white'>There was an error accessing the database. Please contact the database administrator.</div><br>";
           //$stmt->fetch();
           $stmt->close();
         }
       }
+      else if ((array_key_exists('Submit1', $_POST)) && ($newPasswordIsLongEnough == false)){
+        $msg = "<div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
+            <h3 class='display-4 mx-auto my-5 text-white'>There was an error resetting your password.</h3>
+            <p class='lead text-white'>You entered the correct Current Password, but your new password was too short. Please try again.</p>
+            </div>
+            <br>";
+
+      }
+
       else if ((array_key_exists('Submit1', $_POST)) && ($credentialsMatched) && ($newPasswordsMatched != 1)){
         $msg = "<div class='col-lg-6 col-md-8 col-sm-12 bg-dark mx-auto my-5'>
             <h3 class='display-4 mx-auto my-5 text-white'>There was an error resetting your password.</h3>
@@ -184,7 +206,7 @@ header("Location: admin_loginpage.php");
     ?>
 
     <!-- Form that sends the password string to the authentication page -->
-    <form action="" class="container rounded py-1 col-lg-5 col-md-8 col-sm-12 bg-dark bg-gradient" method="post">
+    <form action="" class="container rounded py-1 col-lg-6 col-md-8 col-sm-12 bg-dark bg-gradient" method="post">
 
       <label for="password" class="text-white" name="Password">Current Password</label>
       <!--Input field that takes the current password.-->
