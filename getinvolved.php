@@ -17,7 +17,7 @@ echo "$component_HTMLHeader";?>
   <div id="getinvolved-membershipRow" class="row mx-0 px-0 d-flex align-items-center gulfBlueBG">
     <!-- center-aligned section -->
     <section class="col-sm px-5">
-      <h1 class="display-2 text-white">Membership</h1>
+      <h1 class="display-2 text-white mt-5">Membership</h1>
       <p class="lead text-white">Join The G.U.L.F. and experience the growth opportunities of a life time.</p>
       <p class="lead w-25 d-flex">
         <a class="btn btn-primary btn-lg bg-white gulfBlueText d-flex" href="membership.php" role="button">Learn More</a>
@@ -69,8 +69,7 @@ echo "$component_HTMLHeader";?>
 
     <!-- center-aligned text section with CTA button-->
     <section class="col-sm px-5">
-      <div class="justify-content-center">
-        <h1 class="display-2 text-white">Volunteering</h1>
+        <h1 class="display-2 text-white mt-5">Volunteering</h1>
         <p class="lead text-white">Help us accomplish our mission to develop the next <br>generation of leaders and entrepreneurs.</p>
         <p class="lead text-white">
         Become a volunteer today.
@@ -78,7 +77,6 @@ echo "$component_HTMLHeader";?>
         <p class="lead w-25 d-flex">
           <a class="btn btn-primary btn-lg d-flex" href="volunteer.php" role="button">Learn More</a>
         </p>
-      </div>
     </section>
     <!-- volunteer lottie animation. Should show up on left side of text for tablet and desktop. Should show up on top of the text for mobile.  -->
     <section class="col-sm">
