@@ -92,6 +92,10 @@
   color:var(--gulfOrange) !important;
 }
 
+.gulfBlueText{
+  color:var(--gulfBlue) !important;
+}
+
 .offwhiteBG{
   background-color:#F4F7FA;
 }
