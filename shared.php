@@ -36,7 +36,7 @@ $component_HTMLHeader =
 //If the user doesn't have admin access, show them the regular nav:
 if ($_SESSION['admin_access'] !== true){
   $component_Nav =
-    "<nav class=\"navbar col navbar-expand-lg sticky-top\">
+    "<nav class=\"navbar col navbar-expand-lg sticky-top bg-dark\">
     <a class=\"navbar-brand px-3\" href=\"index.php\">
         <img id=\"navbarLogo\" src=\"img/gulfLogo.png\" width=\"250\" height=\"100%\" alt=\"The logo for Giving Us Leadership and Focus\">
     </a>
@@ -50,13 +50,13 @@ if ($_SESSION['admin_access'] !== true){
         <ul class=\"navbar-nav\">
 
           <li class=\"nav-item\">
-            <a class=\"nav-link text-nowrap \" href=\"index.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link text-nowrap text-white\" href=\"index.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
             Home
             </a>
           </li>
 
           <li class=\"nav-item dropdown\">
-            <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link dropdown-toggle text-white\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
               About
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
@@ -68,7 +68,7 @@ if ($_SESSION['admin_access'] !== true){
           </li>
 
           <li class=\"nav-item dropdown\">
-            <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link dropdown-toggle text-white\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
               Get Involved
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
@@ -79,7 +79,7 @@ if ($_SESSION['admin_access'] !== true){
           </li>
 
           <li class=\"nav-item dropdown\">
-            <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link dropdown-toggle text-white\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
               Programs
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
@@ -89,19 +89,19 @@ if ($_SESSION['admin_access'] !== true){
           </li>
 
           <li class=\"nav-item\">
-            <a class=\"nav-link text-nowrap \" href=\"challenge.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link text-nowrap text-white\" href=\"challenge.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
             Monthly Challenge
             </a>
           </li>
 
           <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"contact.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link text-white\" href=\"contact.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
             Contact
             </a>
           </li>
 
           <li class=\"nav-item donate-nav-btn\">
-            <a class=\"nav-link donate-nav-link\" href=\"https://www.paypal.com/donate?token=IBOjFEeD8bISqsVxcBPs5cCCrkQHjIDONXWEYSOJuwcFzJFgmhW8Nu8u7Xqld370PTE-0aJtzZRBmQIr\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link donate-nav-link text-white\" href=\"https://www.paypal.com/donate?token=IBOjFEeD8bISqsVxcBPs5cCCrkQHjIDONXWEYSOJuwcFzJFgmhW8Nu8u7Xqld370PTE-0aJtzZRBmQIr\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
               Donate
             </a>
           </li>
@@ -113,7 +113,7 @@ if ($_SESSION['admin_access'] !== true){
 //If the user does have admin access, show them a nav with the following admin links: log out, view email list, etc.
 if ($_SESSION['admin_access'] == true){
   $component_Nav =
-    "<nav class=\"navbar col navbar-expand-lg sticky-top\">
+    "<nav class=\"navbar col navbar-expand-lg sticky-top bg-dark\">
     <a class=\"navbar-brand px-3\" href=\"index.php\">
         <img id=\"navbarLogo\" src=\"img/gulfLogo.png\" width=\"250\" height=\"100%\" alt=\"The logo for Giving Us Leadership and Focus\">
     </a>
@@ -125,7 +125,7 @@ if ($_SESSION['admin_access'] == true){
       <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">
         <ul class=\"navbar-nav\">
           <li class=\"nav-item dropdown\">
-            <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link dropdown-toggle text-white\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
               About
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
@@ -137,7 +137,7 @@ if ($_SESSION['admin_access'] == true){
           </li>
 
           <li class=\"nav-item dropdown\">
-            <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link dropdown-toggle text-white\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
               Get Involved
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
@@ -148,7 +148,7 @@ if ($_SESSION['admin_access'] == true){
           </li>
 
           <li class=\"nav-item dropdown\">
-            <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link dropdown-toggle text-white\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
               Programs
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
@@ -158,13 +158,13 @@ if ($_SESSION['admin_access'] == true){
           </li>
 
           <li class=\"nav-item\">
-            <a class=\"nav-link text-nowrap \" href=\"challenge.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link text-nowrap text-white\" href=\"challenge.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
             Monthly Challenge
             </a>
           </li>
 
           <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"contact.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link text-white\" href=\"contact.php\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
             Contact
             </a>
           </li>
@@ -176,7 +176,7 @@ if ($_SESSION['admin_access'] == true){
           </li>
 
           <li class=\"nav-item dropdown\">
-            <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link dropdown-toggle text-white\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
               Admin Controls
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
