@@ -17,17 +17,17 @@ echo "$component_HTMLHeader";?>
     <div id="about-OurStoryRow" class="row d-flex align-items-center mt-0 py-0">
 
       <!-- center-aligned text section with CTA button. Should show up on the left side for tablet/desktop -->
-      <section class="col-lg-4 col-md-6 col-sm-12 mt-0 py-5 px-5">
+      <section class="col-lg-6 col-md-6 col-sm-12 mt-0 py-5 px-5">
         <h1 class="display-4 text-black">About Us</h1>
         <p class="lead text-black">Since 2016, we've been driving positive change in DFW's youth.</p>
         <p class="lead text-black">Whether they're volunteering at AT&T Stadium, learning about the business world or growing their leadership skills, G.U.L.F. participants are pushed to be their absolute best.</p>
         <p class="lead w-25 d-flex">
-          <a class="btn btn-primary btn-lg d-flex" href="getinvolved.php" role="button">Get Involved</a>
+          <a class="btn btn-primary btn-lg d-flex text-nowrap" href="getinvolved.php" role="button">Get Involved</a>
         </p>
       </section>
 
       <!-- Our Story lottie animation. should show up on right side of text for tablet/desktop.-->
-      <section class="col-sm mt-0 py-0">
+      <section class="col-lg-6 col-md-6 col-sm-12 mt-0 py-0 d-flex justify-content-center">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_1ixgi8rs.json"
           background="transparent"
@@ -42,7 +42,7 @@ echo "$component_HTMLHeader";?>
     <!-- Our Mission row -->
     <div id="about-OurMissionRow" class="row d-flex align-items-center bg-dark bg-gradient">
       <!-- Our Mission animation. Should show up on left side of text for tablet and desktop. Should show up on top of the text for mobile.  -->
-      <section class="col-sm">
+      <section class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <lottie-player
           src="https://assets3.lottiefiles.com/packages/lf20_xiussssy.json"
@@ -54,12 +54,12 @@ echo "$component_HTMLHeader";?>
         </lottie-player>
       </section>
       <!-- center-aligned text section with CTA button-->
-      <section class="col-lg-4 col-md-6 col-sm-12 mt-0 py-5 px-5">
+      <section class="col-lg-6 col-md-6 col-sm-12 mt-0 py-5 px-5">
         <h1 class="display-4 text-white">Our Mission</h1>
         <p class="lead text-white">We're launching Texas teens and young adults toward success via volunteering, mentoring programs and leadership.</p>
         <p class="lead text-white">Want to help?</p>
         <p class="lead w-25 d-flex">
-          <a class="btn btn-primary btn-lg d-flex" href="getinvolved.php" role="button">Get Involved</a>
+          <a class="btn btn-primary btn-lg d-flex text-nowrap" href="getinvolved.php" role="button">Get Involved</a>
         </p>
       </section>
     </div>
@@ -68,19 +68,19 @@ echo "$component_HTMLHeader";?>
     <div id="about-OurImpactRow"class="row d-flex align-items-center offwhiteBG">
 
       <!-- text section -->
-      <section class="col-lg-4 col-md-6 col-sm-12 mt-0 py-5 px-5">
+      <section class="col-lg-6 col-md-6 col-sm-12 mt-0 py-5 px-5">
         <h1 class="display-4 text-black">Our Impact</h1>
         <p class="lead text-black">We've led over 100 volunteering events and 46 youth leadership programs impacting over 6,000 people in 5 cities.</p>
         <p class="lead text-black">
         Want to be a part of the action?
         </p>
         <p class="lead w-25 d-flex">
-          <a class="btn btn-primary btn-lg d-flex" href="volunteer.php" role="button">Get Involved</a>
+          <a class="btn btn-primary btn-lg d-flex text-nowrap" href="volunteer.php" role="button">Get Involved</a>
         </p>
       </section>
+      <!-- Our Impact lottie animation. Should show up on right side of text for tablet and desktop. Should show up on top of the text for mobile.  -->
+      <section class="col-lg-6 col-md-6 col-sm-12 py-0 d-flex justify-content-center">
 
-      <section class="col-sm py-0">
-        <!-- Our Impact lottie animation. Should show up on right side of text for tablet and desktop. Should show up on top of the text for mobile.  -->
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_3u3ztlkh.json"
           background="transparent"
@@ -96,6 +96,17 @@ echo "$component_HTMLHeader";?>
 
     <div id="about-QuotesRow" class="row d-flex align-items-center bg-dark bg-gradient">
 
+      <!-- lottie animation for this section -->
+      <section class="col-lg-6 col-md-6 col-sm-12 py-0">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ydeuqme7.json"
+          background="transparent"
+          speed="1"
+          style="width: 100%; height: 100%;"
+          loop
+          autoplay>
+        </lottie-player>
+      </section>
 
       <!-- testimonial section -->
       <section class="col-sm py-0">
@@ -110,17 +121,7 @@ echo "$component_HTMLHeader";?>
         </blockquote>
       </section>
 
-      <!-- lottie animation for this section -->
-      <section class="col-sm py-0">
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ydeuqme7.json"
-          background="transparent"
-          speed="1"
-          style="width: 100%; height: 100%;"
-          loop
-          autoplay>
-        </lottie-player>
-      </section>
+
 
     </div>
 
