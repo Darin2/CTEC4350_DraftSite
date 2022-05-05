@@ -171,7 +171,7 @@ if ($_SESSION['admin_access'] == true){
 
 
           <li class=\"nav-item dropdown\">
-            <a class=\"nav-link dropdown-toggle text-danger border border-danger rounded\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
+            <a class=\"nav-link dropdown-toggle text-white bg-danger bg-gradient border border-danger\" id=\"navbarDropdownMenuLink\" role=\"button\" aria-expanded=\"false\">
               Admin Controls
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
