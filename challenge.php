@@ -7,16 +7,16 @@ echo "$component_HTMLHeader";?>
 <?php echo "$component_Nav";?>
 
 <!-- begin alternate way of showing the challenge -->
-<div id="challengesContainer" class="container-fluid col-lg-6 col-md-8 col-sm-12 px-5 mx-auto fullwidthBridgePic">
-	<div id="challengeBorder" class="col card text-center">
+<div id="challengesContainer" class="container-fluid col-lg-6 col-md-10 col-sm-12 px-5 mx-auto fullwidthBridgePic">
+	<div id="challengeBorder" class="col card">
 
 	  <div class="card-header">
-	   <p id="challengeMonth" class="display-2 gulfBlueText">month</p>
+	   <p id="challengeMonth" class="display-2 text-center gulfBlueText">month</p>
 	  </div>
 
-	  <div class="card-body gulfBlueBG text-center">
-	    <h5 id="challengeTitle" class="display-6 card-title text-white">challenge title</h5>
-	    <p id="challengeDescription" class="lead card-text text-white">challenge description with social media reminder goes here (IG: thegulf_tx)</p>
+	  <div class="card-body gulfBlueBG">
+	    <h5 id="challengeTitle" class="display-6 card-title text-center text-white">challenge title</h5>
+	    <p id="challengeDescription" class="lead col-sm-6 text-white text-left mx-auto">challenge description with social media reminder goes here (IG: thegulf_tx)</p>
 	  </div>
 
 	  <div class="card-footer text-muted text-black">
@@ -48,19 +48,19 @@ echo "$component_HTMLHeader";?>
 
 	let challengeDescriptionArray = [
 
-		"This week, your challenge is to turn $5 into at least $25.<br> You get to keep every dollar you make, so get creative!",
+		"This week, your challenge is to turn $5 into at least $25. You get to keep every dollar you make, so get creative! <br>",
 
-		"Come up with three business ideas in five minutes or less, then write a business plan for your favorite one.",
+		"Come up with three business ideas in five minutes or less, then write a business plan for your favorite one.<br>",
 
-		"Invent your own product and come up with a five minute business pitch<br> as if you were pitching your product to real investors.",
+		"Invent your own product and come up with a five minute business pitch as if you were pitching your product to real investors.<br>",
 
-		"Find an item you can buy cheaply from a garage sale, thrift store or friend.<br> Buy the item, and see how quickly you can sell it for a profit.",
+		"Find an item you can buy cheaply from a garage sale, thrift store or friend. Buy the item, and see how quickly you can sell it for a profit.<br>",
 
-		"Connect with a local business owner, either in person or virtually,<br> and ask them what they've learned since starting their own business.",
+		"Connect with a local business owner, either in person or virtually, and ask them what they've learned since starting their own business.<br>",
 
-		"Think of your absolute favorite product.<br> What do you like about it? What makes it great?<br> Now, think of three ways this product could be even better."]
+		"Think of your absolute favorite product. What do you like about it? What makes it great?<br> Now, think of three ways this product could be even better.<br>"]
 
-	let shareMsg = "<br>Share your success with us on Instagram and use the hashtag #TheGulf. Check back next month for another challenge!";
+	let shareMsg = "<br>Share your success with us on Instagram and use the hashtag #TheGulf.<br><br>Check back next month for another challenge!<br>";
 
 	let challengeTitleText = "";
 	let challengeDescriptionText = "";
@@ -86,8 +86,8 @@ echo "$component_HTMLHeader";?>
 	let daysInCurrentMonth = lengthOfMonthArray[d.getMonth()];
 	console.log('daysInCurrentMonth = ' + daysInCurrentMonth);
 
-	//total days in this month - today's date = days left in this month. Challenge resets on first day of each month, so add one to get the number of days until reset.
-	let daysUntilCountdownResets = daysInCurrentMonth - todaysDateNumber + 1;
+	//total days in this month - today's date = days left in this month. Challenge resets on first day of each month
+	let daysUntilCountdownResets = daysInCurrentMonth - todaysDateNumber;
 	console.log('daysUntilCountdownResets = ' + daysUntilCountdownResets);
 
 	//Print the current month at the top of the challengesContainer.
@@ -95,7 +95,7 @@ echo "$component_HTMLHeader";?>
 	//Print the description of the challenge with the "share on social media" message attached
 	document.getElementById("challengeDescription").innerHTML = challengeDescriptionText + ' ' + shareMsg;
 	//Print the title of the challenge.
-	document.getElementById("challengeTitle").innerHTML = 'The ' + challengeTitleText + ' Challenge';
+	document.getElementById("challengeTitle").innerHTML = '<u>The ' + challengeTitleText + ' Challenge</u>';
 	//Print the remaining days for this challenge
 	document.getElementById("daysLeft").innerHTML = daysUntilCountdownResets + ' days until our next challenge!';
 
