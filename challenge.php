@@ -64,82 +64,15 @@ echo "$component_HTMLHeader";?>
 
 	let challengeTitleText = "";
 	let challengeDescriptionText = "";
-	//using a switch statement to decide what to show for this month's challenge. This should probably be written as a function if we have the time, but this works for now.
 
 	console.log('Debug: on line 134 my switch statement evaluated d.month to equal ' + d.getMonth());
-	switch(d.getMonth()){
-		//If the month is January, we'll show the Trade Up Challenge
-		case 0:
-			challengeTitleText = challengeTitleArray[0];
-			challengeDescriptionText = challengeDescriptionArray[0];
-		break;
 
-		//If the month is February, we'll show the 3 in 5 Challenge
-		case 1:
-			challengeTitleText = challengeTitleArray[1];
-			challengeDescriptionText = challengeDescriptionArray[1];
-		break;
+	// Set the title of the event based on the current month
+	challengeTitleText = challengeTitleArray[d.getMonth()];
 
-		//If the month is March, we'll show the Invention Challenge
-		case 2:
-			challengeTitleText = challengeTitleArray[2];
-			challengeDescriptionText = challengeDescriptionArray[2];
-		break;
+	//Set the description of the event based on the current month
+	challengeDescriptionText = challengeDescriptionArray[d.getMonth()];
 
-		//If the month is April, we'll show the Flipping Challenge
-		case 3:
-			challengeTitleText = challengeTitleArray[3];
-			challengeDescriptionText = challengeDescriptionArray[3];
-		break;
-
-		//If the month is May, we'll show the Mentoring Challenge
-		case 4:
-			challengeTitleText = challengeTitleArray[4];
-			challengeDescriptionText = challengeDescriptionArray[4];
-		break;
-
-		//If the month is June, we'll show the Innovation Challenge
-		case 5:
-			challengeTitleText = challengeTitleArray[5];
-			challengeDescriptionText = challengeDescriptionArray[5];
-		break;
-
-		//If the month is July, we'll show the Trade Up Challenge
-		case 6:
-			challengeTitleText = challengeTitleArray[0];
-			challengeDescriptionText = challengeDescriptionArray[0];
-		break;
-
-		//If the month is August, we'll show the 3 in 5 Challenge
-		case 7:
-			challengeTitleText = challengeTitleArray[1];
-			challengeDescriptionText = challengeDescriptionArray[1];
-		break;
-
-		//If the month is September, we'll show the Invention Challenge
-		case 8:
-			challengeTitleText = challengeTitleArray[2];
-			challengeDescriptionText = challengeDescriptionArray[2];
-		break;
-
-		//If the month is October, we'll show the Flipping Challenge
-		case 9:
-			challengeTitleText = challengeTitleArray[3];
-			challengeDescriptionText = challengeDescriptionArray[3];
-		break;
-
-		//If the month is November, we'll show the Mentoring Challenge
-		case 10:
-			challengeTitleText = challengeTitleArray[4];
-			challengeDescriptionText = challengeDescriptionArray[4];
-		break;
-
-		//If the month is December, we'll show the Innovation Challenge
-		case 11:
-			challengeTitleText = challengeTitleArray[5];
-			challengeDescriptionText = challengeDescriptionArray[5];
-		break;
-	}
 
 	//make an array containing the number of days in each month, in order from january to december
 	let lengthOfMonthArray = [31,28,31,30,31,30,31,31,30,31,30,31];
