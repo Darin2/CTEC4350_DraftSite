@@ -15,7 +15,7 @@ echo "$component_HTMLHeader";?>
 	  </div>
 
 	  <div class="card-body gulfBlueBG">
-			<img id="challengeImage" class="w-75 mx-auto d-block"></img>
+			<img id="challengeImage" class="w-50 mx-auto d-block"></img>
 	    <h5 id="challengeTitle" class="display-6 card-title text-center text-white">challenge title</h5>
 	    <p id="challengeDescription" class="lead col-sm-6 text-white text-left mx-auto">challenge description with social media reminder goes here (IG: thegulf_tx)</p>
 			<p class="lead col-sm-6 text-white text-left mx-auto">Share your success with us on Instagram and use the hashtag #TheGulf.<br><br>Check back next month for another challenge!</p>
