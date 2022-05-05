@@ -3,19 +3,19 @@ include("shared.php");
 echo "$component_HTMLHeader";?>
 
 <body>
-<main class="fullwidthBridgePic">
+<main class="fullwidthBridgePic pb-5">
 <?php echo "$component_Nav";?>
 
 <!-- begin alternate way of showing the challenge -->
 <div id="challengesContainer" class="container-fluid col-lg-6 col-md-10 col-sm-12 px-5 mx-auto fullwidthBridgePic">
-	<div id="challengeBorder" class="col card">
+	<div id="challengeBorder" class="col card mt-5">
 
 	  <div class="card-header">
 	   <p id="challengeMonth" class="display-2 text-center gulfBlueText">month</p>
 	  </div>
 
 	  <div class="card-body gulfBlueBG">
-			<img id="challengeImage"></img>
+			<img id="challengeImage" class="w-75 mx-auto d-block"></img>
 	    <h5 id="challengeTitle" class="display-6 card-title text-center text-white">challenge title</h5>
 	    <p id="challengeDescription" class="lead col-sm-6 text-white text-left mx-auto">challenge description with social media reminder goes here (IG: thegulf_tx)</p>
 			<p class="lead col-sm-6 text-white text-left mx-auto">Share your success with us on Instagram and use the hashtag #TheGulf.<br><br>Check back next month for another challenge!</p>
@@ -36,21 +36,35 @@ echo "$component_HTMLHeader";?>
 <script>
 
 	/**********************************************************/
-	/*****************Setting up a date object*****************/
+	/**************** Setting up a date object ****************/
 	/**********************************************************/
 
 	const d = new Date();
 	console.log('d.getMonth() = ' + d.getMonth());
 
+
+
+
+
+
 	/**********************************************************/
-	/*****************Creating our arrays**********************/
+	/**************** Creating our arrays *********************/
 	/**********************************************************/
 
 	//create an array of months
 	const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
+	//get the number of the current month. January is 0, February is 1, etc
+	let monthNumber = d.getMonth();
+
 	// store the current month in a variable
-	let currentMonth = month[d.getMonth()];
+	let currentMonth = month[monthNumber];
+
+	//make sure the month number never goes over 6 (we have 6 challenges)
+	if(monthNumber>6){
+		monthNumber = monthNumber - 6;
+	}
+
 	console.log('currentMonth = ' + currentMonth);
 
 	//array of challenge titles
@@ -72,16 +86,14 @@ echo "$component_HTMLHeader";?>
 		"Think of your absolute favorite product. What do you like about it? What makes it great?<br> Now, think of three ways this product could be even better.<br>"]
 
 		//array containg the src of each image, as a string. All images are located in the img folder.
-		let imgSourceArray = [
-			0,
-			1,
-			2,
-			3,
-			4,
-			5
+		let imgArray = [
+			'img/challenge_tradeup.svg',
+			'img/challenge_3in5.svg',
+			'img/challenge_invention.svg',
+			'img/challenge_flipping.svg',
+			'img/challenge_mentor.svg',
+			'img/challenge_innovation.svg'
 		];
-
-
 
 	//make an array containing the number of days in each month, in order from january to december
 	let lengthOfMonthArray = [31,28,31,30,31,30,31,31,30,31,30,31];
@@ -89,38 +101,46 @@ echo "$component_HTMLHeader";?>
 
 
 
+
+
+
 	/**********************************************************/
-	/****Creating variables for each piece of the challenge****/
+	/*** Creating variables for each piece of the challenge ***/
 	/**********************************************************/
 
 	let challengeTitleText = "";
 	let challengeDescriptionText = "";
 
 	// Set the title of the event based on the current month
-	challengeTitleText = challengeTitleArray[d.getMonth()];
-	console.log('challengeTitle = ' + challengeTitleArray[d.getMonth()]);
+	challengeTitleText = challengeTitleArray[monthNumber];
+	console.log('challengeTitle = ' + challengeTitleArray[monthNumber]);
 
 	//Set the description of the event based on the current month
-	challengeDescriptionText = challengeDescriptionArray[d.getMonth()];
-	console.log('challengeDescription = ' + challengeDescriptionArray[d.getMonth()]);
+	challengeDescriptionText = challengeDescriptionArray[monthNumber];
+	console.log('challengeDescription = ' + challengeDescriptionArray[monthNumber]);
 
 	//Get the number for today's date, e.g. "18" for april 18th
 	let todaysDateNumber = String(new Date().getDate()).padStart(2, '0');
 	console.log('todaysDate = ' + todaysDateNumber);
 
 	//get the number of days in this month
-	let daysInCurrentMonth = lengthOfMonthArray[d.getMonth()];
+	let daysInCurrentMonth = lengthOfMonthArray[monthNumber];
 	console.log('daysInCurrentMonth = ' + daysInCurrentMonth);
 
 	//total days in this month - today's date = days left in this month. Challenge resets on first day of each month
 	let daysUntilCountdownResets = daysInCurrentMonth - todaysDateNumber;
 	console.log('daysUntilCountdownResets = ' + daysUntilCountdownResets);
 
+	let currentImage = imgArray[monthNumber];
+
+
+
+
 
 
 
 	/***************************************************/
-	/****Set innerHTML of each challenge component*****/
+	/**** Set innerHTML of each challenge component ***/
 	/**************************************************/
 
 	//Print the current month at the top of the challengesContainer.
@@ -130,7 +150,7 @@ echo "$component_HTMLHeader";?>
 	document.getElementById("challengeTitle").innerHTML = '<u>The ' + challengeTitleText + ' Challenge</u>';
 
 	//Print the image for this challenge.
-	//document.getElementById("challengeImage").src = imgSource;
+	document.getElementById("challengeImage").src = currentImage;
 
 	//Print the description of the challenge with the "share on social media" message attached
 	document.getElementById("challengeDescription").innerHTML = challengeDescriptionText + ' ';
