@@ -15,6 +15,7 @@ echo "$component_HTMLHeader";?>
 	  </div>
 
 	  <div class="card-body gulfBlueBG">
+			<img id="challengeImage"></img>
 	    <h5 id="challengeTitle" class="display-6 card-title text-center text-white">challenge title</h5>
 	    <p id="challengeDescription" class="lead col-sm-6 text-white text-left mx-auto">challenge description with social media reminder goes here (IG: thegulf_tx)</p>
 			<p class="lead col-sm-6 text-white text-left mx-auto">Share your success with us on Instagram and use the hashtag #TheGulf.<br><br>Check back next month for another challenge!</p>
@@ -70,6 +71,18 @@ echo "$component_HTMLHeader";?>
 
 		"Think of your absolute favorite product. What do you like about it? What makes it great?<br> Now, think of three ways this product could be even better.<br>"]
 
+		//array containg the src of each image, as a string. All images are located in the img folder.
+		let imgSourceArray = [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5
+		];
+
+
+
 	//make an array containing the number of days in each month, in order from january to december
 	let lengthOfMonthArray = [31,28,31,30,31,30,31,31,30,31,30,31];
 
@@ -112,10 +125,16 @@ echo "$component_HTMLHeader";?>
 
 	//Print the current month at the top of the challengesContainer.
 	document.getElementById("challengeMonth").innerHTML = "Monthly Challenge: " + currentMonth;
-	//Print the description of the challenge with the "share on social media" message attached
-	document.getElementById("challengeDescription").innerHTML = challengeDescriptionText + ' ';
+
 	//Print the title of the challenge.
 	document.getElementById("challengeTitle").innerHTML = '<u>The ' + challengeTitleText + ' Challenge</u>';
+
+	//Print the image for this challenge.
+	//document.getElementById("challengeImage").src = imgSource;
+
+	//Print the description of the challenge with the "share on social media" message attached
+	document.getElementById("challengeDescription").innerHTML = challengeDescriptionText + ' ';
+
 	//Print the remaining days for this challenge
 	document.getElementById("daysLeft").innerHTML = daysUntilCountdownResets + ' days until our next challenge!';
 
