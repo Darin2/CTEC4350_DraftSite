@@ -176,7 +176,7 @@ if ($_SESSION['admin_access'] == true){
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">
               <li><a class=\"dropdown-item\" href=\"admin_controlpanel.php\">View Control Panel</a></li>
-              <li><a class=\"dropdown-item\" href=\"admin_contactFormLeads.php\">Contact Form Leads</a></li>
+              <li><a class=\"dropdown-item\" href=\"admin_contactFormLeads.php\">Contact Form Messages</a></li>
               <li><a class=\"dropdown-item\" href=\"admin_volunteerInterestFormLeads.php\">Volunteer Leads</a></li>
               <li><a class=\"dropdown-item\" href=\"admin_memberFormLeads.php\">Membership Leads</a></li>
               <li><a class=\"dropdown-item\" href=\"admin_sponsorFormLeads.php\">Sponsorship Leads</a></li>
