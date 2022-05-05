@@ -54,12 +54,12 @@ echo "$component_HTMLHeader";?>
         </lottie-player>
       </section>
       <!-- center-aligned text section with CTA button-->
-      <section class="col-sm">
-        <h1 class="display-4 text-white text-center">Our Mission</h1>
-        <p class="lead text-white text-center mx-5">We're launching Texas teens and young adults toward success via volunteering, mentoring programs and leadership.</p>
-        <p class="lead text-white text-center">Want to help?</p>
-        <p class="lead w-25 d-flex justify-content-center mx-auto">
-          <a class="btn btn-primary btn-lg d-flex justify-content-center" href="getinvolved.php" role="button">Get Involved</a>
+      <section class="col-lg-4 col-md-6 col-sm-12 mt-0 py-5 px-5">
+        <h1 class="display-4 text-white">Our Mission</h1>
+        <p class="lead text-white">We're launching Texas teens and young adults toward success via volunteering, mentoring programs and leadership.</p>
+        <p class="lead text-white">Want to help?</p>
+        <p class="lead w-25 d-flex">
+          <a class="btn btn-primary btn-lg d-flex" href="getinvolved.php" role="button">Get Involved</a>
         </p>
       </section>
     </div>
@@ -68,14 +68,14 @@ echo "$component_HTMLHeader";?>
     <div id="about-OurImpactRow"class="row d-flex align-items-center offwhiteBG">
 
       <!-- text section -->
-      <section class="col-sm py-0">
-        <h1 class="display-4 text-black text-center">Our Impact</h1>
-        <p class="lead text-black text-center mx-5 px-3">We've led over 100 volunteering events and 46 youth leadership programs impacting over 6,000 people in 5 cities.</p>
-        <p class="lead text-black text-center">
+      <section class="col-lg-4 col-md-6 col-sm-12 mt-0 py-5 px-5">
+        <h1 class="display-4 text-black">Our Impact</h1>
+        <p class="lead text-black">We've led over 100 volunteering events and 46 youth leadership programs impacting over 6,000 people in 5 cities.</p>
+        <p class="lead text-black">
         Want to be a part of the action?
         </p>
-        <p class="lead w-25 d-flex justify-content-center mx-auto">
-          <a class="btn btn-primary btn-lg d-flex justify-content-center" href="volunteer.php" role="button">Get Involved</a>
+        <p class="lead w-25 d-flex">
+          <a class="btn btn-primary btn-lg d-flex" href="volunteer.php" role="button">Get Involved</a>
         </p>
       </section>
 
