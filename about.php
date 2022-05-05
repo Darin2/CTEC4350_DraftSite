@@ -17,12 +17,12 @@ echo "$component_HTMLHeader";?>
     <div id="about-OurStoryRow" class="row d-flex align-items-center mt-0 py-0">
 
       <!-- center-aligned text section with CTA button. Should show up on the left side for tablet/desktop -->
-      <section class="col-sm mt-0 py-0">
-        <h1 class="display-4 text-black text-center">About Us</h1>
-        <p class="lead text-black text-center mx-5">Since 2016, we've been driving positive change in DFW's youth.</p>
-        <p class="lead text-black text-center mx-5">Whether they're volunteering at AT&T Stadium, learning about the business world or growing their leadership skills, G.U.L.F. participants are pushed to be their absolute best.</p>
-        <p class="lead w-25 d-flex justify-content-center mx-auto">
-          <a class="btn btn-primary btn-lg d-flex justify-content-center" href="getinvolved.php" role="button">Get Involved</a>
+      <section class="col-lg-4 col-md-6 col-sm-12 mt-0 py-0 px-5">
+        <h1 class="display-4 text-black">About Us</h1>
+        <p class="lead text-black">Since 2016, we've been driving positive change in DFW's youth.</p>
+        <p class="lead text-black">Whether they're volunteering at AT&T Stadium, learning about the business world or growing their leadership skills, G.U.L.F. participants are pushed to be their absolute best.</p>
+        <p class="lead w-25 d-flex">
+          <a class="btn btn-primary btn-lg d-flex" href="getinvolved.php" role="button">Get Involved</a>
         </p>
       </section>
 
