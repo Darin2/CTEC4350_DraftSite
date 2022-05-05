@@ -11,7 +11,7 @@ echo "$component_HTMLHeader";?>
 	<div id="challengeBorder" class="col card text-center">
 
 	  <div class="card-header">
-	   <p id="challengeMonth" class="display-2">month</p>
+	   <p id="challengeMonth" class="display-2 gulfBlueText">month</p>
 	  </div>
 
 	  <div class="card-body gulfBlueBG text-center">
@@ -69,10 +69,11 @@ echo "$component_HTMLHeader";?>
 
 	// Set the title of the event based on the current month
 	challengeTitleText = challengeTitleArray[d.getMonth()];
+	console.log('challengeTitle = ' + challengeTitleArray[d.getMonth()]);
 
 	//Set the description of the event based on the current month
 	challengeDescriptionText = challengeDescriptionArray[d.getMonth()];
-
+	console.log('challengeDescription = ' + challengeDescriptionArray[d.getMonth()]);
 
 	//make an array containing the number of days in each month, in order from january to december
 	let lengthOfMonthArray = [31,28,31,30,31,30,31,31,30,31,30,31];
@@ -88,9 +89,6 @@ echo "$component_HTMLHeader";?>
 	//total days in this month - today's date = days left in this month. Challenge resets on first day of each month, so add one to get the number of days until reset.
 	let daysUntilCountdownResets = daysInCurrentMonth - todaysDateNumber + 1;
 	console.log('daysUntilCountdownResets = ' + daysUntilCountdownResets);
-
-	console.log('challengeTitle = ' + challengeTitleArray[d.getMonth()]);
-	console.log('challengeDescription = ' + challengeDescriptionArray[d.getMonth()]);
 
 	//Print the current month at the top of the challengesContainer.
 	document.getElementById("challengeMonth").innerHTML = "Monthly Challenge: " + currentMonth;
