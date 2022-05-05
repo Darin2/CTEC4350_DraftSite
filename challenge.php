@@ -8,17 +8,18 @@ echo "$component_HTMLHeader";?>
 
 <!-- begin alternate way of showing the challenge -->
 <div id="challengesContainer" class="container-fluid col-lg-6 col-md-10 col-sm-12 px-5 mx-auto fullwidthBridgePic">
-	<div id="challengeBorder" class="col card mt-5">
+	<div id="challengeBorder" class="col card mt-1">
 
 	  <div class="card-header">
-	   <p id="challengeMonth" class="display-2 text-center gulfBlueText">month</p>
+	   <h1 id="challengeMonth" class="display-5 text-center gulfBlueText">month</h1>
 	  </div>
 
 	  <div class="card-body gulfBlueBG">
-			<img id="challengeImage" class="w-50 mx-auto d-block"></img>
-	    <h5 id="challengeTitle" class="display-6 card-title text-center text-white">challenge title</h5>
+			<img id="challengeImage" class="w-50 py-3 mx-auto d-block"></img>
+	    <h5 id="challengeTitle" class="py-3 display-6 card-title text-center text-white">challenge title</h5>
 	    <p id="challengeDescription" class="lead col-sm-6 text-white text-left mx-auto">challenge description with social media reminder goes here (IG: thegulf_tx)</p>
-			<p class="lead col-sm-6 text-white text-left mx-auto">Share your success with us on Instagram and use the hashtag #TheGulf.<br><br>Check back next month for another challenge!</p>
+			<p class="lead col-sm-6 text-white text-left mx-auto">Share your success with us <a class="text-white" href="https://www.instagram.com/thegulf_tx/"><u>on Instagram</u></a> and use the hashtag #thegulftx.</p>
+			<p class="lead col-sm-6 text-white text-left mx-auto">Check back next month for another challenge!</p>
 	  </div>
 
 	  <div class="card-footer text-muted text-center text-black">
