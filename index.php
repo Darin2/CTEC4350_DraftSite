@@ -21,7 +21,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
 <div class="col-lg-12 col-md-12 col-sm-12 gulfBlueBG mx-0 px-5">
 	 <section class="col-lg-6 col-md-8 col-sm-12 mt-0 mx-auto py-5 gulfBlueBG">
 
-        <h1 class="display-2 text-white text-center">Launching DFW Youth Toward Success</h1>
+        <h1 class="display-2 text-white text-center">Launching DFW Youth Toward <u>Success</u></h1>
 
         <img src="img/illustration_success.svg" class="w-50 my-2 py-3 mx-auto d-block"></img>
         <p class="lead text-white">We're a Texas-based <a class="gulfOrangeText" href="https://www.charitynavigator.org/ein/811313299"><u>501(c)(3) organization</a></u> offering solutions and opportunities to engage underserved teens in staying on the path to their success.</p>

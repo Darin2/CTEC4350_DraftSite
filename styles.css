@@ -101,6 +101,12 @@ a:hover {
 */
 /*End of link styles*/
 
+/* Making sure text doesn't overlap images */
+p{
+  white-space:normal;}
+
+h3{
+  white-space:normal;}
 
 /*******************************************/
 /***********Styling our nav bar************/
