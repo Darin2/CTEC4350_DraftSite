@@ -29,7 +29,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
         <img src="img/illustration_mentoring.svg" class="w-50 my-2 py-3 mx-auto d-block"></img>
         <p class="lead text-white">By offering a uniquely combined mentoring program that is fostered and managed by teens in exciting peer to peer settings, teens are encouraged to make successful transitions from high school no matter their surrounding circumstances.</p>
 
-        <img src="img/illustration_inspiration.svg" class="w-25 my-2 py-3 mx-auto d-block"></img>
+        <img src="img/illustration_inspiration.svg" class="w-50 my-2 py-3 mx-auto d-block"></img>
         <p class="lead text-white">
          Whether they're going to college or entering the workforce, we set G.U.L.F. members up for success with skills such as:
         </p>
