@@ -18,7 +18,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
   </video>
 </div>
 <!-- begin bootstrap container -->
-<div class="col-lg-12 col-md-12 col-sm-12 gulfBlueBG mx-0 px-0">
+<div class="col-lg-12 col-md-12 col-sm-12 gulfBlueBG mx-0 px-5">
 	 <section class="col-lg-6 col-md-8 col-sm-12 mt-0 mx-auto py-5 gulfBlueBG">
         <h1 class="display-4 text-white">Launching DFW Youth Toward Success</h1>
         <img src="img/illustration_success.svg" class="w-50 py-3 mx-auto d-block"></img>
