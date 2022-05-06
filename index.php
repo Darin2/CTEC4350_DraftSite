@@ -17,24 +17,23 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
     <source src="img/revamped.mp4" type="video/mp4">
   </video>
 </div>
-<div class="landing">	
-	 <section class="col-sm mt-0 py-0">
-        <h1 class="display-6 text-black text-center">Discovering Diamonds</h1>
-        <p class="lead text-black text-center mx-5">Giving Us Leadership and Focus (The GULF) is a Texas-based 501(c)(3) Organization that is coming up with solutions and opportunities to re-engage underserved teens in staying on track in school.</p>
-        <p class="lead text-black text-center mx-5">By offering a uniquely combined mentoring program that is fostered and managed by teens in exciting peer to peer settings, teens are encouraged to make successful transitions from high school no matter their surrounding circumstances.</p>
-        <p class="lead text-black text-center mx-5">
+<!-- begin bootstrap container -->
+<div class="container gulfBlueBG">
+	 <section class="col-lg-6 col-md-8 col-sm-12 mt-0 mx-auto py-5 gulfBlueBG">
+        <h1 class="display-4 text-white">Launching DFW Youth Toward Success</h1>
+        <img src="img/illustration_success.svg" class="w-50 py-3 mx-auto d-block"></img>
+        <p class="lead text-white">We're a Texas-based 501(c)(3) Organization offering solutions and opportunities to engage underserved teens in staying on the path to their success.</p>
+        <img src="img/illustration_mentoring.svg" class="w-50 py-3 mx-auto d-block"></img>
+        <p class="lead text-white">By offering a uniquely combined mentoring program that is fostered and managed by teens in exciting peer to peer settings, teens are encouraged to make successful transitions from high school no matter their surrounding circumstances.</p>
+        <p class="lead text-white">
          Whether they are going to college or preparing for life as young adults without college, they are encouraged and inspired by inquiring project planning, organization, business development, volunteering, and career and entrepreneurial skills. Thus giving them a fighting chance on living life beyond mediocrity.
         </p>
       </section>
-	
-	<!-- OR THE TEXT BELOW  
+
+	<!-- OR THE TEXT BELOW
 	  <p> At The G.U.L.F. we are offering youth an opportunity to get involved in things that teens love and parents will appreciate them doing. <br> We are offering exciting programs and events that get youth to appreciate where they are in life, while creating a focus on where they are going. <br> We promote a positive atmosphere, friends, and activities that emphasize the collective and individual growth of everyone involved.</p> -->
 </div>
-
-   
-
-<!-- end innerContainer-->
-<!--end container-fluid -->
+<!-- end Bootstrap container -->
 
 </main>
 <div id="homepageGoogleMapsEmbed">

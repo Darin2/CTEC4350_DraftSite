@@ -7,19 +7,6 @@
   background-size: cover;
 }
 
-
-.landing{
-  width: 100%;
-  height: auto;
-  padding: 20%;
-  align-items: center;
-  text-align: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  margin: auto;
-  align-content: center;
-}
-
 .video {
   width: 100% !important;
   height: auto !important;
