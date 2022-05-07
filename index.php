@@ -26,7 +26,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
         <img src="img/illustration_success.svg" class="w-50 my-2 py-3 mx-auto d-block"></img>
         <p class="lead text-white">We're a Texas-based <a class="gulfOrangeText" href="https://www.charitynavigator.org/ein/811313299"><u>501(c)(3) organization</a></u> offering solutions and opportunities to engage underserved teens in staying on the path to their success.</p>
 
-        <img src="img/illustration_mentoring.svg" class="w-50 my-2 py-3 mx-auto d-block"></img>
+        <img src="img/illustration_mentoring.svg" class="w-25 my-2 py-3 mx-auto d-block"></img>
         <p class="lead text-white">Our unique peer to peer mentoring program encourages members to make successful transitions from high school no matter their surrounding circumstances.</p>
 
         <img src="img/illustration_inspiration.svg" class="w-50 my-2 py-3 mx-auto d-block"></img>
@@ -67,7 +67,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
             <div class="card-body gulfBlueBG">
               <h5 class="card-title text-white">Membership</h5>
               <p class="card-text text-white">Build your future with valuable skills and relationships that last a lifetime.</p>
-              <a href="#" class="btn btn-primary bg-white gulfBlueText">Learn more</a>
+              <a href="membership.php" class="btn btn-primary bg-white gulfBlueText">Learn more</a>
             </div>
           </div>
 

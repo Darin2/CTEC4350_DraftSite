@@ -215,13 +215,9 @@ echo "$component_HTMLHeader";?>
   echo "$output";
 ?>
 
-<!-- bootstrap form example -->
-<div class="container-fluid bg-dark mb-5">
-  <!-- the actual form begins here
 
-  It takes up 4 columns of a 12-column grid on large screens, 6 on a medium screen, and all 12 on a small screen.
-  -->
-    <form class="container col-lg-6 col-md-8 col-sm-12 my-3 px-5 pt-5 bg-light bg-gradient rounded" method="POST" action="">
+<div class="container-fluid bg-dark mb-5">
+  <form class="container col-lg-6 col-md-8 col-sm-12 my-3 px-5 pt-5 bg-light bg-gradient rounded" method="POST" action="">
       <h1 class="text-center text-black">Interested In Membership?</h1>
       <p class="lead text-center text-black">Fill out the form below to get started on your journey to success.</p>
       <div class="mb-3">
@@ -229,9 +225,6 @@ echo "$component_HTMLHeader";?>
 
         <label for="memberEmail" class="form-label text-black">* Email address</label>
         <input type="email" name="memberEmail" class="form-control" id="member-input-Email" aria-describedby="emailHelp">
-        <!-- * we don't need this part right now, but leaving the code here as an example of the form-text class*
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        -->
       </div>
 
       <!-- Get user's first name -->
@@ -263,7 +256,7 @@ echo "$component_HTMLHeader";?>
     </form>
 
 </div>
-<!-- end bootstrap form example -->
+
 
 </main>
 
