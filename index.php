@@ -76,7 +76,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
             <div class="card-body gulfBlueBG">
               <h5 class="card-title text-white">Volunteering</h5>
               <p class="card-text text-white">Make positive, impactful contributions to the success of DFW's next generation.</p>
-              <a href="#" class="btn btn-primary bg-white gulfBlueText">Learn more</a>
+              <a href="volunteer.php" class="btn btn-primary bg-white gulfBlueText">Learn more</a>
             </div>
           </div>
 
@@ -85,7 +85,7 @@ Link to the wireframes for this project: https://darinhardin550576.invisionapp.c
             <div class="card-body gulfBlueBG">
               <h5 class="card-title text-white">Sponsorship</h5>
               <p class="card-text text-white">Help us accomplish our mission to launch DFW youth toward success.</p>
-              <a href="#" class="btn btn-primary bg-white gulfBlueText">Learn more</a>
+              <a href="sponsorship.php" class="btn btn-primary bg-white gulfBlueText">Learn more</a>
             </div>
           </div>
 
