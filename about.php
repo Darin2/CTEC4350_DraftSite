@@ -112,12 +112,12 @@ echo "$component_HTMLHeader";?>
       <section class="col-sm py-0">
         <h1 class="display-4 text-white text-center">What People Are Saying</h1>
         <blockquote class="blockquote text-center text-white py-3">
-          <p class="mb-0">I'm not superstitious, but I am a little stitious.</p>
-          <footer class="blockquote-footer py-3">Michael Scott, <cite title="Source Title">Dunder Mifflin Paper Company</cite></footer>
+          <p class="mb-0">Working with The G.U.L.F. was a hugely impactful experience.</p>
+          <footer class="blockquote-footer py-3">Darin Hardin, <cite title="Source Title">G.U.L.F. Member</cite></footer>
         </blockquote>
         <blockquote class="blockquote text-center text-white py-3">
-          <p class="mb-0">Don't let your dreams be dreams.</p>
-          <footer class="blockquote-footer py-3">Shia LaBeouf, <cite title="Source Title">Ice Cream Truck Driver</cite></footer>
+          <p class="mb-0">They're changing lives over there at The G.U.L.F.</p>
+          <footer class="blockquote-footer py-3">Nyric Evans, <cite title="Source Title">G.U.L.F. Member</cite></footer>
         </blockquote>
       </section>
 
