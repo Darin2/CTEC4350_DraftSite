@@ -1,4 +1,8 @@
 <?php
+	session_start();
+	include("shared.php");
+	// connect with database
+	$conn = mysqli_connect("localhost", "vmt8625_class4350", "theGULF2022", "vmt8625_4350");
 	// stored shared content
 include("dbconn2.inc.php");
 include("shared.php");
@@ -15,16 +19,24 @@ echo "$component_HTMLHeader";
 	$stmt = $conn->prepare($sql);		
 	$stmt->execute();
 	$faqs = $stmt->fetchAll();
-?>
+?><body>
 <?php echo "$component_Nav";?>
 
 <!-- include CSS -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" />
 
+
 <!-- include JS -->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<h2 class="display-4 text-black text-center">Frequently Asked Questions</h2>
+
+ <p class="lead text-center">To give you more information about The G.U.L.F and what we offer to our community, here are some commonly asked questions.</p>
+
+<div id="faqBorder" class="col card text-center">
+	</div>
+
 
 <!-- show all FAQs in a panel -->
 <div class="container" style="margin-top: 50px; margin-bottom: 50px;">
@@ -57,69 +69,75 @@ echo "$component_HTMLHeader";
 		</div>
 	</div>
 </div>
-<?php echo "$component_Footer";?>
+   <p class="lead text-center">If you have a question that you can't find the answer to, please use the <a href="contact.php">contact form</a> and a member of our team will be in touch.
+   </p>
+	
 
+
+<?php echo "$component_Footer";?>
+</body>
 
 <!-- apply some styles -->
+
 <style>
 	.accordion_one .panel-group {
 	    border: 1px solid #f1f1f1;
-	    margin-top: 100px
+	    margin-top: 100px;
 	}
 	a:link {
-	    text-decoration: none
+	    text-decoration: none;
 	}
 	.accordion_one .panel {
 	    background-color: transparent;
 	    box-shadow: none;
 	    border-bottom: 0px solid transparent;
 	    border-radius: 0;
-	    margin: 0
+	    margin: 0;
 	}
 	.accordion_one .panel-default {
-	    border: 0
+	    border: 0;
 	}
 	.accordion-wrap .panel-heading {
 	    padding: 0px;
-	    border-radius: 0px
+	    border-radius: 0px;
 	}
 	h4 {
 	    font-size: 18px;
-	    line-height: 24px
+	    line-height: 24px;
 	}
 	.accordion_one .panel .panel-heading a.collapsed {
-	    color: #999999;
+	    color: #313131;
 	    display: block;
 	    padding: 12px 30px;
-	    border-top: 0px
+	    border-top: 0px;
 	}
 	.accordion_one .panel .panel-heading a {
 	    display: block;
 	    padding: 12px 30px;
 	    background: #fff;
-	    color: #313131;
-	    border-bottom: 1px solid #f1f1f1
+	    color: #334da1;
+	    border-bottom: 1px solid #f1f1f1;
 	}
 	.accordion-wrap .panel .panel-heading a {
-	    font-size: 14px
+	    font-size: 14px;
 	}
 	.accordion_one .panel-group .panel-heading+.panel-collapse>.panel-body {
 	    border-top: 0;
 	    padding-top: 0;
 	    padding: 25px 30px 30px 35px;
 	    background: #fff;
-	    color: #999999
+	    color: #313131;
 	}
 	.img-accordion {
 	    width: 81px;
 	    float: left;
 	    margin-right: 15px;
-	    display: block
+	    display: block;
 	}
 	.accordion_one .panel .panel-heading a.collapsed:after {
 	    content: "\2b";
-	    color: #999999;
-	    background: #f1f1f1
+	    color: #334da1;
+	    background: #f1f1f1;
 	}
 	.accordion_one .panel .panel-heading a:after,
 	.accordion_one .panel .panel-heading a.collapsed:after {
@@ -132,10 +150,10 @@ echo "$component_HTMLHeader";
 	    float: left;
 	    margin-left: -31px;
 	    margin-top: -12px;
-	    margin-right: 15px
+	    margin-right: 15px;
 	}
 	.accordion_one .panel .panel-heading a:after {
-	    content: "\2212"
+	    content: "\2212";
 	}
 	.accordion_one .panel .panel-heading a:after,
 	.accordion_one .panel .panel-heading a.collapsed:after {
@@ -149,6 +167,6 @@ echo "$component_HTMLHeader";
 	    float: left;
 	    margin-left: -31px;
 	    margin-top: -12px;
-	    margin-right: 15px
+	    margin-right: 15px;
 	}
 </style>
