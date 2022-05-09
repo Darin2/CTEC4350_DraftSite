@@ -43,12 +43,14 @@ echo "$component_HTMLHeader";
 echo "$component_Nav";
 ?>
 <!-- include CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" />
 <link rel="stylesheet" type="text/css" href="richtext/richtext.min.css" />
 
 <!-- include JS -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="richtext/jquery.richtext.js"></script>
-
 <!-- layout for form to edit FAQ -->
 <div class="container" style="margin-top: 50px; margin-bottom: 50px;">
 	<div class="row">
